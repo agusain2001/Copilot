@@ -1,0 +1,57 @@
+.toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--toast-bg);
+  border: 1px solid var(--toast-border);
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  box-shadow: var(--shadow-lg);
+  z-index: 2000;
+  white-space: nowrap;
+  animation: slideUp 0.2s ease;
+}
+
+.toast-message {
+  color: #fff;
+}
+
+.toast-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toast-undo {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.toast-undo:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.toast-close {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: color 0.15s;
+}
+.toast-close:hover {
+  color: #fff;
+}
