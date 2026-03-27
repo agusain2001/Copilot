@@ -287,19 +287,11 @@ def match_journal_to_icm(data_rows, primary_lookup, fallback_lookup):
                 if net != 0:
                     partner_updates[(ent_code, partner_code, a)] = net
 
-        # Entity-side fallback (E-prefix group entities)
-        for (p, a), jlines in fallback_lookup.items():
-            if p == partner_code and (ent_code, partner_code, a) not in entity_updates:
-                net = sum(apply_sign(j["debit"], j["credit"], a) for j in jlines)
-                if net != 0:
-                    entity_updates[(ent_code, partner_code, a)] = ("GROUP", net)
-
-        # Partner-side fallback
-        for (p, a), jlines in fallback_lookup.items():
-            if p == entity_as_icp and (ent_code, partner_code, a) not in partner_updates:
-                net = sum(apply_sign(j["debit"], j["credit"], a) for j in jlines)
-                if net != 0:
-                    partner_updates[(ent_code, partner_code, a)] = ("GROUP", net)
+        # NOTE: Fallback (E-prefix group entity) matching is intentionally
+        # removed. Group entities cannot be reliably mapped to individual
+        # entities without an explicit group→entity mapping table.
+        # Without that mapping, the same group value would be incorrectly
+        # duplicated across all entities sharing the same partner.
 
     return entity_updates, partner_updates
 
