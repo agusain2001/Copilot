@@ -4,6 +4,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
 import ReportsPage from './pages/ReportsPage';
+import ProcessingPage from './pages/ProcessingPage';
 import './index.css';
 
 export default function App() {
@@ -18,6 +19,14 @@ export default function App() {
               element={
                 <ProtectedRoute>
                   <ReportsPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/processing"
+              element={
+                <ProtectedRoute>
+                  <ProcessingPage />
                 </ProtectedRoute>
               }
             />

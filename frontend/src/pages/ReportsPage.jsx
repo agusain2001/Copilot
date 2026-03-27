@@ -254,7 +254,6 @@ export default function ReportsPage() {
                     />
                   </th>
                   <th>Report Name</th>
-                  <th>Type</th>
                   <th>Uploaded Time</th>
                   <th>File</th>
                 </tr>

@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
 import { FiMoon, FiSun, FiChevronDown, FiLogOut, FiUser } from 'react-icons/fi';
@@ -41,6 +42,11 @@ export default function Navbar() {
           </span>
         </div>
 
+        <div className="navbar-links">
+          <NavLink to="/reports" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Reports</NavLink>
+          <NavLink to="/processing" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Processing</NavLink>
+        </div>
+
         <div className="navbar-right">
           <button className="theme-toggle" onClick={toggleTheme} title="Toggle theme">
             {theme === 'dark' ? <FiSun size={16} /> : <FiMoon size={16} />}
@@ -49,7 +55,7 @@ export default function Navbar() {
           <div className="user-menu" ref={dropRef}>
             <button className="avatar-btn" onClick={() => setDropdownOpen(!dropdownOpen)}>
               {user?.profile_photo_url ? (
-                <img src={`http://localhost:8080${user.profile_photo_url}`} alt="avatar" className="avatar-img" />
+                <img src={`http://localhost:8000${user.profile_photo_url}`} alt="avatar" className="avatar-img" />
               ) : (
                 <div className="avatar-initials">{initials}</div>
               )}

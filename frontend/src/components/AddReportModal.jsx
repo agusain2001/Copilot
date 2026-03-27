@@ -58,6 +58,7 @@ export default function AddReportModal({ onClose, onSuccess }) {
       const formData = new FormData();
       formData.append('name', reportName);
       formData.append('type_name', reportType);
+      formData.append('file_type', 'input');
       formData.append('file', file);
       await api.post('/api/reports', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },

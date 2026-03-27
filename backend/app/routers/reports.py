@@ -10,8 +10,9 @@ from sqlalchemy import select, and_
 from app.database import get_db
 from app.models.report import Report
 from app.models.report_type import ReportType
+from app.models.report_sequence import ReportSequence
 from app.schemas.report import ReportResponse, BulkActionRequest
-from app.utils.files import save_upload_file, delete_file, ALLOWED_REPORT_EXTENSIONS
+from app.utils.files import save_report_file, delete_file, ALLOWED_REPORT_EXTENSIONS
 from app.dependencies import get_current_user
 from app.models.user import User
 
@@ -29,6 +30,11 @@ def report_to_response(r: Report) -> ReportResponse:
         uploaded_at=r.uploaded_at,
         uploaded_by_name=r.uploader.full_name if r.uploader else "",
         is_deleted=r.is_deleted,
+        # Structured-storage fields
+        sequence_id=r.sequence_id,
+        file_type=r.file_type,
+        stored_filename=r.stored_filename,
+        folder_path=r.folder_path,
     )
 
 
@@ -39,6 +45,8 @@ async def list_reports(
     date_to: datetime | None = Query(None),
     search: str | None = Query(None),
     sort_by: str = Query("date_desc"),
+    sequence_id: int | None = Query(None),
+    file_type: str | None = Query(None),
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
@@ -56,6 +64,10 @@ async def list_reports(
         filters.append(Report.uploaded_at <= date_to)
     if search:
         filters.append(Report.name.ilike(f"%{search}%"))
+    if sequence_id is not None:
+        filters.append(Report.sequence_id == sequence_id)
+    if file_type:
+        filters.append(Report.file_type == file_type)
 
     query = select(Report).where(and_(*filters))
 
@@ -76,28 +88,79 @@ async def create_report(
     name: str = Form(...),
     type_name: str = Form(...),
     file: UploadFile = File(...),
+    file_type: str = Form("input", description="Must be 'input' or 'output'"),
+    sequence_id: int | None = Form(
+        None,
+        description="Existing sequence/group ID. Leave empty to create a new group folder.",
+    ),
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    from pathlib import Path as P
-    ext = P(file.filename).suffix.lower()
+    """
+    Upload a report file.
+
+    - **file_type**: `input` or `output`
+    - **sequence_id**: optional integer. If omitted, a new group folder (N+1) is created.
+      Pass the same `sequence_id` to add an output file to the same folder as its input.
+
+    The file is saved to:
+        `uploads/reports/<sequence_id>/inputs/<ddmmyyyyhhmmss>_<filename>`
+        `uploads/reports/<sequence_id>/outputs/<ddmmyyyyhhmmss>_<filename>`
+    """
+    # Validate file_type
+    if file_type not in ("input", "output"):
+        raise HTTPException(status_code=400, detail="file_type must be 'input' or 'output'")
+
+    # Validate extension
+    ext = Path(file.filename).suffix.lower()
     if ext not in ALLOWED_REPORT_EXTENSIONS:
         raise HTTPException(status_code=400, detail="Only .csv, .xlsx, .xls files are allowed")
 
-    rt_result = await db.execute(select(ReportType).where(ReportType.name == type_name, ReportType.is_active == True))
+    # Validate report type
+    rt_result = await db.execute(
+        select(ReportType).where(ReportType.name == type_name, ReportType.is_active == True)
+    )
     report_type = rt_result.scalar_one_or_none()
     if not report_type:
         raise HTTPException(status_code=400, detail=f"Report type '{type_name}' not found")
 
-    file_url, file_size = await save_upload_file(file, subfolder="reports")
+    # Resolve or create sequence
+    if sequence_id is not None:
+        # Verify the sequence exists
+        seq_result = await db.execute(
+            select(ReportSequence).where(ReportSequence.id == sequence_id)
+        )
+        seq = seq_result.scalar_one_or_none()
+        if not seq:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Sequence group {sequence_id} not found. "
+                       "Leave sequence_id empty to create a new group.",
+            )
+    else:
+        # Create a new sequence entry — DB auto-assigns the next integer ID
+        seq = ReportSequence()
+        db.add(seq)
+        await db.flush()   # flush to get the generated ID without full commit
+        sequence_id = seq.id
 
+    # Save the file with the structured path
+    full_path, stored_filename, folder_path, file_size = await save_report_file(
+        file, sequence_id=sequence_id, file_type=file_type
+    )
+
+    # Persist report record
     report = Report(
         name=name,
         type_id=report_type.id,
-        file_url=file_url,
+        file_url=full_path,
         original_filename=file.filename,
         file_size_bytes=file_size,
         uploaded_by=current_user.id,
+        sequence_id=sequence_id,
+        file_type=file_type,
+        stored_filename=stored_filename,
+        folder_path=folder_path,
     )
     db.add(report)
     await db.commit()

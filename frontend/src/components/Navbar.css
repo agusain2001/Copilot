@@ -52,6 +52,33 @@
   letter-spacing: 1px;
 }
 
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-link {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  transition: color 0.15s, background 0.15s;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+  background: var(--bg-pill);
+}
+
+.nav-link.active {
+  color: var(--text-primary);
+  background: var(--bg-pill);
+  font-weight: 600;
+}
+
 .navbar-right {
   display: flex;
   align-items: center;

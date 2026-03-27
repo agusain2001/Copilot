@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from app.config import settings
-from app.routers import auth_router, users_router, reports_router, report_types_router
+from app.routers import auth_router, users_router, reports_router, report_types_router, processing_router
 
 
 @asynccontextmanager
@@ -48,6 +48,7 @@ app.include_router(auth_router)
 app.include_router(users_router)
 app.include_router(reports_router)
 app.include_router(report_types_router)
+app.include_router(processing_router)
 
 
 @app.get("/")

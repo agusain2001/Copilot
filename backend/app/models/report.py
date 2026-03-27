@@ -1,6 +1,6 @@
 import uuid
 from datetime import datetime
-from sqlalchemy import String, Boolean, DateTime, BigInteger, ForeignKey, func
+from sqlalchemy import String, Boolean, DateTime, BigInteger, Integer, ForeignKey, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.dialects.postgresql import UUID
 from app.database import Base
@@ -28,6 +28,22 @@ class Report(Base):
     is_deleted: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False, index=True)
     deleted_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
 
+    # ── New structured-storage fields ──────────────────────────────────────────
+    sequence_id: Mapped[int | None] = mapped_column(
+        Integer, ForeignKey("report_sequences.id", ondelete="SET NULL"), nullable=True, index=True
+    )
+    file_type: Mapped[str | None] = mapped_column(
+        String(10), nullable=True
+    )  # "input" or "output"
+    stored_filename: Mapped[str | None] = mapped_column(
+        String(400), nullable=True
+    )  # e.g. "20032026122900_report.xls"
+    folder_path: Mapped[str | None] = mapped_column(
+        String(700), nullable=True
+    )  # e.g. "uploads/reports/3/inputs/20032026122900_report.xls"
+    # ────────────────────────────────────────────────────────────────────────────
+
     # Relationships
     report_type = relationship("ReportType", lazy="joined")
     uploader = relationship("User", lazy="joined")
+    sequence = relationship("ReportSequence", back_populates="reports", lazy="joined")
