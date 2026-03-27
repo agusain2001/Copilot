@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import os; print\\(os.path.exists\\(''G:/AI/ic_matching_v3.py''\\)\\)\")",
+      "Bash(python3 ic_matching_v3.py)",
+      "Bash(python3 -c \":*)"
+    ]
+  }
+}

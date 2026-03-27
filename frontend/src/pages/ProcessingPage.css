@@ -347,3 +347,108 @@
 .file-grid .drop-zone:nth-child(5) {
   grid-column: 1 / -1;
 }
+
+/* ─── Back to Reports button ─── */
+.back-to-reports-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-bottom: 28px;
+}
+.back-to-reports-btn:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+
+/* ─── Runs section ─── */
+.runs-section { width: 100%; }
+
+/* ─── Empty state ─── */
+.empty-runs {
+  text-align: center;
+  padding: 60px 24px;
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--bg-secondary);
+}
+.empty-runs-icon {
+  font-size: 36px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+.empty-runs-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+.empty-runs-sub {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+/* ─── Runs list ─── */
+.runs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.run-card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+  background: var(--bg-card);
+  transition: border-color 0.2s;
+  animation: slideUp 0.25s ease;
+}
+.run-card.success { border-left: 3px solid var(--accent-success); }
+.run-card.error   { border-left: 3px solid var(--accent-danger); }
+
+.run-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.run-status-icon { font-size: 22px; }
+.run-status-icon.success { color: var(--accent-success); }
+.run-status-icon.error   { color: var(--accent-danger); }
+
+.run-card-info { flex: 1; }
+.run-card-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.run-card-time {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.run-card-actions { display: flex; gap: 8px; }
+
+.run-card-detail {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+}
+.run-card-detail.error-text { color: var(--accent-danger); }
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

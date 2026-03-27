@@ -1,0 +1,542 @@
+
+================================================================================
+  CURRENT OUTPUT (ICM_Output_9)
+  Sheet: 'ICM Matched'  |  Rows: 1294  |  Cols: 27
+================================================================================
+
+--- Merged Cells (3) ---
+  I29:M29  value='Parent Input'
+  O29:S29  value='Contribution Input'
+  U29:W29  value='Plug Account'
+
+--- Row Heights (non-default) ---
+  Row 32: height=78.75
+
+--- Column Widths ---
+  Col 1 (A): width=17.5714
+  Col 2 (B): width=17.5714
+  Col 3 (C): width=17.5714
+  Col 4 (D): width=17.5714
+  Col 5 (E): width=17.5714
+  Col 6 (F): width=17.5714
+  Col 7 (G): width=17.5714
+  Col 8 (H): width=4.0
+  Col 9 (I): width=17.5714
+  Col 10 (J): width=17.5714
+  Col 11 (K): width=17.5714
+  Col 12 (L): width=17.5714
+  Col 13 (M): width=17.5714
+  Col 14 (N): width=4.0
+  Col 15 (O): width=17.5714
+  Col 16 (P): width=17.5714
+  Col 17 (Q): width=17.5714
+  Col 18 (R): width=17.5714
+  Col 19 (S): width=17.5714
+  Col 20 (T): width=4.0
+  Col 21 (U): width=17.5714
+  Col 22 (V): width=4.0
+  Col 23 (W): width=17.5714
+  Col 24 (X): width=None
+  Col 25 (Y): width=None
+  Col 26 (Z): width=None
+  Col 27 (AA): width=None
+
+--- Row Content (rows 1-35) ---
+  Row 1: (empty)
+  Row 2: (empty)
+  Row 3: (empty)
+  Row 4: C1=' Entity ', C2=' Partner ', C3='165003 - 165003:Advances provided for related parties Entit, C4='165004 - 165004:Payments to subcontractors & suppliers on b, C5='165005 - 165005:Retention receivable-Intercompany (Current), C6='189001 - 189001:Inter company account - receivables Entity , C7='189014 - 189014:Discount on intercompany loan Entity ', C8='189501 - 189501:Due from Related Party - Non-current Entity, C9='224000 - 224000:Due to related parties Partner ', C10='224003 - 224003:Advances provided from related parties Part, C11='224009 - 224009:Inter company accounts - Payables Partner ', C12='Variance ', C13='165003 - 165003:Advances provided for related parties Partn, C14='165004 - 165004:Payments to subcontractors & suppliers on b, C15='165005 - 165005:Retention receivable-Intercompany (Current), C16='189001 - 189001:Inter company account - receivables Partner, C17='189014 - 189014:Discount on intercompany loan Partner ', C18='189501 - 189501:Due from Related Party - Non-current Partne, C19='224000 - 224000:Due to related parties Entity ', C20='224003 - 224003:Advances provided from related parties Enti, C21='224009 - 224009:Inter company accounts - Payables Entity ', C22='Variance ', C23='Total ', C24='PARENT INPUT', C25='QAR_Reporting', C26='Final amount', C27='final variance'
+  Row 5: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_001051 - Huzoom Lusail Company LLC ICP', C3=' ', C4=' ', C5=' ', C6=265220560, C7=' ', C8=' ', C9=-580677922, C10=' ', C11=845898482, C12=0, C13=' ', C14=' ', C15=' ', C16=0, C17=' ', C18=' ', C19=-580200000, C20=' ', C21=580200000, C22=0, C23=0
+  Row 6: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_007001 - QD Europe S.a.r.l. (H) ICP', C3=' ', C4=' ', C5=' ', C6=448604532, C7=' ', C8=' ', C9=' ', C10=' ', C11=448475850, C12=128683, C13=' ', C14=' ', C15=' ', C16=0, C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=0, C23=128683
+  Row 7: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_032002 - QD Hotel & Property Investment Montenegro Doo, C3=' ', C4=' ', C5=' ', C6=' ', C7=' ', C8=' ', C9=0, C10=' ', C11=' ', C12=0, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=0, C19=' ', C20=' ', C21=' ', C22=0, C23=0
+  Row 8: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_007013 - Q Hotel & Marina Ltd. (H) ICP', C3=' ', C4=' ', C5=' ', C6=71265, C7=' ', C8=' ', C9=' ', C10=' ', C11=0, C12=71265, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=' ', C23=71265
+  Row 9: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_007008 - QD Cyprus Ltd. ICP', C3=' ', C4=' ', C5=' ', C6=2508, C7=' ', C8=' ', C9=' ', C10=' ', C11=0, C12=2508, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=' ', C23=2508
+  Row 10: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_027009 - QD Americas Inc. - Delaware ICP', C3=' ', C4=' ', C5=' ', C6=-1, C7=' ', C8=' ', C9=' ', C10=' ', C11=' ', C12=-1, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=0, C19=' ', C20=' ', C21=' ', C22=0, C23=-1
+  Row 11: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_006002 - QD Hotel & Property Investment Ltd. ICP', C3=' ', C4=' ', C5=' ', C6=0, C7=' ', C8=' ', C9=0, C10=' ', C11=' ', C12=0, C13=381140, C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=381141, C20=' ', C21=' ', C22=0, C23=0
+  Row 12: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_001007 - QDVC Q.S.C. (Holding) ICP', C3=' ', C4=' ', C5=' ', C6=40466140, C7=' ', C8=' ', C9=40466140, C10=' ', C11=' ', C12=-1, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=0, C19=' ', C20=' ', C21=' ', C22=0, C23=-1
+  Row 13: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_001016 - Smeet W.L.L. (H) ICP', C3=' ', C4=' ', C5=' ', C6=0, C7=' ', C8=' ', C9=-172708, C10=' ', C11=' ', C12=172708, C13=0, C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=0, C23=172708
+  Row 14: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_001028 - East Gates Real Estate Investment ICP', C3=' ', C4=' ', C5=' ', C6=205273, C7=' ', C8=' ', C9=' ', C10=' ', C11=205273, C12=0, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=100, C20=' ', C21=-100, C22=0, C23=0
+  Row 15: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_005001 - QDRE Investment Co.(QD Morocco) (H) ICP', C3=' ', C4=' ', C5=' ', C6=1632482444, C7=' ', C8=' ', C9=1632462567, C10=' ', C11=' ', C12=19877, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=0, C19=' ', C20=' ', C21=' ', C22=0, C23=19877
+  Row 16: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_002001 - QDRE & Tourism Co. LLC. (Egypt) ICP', C3=' ', C4=' ', C5=' ', C6=4029421211, C7=' ', C8=' ', C9=4029370791, C10=' ', C11=' ', C12=50420, C13=0, C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=0, C23=50420
+  Row 17: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_017001 - QDRE Investment Co. L.L.C. (Syria) ICP', C3=' ', C4=' ', C5=' ', C6=199768031, C7=' ', C8=' ', C9=' ', C10=' ', C11=199768034, C12=-3, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=' ', C23=-3
+  Row 18: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_003001 - Project Red Group Limited (Holding) ICP', C3=' ', C4=' ', C5=' ', C6=' ', C7=' ', C8=' ', C9=0, C10=' ', C11=' ', C12=0, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=0, C19=' ', C20=' ', C21=' ', C22=0, C23=0
+  Row 19: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_003003 - Project Red  Limited ICP', C3=' ', C4=' ', C5=' ', C6=0, C7=' ', C8=' ', C9=' ', C10=' ', C11=' ', C12=0, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=' ', C23=0
+  Row 20: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_003004 - Project Blue Holdings Ltd.(H) ICP', C3=' ', C4=' ', C5=' ', C6=0, C7=' ', C8=' ', C9=3074243107, C10=' ', C11=' ', C12=-3074243107, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=0, C19=' ', C20=' ', C21=' ', C22=0, C23=-3074243107
+  Row 21: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_003007 - Project Blue  Limited ICP', C3=' ', C4=' ', C5=' ', C6=5136672, C7=' ', C8=' ', C9=' ', C10=' ', C11=' ', C12=5136672, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=' ', C23=5136672
+  Row 22: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_019002 - QD US Real Estate Company (H) ICP', C3=' ', C4=' ', C5=' ', C6=2373163331, C7=' ', C8=' ', C9=-69323812, C10=' ', C11=2442487141, C12=3, C13=' ', C14=' ', C15=' ', C16=0, C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=0, C23=3
+  Row 23: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_019005 - QD US Parcel A (Condo 2) Company (H) ICP', C3=' ', C4=' ', C5=' ', C6=' ', C7=' ', C8=' ', C9=' ', C10=' ', C11=1, C12=-1, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=' ', C23=-1
+  Row 24: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_019006 - QD US Parcel A (Office) Company (H) ICP', C3=' ', C4=' ', C5=' ', C6=' ', C7=' ', C8=' ', C9=' ', C10=' ', C11=1, C12=-1, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=' ', C23=-1
+  Row 25: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_019007 - QD US Parcel A (Retail) Company (H) ICP', C3=' ', C4=' ', C5=' ', C6=' ', C7=' ', C8=' ', C9=' ', C10=' ', C11=1, C12=-1, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=' ', C23=-1
+  Row 26: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_013004 - CCDC Parcel B Hotel Corp. ICP', C3=' ', C4=' ', C5=' ', C6=' ', C7=' ', C8=' ', C9=' ', C10=' ', C11=1, C12=-1, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=' ', C23=-1
+  Row 27: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_013005 - CCDC Parcel B Retail Corp. ICP', C3=' ', C4=' ', C5=' ', C6=' ', C7=' ', C8=' ', C9=' ', C10=' ', C11=1, C12=-1, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=' ', C23=-1
+  Row 28: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_027007 - CityCenter Parcel B Retail Corp. ICP', C3=' ', C4=' ', C5=' ', C6=' ', C7=' ', C8=' ', C9=' ', C10=' ', C11=0, C12=0, C13=' ', C14=' ', C15=' ', C16=0, C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=0, C23=0
+  Row 29: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_013006 - LIC Gotham (UK) Ltd. (H) ICP', C3=' ', C4=' ', C5=' ', C6=' ', C7=' ', C8=' ', C9='Parent Input', C14=' ', C15='Contribution Input', C20=' ', C21='Plug Account'
+  Row 30: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_013001 - Qatari Diar UK Limited ICP', C3=' ', C4=' ', C5=' ', C6=0, C7=' ', C8=' ', C9=1241598, C10=' ', C11=-1241601, C12=2, C13=' ', C14=' ', C15=' ', C16=3636313, C17=' ', C18=' ', C19=-30000, C20=' ', C21=3636427, C22=29886, C23=29888
+  Row 31: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_016001 - QDRE Investment Co. Ltd (QD Sudan) ICP', C3=' ', C4=' ', C5=' ', C6=1458842047, C7=' ', C8=' ', C9=1487552269, C10=' ', C11=' ', C12=-28710223, C13=28710222, C14=' ', C15=' ', C16=' ', C17=' ', C18=0, C19=-28710222, C20=' ', C21=28710222, C22=28710222, C23=-1
+  Row 32: C1='Entity', C2='Partner', C3='1306865966', C4='Variance', C5='280584461', C6='Variance', C7='Total', C9='1306865966', C10='Variance', C11='280584461', C12='Variance', C13='Total', C15='1306865966', C16='Variance', C17='280584461', C18='Variance', C19='Total', C21='188800:Intercompany Balances Plug A/c', C23='Total'
+  Row 33: C1='001001 - QDRE Investment Company Q.S.C. (H)', C2='ICP_011002 - Kat Turizm Gayrimenkul Yatirimlarive Isletme T, C6=1025532898
+  Row 34: C1='001001 - QDRE Investment Company Q.S.C. (H)', C2='ICP_018001 - QDRE Investments Co. Mauritania S.a.r.l. ICP', C6=7416140
+  Row 35: C1='001001 - QDRE Investment Company Q.S.C. (H)', C2='ICP_026001 - QDRE Investment Co. (Seychelles) Ltd. ICP', C6=5585593
+
+--- Header Row 32 (all values) ---
+  Col 1: val='Entity' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 2: val='Partner' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 3: val='1306865966' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 4: val='Variance' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 5: val='280584461' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 6: val='Variance' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 7: val='Total' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 9: val='1306865966' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 10: val='Variance' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 11: val='280584461' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 12: val='Variance' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 13: val='Total' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 15: val='1306865966' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 16: val='Variance' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 17: val='280584461' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 18: val='Variance' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 19: val='Total' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 21: val='188800:Intercompany Balances Plug A/c' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 23: val='Total' bold=True fill_fg=00003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='00FFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+
+--- Section Label Row 29 (all values) ---
+  Col 1: val=' 001001 - QDRE Investment Company Q.S.C. (H)' bold=False fill_fg=00000000
+  Col 2: val=' ICP_013006 - LIC Gotham (UK) Ltd. (H) ICP' bold=False fill_fg=00000000
+  Col 3: val=' ' bold=False fill_fg=00000000
+  Col 4: val=' ' bold=False fill_fg=00000000
+  Col 5: val=' ' bold=False fill_fg=00000000
+  Col 6: val=' ' bold=False fill_fg=00000000
+  Col 7: val=' ' bold=False fill_fg=00000000
+  Col 8: val=' ' bold=False fill_fg=00000000
+  Col 9: val='Parent Input' bold=True fill_fg=0000B050
+  Col 14: val=' ' bold=False fill_fg=00000000
+  Col 15: val='Contribution Input' bold=True fill_fg=0000B050
+  Col 20: val=' ' bold=False fill_fg=00000000
+  Col 21: val='Plug Account' bold=True fill_fg=0000B050
+
+--- Data Rows 33-35 (first 5 cols) ---
+  R33C1: val='001001 - QDRE Investment Company Q.S.C. (H)' fill=00C8DCF0 bold=True size=11.0 numfmt=General
+  R33C2: val='ICP_011002 - Kat Turizm Gayrimenkul Yatirimlarive Isletme T fill=00C8DCF0 bold=True size=11.0 numfmt=General
+  R33C3: val=None fill=00000000 bold=False size=11.0 numfmt=General
+  R33C4: val=None fill=00DCDCDC bold=False size=11.0 numfmt=General
+  R33C5: val=None fill=00000000 bold=False size=11.0 numfmt=General
+  R34C1: val='001001 - QDRE Investment Company Q.S.C. (H)' fill=00C8DCF0 bold=True size=11.0 numfmt=General
+  R34C2: val='ICP_018001 - QDRE Investments Co. Mauritania S.a.r.l. ICP' fill=00C8DCF0 bold=True size=11.0 numfmt=General
+  R34C3: val=None fill=00000000 bold=False size=11.0 numfmt=General
+  R34C4: val=None fill=00DCDCDC bold=False size=11.0 numfmt=General
+  R34C5: val=None fill=00000000 bold=False size=11.0 numfmt=General
+  R35C1: val='001001 - QDRE Investment Company Q.S.C. (H)' fill=00C8DCF0 bold=True size=11.0 numfmt=General
+  R35C2: val='ICP_026001 - QDRE Investment Co. (Seychelles) Ltd. ICP' fill=00C8DCF0 bold=True size=11.0 numfmt=General
+  R35C3: val=None fill=00000000 bold=False size=11.0 numfmt=General
+  R35C4: val=None fill=00DCDCDC bold=False size=11.0 numfmt=General
+  R35C5: val=None fill=00000000 bold=False size=11.0 numfmt=General
+
+--- AutoFilter ---
+  ref=None
+
+--- Freeze Panes ---
+  freeze=None
+
+================================================================================
+  EXPECTED MASTER REPORT
+  Sheet: 'Sheet1 (2)'  |  Rows: 1325  |  Cols: 71
+================================================================================
+
+--- Merged Cells (2) ---
+  AH29:AM29  value='Parent Input'
+  BB29:BI29  value='Contribution Input'
+
+--- Row Heights (non-default) ---
+  Row 1: height=27.0
+  Row 10: height=14.45
+  Row 11: height=14.45
+  Row 12: height=14.45
+  Row 13: height=14.45
+  Row 14: height=14.45
+  Row 15: height=14.45
+  Row 16: height=14.45
+  Row 17: height=14.45
+  Row 18: height=14.45
+  Row 19: height=14.45
+  Row 23: height=14.45
+  Row 28: height=14.45
+  Row 32: height=78.75
+
+--- Column Widths ---
+  Col 1 (A): width=17.5714285714286
+  Col 2 (B): width=16.7142857142857
+  Col 3 (C): width=17.5714285714286
+  Col 4 (D): width=16.7142857142857
+  Col 5 (E): width=17.5714285714286
+  Col 6 (F): width=16.7142857142857
+  Col 7 (G): width=17.5714285714286
+  Col 8 (H): width=16.7142857142857
+  Col 9 (I): width=17.5714285714286
+  Col 10 (J): width=16.7142857142857
+  Col 11 (K): width=17.5714285714286
+  Col 12 (L): width=16.7142857142857
+  Col 13 (M): width=17.5714285714286
+  Col 14 (N): width=16.7142857142857
+  Col 15 (O): width=17.5714285714286
+  Col 16 (P): width=12.8571428571429
+  Col 17 (Q): width=17.5714285714286
+  Col 18 (R): width=16.7142857142857
+  Col 19 (S): width=17.5714285714286
+  Col 20 (T): width=16.7142857142857
+  Col 21 (U): width=17.5714285714286
+  Col 22 (V): width=16.7142857142857
+  Col 23 (W): width=17.5714285714286
+  Col 24 (X): width=None
+  Col 25 (Y): width=16.7142857142857
+  Col 26 (Z): width=None
+  Col 27 (AA): width=None
+  Col 28 (AB): width=None
+  Col 29 (AC): width=None
+  Col 30 (AD): width=None
+  Col 31 (AE): width=None
+  Col 32 (AF): width=None
+  Col 33 (AG): width=None
+  Col 34 (AH): width=None
+  Col 35 (AI): width=None
+  Col 36 (AJ): width=None
+  Col 37 (AK): width=None
+  Col 38 (AL): width=None
+  Col 39 (AM): width=None
+  Col 40 (AN): width=None
+  Col 41 (AO): width=None
+  Col 42 (AP): width=None
+  Col 43 (AQ): width=None
+  Col 44 (AR): width=None
+  Col 45 (AS): width=None
+  Col 46 (AT): width=16.7142857142857
+  Col 47 (AU): width=16.7142857142857
+  Col 48 (AV): width=None
+  Col 49 (AW): width=None
+  Col 50 (AX): width=None
+  Col 51 (AY): width=None
+  Col 52 (AZ): width=None
+  Col 53 (BA): width=None
+  Col 54 (BB): width=None
+  Col 55 (BC): width=None
+  Col 56 (BD): width=None
+  Col 57 (BE): width=None
+  Col 58 (BF): width=None
+  Col 59 (BG): width=None
+  Col 60 (BH): width=None
+  Col 61 (BI): width=None
+  Col 62 (BJ): width=None
+  Col 63 (BK): width=None
+  Col 64 (BL): width=None
+  Col 65 (BM): width=None
+  Col 66 (BN): width=None
+  Col 67 (BO): width=None
+  Col 68 (BP): width=None
+  Col 69 (BQ): width=None
+  Col 70 (BR): width=None
+  Col 71 (BS): width=None
+
+--- Row Content (rows 1-35) ---
+  Row 1: (empty)
+  Row 2: (empty)
+  Row 3: (empty)
+  Row 4: (empty)
+  Row 5: (empty)
+  Row 6: (empty)
+  Row 7: (empty)
+  Row 8: (empty)
+  Row 9: (empty)
+  Row 10: (empty)
+  Row 11: (empty)
+  Row 12: (empty)
+  Row 13: (empty)
+  Row 14: (empty)
+  Row 15: (empty)
+  Row 16: (empty)
+  Row 17: (empty)
+  Row 18: (empty)
+  Row 19: (empty)
+  Row 20: (empty)
+  Row 21: (empty)
+  Row 22: (empty)
+  Row 23: (empty)
+  Row 24: (empty)
+  Row 25: (empty)
+  Row 26: (empty)
+  Row 27: (empty)
+  Row 28: (empty)
+  Row 29: C34='Parent Input', C54='Contribution Input', C69='Plug Account'
+  Row 30: (empty)
+  Row 31: C1=' '
+  Row 32: C1='Entity', C2='Partner', C3='165003 - 165003:Advances provided for related parties Entit, C4='165004 - 165004:Payments to subcontractors & suppliers on b, C5='165005 - 165005:Retention receivable-Intercompany (Current), C6='189001 - 189001:Inter company account - receivables Entity', C7='189014 - 189014:Discount on intercompany loan Entity', C8='189501 - 189501:Due from Related Party - Non-current Entity, C9='224000 - 224000:Due to related parties Partner', C10='224003 - 224003:Advances provided from related parties Part, C11='224009 - 224009:Inter company accounts - Payables Partner', C12='Variance', C13='165003 - 165003:Advances provided for related parties Partn, C14='165004 - 165004:Payments to subcontractors & suppliers on b, C15='165005 - 165005:Retention receivable-Intercompany (Current), C16='189001 - 189001:Inter company account - receivables Partner, C17='189014 - 189014:Discount on intercompany loan Partner', C18='189501 - 189501:Due from Related Party - Non-current Partne, C19='224000 - 224000:Due to related parties Entity', C20='224003 - 224003:Advances provided from related parties Enti, C21='224009 - 224009:Inter company accounts - Payables Entity', C22='Variance', C23='Total', C25='165003 - 165003:Advances provided for related parties Entit, C26='165004 - 165004:Payments to subcontractors & suppliers on b, C27='165005 - 165005:Retention receivable-Intercompany (Current), C28='189001 - 189001:Inter company account - receivables Entity', C29='189014 - 189014:Discount on intercompany loan Entity', C30='189501 - 189501:Due from Related Party - Non-current Entity, C31='224000 - 224000:Due to related parties Partner', C32='224003 - 224003:Advances provided from related parties Part, C33='224009 - 224009:Inter company accounts - Payables Partner', C34='Variance', C35='165003 - 165003:Advances provided for related parties Partn, C36='165004 - 165004:Payments to subcontractors & suppliers on b, C37='165005 - 165005:Retention receivable-Intercompany (Current), C38='189001 - 189001:Inter company account - receivables Partner, C39='189014 - 189014:Discount on intercompany loan Partner', C40='189501 - 189501:Due from Related Party - Non-current Partne, C41='224000 - 224000:Due to related parties Entity', C42='224003 - 224003:Advances provided from related parties Enti, C43='224009 - 224009:Inter company accounts - Payables Entity', C44='Variance', C45='Total', C47='165003 - 165003:Advances provided for related parties Entit, C48='165004 - 165004:Payments to subcontractors & suppliers on b, C49='165005 - 165005:Retention receivable-Intercompany (Current), C50='189001 - 189001:Inter company account - receivables Entity', C51='189014 - 189014:Discount on intercompany loan Entity', C52='189501 - 189501:Due from Related Party - Non-current Entity, C53='224000 - 224000:Due to related parties Partner', C54='224003 - 224003:Advances provided from related parties Part, C55='224009 - 224009:Inter company accounts - Payables Partner', C56='Variance', C57='165003 - 165003:Advances provided for related parties Partn, C58='165004 - 165004:Payments to subcontractors & suppliers on b, C59='165005 - 165005:Retention receivable-Intercompany (Current), C60='189001 - 189001:Inter company account - receivables Partner, C61='189014 - 189014:Discount on intercompany loan Partner', C62='189501 - 189501:Due from Related Party - Non-current Partne, C63='224000 - 224000:Due to related parties Entity', C64='224003 - 224003:Advances provided from related parties Enti, C65='224009 - 224009:Inter company accounts - Payables Entity', C66='Variance', C67='Total', C69='188800:Intercompany Balances Plug A/c', C71='Total'
+  Row 33: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_001051 - Huzoom Lusail Company LLC ICP', C3=' ', C4=' ', C5=' ', C6=265220560, C7=' ', C8=' ', C9=-580677922, C10=' ', C11=845898482, C12=0, C13=' ', C14=' ', C15=' ', C16=0, C17=' ', C18=' ', C19=-580200000, C20=' ', C21=580200000, C22=0, C23=0
+  Row 34: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_007001 - QD Europe S.a.r.l. (H) ICP', C3=' ', C4=' ', C5=' ', C6=448604532, C7=' ', C8=' ', C9=' ', C10=' ', C11=448475850, C12=128683, C13=' ', C14=' ', C15=' ', C16=0, C17=' ', C18=' ', C19=' ', C20=' ', C21=' ', C22=0, C23=128683, C71=0
+  Row 35: C1=' 001001 - QDRE Investment Company Q.S.C. (H)', C2=' ICP_032002 - QD Hotel & Property Investment Montenegro Doo, C3=' ', C4=' ', C5=' ', C6=' ', C7=' ', C8=' ', C9=0, C10=' ', C11=' ', C12=0, C13=' ', C14=' ', C15=' ', C16=' ', C17=' ', C18=0, C19=' ', C20=' ', C21=' ', C22=0, C23=0
+
+--- Header Row 32 (all values) ---
+  Col 1: val='Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 2: val='Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 3: val='165003 - 165003:Advances provided for related parties Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 4: val='165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 5: val='165005 - 165005:Retention receivable-Intercompany (Current) Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 6: val='189001 - 189001:Inter company account - receivables Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 7: val='189014 - 189014:Discount on intercompany loan Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 8: val='189501 - 189501:Due from Related Party - Non-current Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 9: val='224000 - 224000:Due to related parties Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 10: val='224003 - 224003:Advances provided from related parties Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 11: val='224009 - 224009:Inter company accounts - Payables Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 12: val='Variance' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 13: val='165003 - 165003:Advances provided for related parties Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 14: val='165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 15: val='165005 - 165005:Retention receivable-Intercompany (Current) Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 16: val='189001 - 189001:Inter company account - receivables Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 17: val='189014 - 189014:Discount on intercompany loan Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 18: val='189501 - 189501:Due from Related Party - Non-current Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 19: val='224000 - 224000:Due to related parties Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 20: val='224003 - 224003:Advances provided from related parties Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 21: val='224009 - 224009:Inter company accounts - Payables Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 22: val='Variance' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 23: val='Total' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 25: val='165003 - 165003:Advances provided for related parties Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 26: val='165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 27: val='165005 - 165005:Retention receivable-Intercompany (Current) Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 28: val='189001 - 189001:Inter company account - receivables Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 29: val='189014 - 189014:Discount on intercompany loan Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 30: val='189501 - 189501:Due from Related Party - Non-current Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 31: val='224000 - 224000:Due to related parties Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 32: val='224003 - 224003:Advances provided from related parties Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 33: val='224009 - 224009:Inter company accounts - Payables Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 34: val='Variance' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 35: val='165003 - 165003:Advances provided for related parties Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 36: val='165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 37: val='165005 - 165005:Retention receivable-Intercompany (Current) Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 38: val='189001 - 189001:Inter company account - receivables Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 39: val='189014 - 189014:Discount on intercompany loan Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 40: val='189501 - 189501:Due from Related Party - Non-current Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 41: val='224000 - 224000:Due to related parties Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 42: val='224003 - 224003:Advances provided from related parties Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 43: val='224009 - 224009:Inter company accounts - Payables Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 44: val='Variance' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 45: val='Total' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 47: val='165003 - 165003:Advances provided for related parties Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 48: val='165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 49: val='165005 - 165005:Retention receivable-Intercompany (Current) Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 50: val='189001 - 189001:Inter company account - receivables Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 51: val='189014 - 189014:Discount on intercompany loan Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 52: val='189501 - 189501:Due from Related Party - Non-current Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 53: val='224000 - 224000:Due to related parties Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 54: val='224003 - 224003:Advances provided from related parties Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 55: val='224009 - 224009:Inter company accounts - Payables Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 56: val='Variance' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 57: val='165003 - 165003:Advances provided for related parties Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 58: val='165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 59: val='165005 - 165005:Retention receivable-Intercompany (Current) Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 60: val='189001 - 189001:Inter company account - receivables Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 61: val='189014 - 189014:Discount on intercompany loan Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 62: val='189501 - 189501:Due from Related Party - Non-current Partner' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 63: val='224000 - 224000:Due to related parties Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 64: val='224003 - 224003:Advances provided from related parties Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 65: val='224009 - 224009:Inter company accounts - Payables Entity' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 66: val='Variance' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 67: val='Total' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 69: val='188800:Intercompany Balances Plug A/c' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+  Col 71: val='Total' bold=True fill_fg=FF003366 font_color=<openpyxl.styles.colors.Color object>
+Parameters:
+rgb='FFFFFFFF', indexed=None, auto=None, theme=None, tint=0.0, type='rgb' font_size=9.0
+
+--- Section Label Row 29 (all values) ---
+  Col 34: val='Parent Input' bold=False fill_fg=FF00B050
+  Col 54: val='Contribution Input' bold=False fill_fg=FF00B050
+  Col 69: val='Plug Account' bold=False fill_fg=FF00B050
+
+--- Data Rows 33-35 (first 5 cols) ---
+  R33C1: val=' 001001 - QDRE Investment Company Q.S.C. (H)' fill=FFC8DCF0 bold=True size=11.0 numfmt=General
+  R33C2: val=' ICP_001051 - Huzoom Lusail Company LLC ICP' fill=FFC8DCF0 bold=True size=11.0 numfmt=General
+  R33C3: val=' ' fill=00000000 bold=False size=11.0 numfmt=General
+  R33C4: val=' ' fill=00000000 bold=False size=11.0 numfmt=General
+  R33C5: val=' ' fill=00000000 bold=False size=11.0 numfmt=General
+  R34C1: val=' 001001 - QDRE Investment Company Q.S.C. (H)' fill=FFC8DCF0 bold=True size=11.0 numfmt=General
+  R34C2: val=' ICP_007001 - QD Europe S.a.r.l. (H) ICP' fill=FFC8DCF0 bold=True size=11.0 numfmt=General
+  R34C3: val=' ' fill=00000000 bold=False size=11.0 numfmt=General
+  R34C4: val=' ' fill=00000000 bold=False size=11.0 numfmt=General
+  R34C5: val=' ' fill=00000000 bold=False size=11.0 numfmt=General
+  R35C1: val=' 001001 - QDRE Investment Company Q.S.C. (H)' fill=FFC8DCF0 bold=True size=11.0 numfmt=General
+  R35C2: val=' ICP_032002 - QD Hotel & Property Investment Montenegro Doo fill=FFC8DCF0 bold=True size=11.0 numfmt=General
+  R35C3: val=' ' fill=00000000 bold=False size=11.0 numfmt=General
+  R35C4: val=' ' fill=00000000 bold=False size=11.0 numfmt=General
+  R35C5: val=' ' fill=00000000 bold=False size=11.0 numfmt=General
+
+--- AutoFilter ---
+  ref=None
+
+--- Freeze Panes ---
+  freeze=None

@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
 import { FiMoon, FiSun, FiChevronDown, FiLogOut, FiUser } from 'react-icons/fi';
 import EditProfileModal from './EditProfileModal';
+import { buildFileUrl } from '../config';
 import './Navbar.css';
 
 export default function Navbar() {
@@ -55,7 +56,7 @@ export default function Navbar() {
           <div className="user-menu" ref={dropRef}>
             <button className="avatar-btn" onClick={() => setDropdownOpen(!dropdownOpen)}>
               {user?.profile_photo_url ? (
-                <img src={`http://localhost:8000${user.profile_photo_url}`} alt="avatar" className="avatar-img" />
+                <img src={buildFileUrl(user.profile_photo_url)} alt="avatar" className="avatar-img" />
               ) : (
                 <div className="avatar-initials">{initials}</div>
               )}

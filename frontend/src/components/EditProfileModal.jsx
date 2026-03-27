@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import { FiX, FiCamera, FiCopy, FiEye, FiEyeOff } from 'react-icons/fi';
 import { useAuth } from '../context/AuthContext';
 import api from '../services/api';
+import { buildFileUrl } from '../config';
 import './EditProfileModal.css';
 
 export default function EditProfileModal({ onClose }) {
@@ -12,7 +13,6 @@ export default function EditProfileModal({ onClose }) {
   const [saving, setSaving] = useState(false);
   const [saveMsg, setSaveMsg] = useState('');
 
-  // Password section
   const [pwExpanded, setPwExpanded] = useState(false);
   const [currentPw, setCurrentPw] = useState('');
   const [showCurrentPw, setShowCurrentPw] = useState(false);
@@ -75,7 +75,6 @@ export default function EditProfileModal({ onClose }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-box profile-modal" onClick={(e) => e.stopPropagation()}>
-        {/* Header */}
         <div className="modal-header">
           <div>
             <h2>Edit Profile Information</h2>
@@ -84,12 +83,11 @@ export default function EditProfileModal({ onClose }) {
           <button className="modal-close-btn" onClick={onClose}><FiX /></button>
         </div>
 
-        {/* Basic Information */}
         <p className="section-title">Basic Information</p>
         <div className="profile-photo-row">
           <div className="profile-photo-wrap" onClick={() => photoRef.current.click()}>
             {user?.profile_photo_url ? (
-              <img src={`http://localhost:8080${user.profile_photo_url}`} alt="profile" className="profile-img" />
+              <img src={buildFileUrl(user.profile_photo_url)} alt="profile" className="profile-img" />
             ) : (
               <div className="profile-initials">{initials}</div>
             )}
@@ -131,7 +129,6 @@ export default function EditProfileModal({ onClose }) {
 
         <hr className="divider" />
 
-        {/* Password Management */}
         <div style={{ marginBottom: 16 }}>
           <p className="section-title" style={{ marginBottom: 4 }}>Password Management</p>
           <p style={{ fontSize: 11, color: 'var(--text-secondary)', marginBottom: 14 }}>
@@ -197,7 +194,6 @@ export default function EditProfileModal({ onClose }) {
           )}
         </div>
 
-        {/* Footer */}
         <hr className="divider" />
         {saveMsg && <p style={{ fontSize: 12, color: saveMsg.includes('!') ? 'var(--accent-success)' : 'var(--accent-danger)', marginBottom: 10 }}>{saveMsg}</p>}
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>

@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(netstat -ano)",
+      "Bash(tasklist /FI \"IMAGENAME eq python.exe\" /FO CSV)",
+      "Bash(tasklist /FI \"IMAGENAME eq uvicorn.exe\" /FO CSV)",
+      "Bash(cmd /c \"netstat -ano | findstr :8000\")",
+      "Bash(cmd /c \"tasklist /FI \\\\\"IMAGENAME eq python.exe\\\\\" /FO CSV\")",
+      "Bash(cmd /c \"tasklist 2>&1\")",
+      "Bash(cmd /c \"netstat -ano 2>&1\")",
+      "Bash(powershell -Command \"Get-NetTCPConnection -State Listen | Where-Object { $_.LocalPort -in @\\(8000,8001,8002,3000,3001,5000,5001\\) } | Select-Object LocalPort, OwningProcess | Format-Table -AutoSize\")",
+      "Bash(cmd /c \"powershell -NoProfile -Command \\\\\"Get-NetTCPConnection -State Listen | Where-Object LocalPort -in @\\(8000,8001,8002,3000,3001,5000\\) | Select-Object LocalPort, OwningProcess | Format-Table -AutoSize\\\\\"\")",
+      "Bash(python -c \":*)",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''backend/app/ic_processor.py'', doraise=True\\); print\\(''Syntax OK''\\)\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)"
+    ]
+  }
+}
