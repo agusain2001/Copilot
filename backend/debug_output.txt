@@ -1,0 +1,92 @@
+﻿=== Testing ICM file load ===
+ICM loaded OK. Sheets: ['Sheet1', 'Sheet2']
+  Sheet 'Sheet1': rows=285, cols=32
+    Row 1: ['Intercompany Report', None, None, None, None]
+    Row 2: ['Application: FCCS', None, None, None, None]
+    Row 3: ['Date', None, '4/2/26 2:30 PM', None, None]
+    Row 4: ['User', None, 'Venkatesh Pamuri', None, None]
+    Row 5: ['Cube', None, 'Consol', None, None]
+  Sheet 'Sheet2': rows=1, cols=1
+    Row 1: [None]
+
+=== Testing Journal 5 (Parent) ===
+Loaded OK. Sheet 'Sheet1': rows=114, cols=15
+  Row 28: ['Column Display Options', None, 'Label, Status, Entity, Account, Intercompany, Movement, Project, Sub Code, Future1, Future2', None, None, None, None, None, None, None, None, None, None, None, None]
+  Row 29: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+  Row 30: [' Label ', ' Status ', None, ' Entity ', ' Account ', ' Intercompany ', ' Movement ', None, ' Project ', ' Sub Code ', ' Future1 ', ' Future2 ', 'Debit', 'Credit', None]
+  Row 31: [' AdhocAdj15', ' Posted', None, ' E101000:QDHP & QD Europe Sarl', ' 224000:224000:Due to related parties', ' ICP_001001:QDRE Investment Company Q.S.C. (H) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', None, 4147686.72, None]
+  Row 32: [' AdhocAdj15', ' Posted', None, ' E101000:QDHP & QD Europe Sarl', ' 224000:224000:Due to related parties', ' ICP_013001:Qatari Diar UK Limited ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', 116.79, None, None]
+  Row 33: [' AdhocAdj15', ' Posted', None, ' E101000:QDHP & QD Europe Sarl', ' 224000:224000:Due to related parties', ' ICP_013011:Qatari Diar Europe LLP ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', None, 8722.03, None]
+  Row 34: [' AdhocAdj16', ' Posted', None, ' E101000:QDHP & QD Europe Sarl', ' 189001:189001:Inter company account - receivables', ' ICP_001001:QDRE Investment Company Q.S.C. (H) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', 1.75, None, None]
+
+=== Testing Journal 6 (Contribution) ===
+Loaded OK. Sheet 'Sheet1': rows=195, cols=15
+  Row 28: ['Column Display Options', None, 'Label, Status, Entity, Account, Intercompany, Movement, Project, Sub Code, Future1, Future2', None, None, None, None, None, None, None, None, None, None, None, None]
+  Row 29: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+  Row 30: [' Label ', ' Status ', None, ' Entity ', ' Account ', ' Intercompany ', ' Movement ', None, ' Project ', ' Sub Code ', ' Future1 ', ' Future2 ', 'Debit', 'Credit', None]
+  Row 31: [' Eliminationadj007', ' Posted', None, ' 001001:QDRE Investment Company Q.S.C. (H)', ' 202119:202119:Provision for impairment on intercompany receivables', ' ICP_002001:QDRE & Tourism Co. LLC. (Egypt) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', None, 1405059555.59, None]
+  Row 32: [' Eliminationadj007', ' Posted', None, ' 001001:QDRE Investment Company Q.S.C. (H)', ' [155000].[202120]:202120:Provision for impairment loss on subsidairies', ' ICP_002001:QDRE & Tourism Co. LLC. (Egypt) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', 1405059555.59, None, None]
+  Row 33: [' EliminationadjCI006', ' Posted', None, ' E105000:Qatari Diar Real Estate Investment Company (QD Morocco)', ' [312000].[310004]:310004:Translation_Reserve', ' ICP_005001:QDRE Investment Co.(QD Morocco) (H) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', 127637532.62, None, None]
+  Row 34: [' EliminationadjCI006', ' Posted', None, ' E105000:Qatari Diar Real Estate Investment Company (QD Morocco)', ' [FCCS_Retained Earnings].[315001]:315001:Retained earnings_', ' ICP_005001:QDRE Investment Co.(QD Morocco) (H) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', None, 127637532.62, None]
+
+=== Testing Journal 4 (Plug) ===
+Loaded OK. Sheet 'Sheet1': rows=41, cols=17
+  Row 28: ['Column Display Options', None, 'Label(Subtotal), Status, Entity, Account, Intercompany, Movement, Project, Sub Code, Future1, Future2, Group, Type, Journal Description', None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+  Row 29: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+  Row 30: [' Label ', ' Status ', ' Entity ', ' Account ', ' Intercompany ', ' Movement ', ' Project ', None, ' Sub Code ', ' Future1 ', ' Future2 ', ' Group ', ' Type ', ' Journal Description ', 'Debit', 'Credit', None]
+  Row 31: [' QDCONSOLADJ276', ' Posted', ' E103000:Qatar RE Partners C.Q.S.C. (under liquidation)', ' [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug account', ' ICP_001004:Qatar Real Estate Brokerage Services ICP', ' Mvmts_BS', ' [Project].[No Project]', None, ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', ' Consol_Adj', ' Regular', ' Adj to match consol', 43170, None, None]
+  Row 32: [' QDCONSOLADJ276', ' Posted', ' E103000:Qatar RE Partners C.Q.S.C. (under liquidation)', ' [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug account', ' ICP_005003:Morocco RE Brok Serv(under liquidation) ICP', ' Mvmts_BS', ' [Project].[No Project]', None, ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', ' Consol_Adj', ' Regular', ' Adj to match consol', None, 200000, None]
+  Row 33: [' QDCONSOLADJ276', '  ', '  ', '  ', '  ', '  ', '  ', None, '  ', '  ', '  ', '  ', '  ', '  ', 43170, 200000, None]
+  Row 34: [' QDCONSOLADJ276CIRDEC23', ' Posted', ' E103000:Qatar RE Partners C.Q.S.C. (under liquidation)', ' [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug account', ' ICP_001004:Qatar Real Estate Brokerage Services ICP', ' Mvmts_BS', ' [Project].[No Project]', None, ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', ' Consol_Adj', ' Regular', ' Adj to match consol', None, 43170, None]
+
+=== Testing report_inputs ===
+Loaded OK. Sheet 'Sheet1': rows=17, cols=3
+  Row 1: ['Plug Account: 188800 - 188800:Intercompany Balances Plug A/c', None, None]
+  Row 2: ['Eliminating Accounts', None, None]
+  Row 3: ['165002 - 165002:Expenses recharged on behalf of a related party', None, None]
+  Row 4: ['165001 - 165001:Loans provided to related parties', None, None]
+  Row 5: ['165003 - 165003:Advances provided for related parties', None, None]
+
+=== Now testing is_detail_row with journal data ===
+
+--- Parent(5): g:\FCCS\New folder (3)\Journal Report (5).xlsx ---
+  max_row=114, max_column=15
+  Required columns: J_ENTITY=3, J_ACCT=4, J_ICP=5, J_DEBIT=15, J_CREDIT=16
+  Row 31 (15 cols): [' AdhocAdj15', ' Posted', None, ' E101000:QDHP & QD Europe Sarl', ' 224000:224000:Due to related parties', ' ICP_001001:QDRE Investment Company Q.S.C. (H) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', None, 4147686.72, None]
+    is_detail_row = True
+  Row 32 (15 cols): [' AdhocAdj15', ' Posted', None, ' E101000:QDHP & QD Europe Sarl', ' 224000:224000:Due to related parties', ' ICP_013001:Qatari Diar UK Limited ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', 116.79, None, None]
+    is_detail_row = True
+  Row 33 (15 cols): [' AdhocAdj15', ' Posted', None, ' E101000:QDHP & QD Europe Sarl', ' 224000:224000:Due to related parties', ' ICP_013011:Qatari Diar Europe LLP ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', None, 8722.03, None]
+    is_detail_row = True
+  Row 34 (15 cols): [' AdhocAdj16', ' Posted', None, ' E101000:QDHP & QD Europe Sarl', ' 189001:189001:Inter company account - receivables', ' ICP_001001:QDRE Investment Company Q.S.C. (H) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', 1.75, None, None]
+    is_detail_row = True
+  Row 35 (15 cols): [' AdhocAdj16', ' Posted', None, ' E101000:QDHP & QD Europe Sarl', ' 189001:189001:Inter company account - receivables', ' ICP_013014:30 GS LLP ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', None, 1.96, None]
+    is_detail_row = True
+
+--- Contribution(6): g:\FCCS\New folder (3)\Journal Report (6).xlsx ---
+  max_row=195, max_column=15
+  Required columns: J_ENTITY=3, J_ACCT=4, J_ICP=5, J_DEBIT=15, J_CREDIT=16
+  Row 31 (15 cols): [' Eliminationadj007', ' Posted', None, ' 001001:QDRE Investment Company Q.S.C. (H)', ' 202119:202119:Provision for impairment on intercompany receivables', ' ICP_002001:QDRE & Tourism Co. LLC. (Egypt) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', None, 1405059555.59, None]
+    is_detail_row = True
+  Row 32 (15 cols): [' Eliminationadj007', ' Posted', None, ' 001001:QDRE Investment Company Q.S.C. (H)', ' [155000].[202120]:202120:Provision for impairment loss on subsidairies', ' ICP_002001:QDRE & Tourism Co. LLC. (Egypt) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', 1405059555.59, None, None]
+    is_detail_row = True
+  Row 33 (15 cols): [' EliminationadjCI006', ' Posted', None, ' E105000:Qatari Diar Real Estate Investment Company (QD Morocco)', ' [312000].[310004]:310004:Translation_Reserve', ' ICP_005001:QDRE Investment Co.(QD Morocco) (H) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', 127637532.62, None, None]
+    is_detail_row = True
+  Row 34 (15 cols): [' EliminationadjCI006', ' Posted', None, ' E105000:Qatari Diar Real Estate Investment Company (QD Morocco)', ' [FCCS_Retained Earnings].[315001]:315001:Retained earnings_', ' ICP_005001:QDRE Investment Co.(QD Morocco) (H) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', None, 127637532.62, None]
+    is_detail_row = True
+  Row 35 (15 cols): [' EliminationadjCI007', ' Posted', None, ' E121000:QDRE & Tourism Co. LLC. (Egypt) Subgroup', ' [312000].[310004]:310004:Translation_Reserve', ' ICP_002001:QDRE & Tourism Co. LLC. (Egypt) ICP', ' Mvmts_BS', None, ' [Project].[No Project]', ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', 18167613.6, None, None]
+    is_detail_row = True
+
+--- Plug(4): g:\FCCS\Update files\Journal Report (4).xlsx ---
+  max_row=41, max_column=17
+  Required columns: J_ENTITY=3, J_ACCT=4, J_ICP=5, J_DEBIT=15, J_CREDIT=16
+  Row 31 (17 cols): [' QDCONSOLADJ276', ' Posted', ' E103000:Qatar RE Partners C.Q.S.C. (under liquidation)', ' [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug account', ' ICP_001004:Qatar Real Estate Brokerage Services ICP', ' Mvmts_BS', ' [Project].[No Project]', None, ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', ' Consol_Adj', ' Regular', ' Adj to match consol', 43170, None, None]
+    is_detail_row = True
+  Row 32 (17 cols): [' QDCONSOLADJ276', ' Posted', ' E103000:Qatar RE Partners C.Q.S.C. (under liquidation)', ' [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug account', ' ICP_005003:Morocco RE Brok Serv(under liquidation) ICP', ' Mvmts_BS', ' [Project].[No Project]', None, ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', ' Consol_Adj', ' Regular', ' Adj to match consol', None, 200000, None]
+    is_detail_row = True
+  Row 33 (17 cols): [' QDCONSOLADJ276', '  ', '  ', '  ', '  ', '  ', '  ', None, '  ', '  ', '  ', '  ', '  ', '  ', 43170, 200000, None]
+    is_detail_row = False
+  Row 34 (17 cols): [' QDCONSOLADJ276CIRDEC23', ' Posted', ' E103000:Qatar RE Partners C.Q.S.C. (under liquidation)', ' [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug account', ' ICP_001004:Qatar Real Estate Brokerage Services ICP', ' Mvmts_BS', ' [Project].[No Project]', None, ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', ' Consol_Adj', ' Regular', ' Adj to match consol', None, 43170, None]
+    is_detail_row = True
+  Row 35 (17 cols): [' QDCONSOLADJ276CIRDEC23', ' Posted', ' E103000:Qatar RE Partners C.Q.S.C. (under liquidation)', ' [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug account', ' ICP_005003:Morocco RE Brok Serv(under liquidation) ICP', ' Mvmts_BS', ' [Project].[No Project]', None, ' [Sub Code].[No Sub Code]', ' [Future1].[No Future1]', ' [Future2].[No Future2]', ' Consol_Adj', ' Regular', ' Adj to match consol', 200000, None, None]
+    is_detail_row = True

@@ -1,0 +1,28 @@
+﻿g:\FCCS\backend\venv\Scripts\python.exe : INFO: 
+=================================================================
+At line:1 char:1
++ g:\FCCS\backend\venv\Scripts\python.exe tmp_run_update.py 2>&1 | Out- ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (INFO: =========...=============== 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+INFO:   IC Matching ù Dynamic ICM-Driven Columns
+INFO: =================================================================
+INFO: Using sheet 'Sheet1' header=32 data=33
+INFO: Output columns: 16 entity-side, 15 partner-side
+INFO: Valid account codes: ['165001', '165002', '165003', '165004', '165005', 
+'187052', '188800', '189001', '189014', '189015', '189501', '224000', 
+'224001', '224003', '224009', '224024']
+INFO: Added 21 synthetic rows for missing entity/partner pairs
+INFO: Saved output to G:\FCCS\Update files\ICM_Output_ENHANCED_v5.xlsx  (1310 
+rows, 111 cols)
+Running IC Matching processor...
+  ICM Source:      G:\FCCS\Update files\Intercompany Balances IC Matching Report (1).xlsx
+  Parent:          G:\FCCS\Update files\Journal Report.xlsx
+  Contribution:    G:\FCCS\Update files\Journal Report (2).xlsx
+  Plug:            G:\FCCS\Update files\Journal Report (4).xlsx
+  Report Inputs:   G:\FCCS\AI\report_inputs.xlsx
+  Output:          G:\FCCS\Update files\ICM_Output_ENHANCED_v5.xlsx
+
+Done! Saved to: G:\FCCS\Update files\ICM_Output_ENHANCED_v5.xlsx

@@ -1,0 +1,256 @@
+﻿================================================================================
+JOURNAL ENTRIES FOR ENTITY 001033 + ACCOUNT 165003
+================================================================================
+
+Row 265: Label=QDCONSOLADJ191
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 165003:165003:Advances provided for related parties
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: None
+  Credit: 20340466.09
+
+Row 266: Label=QDCONSOLADJ191
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 165003:165003:Advances provided for related parties
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: 88717872.52
+  Credit: None
+
+Row 267: Label=QDCONSOLADJ191
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 165003:165003:Advances provided for related parties
+  ICP: ICP_001001:QDRE Investment Company Q.S.C. (H) ICP
+  Debit: 20340466.09
+  Credit: None
+
+Row 268: Label=QDCONSOLADJ191
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 165003:165003:Advances provided for related parties
+  ICP: ICP_001032:SBG-PORR-HBK Joint Operation (Elevated) ICP
+  Debit: None
+  Credit: 88717872.52
+
+Row 270: Label=QDCONSOLADJ192
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 165003:165003:Advances provided for related parties
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: None
+  Credit: 372121154.15
+
+Row 471: Label=QDCONSOLADJ255
+  Entity: E118000:QD SBG Group adjusted
+  Account: 165003:165003:Advances provided for related parties
+  ICP: ICP_001001:QDRE Investment Company Q.S.C. (H) ICP
+  Debit: None
+  Credit: 1576708
+
+================================================================================
+ALL JOURNAL ENTRIES FOR ENTITY 001033 (any account)
+================================================================================
+
+Row 265: Label=QDCONSOLADJ191
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 165003:165003:Advances provided for related parties (code: 165003)
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: None, Credit: 20340466.09
+
+Row 266: Label=QDCONSOLADJ191
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 165003:165003:Advances provided for related parties (code: 165003)
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: 88717872.52, Credit: None
+
+Row 267: Label=QDCONSOLADJ191
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 165003:165003:Advances provided for related parties (code: 165003)
+  ICP: ICP_001001:QDRE Investment Company Q.S.C. (H) ICP
+  Debit: 20340466.09, Credit: None
+
+Row 268: Label=QDCONSOLADJ191
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 165003:165003:Advances provided for related parties (code: 165003)
+  ICP: ICP_001032:SBG-PORR-HBK Joint Operation (Elevated) ICP
+  Debit: None, Credit: 88717872.52
+
+Row 270: Label=QDCONSOLADJ192
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 165003:165003:Advances provided for related parties (code: 165003)
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: None, Credit: 372121154.15
+
+Row 287: Label=QDCONSOLADJ196
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 224000:224000:Due to related parties (code: 224000)
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: 305872873.27, Credit: None
+
+Row 288: Label=QDCONSOLADJ196
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Underground)
+  Account: 224000:224000:Due to related parties (code: 224000)
+  ICP: ICP_001032:SBG-PORR-HBK Joint Operation (Elevated) ICP
+  Debit: 192160, Credit: None
+
+================================================================================
+ALL JOURNAL ENTRIES FOR GROUP ENTITY E118000
+================================================================================
+
+Row 471: Label=QDCONSOLADJ255
+  Entity: E118000:QD SBG Group adjusted
+  Account: 165003:165003:Advances provided for related parties
+  ICP: ICP_001001:QDRE Investment Company Q.S.C. (H) ICP
+  Debit: None, Credit: 1576708
+
+Row 472: Label=QDCONSOLADJ255
+  Entity: E118000:QD SBG Group adjusted
+  Account: 187012:187012:Current - Other receivables
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: 1576708, Credit: None
+
+Row 514: Label=QDCONSOLADJ268
+  Entity: E118000:QD SBG Group adjusted
+  Account: 432002:432002:Share of results from associates/JV.
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: None, Credit: 3327852
+
+Row 515: Label=QDCONSOLADJ268
+  Entity: E118000:QD SBG Group adjusted
+  Account: 520020:520020:Provision for additional funding
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: 3327852, Credit: None
+
+Row 517: Label=QDCONSOLADJ269
+  Entity: E118000:QD SBG Group adjusted
+  Account: 222119:222119:Advances from customers
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: 8863168.96, Credit: None
+
+Row 518: Label=QDCONSOLADJ269
+  Entity: E118000:QD SBG Group adjusted
+  Account: 226005:226005:Client advances
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: None, Credit: 8863168.96
+
+Row 538: Label=QDCONSOLADJ275
+  Entity: E118000:QD SBG Group adjusted
+  Account: 167003:167003:Advances to subcontractors & suppliers
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: None, Credit: 15448935
+
+Row 539: Label=QDCONSOLADJ275
+  Entity: E118000:QD SBG Group adjusted
+  Account: 167999:167999:Client receivables (Non current assets)
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: 15448935, Credit: None
+
+Row 628: Label=QDCONSOLADJ295
+  Entity: E118000:QD SBG Group adjusted
+  Account: 226008:226008:Other payables - current liabilities.
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: 452523697, Credit: None
+
+Row 629: Label=QDCONSOLADJ295
+  Entity: E118000:QD SBG Group adjusted
+  Account: 229999:229999:Other provision (Disposal of Subsidiary)
+  ICP: FCCS_No Intercompany:No Intercompany
+  Debit: None, Credit: 452523697
+
+================================================================================
+OUTPUT FILE: ROWS FOR ENTITY 001033
+================================================================================
+
+Row 111: Entity=001001 - QDRE Investment Company Q.S.C. (H)
+  Partner=ICP_001033 - PORR-SBG-HBK Joint Operation (Underground) ICP
+  Col U(21) [165003 - 165003:Advances provided for related part]: 2654819
+  Col AC(29) [224000 - 224000:Due to related parties Entity]: -95039084
+  Col AF(32) [224009 - 224009:Inter company accounts - Payables ]: 96631569
+  Col AH(34) [Variance]: 1062334
+  Col AI(35) [Total]: 1062334
+  Col BC(55) [165003 - 165003:Advances provided for related part]: 20340466.09
+  Col BP(68) [Variance]: 20340466
+  Col BQ(69) [Total]: 20340466
+  Col DC(107) [Total]: 21402800
+
+Row 1119: Entity=001032 - SBG-PORR-HBK Joint Operation (Elevated)
+  Partner=ICP_001033 - PORR-SBG-HBK Joint Operation (Underground) ICP
+  Col U(21) [165003 - 165003:Advances provided for related part]: 20937048
+  Col AC(29) [224000 - 224000:Due to related parties Entity]: 20937048
+  Col BC(55) [165003 - 165003:Advances provided for related part]: -88717872.52
+  Col BK(63) [224000 - 224000:Due to related parties Entity]: -192160
+  Col BP(68) [Variance]: -88525713
+  Col BQ(69) [Total]: -88525713
+  Col DC(107) [Total]: -88525713
+
+Row 1122: Entity=001033 - PORR-SBG-HBK Joint Operation (Underground)
+  Partner=ICP_001001 - QDRE Investment Company Q.S.C. (H) ICP
+  Col E(5) [165003 - 165003:Advances provided for related part]: 2654819
+  Col M(13) [224000 - 224000:Due to related parties Partner]: -95039084
+  Col P(16) [224009 - 224009:Inter company accounts - Payables ]: 96631569
+  Col R(18) [Variance]: 1062334
+  Col AI(35) [Total]: 1062334
+  Col DC(107) [Total]: 1062334
+
+Row 1123: Entity=001033 - PORR-SBG-HBK Joint Operation (Underground)
+  Partner=ICP_001032 - SBG-PORR-HBK Joint Operation (Elevated) ICP
+  Col E(5) [165003 - 165003:Advances provided for related part]: 20937048
+  Col M(13) [224000 - 224000:Due to related parties Partner]: 20937048
+
+Row 1124: Entity=001033 - PORR-SBG-HBK Joint Operation (Underground)
+  Partner=ICP_E900001 - QD Group Adjustment Entities (H) ICP
+  Col M(13) [224000 - 224000:Due to related parties Partner]: -62810520
+  Col P(16) [224009 - 224009:Inter company accounts - Payables ]: 61775405
+  Col R(18) [Variance]: 1035115
+  Col AI(35) [Total]: 1035115
+  Col DC(107) [Total]: 1035115
+
+Row 1125: Entity=001033 - PORR-SBG-HBK Joint Operation (Underground)
+  Partner=
+  Col E(5) [165003 - 165003:Advances provided for related part]: 23591867
+  Col M(13) [224000 - 224000:Due to related parties Partner]: -136912556
+  Col P(16) [224009 - 224009:Inter company accounts - Payables ]: 158406974
+  Col R(18) [Variance]: 2097449
+  Col AI(35) [Total]: 2097449
+  Col AM(39) [165003 - 165003:Advances provided for related part]: -303743747.72
+  Col AU(47) [224000 - 224000:Due to related parties Partner]: -305872873.27
+  Col AZ(52) [Variance]: 2129126
+  Col BQ(69) [Total]: 2129126
+  Col DC(107) [Total]: 4226575
+
+Row 1302: Entity=E900001 - QD Group Adjustment Entities (H)
+  Partner=ICP_001033 - PORR-SBG-HBK Joint Operation (Underground) ICP
+  Col AC(29) [224000 - 224000:Due to related parties Entity]: -62810520
+  Col AF(32) [224009 - 224009:Inter company accounts - Payables ]: 61775405
+  Col AH(34) [Variance]: 1035115
+  Col AI(35) [Total]: 1035115
+  Col DC(107) [Total]: 1035115
+
+================================================================================
+ICM SOURCE: ROWS FOR ENTITY 001033
+================================================================================
+
+Row 1122: Entity=001033 - PORR-SBG-HBK Joint Operation (Underground
+  Partner=ICP_001001 - QDRE Investment Company Q.S.C. (H) IC
+  Col 3 [165003 - 165003:Advances provided for re]: 2654819
+  Col 9 [224000 - 224000:Due to related parties P]: -95039084
+  Col 11 [224009 - 224009:Inter company accounts -]: 96631569
+  Col 12 [Variance ]: 1062335
+  Col 23 [Total ]: 1062335
+
+Row 1123: Entity=001033 - PORR-SBG-HBK Joint Operation (Underground
+  Partner=ICP_001032 - SBG-PORR-HBK Joint Operation (Elevate
+  Col 3 [165003 - 165003:Advances provided for re]: 20937048
+  Col 9 [224000 - 224000:Due to related parties P]: 20937048
+
+Row 1124: Entity=001033 - PORR-SBG-HBK Joint Operation (Underground
+  Partner=ICP_E900001 - QD Group Adjustment Entities (H) ICP
+  Col 9 [224000 - 224000:Due to related parties P]: -62810520
+  Col 11 [224009 - 224009:Inter company accounts -]: 61775405
+  Col 12 [Variance ]: 1035115
+  Col 23 [Total ]: 1035115
+
+Row 1125: Entity=001033 - PORR-SBG-HBK Joint Operation (Underground
+  Partner=
+  Col 3 [165003 - 165003:Advances provided for re]: 23591867
+  Col 9 [224000 - 224000:Due to related parties P]: -136912556
+  Col 11 [224009 - 224009:Inter company accounts -]: 158406974
+  Col 12 [Variance ]: 2097450
+  Col 23 [Total ]: 2097450

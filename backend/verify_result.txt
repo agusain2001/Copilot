@@ -1,0 +1,28 @@
+PARENT BLOCK - Entity-side values for target entities:
+================================================================================
+
+Row 506: 022001 - QDREI  Co. Tajakistan Ltd
+  Partner: ICP_001001 - QDRE Investment Company Q.S.C. (H) ICP
+  PARENT: 189001=26035079.04, 189501=-26035079.04
+
+Row 664: 001021 - Legtafiya Asset Mng. Co.
+  Partner: ICP_001001 - QDRE Investment Company Q.S.C. (H) ICP
+  PARENT: 189001=-69025.28
+
+Row 1122: 001033 - PORR-SBG-HBK Joint Operation (Underground)
+  Partner: ICP_001001 - QDRE Investment Company Q.S.C. (H) ICP
+  PARENT: 165003=20340466.09
+
+Row 1123: 001033 - PORR-SBG-HBK Joint Operation (Underground)
+  Partner: ICP_001032 - SBG-PORR-HBK Joint Operation (Elevated) ICP
+  PARENT: 165003=-88717872.52, 224000=-192160
+
+Row 1274: 013024 - QDUK Holdings GP LLP
+  Partner: ICP_001001 - QDRE Investment Company Q.S.C. (H) ICP
+  PARENT: 189001=3218
+
+
+================================================================================
+001001 CHECK (should have NO parent entity-side values):
+================================================================================
+  CORRECT - No parent entity-side values for 001001

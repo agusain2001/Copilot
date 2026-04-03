@@ -1,0 +1,30 @@
+﻿================================================================================
+CHECKING CONTRIBUTION JOURNAL for entities 001033 / E118000
+================================================================================
+================================================================================
+CHECKING PLUG JOURNAL for entities 001033 / E118000
+================================================================================
+================================================================================
+CHECKING: FCCS_No Intercompany entries in Parent Journal
+================================================================================
+Journal lines with IC elimination accounts:
+  With ICP partner: 29
+  With 'No Intercompany': 11
+
+NOTE: 'No Intercompany' entries should NOT be included in ICM matching!
+These are non-IC adjustments that don't belong in the IC matching output.
+
+================================================================================
+CHECKING: Does my script filter out 'No Intercompany'?
+================================================================================
+extract_icp_code('FCCS_No Intercompany:No Intercompany') = ''
+This means 'No Intercompany' entries get icp_code='' (empty)
+They would only match ICM rows where partner is also empty...
+
+ICM rows where entity=001033 and partner is EMPTY:
+  Row 1125: Entity=001033 - PORR-SBG-HBK Joint Operation (Underground, Partner=''
+    Col 3 [165003 - 165003:Advances provided for re]: 23591867
+    Col 9 [224000 - 224000:Due to related parties P]: -136912556
+    Col 11 [224009 - 224009:Inter company accounts -]: 158406974
+    Col 12 [Variance ]: 2097450
+    Col 23 [Total ]: 2097450

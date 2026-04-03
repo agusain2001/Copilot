@@ -1,0 +1,7 @@
+﻿Plug Code is 188800
+parent journal (no mapping): 0 plug, 7 elim
+parent journal (with mapping): 5 plug
+contrib journal (no mapping): 0 plug, 2 elim
+contrib journal (with mapping): 2 plug
+plug journal (no mapping): 0 plug, 0 elim
+plug journal (with mapping): 0 plug

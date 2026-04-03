@@ -1,0 +1,519 @@
+﻿=== Journal 1 (Parent) entries involving 001001 or 001033 ===
+
+Row 56:
+  Entity:  E101000:QDHP & QD Europe Sarl  code=E101000
+  Account: 224000:224000:Due to related partie  code=224000
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=4147686.72  Credit=None
+
+Row 61:
+  Entity:  E101000:QDHP & QD Europe Sarl  code=E101000
+  Account: 189001:189001:Inter company account  code=189001
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=None  Credit=1.75
+
+Row 72:
+  Entity:  E108000:QD US Real Estate Co.  code=E108000
+  Account: 189001:189001:Inter company account  code=189001
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=None  Credit=69247729
+
+Row 73:
+  Entity:  E108000:QD US Real Estate Co.  code=E108000
+  Account: 224000:224000:Due to related partie  code=224000
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=69254195.5  Credit=None
+
+Row 81:
+  Entity:  022001:QDREI  Co. Tajakistan Ltd  code=022001
+  Account: 189001:189001:Inter company account  code=189001
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=26035079.04  Credit=None
+
+Row 82:
+  Entity:  022001:QDREI  Co. Tajakistan Ltd  code=022001
+  Account: [165000].[189501]:189501:Due from R  code=189501
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=None  Credit=26035079.04
+
+Row 84:
+  Entity:  E111000:Qatari Resorts Co. Q.S.C.  code=E111000
+  Account: 224000:224000:Due to related partie  code=224000
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=None  Credit=11700
+
+Row 98:
+  Entity:  E101000:QDHP & QD Europe Sarl  code=E101000
+  Account: [165000].[189501]:189501:Due from R  code=189501
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=None  Credit=1555338.34
+
+Row 104:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 189001:189001:Inter company account  code=189001
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=29889996.63
+
+Row 105:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 999999:999999:Suspense Account  code=999999
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=29889996.63  Credit=None
+
+Row 110:
+  Entity:  E117100:QD UK Holdings LP adjusted  code=E117100
+  Account: 189001:189001:Inter company account  code=189001
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=2315402.68  Credit=None
+
+Row 257:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 120002:120002:Buildings - Cost  code=120002
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=26297323  Credit=None
+
+Row 258:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 120003:120003:Machinery and equipme  code=120003
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=2445917.94  Credit=None
+
+Row 259:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 120008:120008:Office and air condit  code=120008
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=15728703.39  Credit=None
+
+Row 260:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 127001:127001:Building - Accumulate  code=127001
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=26297323
+
+Row 261:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 127002:127002:Machinery and Equipme  code=127002
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=1083748.69
+
+Row 262:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 127007:127007:Office and air condit  code=127007
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=15728703.39
+
+Row 263:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: [FCCS_Retained Earnings].[315001]:3  code=315001
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=1362169.25
+
+Row 265:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 165003:165003:Advances provided for  code=165003
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=20340466.09
+
+Row 266:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 165003:165003:Advances provided for  code=165003
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=88717872.52  Credit=None
+
+Row 267:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 165003:165003:Advances provided for  code=165003
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=20340466.09  Credit=None
+
+Row 268:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 165003:165003:Advances provided for  code=165003
+  ICP:     ICP_001032:SBG-PORR-HBK Joint Operation (Elevated)  code=ICP_001032
+  Debit=None  Credit=88717872.52
+
+Row 270:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 165003:165003:Advances provided for  code=165003
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=372121154.15
+
+Row 271:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 167012:167012:Other receivables  code=167012
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=372121154.15  Credit=None
+
+Row 273:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 167005:167005:Clients receivable  code=167005
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=54484231.68
+
+Row 274:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 167012:167012:Other receivables  code=167012
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=291598988.71
+
+Row 275:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 187012:187012:Current - Other recei  code=187012
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=45221753.67
+
+Row 276:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 187205:187205:Contract Assets  code=187205
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=391304974.06  Credit=None
+
+Row 278:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 167012:167012:Other receivables  code=167012
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=12984.28  Credit=None
+
+Row 279:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 183101:183101:Cash on hand.  code=183101
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=13260.5
+
+Row 280:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 185163:185163:Call account - QAR  code=185163
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=276.22  Credit=None
+
+Row 282:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 167012:167012:Other receivables  code=167012
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=41234.45  Credit=None
+
+Row 283:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 215001:215001:Employees' End of Ser  code=215001
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=41234.45
+
+Row 285:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 167012:167012:Other receivables  code=167012
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=80576384.17
+
+Row 286:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 222101:222101:Current portion of Lo  code=222101
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=9270829.02
+
+Row 287:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 224000:224000:Due to related partie  code=224000
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=305872873.27  Credit=None
+
+Row 288:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 224000:224000:Due to related partie  code=224000
+  ICP:     ICP_001032:SBG-PORR-HBK Joint Operation (Elevated)  code=ICP_001032
+  Debit=192160  Credit=None
+
+Row 289:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 226001:226001:Payable to subcontrac  code=226001
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=74657809.26  Credit=None
+
+Row 290:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 226008:226008:Other payables - curr  code=226008
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=88594665.58
+
+Row 291:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: 226029:226029:Project Accruals - cu  code=226029
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=203643133.37
+
+Row 292:
+  Entity:  001033:PORR-SBG-HBK Joint Operation (Undergro  code=001033
+  Account: [FCCS_Retained Earnings].[315001]:3  code=315001
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=1362169.61  Credit=None
+
+Row 391:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 172010:172010:Fuel-Inventory  code=172010
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=201265
+
+Row 392:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 999999:999999:Suspense Account  code=999999
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=201265  Credit=None
+
+Row 394:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 187014:187014:Advance to employees  code=187014
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=8992352.63  Credit=None
+
+Row 395:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 999999:999999:Suspense Account  code=999999
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=8992352.63
+
+Row 454:
+  Entity:  001021:Legtafiya Asset Mng. Co.  code=001021
+  Account: 189001:189001:Inter company account  code=189001
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=None  Credit=69025.28
+
+Row 471:
+  Entity:  E118000:QD SBG Group adjusted  code=E118000
+  Account: 165003:165003:Advances provided for  code=165003
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=None  Credit=1576708
+
+Row 479:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: [189910].[121001]:121001:Property u  code=121001
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=274826119.97
+
+Row 480:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 189998:189998:Development work in p  code=189998
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=274826119.97  Credit=None
+
+Row 502:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 432009:432009:Gain/ loss on sale of  code=432009
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=266703858  Credit=None
+
+Row 503:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 520020:520020:Provision for additio  code=520020
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=266703858
+
+Row 508:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 167003:167003:Advances to subcontra  code=167003
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=749035640.97  Credit=None
+
+Row 509:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 167012:167012:Other receivables  code=167012
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=749035640.97
+
+Row 523:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 187012:187012:Current - Other recei  code=187012
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=21062408  Credit=None
+
+Row 524:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 202129:202129:Provision for trade r  code=202129
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=36501  Credit=None
+
+Row 525:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 999999:999999:Suspense Account  code=999999
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=21098909
+
+Row 527:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 167003:167003:Advances to subcontra  code=167003
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=749035641
+
+Row 528:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 167012:167012:Other receivables  code=167012
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=36773933
+
+Row 529:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 167998:167998:Advances and receivab  code=167998
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=36773933  Credit=None
+
+Row 530:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 167999:167999:Client receivables (N  code=167999
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=749035641  Credit=None
+
+Row 545:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 512045:512045:Bank charges account  code=512045
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=42389
+
+Row 546:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 512060:512060:Miscellaneous expense  code=512060
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=42389  Credit=None
+
+Row 548:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 201101:201101:Government grants  code=201101
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=286590065.86  Credit=None
+
+Row 549:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 201109:201109:Retentions  code=201109
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=253747045.26  Credit=None
+
+Row 550:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 201112:201112:Withholding for Liqui  code=201112
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=34636102  Credit=None
+
+Row 551:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 202108:202108:Other provisions  code=202108
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=11150656  Credit=None
+
+Row 552:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 202110:202110:Annual leave provisio  code=202110
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=7908368  Credit=None
+
+Row 553:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 202122:202122:Provision for future   code=202122
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=348896250  Credit=None
+
+Row 554:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 222104:222104:Current portion of re  code=222104
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=253747044.17
+
+Row 555:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 222117:222117:Tax retention  code=222117
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=700675  Credit=None
+
+Row 556:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 222118:222118:Unearned Income  code=222118
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=3885922  Credit=None
+
+Row 557:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 222121:222121:Accrued pension GCC -  code=222121
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=123338  Credit=None
+
+Row 558:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 222122:222122:Accrued pension GCC -  code=222122
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=180777  Credit=None
+
+Row 559:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 224007:224007:Payables to employees  code=224007
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=14576  Credit=None
+
+Row 560:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 224011:224011:Deferred funding MOF  code=224011
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=12403854
+
+Row 561:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 224015:224015:Advance received from  code=224015
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=38713806  Credit=None
+
+Row 562:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 224019:224019:Advances from Develop  code=224019
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=605395170  Credit=None
+
+Row 563:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 226005:226005:Client advances  code=226005
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=605172753.27
+
+Row 564:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 226006:226006:Taxes payable  code=226006
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=151225  Credit=None
+
+Row 565:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 226008:226008:Other payables - curr  code=226008
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=323807418.56
+
+Row 566:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 229998:229998:Other Provisions  code=229998
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=11150656.34
+
+Row 567:
+  Entity:  001001:QDRE Investment Company Q.S.C. (H)  code=001001
+  Account: 229999:229999:Other provision (Disp  code=229999
+  ICP:     FCCS_No Intercompany:No Intercompany  code=
+  Debit=None  Credit=385812249.78
+
+Row 654:
+  Entity:  013024:QDUK Holdings GP LLP  code=013024
+  Account: 189001:189001:Inter company account  code=189001
+  ICP:     ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  code=ICP_001001
+  Debit=3218  Credit=None
+
+
+=== All ICP codes containing '001001' in Journal 1 ===
+  Row 56: Entity=E101000:QDHP & QD Europe Sarl  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=224000:224000:Due to related p
+  Row 61: Entity=E101000:QDHP & QD Europe Sarl  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=189001:189001:Inter company ac
+  Row 72: Entity=E108000:QD US Real Estate Co.  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=189001:189001:Inter company ac
+  Row 73: Entity=E108000:QD US Real Estate Co.  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=224000:224000:Due to related p
+  Row 81: Entity=022001:QDREI  Co. Tajakistan L  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=189001:189001:Inter company ac
+  Row 82: Entity=022001:QDREI  Co. Tajakistan L  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=[165000].[189501]:189501:Due f
+  Row 84: Entity=E111000:Qatari Resorts Co. Q.S  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=224000:224000:Due to related p
+  Row 98: Entity=E101000:QDHP & QD Europe Sarl  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=[165000].[189501]:189501:Due f
+  Row 110: Entity=E117100:QD UK Holdings LP adju  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=189001:189001:Inter company ac
+  Row 267: Entity=001033:PORR-SBG-HBK Joint Oper  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=165003:165003:Advances provide
+  Row 454: Entity=001021:Legtafiya Asset Mng. Co  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=189001:189001:Inter company ac
+  Row 471: Entity=E118000:QD SBG Group adjusted  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=165003:165003:Advances provide
+  Row 654: Entity=013024:QDUK Holdings GP LLP  ICP=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP  Acct=189001:189001:Inter company ac
+
+=== Vice-versa match for (Entity=001001, Partner=ICP_001033) ===
+  Looking for journal keys: (001033, ICP_001001, any_account)
+  MATCH: Row 267 acct=165003 D=20340466.09 C=None

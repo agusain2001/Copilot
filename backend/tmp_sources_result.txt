@@ -1,0 +1,36 @@
+﻿report_inputs.xlsx (Report 22):
+  Row 1 headers: ['Plug Account: 188800 - 188800:Intercompany Balance', '', '']
+
+  All rows:
+  Row 1: ['Plug Account: 188800 - 188800:Intercompany Balances Plug A/c', '', '']
+  Row 2: ['Eliminating Accounts', '', '']
+  Row 3: ['165002 - 165002:Expenses recharged on behalf of a related party', '', '']
+  Row 4: ['165001 - 165001:Loans provided to related parties', '', '']
+  Row 5: ['165003 - 165003:Advances provided for related parties', '', '']
+  Row 6: ['165004 - 165004:Payments to subcontractors & suppliers on behalf of other parties', '', '']
+  Row 7: ['165005 - 165005:Retention receivable-Intercompany (Current)', '', '']
+  Row 8: ['189001 - 189001:Inter company account - receivables', '', '']
+  Row 9: ['189014 - 189014:Discount on intercompany loan', '', '']
+  Row 10: ['189015 - 189015:Intercompany receivable A/C for outside QD group', '', '']
+  Row 11: ['187052 - 187052:Retention receivable-Intercomp', '', '']
+  Row 12: ['189501 - 189501:Due from Related Party - Non-current', '', '']
+  Row 13: ['224000 - 224000:Due to related parties', '', '']
+  Row 14: ['224001 - 224001:Loans provided from related parties', '', '']
+  Row 15: ['224003 - 224003:Advances provided from related parties', '', '']
+  Row 16: ['224009 - 224009:Inter company accounts - Payables', '', '']
+  Row 17: ['224024 - 224024:Intercompany payable A/C for outside QD group', '', '']
+
+
+Searching ICM source for 155020 and Plug_InvSh in all cells...
+
+
+Searching ICM_Output_NEW_RUN.xlsx for 155020 and Plug_InvSh...
+
+
+Checking ICM_Output_WITH_MISSING.xlsx headers...
+  Col 12: 189501 - 189501:Due from Related Party - Non-current Entity
+  Col 28: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col 46: 189501 - 189501:Due from Related Party - Non-current Entity
+  Col 62: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col 80: 189501 - 189501:Due from Related Party - Non-current Entity
+  Col 96: 189501 - 189501:Due from Related Party - Non-current Partner

@@ -4,7 +4,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import ProtectedRoute from './components/ProtectedRoute';
 import LoginPage from './pages/LoginPage';
 import ReportsPage from './pages/ReportsPage';
-import ProcessingPage from './pages/ProcessingPage';
+
 import './index.css';
 
 export default function App() {
@@ -22,14 +22,7 @@ export default function App() {
                 </ProtectedRoute>
               }
             />
-            <Route
-              path="/processing"
-              element={
-                <ProtectedRoute>
-                  <ProcessingPage />
-                </ProtectedRoute>
-              }
-            />
+
             <Route path="/" element={<Navigate to="/reports" replace />} />
             <Route path="*" element={<Navigate to="/reports" replace />} />
           </Routes>

@@ -38,8 +38,11 @@ export default function ReportsPage() {
         params.date_to = iso;
       }
       const res = await api.get('/api/reports', { params });
-      setReports(res.data);
-    } catch {}
+      setReports(Array.isArray(res?.data) ? res.data : []);
+    } catch (error) {
+      console.error('Failed to fetch reports:', error);
+      setReports([]);
+    }
     finally { setLoading(false); }
   }, [search, selectedType, selectedDate]);
 

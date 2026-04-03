@@ -1,0 +1,120 @@
+COMPLETE VERIFICATION - ALL ACCOUNTS
+====================================================================================================
+
+JOURNAL MATCHING RESULTS:
+--------------------------------------------------------------------------------
+
+  parent_journal (Journal Report (1).xlsx):
+    Primary (7 entries):
+      Entity=001021 Partner=ICP_001001 Account=189001 -> -69,025.28
+      Entity=001033 Partner=ICP_001001 Account=165003 -> 20,340,466.09
+      Entity=001033 Partner=ICP_001032 Account=165003 -> -88,717,872.52
+      Entity=001033 Partner=ICP_001032 Account=224000 -> -192,160.00
+      Entity=013024 Partner=ICP_001001 Account=189001 -> 3,218.00
+      Entity=022001 Partner=ICP_001001 Account=189001 -> 26,035,079.04
+      Entity=022001 Partner=ICP_001001 Account=189501 -> -26,035,079.04
+    Fallback (27 entries):
+      Entity=E101000 Partner=ICP_001001 Account=189001 -> -1.75
+      Entity=E101000 Partner=ICP_001001 Account=189501 -> -1,555,338.34
+      Entity=E101000 Partner=ICP_001001 Account=224000 -> -4,147,686.72
+      Entity=E101000 Partner=ICP_001002 Account=224000 -> 3,635,532.44
+      Entity=E101000 Partner=ICP_013001 Account=224000 -> 116.79
+      Entity=E101000 Partner=ICP_013011 Account=224000 -> -8,722.03
+      Entity=E101000 Partner=ICP_013014 Account=189001 -> 1.96
+      Entity=E101000 Partner=ICP_019002 Account=189001 -> 1,313,435.12
+      Entity=E103000 Partner=ICP_001004 Account=Plug_InvSh -> 43,170.00
+      Entity=E103000 Partner=ICP_005003 Account=Plug_InvSh -> -200,000.00
+      Entity=E105000 Partner=ICP_005002 Account=155020 -> 1,109.52
+      Entity=E108000 Partner=ICP_001001 Account=189001 -> -69,247,729.00
+      Entity=E108000 Partner=ICP_001001 Account=224000 -> -69,254,195.50
+      Entity=E108000 Partner=ICP_013011 Account=224000 -> -465,978.46
+      Entity=E108000 Partner=ICP_027009 Account=224000 -> 465,978.46
+      Entity=E111000 Partner=ICP_001001 Account=224000 -> 11,700.00
+      Entity=E112000 Partner=ICP_009002 Account=Plug_InvSh -> -13,112,760.00
+      Entity=E117100 Partner=ICP_001001 Account=189001 -> 2,315,402.68
+      Entity=E117100 Partner=ICP_007001 Account=224000 -> 17,882,306.93
+      Entity=E117100 Partner=ICP_007009 Account=224000 -> -7,934,061.83
+      Entity=E117100 Partner=ICP_007012 Account=224000 -> -9,830,437.32
+      Entity=E117100 Partner=ICP_013001 Account=189001 -> 116,407.55
+      Entity=E117100 Partner=ICP_013001 Account=224000 -> -1,395.30
+      Entity=E117100 Partner=ICP_013003 Account=224000 -> -4.65
+      Entity=E117100 Partner=ICP_013011 Account=189001 -> -2,315,402.68
+      Entity=E117100 Partner=ICP_013018 Account=189001 -> -125,000.28
+      Entity=E118000 Partner=ICP_001001 Account=165003 -> -1,576,708.00
+
+  contribution_journal (Journal Report (2).xlsx):
+    Primary (3 entries):
+      Entity=016003 Partner=ICP_016001 Account=165003 -> -1.00
+      Entity=117000A Partner=ICP_001001 Account=224000 -> -64,502.00
+      Entity=117000A Partner=ICP_013013 Account=310001 -> 64,502.00
+    Fallback (2 entries):
+      Entity=E109000 Partner=ICP_011002 Account=315005 -> 431,247,081.59
+      Entity=E111100 Partner=ICP_001011 Account=Plug_InvSh -> -3,167,434,180.00
+
+  plugaccount_journal (Journal Report (4).xlsx):
+    Primary (0 entries):
+    Fallback (1 entries):
+      Entity=E111100 Partner=ICP_001011 Account=Plug_InvSh -> -3,167,434,180.00
+
+
+====================================================================================================
+OUTPUT FILE - ALL ROWS WITH JOURNAL VALUES:
+====================================================================================================
+
+Row 64: 001001 - QDRE Investment Company Q.S.C. (H)
+  Partner: ICP_022001 - QDREI  Co. Tajakistan Ltd ICP
+  PARENT partner-side: 189001(Partner)=26035079.04, 189501(Partner)=-26035079.04
+
+Row 80: 001001 - QDRE Investment Company Q.S.C. (H)
+  Partner: ICP_001021 - Legtafiya Asset Mng. Co. ICP
+  PARENT partner-side: 189001(Partner)=-69025.28
+
+Row 111: 001001 - QDRE Investment Company Q.S.C. (H)
+  Partner: ICP_001033 - PORR-SBG-HBK Joint Operation (Underground) ICP
+  PARENT partner-side: 165003(Partner)=20340466.09
+
+Row 137: 001001 - QDRE Investment Company Q.S.C. (H)
+  Partner: ICP_013024 - QDUK Holdings GP LLP ICP
+  PARENT partner-side: 189001(Partner)=3218
+
+Row 465: 016001 - QDRE Investment Co. Ltd (QD Sudan)
+  Partner: ICP_016003 - Al Maha Private Asset & Facility Mng. Co. ICP
+  CONTRIB partner-side: 165003(Partner)=-1
+
+Row 506: 022001 - QDREI  Co. Tajakistan Ltd
+  Partner: ICP_001001 - QDRE Investment Company Q.S.C. (H) ICP
+  PARENT entity-side: 189001(Entity)=26035079.04, 189501(Entity)=-26035079.04
+
+Row 664: 001021 - Legtafiya Asset Mng. Co.
+  Partner: ICP_001001 - QDRE Investment Company Q.S.C. (H) ICP
+  PARENT entity-side: 189001(Entity)=-69025.28
+
+Row 830: 016003 - Al Maha Private Asset & Facility Mng. Co.
+  Partner: ICP_016001 - QDRE Investment Co. Ltd (QD Sudan) ICP
+  CONTRIB entity-side: 165003(Entity)=-1
+
+Row 1119: 001032 - SBG-PORR-HBK Joint Operation (Elevated)
+  Partner: ICP_001033 - PORR-SBG-HBK Joint Operation (Underground) ICP
+  PARENT partner-side: 165003(Partner)=-88717872.52, 224000(Entity)=-192160
+
+Row 1122: 001033 - PORR-SBG-HBK Joint Operation (Underground)
+  Partner: ICP_001001 - QDRE Investment Company Q.S.C. (H) ICP
+  PARENT entity-side: 165003(Entity)=20340466.09
+
+Row 1123: 001033 - PORR-SBG-HBK Joint Operation (Underground)
+  Partner: ICP_001032 - SBG-PORR-HBK Joint Operation (Elevated) ICP
+  PARENT entity-side: 165003(Entity)=-88717872.52, 224000(Partner)=-192160
+
+Row 1274: 013024 - QDUK Holdings GP LLP
+  Partner: ICP_001001 - QDRE Investment Company Q.S.C. (H) ICP
+  PARENT entity-side: 189001(Entity)=3218
+
+
+====================================================================================================
+SANITY CHECK - Entity 001001 (should have NO journal values):
+====================================================================================================
+  NOTE: Row 64: parent par 189001=26035079.04 (partner=ICP_022001 - QDREI  Co. Tajakistan Ltd I)
+  NOTE: Row 64: parent par 189501=-26035079.04 (partner=ICP_022001 - QDREI  Co. Tajakistan Ltd I)
+  NOTE: Row 80: parent par 189001=-69025.28 (partner=ICP_001021 - Legtafiya Asset Mng. Co. IC)
+  NOTE: Row 111: parent par 165003=20340466.09 (partner=ICP_001033 - PORR-SBG-HBK Joint Operatio)
+  NOTE: Row 137: parent par 189001=3218 (partner=ICP_013024 - QDUK Holdings GP LLP ICP)

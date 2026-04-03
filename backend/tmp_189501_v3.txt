@@ -1,0 +1,36 @@
+=== ALL SHEETS IN WORKBOOK ===
+Sheet 'Sheet1': max_col=16, hdr_row=32, col1='entity', col2='partner'
+  Entity cols (4):
+    code=165003 tag=Entity series=S1 desc=165003 - 165003:Advances provided for related parties Entity
+    code=189001 tag=Entity series=S1 desc=189001 - 189001:Inter company account - receivables Entity
+    code=224000 tag=Entity series=S2 desc=224000 - 224000:Due to related parties Entity
+    code=224009 tag=Entity series=S2 desc=224009 - 224009:Inter company accounts - Payables Entity
+  Partner cols (6):
+    code=224000 tag=Partner series=S2 desc=224000 - 224000:Due to related parties Partner
+    code=224009 tag=Partner series=S2 desc=224009 - 224009:Inter company accounts - Payables Partner
+    code=165003 tag=Partner series=S1 desc=165003 - 165003:Advances provided for related parties Partner
+    code=189001 tag=Partner series=S1 desc=189001 - 189001:Inter company account - receivables Partner
+    code=189014 tag=Partner series=S1 desc=189014 - 189014:Discount on intercompany loan Partner
+    code=189501 tag=Partner series=S1 desc=189501 - 189501:Due from Related Party - Non-current Partner
+Sheet 'Sheet2': max_col=2, hdr_row=4, col1='', col2=''
+
+=== CANDIDATES: 1 ===
+  [0] sheet='Sheet1' hdr=32 max_col=16
+
+=== REPORT INPUTS - ELIMINATION ACCOUNTS ===
+Headers: ['Plug Account: 188800 - 188800:Intercompany Balances Plug A/c', '', '']
+  val='165002 - 165002:Expenses recharged on behalf of a related pa' -> code='165002'
+  val='165001 - 165001:Loans provided to related parties' -> code='165001'
+  val='165003 - 165003:Advances provided for related parties' -> code='165003'
+  val='165004 - 165004:Payments to subcontractors & suppliers on be' -> code='165004'
+  val='165005 - 165005:Retention receivable-Intercompany (Current)' -> code='165005'
+  val='189001 - 189001:Inter company account - receivables' -> code='189001'
+  val='189014 - 189014:Discount on intercompany loan' -> code='189014'
+  val='189015 - 189015:Intercompany receivable A/C for outside QD g' -> code='189015'
+  val='187052 - 187052:Retention receivable-Intercomp' -> code='187052'
+  val='189501 - 189501:Due from Related Party - Non-current' -> code='189501'
+  val='224000 - 224000:Due to related parties' -> code='224000'
+  val='224001 - 224001:Loans provided from related parties' -> code='224001'
+  val='224003 - 224003:Advances provided from related parties' -> code='224003'
+  val='224009 - 224009:Inter company accounts - Payables' -> code='224009'
+  val='224024 - 224024:Intercompany payable A/C for outside QD grou' -> code='224024'

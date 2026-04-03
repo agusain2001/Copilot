@@ -1,0 +1,154 @@
+﻿Plug mapping: {'plug_code': '188800', 'elim_codes': {'224001', '189015', '187052', '189001', '165003', '165001', '165005', '224009', '224000', '224024', '189014', '189501', '165004', '165002', '224003'}}
+
+=== ICM SOURCE ===
+Entity-side accounts: ['171002', '111007', '121014', '120031', '504132', '504131', '504130', '512064', '512074', '430015', '420003', '400002', '408007']
+Partner-side accounts: ['430015', '420003', '400002', '408007', '171002', '111007', '121014', '120031', '504132', '504131', '504130', '512064', '512074']
+430015 in entity cols: True
+430015 in partner cols: True
+Total ICM data rows: 132
+
+=== ICM ROWS: entity 013011 ===
+  Entity=013011, Partner=ICP_E100000, eCode=013011, pCode=ICP_E100000
+  Entity=013011, Partner=ICP_E117000, eCode=013011, pCode=ICP_E117000
+  Entity=013011, Partner=ICP_013013, eCode=013011, pCode=ICP_013013
+  Entity=013011, Partner=ICP_013007, eCode=013011, pCode=ICP_013007
+  Entity=013011, Partner=ICP_013008, eCode=013011, pCode=ICP_013008
+  Entity=013011, Partner=ICP_013009, eCode=013011, pCode=ICP_013009
+  Entity=013011, Partner=ICP_013010, eCode=013011, pCode=ICP_013010
+  Entity=013011, Partner=ICP_013012, eCode=013011, pCode=ICP_013012
+  Entity=013011, Partner=ICP_013014, eCode=013011, pCode=ICP_013014
+  Entity=013011, Partner=ICP_013017, eCode=013011, pCode=ICP_013017
+  Entity=013011, Partner=ICP_E117100, eCode=013011, pCode=ICP_E117100
+  Entity=013011, Partner=ICP_117101A, eCode=013011, pCode=ICP_117101A
+  Entity=013011, Partner=, eCode=013011, pCode=
+
+=== PARENT (1) Journal - Entries with account 430015 ===
+  PRIMARY: Entity=013011, ICP=ICP_001001, Acct=430015, Debit=22406.55, Credit=0.0
+  PRIMARY: Entity=013011, ICP=ICP_007011, Acct=430015, Debit=0.0, Credit=240.34
+  PRIMARY: Entity=013011, ICP=ICP_013001, Acct=430015, Debit=71101.2, Credit=0.0
+  PRIMARY: Entity=013011, ICP=ICP_013007, Acct=430015, Debit=0.0, Credit=19990.55
+  PRIMARY: Entity=013011, ICP=ICP_013008, Acct=430015, Debit=65123.08, Credit=0.0
+  PRIMARY: Entity=013011, ICP=ICP_013012, Acct=430015, Debit=2674.03, Credit=0.0
+  PRIMARY: Entity=013011, ICP=ICP_013014, Acct=430015, Debit=0.0, Credit=4114.48
+  PRIMARY: Entity=013011, ICP=ICP_019002, Acct=430015, Debit=0.0, Credit=4210.61
+  PRIMARY: Entity=027009, ICP=ICP_019002, Acct=430015, Debit=0.0, Credit=2970.59
+
+=== CONTRIBUTION (2) Journal - Entries with account 430015 ===
+  (no entries with account 430015)
+
+=== PLUG (4) Journal - Entries with account 430015 ===
+  (no entries with account 430015)
+
+=== OUTPUT FILE ===
+
+  Column 12: '430015 Entity'
+    Row 35: Entity='001001', Partner='ICP_001007', Value=9648672
+    Row 37: Entity='001001', Partner='ICP_001013', Value=4078814
+    Row 39: Entity='001001', Partner='ICP_001017', Value=28889881
+    Row 47: Entity='001001', Partner='None', Value=42617367
+    Row 61: Entity='027009', Partner='ICP_019002', Value=2326402
+    Row 62: Entity='027009', Partner='None', Value=2326402
+    Row 66: Entity='E101100', Partner='ICP_019002', Value=2338054
+    Row 68: Entity='E101100', Partner='None', Value=2338054
+    Row 69: Entity='E101000', Partner='ICP_019002', Value=2338054
+    Row 71: Entity='E101000', Partner='None', Value=2338054
+    Row 91: Entity='001013', Partner='ICP_001038', Value=2488147
+    Row 92: Entity='001013', Partner='None', Value=2488147
+    Row 94: Entity='001017', Partner='ICP_001006', Value=22369054
+    Row 95: Entity='001017', Partner='ICP_001022', Value=-5152
+    Row 96: Entity='001017', Partner='ICP_001039', Value=115799
+    Row 97: Entity='001017', Partner='None', Value=22479701
+    Row 98: Entity='E113000', Partner='ICP_001006', Value=22369054
+    Row 99: Entity='E113000', Partner='ICP_001022', Value=-5152
+    Row 100: Entity='E113000', Partner='ICP_001039', Value=115799
+    Row 101: Entity='E113000', Partner='None', Value=22479701
+    Row 111: Entity='013011', Partner='ICP_013013', Value=825799
+    Row 112: Entity='013011', Partner='ICP_013007', Value=12028357
+    Row 113: Entity='013011', Partner='ICP_013008', Value=19746305
+    Row 114: Entity='013011', Partner='ICP_013009', Value=5281336
+    Row 115: Entity='013011', Partner='ICP_013010', Value=2745654
+    Row 116: Entity='013011', Partner='ICP_013012', Value=1357838
+    Row 117: Entity='013011', Partner='ICP_013014', Value=6521668
+    Row 121: Entity='013011', Partner='None', Value=48506957
+    Row 149: Entity='Grand Total', Partner='None', Value=145574383
+
+  Column 32: '430015 Partner'
+    Row 33: Entity='001001', Partner='ICP_E100000', Value=515351
+    Row 36: Entity='001001', Partner='ICP_001006', Value=300000
+    Row 37: Entity='001001', Partner='ICP_001013', Value=55766619
+    Row 38: Entity='001001', Partner='ICP_E113000', Value=31535476
+    Row 39: Entity='001001', Partner='ICP_001017', Value=31535476
+    Row 40: Entity='001001', Partner='ICP_013011', Value=14099702
+    Row 47: Entity='001001', Partner='None', Value=133752624
+    Row 48: Entity='001051', Partner='ICP_E100000', Value=0
+    Row 49: Entity='001051', Partner='ICP_001006', Value=200000
+    Row 50: Entity='001051', Partner='ICP_001013', Value=40816837
+    Row 54: Entity='001051', Partner='None', Value=41016837
+    Row 63: Entity='007011', Partner='ICP_E100000', Value=-5528
+    Row 64: Entity='007011', Partner='ICP_013011', Value=688378
+    Row 65: Entity='007011', Partner='None', Value=682850
+    Row 72: Entity='001007', Partner='ICP_E100000', Value=0
+    Row 73: Entity='001007', Partner='None', Value=0
+    Row 74: Entity='019002', Partner='ICP_E100000', Value=-364840
+    Row 75: Entity='019002', Partner='ICP_013011', Value=1147485
+    Row 76: Entity='019002', Partner='None', Value=782645
+    Row 77: Entity='013001', Partner='ICP_E100000', Value=1635328
+    Row 78: Entity='013001', Partner='ICP_013011', Value=3950114
+    Row 79: Entity='013001', Partner='None', Value=5585442
+    Row 80: Entity='001011', Partner='ICP_E100000', Value=0
+    Row 81: Entity='001011', Partner='ICP_001013', Value=12995834
+    Row 82: Entity='001011', Partner='ICP_001039', Value=3258433
+    Row 83: Entity='001011', Partner='None', Value=16254267
+    Row 88: Entity='001013', Partner='ICP_E100000', Value=0
+    Row 89: Entity='001013', Partner='ICP_E113000', Value=24657949
+    Row 90: Entity='001013', Partner='ICP_001017', Value=24657949
+    Row 92: Entity='001013', Partner='None', Value=49315898
+    Row 93: Entity='001017', Partner='ICP_E100000', Value=0
+    Row 97: Entity='001017', Partner='None', Value=0
+    Row 109: Entity='013011', Partner='ICP_E100000', Value=0
+    Row 110: Entity='013011', Partner='ICP_E117000', Value=6452387
+    Row 116: Entity='013011', Partner='ICP_013012', Value=6073884
+    Row 118: Entity='013011', Partner='ICP_013017', Value=378503
+    Row 119: Entity='013011', Partner='ICP_E117100', Value=6433095
+    Row 120: Entity='013011', Partner='ICP_117101A', Value=-19292
+    Row 121: Entity='013011', Partner='None', Value=19318577
+    Row 122: Entity='013013', Partner='ICP_E100000', Value=0
+    Row 123: Entity='013013', Partner='None', Value=0
+    Row 124: Entity='013007', Partner='ICP_E100000', Value=-459783
+    Row 125: Entity='013007', Partner='None', Value=-459783
+    Row 126: Entity='013008', Partner='ICP_E100000', Value=1497831
+    Row 127: Entity='013008', Partner='None', Value=1497831
+    Row 128: Entity='013009', Partner='ICP_E100000', Value=0
+    Row 129: Entity='013009', Partner='None', Value=0
+    Row 130: Entity='013010', Partner='ICP_E100000', Value=0
+    Row 131: Entity='013010', Partner='None', Value=0
+    Row 132: Entity='013012', Partner='ICP_E100000', Value=61503
+    Row 133: Entity='013012', Partner='None', Value=61503
+    Row 134: Entity='013014', Partner='ICP_E100000', Value=-94633
+    Row 135: Entity='013014', Partner='None', Value=-94633
+    Row 136: Entity='001022', Partner='ICP_E100000', Value=0
+    Row 138: Entity='001022', Partner='None', Value=0
+    Row 143: Entity='001039', Partner='ICP_E100000', Value=0
+    Row 144: Entity='001039', Partner='None', Value=0
+    Row 145: Entity='001038', Partner='ICP_E100000', Value=0
+    Row 146: Entity='001038', Partner='None', Value=0
+    Row 147: Entity='001006', Partner='ICP_E100000', Value=0
+    Row 148: Entity='001006', Partner='None', Value=0
+    Row 149: Entity='Grand Total', Partner='None', Value=267714058
+
+  Column 72: '430015 Entity'
+    Row 61: Entity='027009', Partner='ICP_019002', Value=2970.59
+    Row 112: Entity='013011', Partner='ICP_013007', Value=19990.55
+    Row 113: Entity='013011', Partner='ICP_013008', Value=-65123.08
+    Row 116: Entity='013011', Partner='ICP_013012', Value=-2674.03
+    Row 117: Entity='013011', Partner='ICP_013014', Value=4114.48
+    Row 173: Entity='013011:Qatari Diar Europe LLP', Partner='ICP_001001:QDRE Investment Company Q.S.C. (H) ICP', Value=-22406.55
+    Row 175: Entity='013011:Qatari Diar Europe LLP', Partner='ICP_007011:GPS Holdings S.a.r.l. ICP', Value=240.34
+    Row 176: Entity='013011:Qatari Diar Europe LLP', Partner='ICP_013001:Qatari Diar UK Limited ICP', Value=-71101.2
+    Row 177: Entity='013011:Qatari Diar Europe LLP', Partner='ICP_019002:QD US Real Estate Company (H) ICP', Value=4210.61
+
+  Column 92: '430015 Partner'
+
+  Column 133: '430015 Entity'
+
+  Column 153: '430015 Partner'

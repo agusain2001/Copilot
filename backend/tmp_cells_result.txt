@@ -1,0 +1,36 @@
+﻿Row 29 (Section labels):
+  Col 43: 'Parent Input'
+  Col 83: 'Contribution Input'
+  Col 123: 'Plug Account'
+
+Row 32 (Headers) - searching for 189501 and 155020:
+  Col 12: '189501 - 189501:Due from Related Party - Non-current Entity' (fill=00003366)
+  Col 18: '155020 - [155000].[155020]:155020:Diar Club Al Houra Entity' (fill=00003366)
+  Col 31: '189501 - 189501:Due from Related Party - Non-current Partner' (fill=00003366)
+  Col 37: '155020 - [155000].[155020]:155020:Diar Club Al Houra Partner' (fill=00003366)
+  Col 52: '189501 - 189501:Due from Related Party - Non-current Entity' (fill=00003366)
+  Col 58: '155020 - [155000].[155020]:155020:Diar Club Al Houra Entity' (fill=00003366)
+  Col 71: '189501 - 189501:Due from Related Party - Non-current Partner' (fill=00003366)
+  Col 77: '155020 - [155000].[155020]:155020:Diar Club Al Houra Partner' (fill=00003366)
+  Col 92: '189501 - 189501:Due from Related Party - Non-current Entity' (fill=00003366)
+  Col 98: '155020 - [155000].[155020]:155020:Diar Club Al Houra Entity' (fill=00003366)
+  Col 111: '189501 - 189501:Due from Related Party - Non-current Partner' (fill=00003366)
+  Col 117: '155020 - [155000].[155020]:155020:Diar Club Al Houra Partner' (fill=00003366)
+
+Searching for '[165000].[189501]' pattern across key rows:
+  Row 32, Col 18: '155020 - [155000].[155020]:155020:Diar Club Al Houra Entity' (fill=00003366)
+  Row 32, Col 37: '155020 - [155000].[155020]:155020:Diar Club Al Houra Partner' (fill=00003366)
+  Row 32, Col 58: '155020 - [155000].[155020]:155020:Diar Club Al Houra Entity' (fill=00003366)
+  Row 32, Col 77: '155020 - [155000].[155020]:155020:Diar Club Al Houra Partner' (fill=00003366)
+  Row 32, Col 98: '155020 - [155000].[155020]:155020:Diar Club Al Houra Entity' (fill=00003366)
+  Row 32, Col 117: '155020 - [155000].[155020]:155020:Diar Club Al Houra Partner' (fill=00003366)
+
+ICM Source headers with 189501 or 155020:
+  Sheet 'Sheet1 (2)', Col 8: '189501 - 189501:Due from Related Party - Non-current Entity '
+  Sheet 'Sheet1 (2)', Col 18: '189501 - 189501:Due from Related Party - Non-current Partner '
+  Sheet 'Sheet1 (2)', Col 30: '189501 - 189501:Due from Related Party - Non-current Entity '
+  Sheet 'Sheet1 (2)', Col 40: '189501 - 189501:Due from Related Party - Non-current Partner '
+  Sheet 'Sheet1 (2)', Col 52: '189501 - 189501:Due from Related Party - Non-current Entity '
+  Sheet 'Sheet1 (2)', Col 62: '189501 - 189501:Due from Related Party - Non-current Partner '
+  Sheet 'Sheet1', Col 8: '189501 - 189501:Due from Related Party - Non-current Entity '
+  Sheet 'Sheet1', Col 18: '189501 - 189501:Due from Related Party - Non-current Partner '

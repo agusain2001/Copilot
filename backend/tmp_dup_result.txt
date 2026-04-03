@@ -1,0 +1,16 @@
+﻿Checking for value duplication in Parent Input block...
+Looking for rows with entity 001001/022001 pair:
+
+Row 64: Entity=001001 - QDRE Investment Compa  Partner=ICP_022001 - QDREI  Co. Tajaki
+  Parent Input values:
+      Col 61 [189001 - 189001:Inter company account - ]: 26035079.04
+      Col 63 [189501 - 189501:Due from Related Party -]: -26035079.04
+  Contrib Input: (empty)
+
+Row 506: Entity=022001 - QDREI  Co. Tajakistan  Partner=ICP_001001 - QDRE Investment C
+  Parent Input: (empty)
+  Contrib Input: (empty)
+
+
+--- Global duplication check ---
+No duplications found! Each value appears exactly once.

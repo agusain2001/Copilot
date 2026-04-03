@@ -1,0 +1,27 @@
+Sheet: Sheet1, data_start=33, max_row=841
+
+    Row 431: entity='006001 - Al Qatariya Develop Co. Malta (H)' | partner='ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP' | ent_code='006001'
+    Row 433: entity='006001 - Al Qatariya Develop Co. Malta (H)' | partner='' | ent_code='006001'
+    Row 435: entity='010002 - QDRE Investment Co. Yemen' | partner='ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP' | ent_code='010002'
+    Row 437: entity='010002 - QDRE Investment Co. Yemen' | partner='' | ent_code='010002'
+    Row 439: entity='010001 - Al Yemania Al Qatariah REID Co.' | partner='ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP' | ent_code='010001'
+    Row 441: entity='010001 - Al Yemania Al Qatariah REID Co.' | partner='' | ent_code='010001'
+    Row 443: entity='001002 - Qatari Resorts Co. Q.S.C. (H)' | partner='ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP' | ent_code='001002'
+    Row 445: entity='001002 - Qatari Resorts Co. Q.S.C. (H)' | partner='' | ent_code='001002'
+*** Row 833: entity='189501 - 189501:Due from Related Party - Non-current' | partner='' | ent_code='189501'
+
+
+Total data rows in ICM source:
+  Sheet 'Sheet1': 411 data rows
+
+Total output rows: 437
+
+Output rows 435-442:
+  Row 435: entity='189014 - 189014:Discount on intercompany loan' | partner=''
+  Row 436: entity='189015 - 189015:Intercompany receivable A/C for outside QD g' | partner=''
+  Row 437: entity='187052 - 187052:Retention receivable-Intercomp' | partner=''
+  Row 438: entity='189501 - 189501:Due from Related Party - Non-current' | partner=''
+  Row 439: entity='224000 - 224000:Due to related parties' | partner=''
+  Row 440: entity='224001 - 224001:Loans provided from related parties' | partner=''
+  Row 441: entity='224003 - 224003:Advances provided from related parties' | partner=''
+  Row 442: entity='224009 - 224009:Inter company accounts - Payables' | partner=''

@@ -1,0 +1,34 @@
+=== PARENT JOURNAL ===
+Entity to Partner (account cols 37-51): 30 non-zero values
+  Col 39 (165003 - 165003:Advances provided for related parties Entity): 3
+  Col 43 (189001 - 189001:Inter company account - receivables Entity): 11
+  Col 46 (189501 - 189501:Due from Related Party - Non-current Entity): 2
+  Col 47 (224000 - 224000:Due to related parties Partner): 14
+Entity to Partner Variance (col 52): 23
+Entity to Partner TOTAL (accounts+variance): 53
+
+Partner to Entity (account cols 53-67): 7 non-zero values
+  Col 55 (165003 - 165003:Advances provided for related parties Partner): 2
+  Col 59 (189001 - 189001:Inter company account - receivables Partner): 3
+  Col 62 (189501 - 189501:Due from Related Party - Non-current Partner): 1
+  Col 63 (224000 - 224000:Due to related parties Entity): 1
+Partner to Entity Variance (col 68): 4
+Partner to Entity Total (col 69): 27
+Partner to Entity TOTAL (accounts+variance): 11
+
+=== CONTRIBUTION JOURNAL ===
+Entity to Partner (account cols 71-85): 2 non-zero values
+  Col 73 (165003 - 165003:Advances provided for related parties Entity): 1
+  Col 81 (224000 - 224000:Due to related parties Partner): 1
+Entity to Partner Variance (col 86): 2
+Entity to Partner TOTAL (accounts+variance): 4
+
+Partner to Entity (account cols 87-101): 1 non-zero values
+  Col 89 (165003 - 165003:Advances provided for related parties Partner): 1
+Partner to Entity Variance (col 102): 1
+Partner to Entity Total (col 103): 3
+Partner to Entity TOTAL (accounts+variance): 2
+
+=== PLUG JOURNAL ===
+Plug A/c (col 105): 0 non-zero values
+Plug Total (col 107): 30 non-zero values
