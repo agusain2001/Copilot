@@ -107,6 +107,17 @@ def normalize_entity_code(code: str) -> str:
         return code[1:]
     return code
 
+def normalize_to_numeric(code: str) -> str:
+    """Normalize any entity/ICP code to pure numeric.
+    Strips ICP_ prefix and E prefix.
+    E117100 -> 117100, ICP_007009 -> 007009, ICP_E117100 -> 117100, 007009 -> 007009"""
+    s = str(code or "").strip()
+    if s.startswith("ICP_"):
+        s = s[4:]
+    if s.startswith("E") and len(s) > 1 and s[1:].isdigit():
+        s = s[1:]
+    return s
+
 def to_float(val) -> float:
     if val is None or str(val).strip() in ("", " "):
         return 0.0
@@ -262,12 +273,14 @@ def read_icm_data(ws, data_start=None):
         entity_raw  = str(vals[0] or "").strip()
         partner_raw = str(vals[1] or "").strip() if len(vals) > 1 else ""
         if not entity_raw and not partner_raw: continue
+        partner_icp = extract_icp_code(partner_raw)
         data_rows.append({
             "row_num":      row_num,
             "entity":       entity_raw,
             "partner":      partner_raw,
             "entity_code":  extract_entity_code_icm(entity_raw),
-            "partner_code": extract_icp_code(partner_raw),
+            "partner_code": partner_icp,
+            "partner_num":  normalize_to_numeric(partner_icp),
         })
     return data_rows
 
@@ -276,6 +289,15 @@ def read_icm_data(ws, data_start=None):
 # ═══════════════════════════════════════════════════════════════════════════
 
 def read_journal_report(filepath: str, plug_mapping: dict = None):
+    """Read journal entries and build a lookup keyed by pure numeric codes.
+    Keys are (entity_num, icp_num, account_code) where entity_num and icp_num
+    are normalized to pure numeric (E prefix and ICP_ prefix stripped).
+
+    Matching rules (from user spec):
+      Entity col:  E117100:… → 117100,  007009:… → 007009
+      ICP col:     ICP_007009:… → 007009,  ICP_E117100:… → 117100
+      Account col: 534018 - 534018:Interest expense → 534018
+    """
     wb = openpyxl.load_workbook(filepath, data_only=True)
     ws = wb.active
     indices = get_journal_indices(ws)
@@ -297,10 +319,12 @@ def read_journal_report(filepath: str, plug_mapping: dict = None):
         except IndexError:
             continue
 
+        # Extract raw codes then normalize to pure numeric
         entity_code_raw = extract_entity_code_journal(entity_raw)
-        entity_code     = normalize_entity_code(entity_code_raw)
+        entity_num      = normalize_to_numeric(entity_code_raw)
         account_code    = extract_account_code(account_raw)
-        icp_code        = extract_icp_code(icp_raw)
+        icp_code_raw    = extract_icp_code(icp_raw)
+        icp_num         = normalize_to_numeric(icp_code_raw)
 
         if plug_mapping:
             plug_code = plug_mapping.get("plug_code")
@@ -310,29 +334,25 @@ def read_journal_report(filepath: str, plug_mapping: dict = None):
 
         lines.append({
             "label": label,
-            "entity_code": entity_code,
-            "is_group": bool(re.match(r"^E\d+", entity_code_raw)),
+            "entity_num": entity_num,
             "account_code": account_code,
-            "icp_code": icp_code,
+            "icp_num": icp_num,
             "debit": debit,
             "credit": credit,
         })
 
-    primary_lookup  = defaultdict(list)
-    fallback_lookup = defaultdict(list)
+    # Single unified lookup — all codes are pure numeric
+    lookup = defaultdict(list)
     for line in lines:
-        if not line["entity_code"] or not line["icp_code"] or not line["account_code"]:
+        if not line["entity_num"] or not line["icp_num"] or not line["account_code"]:
             continue
-        if not line["is_group"]:
-            primary_lookup[(line["entity_code"], line["icp_code"], line["account_code"])].append(line)
-        else:
-            fallback_lookup[(line["entity_code"], line["icp_code"], line["account_code"])].append(line)
+        lookup[(line["entity_num"], line["icp_num"], line["account_code"])].append(line)
 
-    return primary_lookup, fallback_lookup
+    return lookup
 
 
 def read_journal_labels(filepath: str) -> dict:
-    """code → full label string (e.g. 'E117100' → 'E117100:QD UK Holdings LP')."""
+    """code → full label string. Maps both raw and normalized numeric codes."""
     wb = openpyxl.load_workbook(filepath, data_only=True)
     ws = wb.active
     indices = get_journal_indices(ws)
@@ -350,33 +370,29 @@ def read_journal_labels(filepath: str) -> dict:
         except IndexError:
             continue
         ent_code = extract_entity_code_journal(entity_raw)
-        ent_code_norm = normalize_entity_code(ent_code)
+        ent_num  = normalize_to_numeric(ent_code)
         icp_code = extract_icp_code(icp_raw)
+        icp_num  = normalize_to_numeric(icp_code)
         if ent_code and entity_raw:
             label_map[ent_code] = entity_raw
-            if ent_code_norm != ent_code:
-                label_map[ent_code_norm] = entity_raw
+            if ent_num != ent_code:
+                label_map[ent_num] = entity_raw
         if icp_code and icp_raw:
             label_map[icp_code] = icp_raw
+            if icp_num != icp_code:
+                label_map[icp_num] = icp_raw
     return label_map
 
 
-def match_journal_to_icm(data_rows, primary_lookup, fallback_lookup):
-    """Returns (primary_updates, fallback_updates) dicts of (ent, icp, acct) → net."""
-    primary_updates = {}
-    fallback_updates = {}
-
-    for (e, p, a), jlines in primary_lookup.items():
+def match_journal_to_icm(data_rows, lookup):
+    """Returns updates dict of (entity_num, icp_num, acct) → net.
+    All keys are pure numeric (no ICP_ or E prefixes)."""
+    updates = {}
+    for (e, p, a), jlines in lookup.items():
         net = sum(apply_sign(j["debit"], j["credit"], a) for j in jlines)
         if net != 0:
-            primary_updates[(e, p, a)] = net
-
-    for (ge, p, a), jlines in fallback_lookup.items():
-        net = sum(apply_sign(j["debit"], j["credit"], a) for j in jlines)
-        if net != 0:
-            fallback_updates[(ge, p, a)] = net
-
-    return primary_updates, fallback_updates
+            updates[(e, p, a)] = net
+    return updates
 
 # ═══════════════════════════════════════════════════════════════════════════
 # OUTPUT WRITER
@@ -526,29 +542,15 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
     def _extract_val(raw):
         if raw is None:
             return None, NO_FILL
-        if isinstance(raw, tuple):
-            return raw[1] * SCALE, GROUP_FILL
         return raw * SCALE, MATCH_FILL
 
-    # ── Unpack updates ───────────────────────────────────────────────────
+    # ── Unpack updates (single dict per journal, no more primary/fallback) ──
     def _unpack(idx):
-        entry = updates_list[idx] if len(updates_list) > idx else ({}, {})
-        return entry if isinstance(entry, tuple) else (entry, {})
+        return updates_list[idx] if len(updates_list) > idx else {}
 
-    parent_primary,  parent_fallback  = _unpack(0)
-    contrib_primary, contrib_fallback = _unpack(1)
-    plug_primary,    plug_fallback    = _unpack(2)
-
-    def _merge_fallback(primary, fallback):
-        merged = dict(primary)
-        for key, net in fallback.items():
-            if key not in merged:
-                merged[key] = (key[0], net)
-        return merged
-
-    parent_primary  = _merge_fallback(parent_primary,  parent_fallback)
-    contrib_primary = _merge_fallback(contrib_primary, contrib_fallback)
-    plug_primary    = _merge_fallback(plug_primary,    plug_fallback)
+    parent_updates  = _unpack(0)
+    contrib_updates = _unpack(1)
+    plug_updates    = _unpack(2)
 
     # S1/S2 groups for variance
     s1_ent_codes = [c[0] for c in ent_cols if c[2] == "S1"]
@@ -565,42 +567,36 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
     for out_idx, icm_row in enumerate(data_rows):
         src_r = icm_row["row_num"]
         out_r = ICM_OUTPUT_DATA_START + out_idx
-        ent   = icm_row["entity_code"]
-        prt   = icm_row["partner_code"]
+        ent   = icm_row["entity_code"]          # pure numeric (e.g. "117100")
+        prt_num = icm_row.get("partner_num", "")  # pure numeric (e.g. "007009")
 
         _style_id_cell(ws.cell(out_r, 1), icm_row["entity"])
         _style_id_cell(ws.cell(out_r, 2), icm_row["partner"])
 
-        # Direct match only: Journal Entity → ICM Entity, Journal ICP → ICM Partner
-        # No fabricated ICP codes — entity names never start with ICP_
-        can_match = bool(ent and prt)
+        # All matching uses pure numeric codes
+        can_match = bool(ent and prt_num)
 
-        # Reverse key components for partner-to-entity matching
-        prt_entity = normalize_entity_code(extract_6digit_from_icp(prt)) if prt else ""
-        reverse_icp_plain = f"ICP_{ent}" if ent else ""
-        reverse_icp_e = f"ICP_E{ent}" if ent else ""
-        can_reverse = bool(prt_entity and ent)
-
-        def _write_block(blk, is_base, primary=None, consumed=None):
+        def _write_block(blk, is_base, updates=None, consumed=None):
             """Write entity-side, partner-side, variances, total for one block.
-            Journal matching uses DIRECT key (ent, prt, code) for ALL columns."""
+            Entity-side:  key (ent, prt_num, acct)  — entity-to-parent direction.
+            Partner-side: key (prt_num, ent, acct)  — parent-to-entity direction (reversed)."""
             ent_vals = {}
             par_vals = {}
 
-            # ── Entity-side (Direct Match) ──────────────────────────────
+            # ── Entity-side (entity-to-parent: ent → prt_num) ────────────
             for i, (code, _, series, tag) in enumerate(ent_cols):
                 if is_base:
                     v = _icm_num(src_r, code, tag)
                     _style_data_cell(ws.cell(out_r, blk["ent_start"] + i), v)
                     ent_vals[code] = v
                 else:
-                    pri_key = (ent, prt, code)
+                    ent_key = (ent, prt_num, code)
                     raw = None
-                    if can_match and primary and pri_key in primary and \
-                       (consumed is None or pri_key not in consumed):
-                        raw = primary[pri_key]
+                    if can_match and updates and ent_key in updates and \
+                       (consumed is None or ent_key not in consumed):
+                        raw = updates[ent_key]
                         if consumed is not None:
-                            consumed.add(pri_key)
+                            consumed.add(ent_key)
                     v, fill = _extract_val(raw)
                     _style_data_cell(ws.cell(out_r, blk["ent_start"] + i), v,
                                      fill if v is not None else None)
@@ -613,22 +609,20 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
             _style_data_cell(ws.cell(out_r, blk["var1"]), var1, VARIANCE_FILL)
             ws.cell(out_r, blk["var1"]).number_format = NUM_FORMAT
 
-            # ── Partner-side (Reverse key: partner as entity, entity as ICP) ──
+            # ── Partner-side (parent-to-entity: prt_num → ent, reversed) ──
             for i, (code, _, series, tag) in enumerate(par_cols):
                 if is_base:
                     v = _icm_num(src_r, code, tag)
                     _style_data_cell(ws.cell(out_r, blk["par_start"] + i), v)
                     par_vals[code] = v
                 else:
+                    rev_key = (prt_num, ent, code)
                     raw_par = None
-                    if can_match and can_reverse and primary:
-                        for rk in ((prt_entity, reverse_icp_plain, code),
-                                   (prt_entity, reverse_icp_e, code)):
-                            if rk in primary and (consumed is None or rk not in consumed):
-                                raw_par = primary[rk]
-                                if consumed is not None:
-                                    consumed.add(rk)
-                                break
+                    if can_match and updates and rev_key in updates and \
+                       (consumed is None or rev_key not in consumed):
+                        raw_par = updates[rev_key]
+                        if consumed is not None:
+                            consumed.add(rev_key)
                     v, fill = _extract_val(raw_par)
                     _style_data_cell(ws.cell(out_r, blk["par_start"] + i), v,
                                      fill if v is not None else None)
@@ -652,20 +646,20 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
         base_total = _write_block(blk_base, is_base=True)
 
         parent_total = _write_block(blk_par, is_base=False,
-                                    primary=parent_primary,
+                                    updates=parent_updates,
                                     consumed=consumed_parent)
 
         contrib_total = _write_block(blk_cont, is_base=False,
-                                     primary=contrib_primary,
+                                     updates=contrib_updates,
                                      consumed=consumed_contrib)
 
-        # ── Plug Account — Parent block ──────────────────────────────────
+        # ── Plug Account — Parent block (entity-to-parent direction) ─────
         plug_par_val = 0.0
-        if plug_code and ent and prt and blk_par["plug"]:
-            plug_key = (ent, prt, plug_code)
+        if plug_code and can_match and blk_par["plug"]:
+            plug_key = (ent, prt_num, plug_code)
             raw = None
-            if plug_key in parent_primary and plug_key not in consumed_parent:
-                raw = parent_primary[plug_key]
+            if plug_key in parent_updates and plug_key not in consumed_parent:
+                raw = parent_updates[plug_key]
                 consumed_parent.add(plug_key)
             v, fill = _extract_val(raw)
             if v is not None:
@@ -674,17 +668,14 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
             else:
                 _style_data_cell(ws.cell(out_r, blk_par["plug"]), None)
 
-        # ── Plug Account — Contribution block (reverse: partner→entity) ──
+        # ── Plug Account — Contribution block (parent-to-entity, reversed) ──
         plug_cont_val = 0.0
-        if plug_code and ent and prt and blk_cont["plug"]:
+        if plug_code and can_match and blk_cont["plug"]:
+            rev_plug_key = (prt_num, ent, plug_code)
             raw = None
-            if can_reverse:
-                for rk in ((prt_entity, reverse_icp_plain, plug_code),
-                           (prt_entity, reverse_icp_e, plug_code)):
-                    if rk in contrib_primary and rk not in consumed_contrib:
-                        raw = contrib_primary[rk]
-                        consumed_contrib.add(rk)
-                        break
+            if rev_plug_key in contrib_updates and rev_plug_key not in consumed_contrib:
+                raw = contrib_updates[rev_plug_key]
+                consumed_contrib.add(rev_plug_key)
             v, fill = _extract_val(raw)
             if v is not None:
                 plug_cont_val = to_float(v)
@@ -694,12 +685,11 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
 
         # ── Plug Account Section (Standalone) ────────────────────────────
         plug_val = 0.0
-        if plug_code and ent and prt:
-            # Direct key only — no vice-versa
-            plug_key = (ent, prt, plug_code)
+        if plug_code and can_match:
+            plug_key = (ent, prt_num, plug_code)
             raw = None
-            if plug_key in plug_primary and plug_key not in consumed_plug:
-                raw = plug_primary[plug_key]
+            if plug_key in plug_updates and plug_key not in consumed_plug:
+                raw = plug_updates[plug_key]
                 consumed_plug.add(plug_key)
             v, fill = _extract_val(raw)
             if v is not None:
@@ -825,19 +815,17 @@ def process_icm_report(icm_path, journal_paths, output_path, report_inputs_path=
     for jkey in journal_order:
         jpath = journal_paths.get(jkey)
         if not jpath:
-            updates_list.append(({}, {}))
+            updates_list.append({})
             continue
 
         jmap = plug_mapping if jkey == "plugaccount_journal" else None
-        primary, fallback = read_journal_report(jpath, jmap)
+        lookup = read_journal_report(jpath, jmap)
 
         # FILTER: only keep matches where account exists in ICM/elimination set
-        primary_filtered = {k: v for k, v in primary.items() if k[2] in valid_accounts}
-        fallback_filtered = {k: v for k, v in fallback.items() if k[2] in valid_accounts}
+        lookup_filtered = {k: v for k, v in lookup.items() if k[2] in valid_accounts}
 
-        primary_updates, fallback_updates = match_journal_to_icm(
-            data_rows, primary_filtered, fallback_filtered)
-        updates_list.append((primary_updates, fallback_updates))
+        updates = match_journal_to_icm(data_rows, lookup_filtered)
+        updates_list.append(updates)
 
     # ── Discover missing Entity/Partner pairs ────────────────────────────
     all_labels = {}
@@ -846,44 +834,27 @@ def process_icm_report(icm_path, journal_paths, output_path, report_inputs_path=
         if jpath:
             all_labels.update(read_journal_labels(jpath))
 
-    existing_pairs = {(r["entity_code"], r["partner_code"]) for r in data_rows}
+    existing_pairs = {(r["entity_code"], r.get("partner_num", "")) for r in data_rows}
 
     missing_pairs = set()
-    for primary_upd, fallback_upd in updates_list:
-        for (ent, icp, acct) in primary_upd:
-            if acct in valid_accounts and (ent, icp) not in existing_pairs:
-                missing_pairs.add((ent, icp))
-        for (ent, icp, acct) in fallback_upd:
+    for upd in updates_list:
+        for (ent, icp, acct) in upd:
             if acct in valid_accounts and (ent, icp) not in existing_pairs:
                 missing_pairs.add((ent, icp))
 
     # ── De-duplicate reverse pairs ────────────────────────────────────
-    # Journal entries come in pairs: a primary entry (entity→E-prefix partner)
-    # and a fallback entry (E-prefix entity→partner). For example:
-    #   Primary:  (001001, ICP_E101000, 534018)  → entity→partner direction
-    #   Fallback: (101000,  ICP_001001, 534018)  → partner→entity direction
-    # The forward row already shows BOTH via entity-side and partner-side columns,
-    # so we remove the fallback synthetic row to avoid double-counting.
-    # IMPORTANT: Only remove when one direction has ICP_E... and the other has ICP_...
-    # to distinguish primary↔fallback pairs from two independent primary entries
-    # (like 001032↔001033 which are both non-E-prefix).
+    # With pure numeric keys, both sides of a transaction produce entries like:
+    #   (117100, 007009, 534018) — entity-to-parent direction
+    #   (007009, 117100, 534018) — parent-to-entity direction
+    # A single ICM row (entity=117100, partner=007009) shows BOTH directions
+    # via entity-side and partner-side columns, so we only need ONE row.
+    # Remove the reverse pair if the forward pair already exists.
     pairs_to_remove = set()
     for (ent, icp) in list(missing_pairs):
-        # Only consider pairs where the ICP does NOT have E prefix
-        # (these are fallback/reverse entries)
-        if icp.startswith("ICP_E"):
-            continue  # This is a primary pair — never remove
-        
-        # Compute the reverse pair (which would be the primary direction)
-        icp_digit = icp[4:] if icp.startswith("ICP_") else icp
-        rev_ent = normalize_entity_code(icp_digit)
-        rev_icp_e = f"ICP_E{ent}"
-        
-        # Only remove if the E-prefix reverse pair exists (confirming this is
-        # truly a fallback mirror, not an independent non-E pair)
-        if (rev_ent, rev_icp_e) in missing_pairs:
+        # If the reverse pair exists, keep the one with the smaller entity code
+        if (icp, ent) in missing_pairs and ent > icp:
             pairs_to_remove.add((ent, icp))
-    
+
     missing_pairs -= pairs_to_remove
     if pairs_to_remove:
         logger.info("Removed %d reverse duplicate pairs", len(pairs_to_remove))
@@ -894,7 +865,8 @@ def process_icm_report(icm_path, journal_paths, output_path, report_inputs_path=
             "entity":       all_labels.get(ent_code, ent_code),
             "partner":      all_labels.get(icp_code, icp_code),
             "entity_code":  ent_code,
-            "partner_code": icp_code,
+            "partner_code": f"ICP_{icp_code}",
+            "partner_num":  icp_code,
         })
 
     if missing_pairs:
@@ -905,19 +877,17 @@ def process_icm_report(icm_path, journal_paths, output_path, report_inputs_path=
     for jkey in journal_order:
         jpath = journal_paths.get(jkey)
         if not jpath:
-            updates_list_final.append(({}, {}))
+            updates_list_final.append({})
             continue
 
         jmap = plug_mapping if jkey == "plugaccount_journal" else None
-        primary, fallback = read_journal_report(jpath, jmap)
+        lookup = read_journal_report(jpath, jmap)
 
         # FILTER: only ICM-defined accounts
-        primary_filtered = {k: v for k, v in primary.items() if k[2] in valid_accounts}
-        fallback_filtered = {k: v for k, v in fallback.items() if k[2] in valid_accounts}
+        lookup_filtered = {k: v for k, v in lookup.items() if k[2] in valid_accounts}
 
-        primary_updates, fallback_updates = match_journal_to_icm(
-            data_rows, primary_filtered, fallback_filtered)
-        updates_list_final.append((primary_updates, fallback_updates))
+        updates = match_journal_to_icm(data_rows, lookup_filtered)
+        updates_list_final.append(updates)
 
     # ── Write output ─────────────────────────────────────────────────────
     write_output(ws_icm, data_rows, icm_header_map, updates_list_final, output_path,
