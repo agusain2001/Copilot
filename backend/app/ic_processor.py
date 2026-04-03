@@ -595,13 +595,12 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
                     ent_vals[code] = v
                 else:
                     pri_key = (ent, prt, code)
-                    consumed_key = ('E', pri_key)  # Entity-side tag
                     raw = None
                     if can_match and primary and pri_key in primary and \
-                       (consumed is None or consumed_key not in consumed):
+                       (consumed is None or pri_key not in consumed):
                         raw = primary[pri_key]
                         if consumed is not None:
-                            consumed.add(consumed_key)
+                            consumed.add(pri_key)
                     v, fill = _extract_val(raw)
                     _style_data_cell(ws.cell(out_r, blk["ent_start"] + i), v,
                                      fill if v is not None else None)
@@ -625,11 +624,10 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
                     if can_match and can_reverse and primary:
                         for rk in ((prt_entity, reverse_icp_plain, code),
                                    (prt_entity, reverse_icp_e, code)):
-                            consumed_key = ('P', rk)  # Partner-side tag
-                            if rk in primary and (consumed is None or consumed_key not in consumed):
+                            if rk in primary and (consumed is None or rk not in consumed):
                                 raw_par = primary[rk]
                                 if consumed is not None:
-                                    consumed.add(consumed_key)
+                                    consumed.add(rk)
                                 break
                     v, fill = _extract_val(raw_par)
                     _style_data_cell(ws.cell(out_r, blk["par_start"] + i), v,
@@ -665,11 +663,10 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
         plug_par_val = 0.0
         if plug_code and ent and prt and blk_par["plug"]:
             plug_key = (ent, prt, plug_code)
-            consumed_key = ('E', plug_key)
             raw = None
-            if plug_key in parent_primary and consumed_key not in consumed_parent:
+            if plug_key in parent_primary and plug_key not in consumed_parent:
                 raw = parent_primary[plug_key]
-                consumed_parent.add(consumed_key)
+                consumed_parent.add(plug_key)
             v, fill = _extract_val(raw)
             if v is not None:
                 plug_par_val = to_float(v)
@@ -684,10 +681,9 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
             if can_reverse:
                 for rk in ((prt_entity, reverse_icp_plain, plug_code),
                            (prt_entity, reverse_icp_e, plug_code)):
-                    consumed_key = ('P', rk)
-                    if rk in contrib_primary and consumed_key not in consumed_contrib:
+                    if rk in contrib_primary and rk not in consumed_contrib:
                         raw = contrib_primary[rk]
-                        consumed_contrib.add(consumed_key)
+                        consumed_contrib.add(rk)
                         break
             v, fill = _extract_val(raw)
             if v is not None:
@@ -701,11 +697,10 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
         if plug_code and ent and prt:
             # Direct key only — no vice-versa
             plug_key = (ent, prt, plug_code)
-            consumed_key = ('E', plug_key)
             raw = None
-            if plug_key in plug_primary and consumed_key not in consumed_plug:
+            if plug_key in plug_primary and plug_key not in consumed_plug:
                 raw = plug_primary[plug_key]
-                consumed_plug.add(consumed_key)
+                consumed_plug.add(plug_key)
             v, fill = _extract_val(raw)
             if v is not None:
                 plug_val = to_float(v)
@@ -861,6 +856,37 @@ def process_icm_report(icm_path, journal_paths, output_path, report_inputs_path=
         for (ent, icp, acct) in fallback_upd:
             if acct in valid_accounts and (ent, icp) not in existing_pairs:
                 missing_pairs.add((ent, icp))
+
+    # ── De-duplicate reverse pairs ────────────────────────────────────
+    # Journal entries come in pairs: a primary entry (entity→E-prefix partner)
+    # and a fallback entry (E-prefix entity→partner). For example:
+    #   Primary:  (001001, ICP_E101000, 534018)  → entity→partner direction
+    #   Fallback: (101000,  ICP_001001, 534018)  → partner→entity direction
+    # The forward row already shows BOTH via entity-side and partner-side columns,
+    # so we remove the fallback synthetic row to avoid double-counting.
+    # IMPORTANT: Only remove when one direction has ICP_E... and the other has ICP_...
+    # to distinguish primary↔fallback pairs from two independent primary entries
+    # (like 001032↔001033 which are both non-E-prefix).
+    pairs_to_remove = set()
+    for (ent, icp) in list(missing_pairs):
+        # Only consider pairs where the ICP does NOT have E prefix
+        # (these are fallback/reverse entries)
+        if icp.startswith("ICP_E"):
+            continue  # This is a primary pair — never remove
+        
+        # Compute the reverse pair (which would be the primary direction)
+        icp_digit = icp[4:] if icp.startswith("ICP_") else icp
+        rev_ent = normalize_entity_code(icp_digit)
+        rev_icp_e = f"ICP_E{ent}"
+        
+        # Only remove if the E-prefix reverse pair exists (confirming this is
+        # truly a fallback mirror, not an independent non-E pair)
+        if (rev_ent, rev_icp_e) in missing_pairs:
+            pairs_to_remove.add((ent, icp))
+    
+    missing_pairs -= pairs_to_remove
+    if pairs_to_remove:
+        logger.info("Removed %d reverse duplicate pairs", len(pairs_to_remove))
 
     for ent_code, icp_code in sorted(missing_pairs):
         data_rows.append({
