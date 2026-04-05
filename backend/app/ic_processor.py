@@ -23,6 +23,10 @@ from collections import defaultdict
 
 logger = logging.getLogger(__name__)
 
+
+class AssignmentAuditError(RuntimeError):
+    """Raised when a normalized journal key is not assigned exactly once."""
+
 # ── Row / column constants ─────────────────────────────────────────────────────
 ICM_INPUT_HEADER_ROW  = 4
 ICM_INPUT_DATA_START  = 5
@@ -77,6 +81,11 @@ def extract_account_code(raw: str) -> str:
             m2 = re.search(r"]:(\d{6}):", raw)
             if m2: return m2.group(1)
         return val
+    # Pattern 2: "NNNNNN - NNNNNN:description" → extract second numeric (middle value)
+    m = re.match(r"\d{6}\s*-\s*(\d{6}):", raw)
+    if m:
+        return m.group(1)
+    # Pattern 3: plain 6-digit at start
     m = re.match(r"(\d{6})", raw)
     return m.group(1) if m else ""
 
@@ -125,6 +134,14 @@ def to_float(val) -> float:
         return float(val)
     except (ValueError, TypeError):
         return 0.0
+
+
+def normalize_output_label(raw: str) -> str:
+    """Normalize journal labels to the workbook display format."""
+    text = str(raw or "").strip()
+    if text and ":" in text and " - " not in text:
+        text = text.replace(":", " - ", 1)
+    return text
 
 def get_journal_indices(ws):
     header_row = JOURNAL_DATA_START - 1
@@ -281,12 +298,48 @@ def read_icm_data(ws, data_start=None):
             "entity_code":  extract_entity_code_icm(entity_raw),
             "partner_code": partner_icp,
             "partner_num":  normalize_to_numeric(partner_icp),
+            "is_synthetic": False,
         })
     return data_rows
 
 # ═══════════════════════════════════════════════════════════════════════════
 # JOURNAL READING & MATCHING
 # ═══════════════════════════════════════════════════════════════════════════
+
+def parse_journal_line(vals, indices: dict, row_num: int, plug_mapping: dict = None):
+    """Normalize one journal detail row into a single numeric-key record."""
+    try:
+        entity_raw = str(vals[indices["entity"]] or "").strip()
+        account_raw = str(vals[indices["acct"]] or "").strip()
+        icp_raw = str(vals[indices["icp"]] or "").strip()
+        debit = to_float(vals[indices["debit"]])
+        credit = to_float(vals[indices["credit"]])
+    except IndexError:
+        return None
+
+    entity_num = normalize_to_numeric(extract_entity_code_journal(entity_raw))
+    account_code = extract_account_code(account_raw)
+    icp_num = normalize_to_numeric(extract_icp_code(icp_raw))
+
+    if plug_mapping and account_raw:
+        plug_code = plug_mapping.get("plug_code")
+        elim_codes = plug_mapping.get("elim_codes", set())
+        if account_code in elim_codes or (not account_code[:1].isdigit() and plug_code):
+            account_code = plug_code
+
+    if not entity_num or not icp_num or not account_code:
+        return None
+
+    return {
+        "source_row": row_num,
+        "entity_num": entity_num,
+        "account_code": account_code,
+        "icp_num": icp_num,
+        "debit": debit,
+        "credit": credit,
+        "net": apply_sign(debit, credit, account_code),
+    }
+
 
 def read_journal_report(filepath: str, plug_mapping: dict = None):
     """Read journal entries and build a lookup keyed by pure numeric codes.
@@ -309,54 +362,30 @@ def read_journal_report(filepath: str, plug_mapping: dict = None):
         label = str(vals[0] or "").strip()
         if label == "Grand Total": break
         if not is_detail_row(vals, indices): continue
+        line = parse_journal_line(vals, indices, row_num, plug_mapping)
+        if line is not None:
+            lines.append(line)
 
-        try:
-            entity_raw   = str(vals[indices["entity"]] or "").strip()
-            account_raw  = str(vals[indices["acct"]]   or "").strip()
-            icp_raw      = str(vals[indices["icp"]]    or "").strip()
-            debit        = to_float(vals[indices["debit"]])
-            credit       = to_float(vals[indices["credit"]])
-        except IndexError:
-            continue
 
-        # Extract raw codes then normalize to pure numeric
-        entity_code_raw = extract_entity_code_journal(entity_raw)
-        entity_num      = normalize_to_numeric(entity_code_raw)
-        account_code    = extract_account_code(account_raw)
-        icp_code_raw    = extract_icp_code(icp_raw)
-        icp_num         = normalize_to_numeric(icp_code_raw)
-
-        if plug_mapping:
-            plug_code = plug_mapping.get("plug_code")
-            elim_codes = plug_mapping.get("elim_codes", set())
-            if account_code in elim_codes or not account_code[:1].isdigit():
-                account_code = plug_code
-
-        lines.append({
-            "label": label,
-            "entity_num": entity_num,
-            "account_code": account_code,
-            "icp_num": icp_num,
-            "debit": debit,
-            "credit": credit,
-        })
-
+    # ── Deduplication: prevent double-counting identical rows (§4) ────
     # Single unified lookup — all codes are pure numeric
     lookup = defaultdict(list)
     for line in lines:
-        if not line["entity_num"] or not line["icp_num"] or not line["account_code"]:
-            continue
         lookup[(line["entity_num"], line["icp_num"], line["account_code"])].append(line)
 
     return lookup
 
 
-def read_journal_labels(filepath: str) -> dict:
-    """code → full label string. Maps both raw and normalized numeric codes."""
+def read_journal_labels(filepath: str) -> tuple:
+    """Returns (entity_labels, icp_labels) — two separate maps.
+    entity_labels: numeric_code → entity raw string  (e.g. '117100' → 'E117100:QD UK...')
+    icp_labels:    numeric_code → ICP raw string      (e.g. '117100' → 'ICP_E117100:QD UK... ICP')
+    Keeping them separate prevents entity labels from overwriting ICP labels."""
     wb = openpyxl.load_workbook(filepath, data_only=True)
     ws = wb.active
     indices = get_journal_indices(ws)
-    label_map = {}
+    entity_labels = {}
+    icp_labels = {}
     for row in ws.iter_rows(min_row=JOURNAL_DATA_START, max_row=ws.max_row):
         vals = [cell.value for cell in row]
         if not vals: continue
@@ -374,14 +403,42 @@ def read_journal_labels(filepath: str) -> dict:
         icp_code = extract_icp_code(icp_raw)
         icp_num  = normalize_to_numeric(icp_code)
         if ent_code and entity_raw:
-            label_map[ent_code] = entity_raw
+            entity_labels[ent_code] = entity_raw
             if ent_num != ent_code:
-                label_map[ent_num] = entity_raw
+                entity_labels[ent_num] = entity_raw
         if icp_code and icp_raw:
-            label_map[icp_code] = icp_raw
+            icp_labels[icp_code] = icp_raw
             if icp_num != icp_code:
-                label_map[icp_num] = icp_raw
-    return label_map
+                icp_labels[icp_num] = icp_raw
+    return entity_labels, icp_labels
+
+
+def read_journal_pair_labels(filepath: str) -> dict:
+    """Returns {(entity_num, icp_num): {'entity': raw_entity, 'icp': raw_icp}}."""
+    wb = openpyxl.load_workbook(filepath, data_only=True)
+    ws = wb.active
+    indices = get_journal_indices(ws)
+    pair_labels = {}
+    for row_num, row in enumerate(
+            ws.iter_rows(min_row=JOURNAL_DATA_START, max_row=ws.max_row),
+            start=JOURNAL_DATA_START):
+        vals = [cell.value for cell in row]
+        if not vals:
+            continue
+        if str(vals[0] or "").strip() == "Grand Total":
+            break
+        if not is_detail_row(vals, indices):
+            continue
+        line = parse_journal_line(vals, indices, row_num)
+        if line is None:
+            continue
+        key = (line["entity_num"], line["icp_num"])
+        if key not in pair_labels:
+            pair_labels[key] = {
+                "entity": str(vals[indices["entity"]] or "").strip(),
+                "icp": str(vals[indices["icp"]] or "").strip(),
+            }
+    return pair_labels
 
 
 def match_journal_to_icm(data_rows, lookup):
@@ -389,7 +446,7 @@ def match_journal_to_icm(data_rows, lookup):
     All keys are pure numeric (no ICP_ or E prefixes)."""
     updates = {}
     for (e, p, a), jlines in lookup.items():
-        net = sum(apply_sign(j["debit"], j["credit"], a) for j in jlines)
+        net = sum(j["net"] for j in jlines)
         if net != 0:
             updates[(e, p, a)] = net
     return updates
@@ -551,6 +608,11 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
     parent_updates  = _unpack(0)
     contrib_updates = _unpack(1)
     plug_updates    = _unpack(2)
+    row_pair_keys = {
+        (row["entity_code"], row.get("partner_num", ""))
+        for row in data_rows
+        if row.get("entity_code") and row.get("partner_num")
+    }
 
     # S1/S2 groups for variance
     s1_ent_codes = [c[0] for c in ent_cols if c[2] == "S1"]
@@ -558,10 +620,51 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
     s1_par_codes = [c[0] for c in par_cols if c[2] == "S1"]
     s2_par_codes = [c[0] for c in par_cols if c[2] == "S2"]
 
-    # Consumed sets — ONE set per journal to ensure each value appears only ONCE
-    consumed_parent  = set()
-    consumed_contrib = set()
-    consumed_plug    = set()
+    # §4 Transaction Uniqueness: Each journal key (entity, icp, acct) must
+    # map to exactly ONE output cell.  Consumed sets track which keys have
+    # already been written so paired rows don't double-count.
+    parent_consumed  = set()
+    contrib_consumed = set()
+    plug_consumed    = set()
+    assignment_audit = {
+        "parent": defaultdict(list),
+        "contrib": defaultdict(list),
+        "plug": defaultdict(list),
+    }
+
+    def _claim_update(family, key, updates, consumed, row_num, slot_name):
+        if key not in updates or key in consumed:
+            return None
+        consumed.add(key)
+        assignment_audit[family][key].append({
+            "row_num": row_num,
+            "slot": slot_name,
+        })
+        return updates[key]
+
+    def _validate_assignments(family, updates, consumed):
+        missing = sorted(k for k in updates if k not in consumed)
+        duplicates = {
+            key: claims for key, claims in assignment_audit[family].items()
+            if len(claims) != 1
+        }
+        if missing or duplicates:
+            pieces = []
+            if missing:
+                pieces.append(
+                    f"unassigned={missing[:5]}"
+                    + ("..." if len(missing) > 5 else "")
+                )
+            if duplicates:
+                pieces.append(f"duplicate_claims={list(duplicates.items())[:5]}")
+            msg = f"{family} journal assignment audit failed: " + "; ".join(pieces)
+            logger.error(msg)
+            raise AssignmentAuditError(msg)
+        logger.info("Assignment audit passed for %s journal: %d keys", family, len(updates))
+
+    def _reverse_row_exists(rev_key):
+        return (rev_key[0], rev_key[1]) in row_pair_keys
+
 
     # ── Write data rows ──────────────────────────────────────────────────
     for out_idx, icm_row in enumerate(data_rows):
@@ -576,27 +679,26 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
         # All matching uses pure numeric codes
         can_match = bool(ent and prt_num)
 
-        def _write_block(blk, is_base, updates=None, consumed=None):
+        def _write_block(blk, is_base, updates=None, consumed=None, audit_family=None):
             """Write entity-side, partner-side, variances, total for one block.
             Entity-side:  key (ent, prt_num, acct)  — entity-to-parent direction.
-            Partner-side: key (prt_num, ent, acct)  — parent-to-entity direction (reversed)."""
+            Partner-side: key (prt_num, ent, acct)  — parent-to-entity direction.
+            consumed: set tracking used keys — ensures §4 uniqueness."""
             ent_vals = {}
             par_vals = {}
 
             # ── Entity-side (entity-to-parent: ent → prt_num) ────────────
             for i, (code, _, series, tag) in enumerate(ent_cols):
                 if is_base:
-                    v = _icm_num(src_r, code, tag)
+                    # Mandatory: only assign values when BOTH entity and partner are present
+                    v = _icm_num(src_r, code, tag) if can_match else None
                     _style_data_cell(ws.cell(out_r, blk["ent_start"] + i), v)
                     ent_vals[code] = v
                 else:
                     ent_key = (ent, prt_num, code)
                     raw = None
-                    if can_match and updates and ent_key in updates and \
-                       (consumed is None or ent_key not in consumed):
-                        raw = updates[ent_key]
-                        if consumed is not None:
-                            consumed.add(ent_key)
+                    if can_match and updates and audit_family and consumed is not None:
+                        raw = _claim_update(audit_family, ent_key, updates, consumed, out_r, "entity_side")
                     v, fill = _extract_val(raw)
                     _style_data_cell(ws.cell(out_r, blk["ent_start"] + i), v,
                                      fill if v is not None else None)
@@ -612,18 +714,19 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
             # ── Partner-side (parent-to-entity: prt_num → ent, reversed) ──
             for i, (code, _, series, tag) in enumerate(par_cols):
                 if is_base:
-                    v = _icm_num(src_r, code, tag)
+                    # Mandatory: only assign values when BOTH entity and partner are present
+                    v = _icm_num(src_r, code, tag) if can_match else None
                     _style_data_cell(ws.cell(out_r, blk["par_start"] + i), v)
                     par_vals[code] = v
                 else:
                     rev_key = (prt_num, ent, code)
-                    raw_par = None
-                    if can_match and updates and rev_key in updates and \
-                       (consumed is None or rev_key not in consumed):
-                        raw_par = updates[rev_key]
-                        if consumed is not None:
-                            consumed.add(rev_key)
-                    v, fill = _extract_val(raw_par)
+                    raw = None
+                    if (
+                        can_match and updates and audit_family and consumed is not None
+                        and not _reverse_row_exists(rev_key)
+                    ):
+                        raw = _claim_update(audit_family, rev_key, updates, consumed, out_r, "partner_side")
+                    v, fill = _extract_val(raw)
                     _style_data_cell(ws.cell(out_r, blk["par_start"] + i), v,
                                      fill if v is not None else None)
                     par_vals[code] = v
@@ -647,20 +750,19 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
 
         parent_total = _write_block(blk_par, is_base=False,
                                     updates=parent_updates,
-                                    consumed=consumed_parent)
+                                    consumed=parent_consumed,
+                                    audit_family="parent")
 
         contrib_total = _write_block(blk_cont, is_base=False,
                                      updates=contrib_updates,
-                                     consumed=consumed_contrib)
+                                     consumed=contrib_consumed,
+                                     audit_family="contrib")
 
         # ── Plug Account — Parent block (entity-to-parent direction) ─────
         plug_par_val = 0.0
         if plug_code and can_match and blk_par["plug"]:
             plug_key = (ent, prt_num, plug_code)
-            raw = None
-            if plug_key in parent_updates and plug_key not in consumed_parent:
-                raw = parent_updates[plug_key]
-                consumed_parent.add(plug_key)
+            raw = _claim_update("parent", plug_key, parent_updates, parent_consumed, out_r, "plug_parent")
             v, fill = _extract_val(raw)
             if v is not None:
                 plug_par_val = to_float(v)
@@ -673,9 +775,8 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
         if plug_code and can_match and blk_cont["plug"]:
             rev_plug_key = (prt_num, ent, plug_code)
             raw = None
-            if rev_plug_key in contrib_updates and rev_plug_key not in consumed_contrib:
-                raw = contrib_updates[rev_plug_key]
-                consumed_contrib.add(rev_plug_key)
+            if not _reverse_row_exists(rev_plug_key):
+                raw = _claim_update("contrib", rev_plug_key, contrib_updates, contrib_consumed, out_r, "plug_contrib")
             v, fill = _extract_val(raw)
             if v is not None:
                 plug_cont_val = to_float(v)
@@ -687,10 +788,7 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
         plug_val = 0.0
         if plug_code and can_match:
             plug_key = (ent, prt_num, plug_code)
-            raw = None
-            if plug_key in plug_updates and plug_key not in consumed_plug:
-                raw = plug_updates[plug_key]
-                consumed_plug.add(plug_key)
+            raw = _claim_update("plug", plug_key, plug_updates, plug_consumed, out_r, "plug_section")
             v, fill = _extract_val(raw)
             if v is not None:
                 plug_val = to_float(v)
@@ -709,6 +807,10 @@ def write_output(ws_icm_source, data_rows, icm_header_map,
         final_total = base_total + parent_total + contrib_total + plug_par_val + plug_cont_val + plug_val
         _style_data_cell(ws.cell(out_r, col_final), final_total, TOTAL_FILL)
         ws.cell(out_r, col_final).number_format = NUM_FORMAT
+
+    _validate_assignments("parent", parent_updates, parent_consumed)
+    _validate_assignments("contrib", contrib_updates, contrib_consumed)
+    _validate_assignments("plug", plug_updates, plug_consumed)
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     out_wb.save(output_path)
@@ -828,45 +930,83 @@ def process_icm_report(icm_path, journal_paths, output_path, report_inputs_path=
         updates_list.append(updates)
 
     # ── Discover missing Entity/Partner pairs ────────────────────────────
-    all_labels = {}
+    all_entity_labels = {}
+    all_icp_labels = {}
+    all_pair_labels = {}
     for jkey in journal_order:
         jpath = journal_paths.get(jkey)
         if jpath:
-            all_labels.update(read_journal_labels(jpath))
+            ent_lbls, icp_lbls = read_journal_labels(jpath)
+            all_entity_labels.update(ent_lbls)
+            all_icp_labels.update(icp_lbls)
+            all_pair_labels.update(read_journal_pair_labels(jpath))
+
+    # Prefer journal pair labels when they exist. Numeric-code-only labels are
+    # ambiguous for some counterparties (for example code 117100 appears under
+    # more than one ICP caption), so pair-specific labels are more reliable.
+    for dr in data_rows:
+        pair_key = (dr["entity_code"], dr.get("partner_num", ""))
+        pair_labels = all_pair_labels.get(pair_key)
+        if pair_labels:
+            dr["entity"] = normalize_output_label(pair_labels["entity"])
+            dr["partner"] = normalize_output_label(pair_labels["icp"])
 
     existing_pairs = {(r["entity_code"], r.get("partner_num", "")) for r in data_rows}
 
     missing_pairs = set()
     for upd in updates_list:
         for (ent, icp, acct) in upd:
-            if acct in valid_accounts and (ent, icp) not in existing_pairs:
+            # §5: Skip if any field is missing
+            if not ent or not icp:
+                continue
+            if acct not in valid_accounts:
+                continue
+            if (ent, icp) not in existing_pairs:
                 missing_pairs.add((ent, icp))
 
-    # ── De-duplicate reverse pairs ────────────────────────────────────
-    # With pure numeric keys, both sides of a transaction produce entries like:
-    #   (117100, 007009, 534018) — entity-to-parent direction
-    #   (007009, 117100, 534018) — parent-to-entity direction
-    # A single ICM row (entity=117100, partner=007009) shows BOTH directions
-    # via entity-side and partner-side columns, so we only need ONE row.
-    # Remove the reverse pair if the forward pair already exists.
-    pairs_to_remove = set()
-    for (ent, icp) in list(missing_pairs):
-        # If the reverse pair exists, keep the one with the smaller entity code
-        if (icp, ent) in missing_pairs and ent > icp:
-            pairs_to_remove.add((ent, icp))
+    # ── Removed reverse pair de-duplication ────────────────────────────
+    # The user expects both directions (e.g. A->B and B->A) to appear as separate
+    # rows in the output. If we deduplicate, they won't find the entity they are 
+    # looking for on the Entity side.
 
-    missing_pairs -= pairs_to_remove
-    if pairs_to_remove:
-        logger.info("Removed %d reverse duplicate pairs", len(pairs_to_remove))
+    # ── Build ICM-source label maps for consistent naming ────────────────
+    # Synthetic rows should reuse ICM entity/partner label formats to avoid
+    # duplicate-looking entries (e.g. "E117100 - ..." vs "E117100:...")
+    icm_entity_labels = {}  # entity_code -> ICM entity label
+    icm_partner_labels = {}  # partner_num -> ICM partner label
+    for dr in data_rows:
+        ec = dr["entity_code"]
+        if ec and ec not in icm_entity_labels:
+            icm_entity_labels[ec] = dr["entity"]
+        pn = dr.get("partner_num", "")
+        if pn and pn not in icm_partner_labels:
+            icm_partner_labels[pn] = dr["partner"]
 
     for ent_code, icp_code in sorted(missing_pairs):
+        pair_key = (ent_code, icp_code)
+        pair_labels = all_pair_labels.get(pair_key)
+        if pair_labels:
+            ent_label = normalize_output_label(pair_labels["entity"])
+            prt_label = normalize_output_label(pair_labels["icp"])
+        else:
+            # Priority: ICM label > journal label > raw code
+            ent_label = normalize_output_label(
+                icm_entity_labels.get(ent_code, all_entity_labels.get(ent_code, ent_code))
+            )
+            prt_label = normalize_output_label(
+                icm_partner_labels.get(
+                    icp_code,
+                    all_icp_labels.get(icp_code, all_entity_labels.get(icp_code, icp_code))
+                )
+            )
         data_rows.append({
             "row_num":      None,
-            "entity":       all_labels.get(ent_code, ent_code),
-            "partner":      all_labels.get(icp_code, icp_code),
+            "entity":       ent_label,
+            "partner":      prt_label,
             "entity_code":  ent_code,
             "partner_code": f"ICP_{icp_code}",
             "partner_num":  icp_code,
+            "is_synthetic": True,
         })
 
     if missing_pairs:
@@ -888,6 +1028,20 @@ def process_icm_report(icm_path, journal_paths, output_path, report_inputs_path=
 
         updates = match_journal_to_icm(data_rows, lookup_filtered)
         updates_list_final.append(updates)
+
+    # ── Final validation: log unmatched journal keys ──────────────────────
+    total_journal_keys = sum(len(u) for u in updates_list_final)
+    matched_keys = 0
+    ep_set = {(r["entity_code"], r.get("partner_num", "")) for r in data_rows}
+    for upd in updates_list_final:
+        for (e, p, a) in upd:
+            if (e, p) in ep_set:
+                matched_keys += 1
+    unmatched = total_journal_keys - matched_keys
+    if unmatched > 0:
+        logger.warning("FINAL: %d journal keys unmatched (no ICM row)", unmatched)
+    else:
+        logger.info("FINAL: All %d journal keys matched to output rows", total_journal_keys)
 
     # ── Write output ─────────────────────────────────────────────────────
     write_output(ws_icm, data_rows, icm_header_map, updates_list_final, output_path,
