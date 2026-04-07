@@ -1,0 +1,26 @@
+Row 37: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=224000:224000:Due to related parties
+Row 38: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=999999:999999:Suspense Account
+Row 39: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=ICP_007009:QD Europe Chancery S.a.r.l. ICP ||| ACCT=534018 - 534018:Interest expense - related parties
+Row 40: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=999999:999999:Suspense Account
+Row 41: ENTITY=007009:QD UK Holdings LP adjusted ||| ICP=ICP_E117100:QD Europe S.a.r.l. (H) ICP ||| ACCT=534018 - 534018:Interest expense - related parties
+Row 42: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=ICP_007012:GS 16  S.ar.l. ICP ||| ACCT=534018 - 534018:Interest expense - related parties
+Row 43: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=999999:999999:Suspense Account
+Row 44: ENTITY=007012:QD UK Holdings LP adjusted ||| ICP=ICP_E117100:QD Europe S.a.r.l. (H) ICP ||| ACCT=534018 - 534018:Interest expense - related parties
+Row 45: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=999999:999999:Suspense Account
+Row 85: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=ICP_013001:Qatari Diar UK Limited ICP ||| ACCT=433002 - 433002:Interest income - related parties
+Row 86: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=999999:999999:Suspense Account
+Row 87: ENTITY=013001:Qatari Diar UK Limited ICP ||| ICP=ICP_E117100:QD UK Holdings LP adjusted ||| ACCT=433002 - 433002:Interest income - related parties
+Row 88: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=999999:999999:Suspense Account
+Row 89: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=ICP_013001:Qatari Diar UK Limited ICP ||| ACCT=433002 - 433002:Interest income - related parties
+Row 90: ENTITY=013001:Qatari Diar UK Limited ICP ||| ICP=ICP_E117100:QD UK Holdings LP adjusted ||| ACCT=534018 - 534018:Interest expense - related parties
+Row 91: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=ICP_013011:Qatari Diar Europe LLP ICP ||| ACCT=433002 - 433002:Interest income - related parties
+Row 92: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=999999:999999:Suspense Account
+Row 93: ENTITY=013011:Qatari Diar Europe LLP ICP ||| ICP=ICP_E117100:QD UK Holdings LP adjusted ||| ACCT=433002 - 433002:Interest income - related parties
+Row 94: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=999999:999999:Suspense Account
+Row 391: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=167011:167011:Retentions receivable
+Row 392: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=167012:167012:Other receivables
+Row 481: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=201999:201999:Finance Lease Payable
+Row 482: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=213002:213002:Lease liability - Non-current
+Row 483: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=226008:226008:Other payables - current liabilities.
+Row 484: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=229998:229998:Other Provisions
+Row 485: ENTITY=E117100:QD UK Holdings LP adjusted ||| ICP=FCCS_No Intercompany:No Intercompany ||| ACCT=999999:999999:Suspense Account

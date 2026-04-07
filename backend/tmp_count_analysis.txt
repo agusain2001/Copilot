@@ -1,0 +1,125 @@
+=== PARENT JOURNAL: 35 valid entries ===
+  Row 39: (117100, 007009, 534018) D=7934061.83 C=0.0 signed=7934061.83
+  Row 41: (007009, 117100, 534018) D=0.0 C=17882306.93 signed=-17882306.93
+  Row 42: (117100, 007012, 534018) D=9830437.32 C=0.0 signed=9830437.32
+  Row 44: (007012, 117100, 534018) D=4.65 C=0.0 signed=4.65
+  Row 48: (101000, 001001, 534018) D=4147686.72 C=0.0 signed=4147686.72
+  Row 49: (001001, 101000, 534018) D=0.0 C=116.79 signed=-116.79
+  Row 50: (101000, 013011, 534018) D=8722.03 C=0.0 signed=8722.03
+  Row 52: (013011, 101000, 433002) D=0.0 C=1.75 signed=1.75
+  Row 53: (101000, 013014, 433002) D=1.96 C=0.0 signed=-1.96
+  Row 54: (013014, 101000, 433002) D=1313435.12 C=0.0 signed=-1313435.12
+  Row 58: (101000, 001002, 534018) D=0.0 C=3635532.44 signed=-3635532.44
+  Row 60: (001002, 101000, 433002) D=0.0 C=69247729.0 signed=69247729.0
+  Row 61: (108000, 001001, 534018) D=69254195.5 C=0.0 signed=69254195.5
+  Row 62: (001001, 108000, 534018) D=465978.46 C=0.0 signed=465978.46
+  Row 63: (108000, 027009, 534018) D=0.0 C=465978.46 signed=-465978.46
+  Row 67: (027009, 108000, 433002) D=26035079.04 C=0.0 signed=-26035079.04
+  Row 68: (022001, 001001, 120030) D=0.0 C=26035079.04 signed=-26035079.04
+  Row 69: (111000, 001001, 534018) D=0.0 C=11700.0 signed=-11700.0
+  Row 79: (001001, 111000, 120030) D=0.0 C=1555338.34 signed=-1555338.34
+  Row 85: (117100, 013001, 433002) D=117802.85 C=0.0 signed=-117802.85
+  Row 87: (013001, 117100, 433002) D=2315402.68 C=0.0 signed=-2315402.68
+  Row 89: (117100, 013001, 433002) D=0.0 C=1395.3 signed=1395.3
+  Row 90: (013001, 117100, 534018) D=1395.3 C=0.0 signed=1395.3
+  Row 91: (117100, 013011, 433002) D=0.0 C=2315402.68 signed=2315402.68
+  Row 93: (013011, 117100, 433002) D=0.0 C=125000.28 signed=125000.28
+  Row 174: (112000, 009002, 111006) D=0.0 C=13112760.0 signed=-13112760.0
+  Row 211: (009002, 112000, 121015) D=20340466.09 C=0.0 signed=20340466.09
+  Row 212: (001033, 001032, 121015) D=0.0 C=88717872.52 signed=-88717872.52
+  Row 227: (001032, 001033, 534018) D=192160.0 C=0.0 signed=192160.0
+  Row 249: (105000, 005002, 111006) D=1109.52 C=0.0 signed=1109.52
+  Row 350: (005002, 105000, 433002) D=0.0 C=69025.28 signed=69025.28
+  Row 363: (118000, 001001, 121015) D=0.0 C=1576708.0 signed=-1576708.0
+  Row 413: (001001, 118000, 111006) D=43170.0 C=0.0 signed=43170.0
+  Row 414: (103000, 005003, 111006) D=0.0 C=200000.0 signed=-200000.0
+  Row 498: (005003, 103000, 433002) D=3218.0 C=0.0 signed=-3218.0
+
+=== After grouping: 34 unique keys, 34 with net != 0 ===
+  ('001001', '101000', '534018') -> net=-116.79
+  ('001001', '108000', '534018') -> net=465978.46
+  ('001001', '111000', '120030') -> net=-1555338.34
+  ('001001', '118000', '111006') -> net=43170.0
+  ('001002', '101000', '433002') -> net=69247729.0
+  ('001032', '001033', '534018') -> net=192160.0
+  ('001033', '001032', '121015') -> net=-88717872.52
+  ('005002', '105000', '433002') -> net=69025.28
+  ('005003', '103000', '433002') -> net=-3218.0
+  ('007009', '117100', '534018') -> net=-17882306.93
+  ('007012', '117100', '534018') -> net=4.65
+  ('009002', '112000', '121015') -> net=20340466.09
+  ('013001', '117100', '433002') -> net=-2315402.68
+  ('013001', '117100', '534018') -> net=1395.3
+  ('013011', '101000', '433002') -> net=1.75
+  ('013011', '117100', '433002') -> net=125000.28
+  ('013014', '101000', '433002') -> net=-1313435.12
+  ('022001', '001001', '120030') -> net=-26035079.04
+  ('027009', '108000', '433002') -> net=-26035079.04
+  ('101000', '001001', '534018') -> net=4147686.72
+  ('101000', '001002', '534018') -> net=-3635532.44
+  ('101000', '013011', '534018') -> net=8722.03
+  ('101000', '013014', '433002') -> net=-1.96
+  ('103000', '005003', '111006') -> net=-200000.0
+  ('105000', '005002', '111006') -> net=1109.52
+  ('108000', '001001', '534018') -> net=69254195.5
+  ('108000', '027009', '534018') -> net=-465978.46
+  ('111000', '001001', '534018') -> net=-11700.0
+  ('112000', '009002', '111006') -> net=-13112760.0
+  ('117100', '007009', '534018') -> net=7934061.83
+  ('117100', '007012', '534018') -> net=9830437.32
+  ('117100', '013001', '433002') -> net=-116407.55
+  ('117100', '013011', '433002') -> net=2315402.68
+  ('118000', '001001', '121015') -> net=-1576708.0
+
+=== ICM OUTPUT Parent Input block ===
+Section labels (row 29):
+  Col 17: Parent Input
+  Col 32: Contribution Input
+  Col 47: Plug Account
+
+Parent Input block: cols 17 to 31
+  Row 171 Col 17 (534018 - 534018:Interest expen): -116.79  [001001 - QDRE Investment Company Q.S.C.  | ICP_E101000 - QDHP & QD Europe Sarl ICP]
+  Row 171 Col 24 (534018 - 534018:Interest expen): 4147686.72  [001001 - QDRE Investment Company Q.S.C.  | ICP_E101000 - QDHP & QD Europe Sarl ICP]
+  Row 172 Col 17 (534018 - 534018:Interest expen): 465978.46  [001001 - QDRE Investment Company Q.S.C.  | ICP_E108000 - QD US Real Estate Co. ICP]
+  Row 172 Col 24 (534018 - 534018:Interest expen): 69254195.5  [001001 - QDRE Investment Company Q.S.C.  | ICP_E108000 - QD US Real Estate Co. ICP]
+  Row 173 Col 20 (120030 - 120030:120030 Entity): -1555338.34  [001001 - QDRE Investment Company Q.S.C.  | ICP_E111000 - Qatari Resorts Co. Q.S.C.]
+  Row 173 Col 24 (534018 - 534018:Interest expen): -11700  [001001 - QDRE Investment Company Q.S.C.  | ICP_E111000 - Qatari Resorts Co. Q.S.C.]
+  Row 174 Col 19 (111006 - 111006:111006 Entity): 43170  [001001 - QDRE Investment Company Q.S.C.  | ICP_E118000 - QD SBG Group adjusted]
+  Row 174 Col 27 (121015 - 121015:121015 Partner): -1576708  [001001 - QDRE Investment Company Q.S.C.  | ICP_E118000 - QD SBG Group adjusted]
+  Row 175 Col 18 (433002 - 433002:Interest incom): 69247729  [001002 - Qatari Resorts Co. Q.S.C. (H) I | ICP_E101000 - QDHP & QD Europe Sarl ICP]
+  Row 175 Col 24 (534018 - 534018:Interest expen): -3635532.44  [001002 - Qatari Resorts Co. Q.S.C. (H) I | ICP_E101000 - QDHP & QD Europe Sarl ICP]
+  Row 176 Col 17 (534018 - 534018:Interest expen): 192160  [001032 - SBG-PORR-HBK Joint Operation (E | ICP_001033 - PORR-SBG-HBK Joint Operatio]
+  Row 176 Col 27 (121015 - 121015:121015 Partner): -88717872.52  [001032 - SBG-PORR-HBK Joint Operation (E | ICP_001033 - PORR-SBG-HBK Joint Operatio]
+  Row 178 Col 18 (433002 - 433002:Interest incom): 69025.28  [005002 - Al Maha Morocco ICP | ICP_E105000 - Qatari Diar Real Estate In]
+  Row 178 Col 25 (111006 - 111006:111006 Partner): 1109.52  [005002 - Al Maha Morocco ICP | ICP_E105000 - Qatari Diar Real Estate In]
+  Row 179 Col 18 (433002 - 433002:Interest incom): -3218  [005003 - Morocco RE Brok Serv(under liqu | ICP_E103000 - Qatar RE Partners C.Q.S.C.]
+  Row 179 Col 25 (111006 - 111006:111006 Partner): -200000  [005003 - Morocco RE Brok Serv(under liqu | ICP_E103000 - Qatar RE Partners C.Q.S.C.]
+  Row 180 Col 17 (534018 - 534018:Interest expen): -17882306.93  [007009 - QD UK Holdings LP adjusted | ICP_E117100 - QD UK Holdings LP adjusted]
+  Row 180 Col 24 (534018 - 534018:Interest expen): 7934061.83  [007009 - QD UK Holdings LP adjusted | ICP_E117100 - QD UK Holdings LP adjusted]
+  Row 181 Col 17 (534018 - 534018:Interest expen): 4.65  [007012 - QD UK Holdings LP adjusted | ICP_E117100 - QD UK Holdings LP adjusted]
+  Row 181 Col 24 (534018 - 534018:Interest expen): 9830437.32  [007012 - QD UK Holdings LP adjusted | ICP_E117100 - QD UK Holdings LP adjusted]
+  Row 182 Col 21 (121015 - 121015:121015 Entity): 20340466.09  [009002 - QD Ras Al Hadd Development ICP | ICP_E112000 - Qatari Diar Development Co]
+  Row 182 Col 25 (111006 - 111006:111006 Partner): -13112760  [009002 - QD Ras Al Hadd Development ICP | ICP_E112000 - Qatari Diar Development Co]
+  Row 183 Col 17 (534018 - 534018:Interest expen): 1395.3  [013001 - Qatari Diar UK Limited | ICP_E117100 - QD UK Holdings LP adjusted]
+  Row 183 Col 18 (433002 - 433002:Interest incom): -2315402.68  [013001 - Qatari Diar UK Limited | ICP_E117100 - QD UK Holdings LP adjusted]
+  Row 183 Col 23 (433002 - 433002:Interest incom): -116407.55  [013001 - Qatari Diar UK Limited | ICP_E117100 - QD UK Holdings LP adjusted]
+  Row 184 Col 18 (433002 - 433002:Interest incom): 1.75  [013011 - Qatari Diar Europe LLP | ICP_E101000 - QDHP & QD Europe Sarl ICP]
+  Row 184 Col 24 (534018 - 534018:Interest expen): 8722.03  [013011 - Qatari Diar Europe LLP | ICP_E101000 - QDHP & QD Europe Sarl ICP]
+  Row 185 Col 18 (433002 - 433002:Interest incom): 125000.28  [013011 - Qatari Diar Europe LLP | ICP_E117100 - QD UK Holdings LP adjusted]
+  Row 185 Col 23 (433002 - 433002:Interest incom): 2315402.68  [013011 - Qatari Diar Europe LLP | ICP_E117100 - QD UK Holdings LP adjusted]
+  Row 186 Col 18 (433002 - 433002:Interest incom): -1313435.12  [013014 - 30 GS LLP ICP | ICP_E101000 - QDHP & QD Europe Sarl ICP]
+  Row 186 Col 23 (433002 - 433002:Interest incom): -1.96  [013014 - 30 GS LLP ICP | ICP_E101000 - QDHP & QD Europe Sarl ICP]
+  Row 187 Col 20 (120030 - 120030:120030 Entity): -26035079.04  [022001 - QDREI  Co. Tajakistan Ltd | ICP_001001 - QDRE Investment Company Q.S]
+  Row 188 Col 18 (433002 - 433002:Interest incom): -26035079.04  [027009:QD Americas Inc. - Delaware ICP | ICP_E108000 - QD US Real Estate Co. ICP]
+  Row 188 Col 24 (534018 - 534018:Interest expen): -465978.46  [027009:QD Americas Inc. - Delaware ICP | ICP_E108000 - QD US Real Estate Co. ICP]
+
+Total non-zero cells in Parent Input (excl Variance/Total): 34
+Rows with at least one value: 17
+
+=== SUMMARY ===
+Parent journal valid entries: 35
+Unique journal keys: 34
+Keys with non-zero net: 34
+Non-zero cells in Parent Input block: 34
+Expected (1 per key): 34
+Excess: 0

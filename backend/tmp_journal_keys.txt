@@ -1,0 +1,48 @@
+
+=== PRIMARY LOOKUP KEYS ===
+  ('001001', 'ICP_E101000', '534018') -> 1 entries, net raw=-116.79
+  ('001001', 'ICP_E108000', '534018') -> 1 entries, net raw=465978.46
+  ('001001', 'ICP_E111000', '120030') -> 1 entries, net raw=-1555338.34
+  ('001001', 'ICP_E118000', '111006') -> 1 entries, net raw=43170.00
+  ('001002', 'ICP_E101000', '433002') -> 1 entries, net raw=-69247729.00
+  ('001032', 'ICP_001033', '534018') -> 1 entries, net raw=192160.00
+  ('001033', 'ICP_001032', '121015') -> 1 entries, net raw=-88717872.52
+  ('005002', 'ICP_E105000', '433002') -> 1 entries, net raw=-69025.28
+  ('005003', 'ICP_E103000', '433002') -> 1 entries, net raw=3218.00
+  ('007009', 'ICP_E117100', '534018') -> 1 entries, net raw=-17882306.93
+  ('007012', 'ICP_E117100', '534018') -> 1 entries, net raw=4.65
+  ('009002', 'ICP_E112000', '121015') -> 1 entries, net raw=20340466.09
+  ('013001', 'ICP_E117100', '433002') -> 1 entries, net raw=2315402.68
+  ('013001', 'ICP_E117100', '534018') -> 1 entries, net raw=1395.30
+  ('013011', 'ICP_E101000', '433002') -> 1 entries, net raw=-1.75
+  ('013011', 'ICP_E117100', '433002') -> 1 entries, net raw=-125000.28
+  ('013014', 'ICP_E101000', '433002') -> 1 entries, net raw=1313435.12
+  ('022001', 'ICP_001001', '120030') -> 1 entries, net raw=-26035079.04
+  ('027009', 'ICP_E108000', '433002') -> 1 entries, net raw=26035079.04
+
+Total primary keys: 19
+
+=== FALLBACK LOOKUP KEYS ===
+  ('101000', 'ICP_001001', '534018') -> 1 entries, net raw=4147686.72
+  ('101000', 'ICP_001002', '534018') -> 1 entries, net raw=-3635532.44
+  ('101000', 'ICP_013011', '534018') -> 1 entries, net raw=8722.03
+  ('101000', 'ICP_013014', '433002') -> 1 entries, net raw=1.96
+  ('103000', 'ICP_005003', '111006') -> 1 entries, net raw=-200000.00
+  ('105000', 'ICP_005002', '111006') -> 1 entries, net raw=1109.52
+  ('108000', 'ICP_001001', '534018') -> 1 entries, net raw=69254195.50
+  ('108000', 'ICP_027009', '534018') -> 1 entries, net raw=-465978.46
+  ('111000', 'ICP_001001', '534018') -> 1 entries, net raw=-11700.00
+  ('112000', 'ICP_009002', '111006') -> 1 entries, net raw=-13112760.00
+  ('117100', 'ICP_007009', '534018') -> 1 entries, net raw=7934061.83
+  ('117100', 'ICP_007012', '534018') -> 1 entries, net raw=9830437.32
+  ('117100', 'ICP_013001', '433002') -> 2 entries, net raw=116407.55
+  ('117100', 'ICP_013011', '433002') -> 1 entries, net raw=-2315402.68
+  ('118000', 'ICP_001001', '121015') -> 1 entries, net raw=-1576708.00
+
+Total fallback keys: 15
+
+=== SPECIFIC KEY CHECKS ===
+  ('001001', 'ICP_E101000', '120030') -> primary=False, fallback=False
+  ('001001', 'ICP_E101000', '121015') -> primary=False, fallback=False
+  ('101000', 'ICP_001001', '120030') -> primary=False, fallback=False
+  ('101000', 'ICP_001001', '121015') -> primary=False, fallback=False

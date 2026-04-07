@@ -1,0 +1,25 @@
+=== PARENT JOURNAL KEYS for entity 117100 ===
+  KEY: (007009, 117100, 534018) -> 1 lines
+  KEY: (007012, 117100, 534018) -> 1 lines
+  KEY: (013001, 117100, 433002) -> 1 lines
+  KEY: (013001, 117100, 534018) -> 1 lines
+  KEY: (013011, 117100, 433002) -> 1 lines
+  KEY: (117100, 007009, 534018) -> 1 lines
+  KEY: (117100, 007012, 534018) -> 1 lines
+  KEY: (117100, 013001, 433002) -> 2 lines
+  KEY: (117100, 013011, 433002) -> 1 lines
+
+=== ICM DATA ROWS for 117100 ===
+  entity_code=013013 partner_num=117100 entity=013013 - QD UK Holdings LP (H) partner=ICP_E117100 - QD UK Holdings LP adjusted ICP
+  entity_code=013007 partner_num=117100 entity=013007 - CB 1_3 LP partner=ICP_E117100 - QD UK Holdings LP adjusted ICP
+  entity_code=013012 partner_num=117100 entity=013012 - 16 GS LLP partner=ICP_E117100 - QD UK Holdings LP adjusted ICP
+  entity_code=117100 partner_num=013013 entity=E117100 - QD UK Holdings LP adjusted partner=ICP_013013 - QD UK Holdings LP (H) ICP
+  entity_code=117100 partner_num=013007 entity=E117100 - QD UK Holdings LP adjusted partner=ICP_013007 - CB 1_3 LP ICP
+  entity_code=117100 partner_num=013012 entity=E117100 - QD UK Holdings LP adjusted partner=ICP_013012 - 16 GS LLP ICP
+  entity_code=117100 partner_num= entity=E117100 - QD UK Holdings LP adjusted partner=
+
+=== SYNTHETIC ROW MATCHING ===
+  FOUND entity-side key ('117100', '007009', '534018')
+  FOUND partner-side key ('007009', '117100', '534018')
+  MISSING entity-side key ('117100', '007009', '433002')
+  MISSING partner-side key ('007009', '117100', '433002')

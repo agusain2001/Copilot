@@ -1,0 +1,498 @@
+Skipped: net=-30465313.0, entity=013014:30 GS LLP, icp=FCCS_No Intercompany:No Intercompany, acct=187013:187013:Current - Derivative financial instruments
+Skipped: net=30465313.0, entity=013014:30 GS LLP, icp=FCCS_No Intercompany:No Intercompany, acct=188999:188999:Derivative financial instruments - asset
+Skipped: net=10717605.0, entity=013014:30 GS LLP, icp=FCCS_No Intercompany:No Intercompany, acct=201106:201106:Retention payable - Withholding Tax
+Skipped: net=-10717605.0, entity=013014:30 GS LLP, icp=FCCS_No Intercompany:No Intercompany, acct=222104:222104:Current portion of retention payable
+Skipped: net=920.84, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-920.84, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=430998:430998:P&L Clearing account FY23
+Skipped: net=156050.35, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=224000:224000:Due to related parties
+Skipped: net=-156050.35, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-7934061.83, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=8051869.61, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-4.65, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-241903.0, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=165003:165003:Advances provided for related parties
+Skipped: net=241903.0, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=189003:189003:Due from QIA
+Skipped: net=-4156291.96, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-1313435.33, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-303343.0, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=189001:189001:Inter company account - receivables
+Skipped: net=303343.0, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=3635532.44, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-6466.5, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-400.0, entity=026001:QDRE Investment Co. (Seychelles) Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=400.0, entity=026001:QDRE Investment Co. (Seychelles) Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=430998:430998:P&L Clearing account FY23
+Skipped: net=11700.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-773.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=773.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=9694.21, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=188800:188800:Intercompany Balances Plug A/c
+Skipped: net=-9694.21, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-21058480.27, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[314000].[301005]:301005:Profit during the period
+Skipped: net=188553.37, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=539195.23, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[314000].[315005]:315005:Minority_Interest
+Skipped: net=20330731.67, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=FCC_Minority Interest Income_Manual Input:Minority Interest Income_Manual Input
+Skipped: net=1555338.34, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-3602.0, entity=E124000:QDRE Investment Company Tozeur Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=3602.0, entity=E124000:QDRE Investment Company Tozeur Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=430998:430998:P&L Clearing account FY23
+Skipped: net=-29889996.63, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=189001:189001:Inter company account - receivables
+Skipped: net=29889996.63, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-117802.85, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-2315402.68, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=2315402.68, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=125000.28, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-14058.0, entity=022002:Al Maha Property & Facility Mng. co.-Tajikistan, icp=FCCS_No Intercompany:No Intercompany, acct=[310100].[310001]:310001:Share_Capital
+Skipped: net=14058.0, entity=022002:Al Maha Property & Facility Mng. co.-Tajikistan, icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-10243250.0, entity=013008:CB 4 LP, icp=FCCS_No Intercompany:No Intercompany, acct=187013:187013:Current - Derivative financial instruments
+Skipped: net=10243250.0, entity=013008:CB 4 LP, icp=FCCS_No Intercompany:No Intercompany, acct=188999:188999:Derivative financial instruments - asset
+Skipped: net=5648224.0, entity=013008:CB 4 LP, icp=FCCS_No Intercompany:No Intercompany, acct=201106:201106:Retention payable - Withholding Tax
+Skipped: net=-5648224.0, entity=013008:CB 4 LP, icp=FCCS_No Intercompany:No Intercompany, acct=222104:222104:Current portion of retention payable
+Skipped: net=-10243250.0, entity=013008:CB 4 LP, icp=FCCS_No Intercompany:No Intercompany, acct=[311500].[310003]:310003:Fair Value/Revaluation Reserve
+Skipped: net=10243250.0, entity=013008:CB 4 LP, icp=FCCS_No Intercompany:No Intercompany, acct=[310300].[310005]:310005:Cash Flow Hedge_Revaluation
+Skipped: net=227178.0, entity=013009:CB 5 LP, icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=-227178.0, entity=013009:CB 5 LP, icp=FCCS_No Intercompany:No Intercompany, acct=187019:187019:Interest receivables
+Skipped: net=5808725.0, entity=013007:CB 1_3 LP, icp=FCCS_No Intercompany:No Intercompany, acct=201106:201106:Retention payable - Withholding Tax
+Skipped: net=-5808725.0, entity=013007:CB 1_3 LP, icp=FCCS_No Intercompany:No Intercompany, acct=222104:222104:Current portion of retention payable
+Skipped: net=12549616.0, entity=013007:CB 1_3 LP, icp=FCCS_No Intercompany:No Intercompany, acct=202111:202111:Project costs provisions
+Skipped: net=-12549616.0, entity=013007:CB 1_3 LP, icp=FCCS_No Intercompany:No Intercompany, acct=226029:226029:Project Accruals - current
+Skipped: net=18483.47, entity=007011:GPS Holdings S.a.r.l., icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=-18483.47, entity=007011:GPS Holdings S.a.r.l., icp=FCCS_No Intercompany:No Intercompany, acct=432007:432007:Gain/ loss on changes in the fair values of Investment property
+Skipped: net=3174.04, entity=007011:GPS Holdings S.a.r.l., icp=FCCS_No Intercompany:No Intercompany, acct=188600:188600:Intercompany Interest Plug A/c
+Skipped: net=-3174.04, entity=007011:GPS Holdings S.a.r.l., icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=-464.0, entity=E114000:Project Russet (Holdings Company) Ltd, Jersey, icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=464.0, entity=E114000:Project Russet (Holdings Company) Ltd, Jersey, icp=FCCS_No Intercompany:No Intercompany, acct=512016:512016:Sundry expenses
+Skipped: net=760975.94, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=184109:184109:IBQ Cur QAR-001
+Skipped: net=-20261.97, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=185140:185140:QNB Call QAR-059 - QD Investments
+Skipped: net=-740713.97, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=185146:185146:CBQ Call QAR-201.
+Skipped: net=-683718.41, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=187003:187003:Current - Advances to subcontractors & suppliers
+Skipped: net=683718.41, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=187007:187007:Current - Value added taxes
+Skipped: net=7262532.09, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=226014:226014:Trade creditors - Project estimation
+Skipped: net=-7262532.09, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=226029:226029:Project Accruals - current
+Skipped: net=-262497034.02, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=262497034.02, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=171001:171001:Trading property held for sale - Current
+Skipped: net=994.27, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=-1121864.8, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-272344.95, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=430016:430016:Other income
+Skipped: net=-171126.0, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512013:512013:Professional services expenses
+Skipped: net=-732.51, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512017:512017:Repair and maintenance expenses
+Skipped: net=-16174.54, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512024:512024:Rental and lease expenses
+Skipped: net=-15456.1, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512025:512025:Electricity expenses
+Skipped: net=-32351.85, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512028:512028:Office expenses
+Skipped: net=46329.4, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512034:512034:Travel - international expenses
+Skipped: net=-46329.51, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512035:512035:Hotel accomodations
+Skipped: net=-2693.71, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512037:512037:Penalties and forfeitures
+Skipped: net=7559.46, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512045:512045:Bank charges account
+Skipped: net=171126.0, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=514001:514001:Legal expenses- General
+Skipped: net=-90543.43, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516001:516001:Leave salary
+Skipped: net=-201725.33, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516003:516003:Bonus
+Skipped: net=-29283.27, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516012:516012:Iqama (Residency)
+Skipped: net=-119827.75, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516014:516014:Staff medical & life insurance
+Skipped: net=-10096.43, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516019:516019:Staff training
+Skipped: net=-87369.33, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516021:516021:Child education
+Skipped: net=-29989.36, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516023:516023:Mobile phone compensation
+Skipped: net=-24936.39, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516024:516024:Recreation allowance
+Skipped: net=0.02, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516028:516028:Hosing Allowance.
+Skipped: net=-61893.71, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516032:516032:Ticket allowance
+Skipped: net=86997.29, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516035:516035:Gratuity account
+Skipped: net=-13747.12, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516036:516036:Relocation expenses
+Skipped: net=-77579.5, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516045:516045:Other remuneration
+Skipped: net=-86997.32, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516050:516050:Employer contribution towards pension - GCC
+Skipped: net=746991.55, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=516401:516401:Other allowances and costs
+Skipped: net=0.04, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=530004:530004:Depreciation - Furnitures and fixtures
+Skipped: net=-90.1, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=532011:532011:Amortisation of Right of use (Lease)
+Skipped: net=656948.82, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=534001:534001:Interest income on deposits
+Skipped: net=-1177175.75, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=534002:534002:Interest charges on borrowings
+Skipped: net=1177175.75, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=534021:534021:Interest expense on lease liability
+Skipped: net=796206.16, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=FCC_Minority Interest Income_Manual Input:Minority Interest Income_Manual Input
+Skipped: net=199458.69, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=430016:430016:Other income
+Skipped: net=-15109.75, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=512016:512016:Sundry expenses
+Skipped: net=-546381.38, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=512043:512043:Expenses Clearing
+Skipped: net=-12882.02, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=512045:512045:Bank charges account
+Skipped: net=2443.23, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=514001:514001:Legal expenses- General
+Skipped: net=372471.23, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=FCCS_Discontinued Operations Income:Discontinued Operations Income
+Skipped: net=-156868.64, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512002:512002:Lusail City Tender Advertisements
+Skipped: net=225684.6, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512016:512016:Sundry expenses
+Skipped: net=-68815.96, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=FCC_Minority Interest Income_Manual Input:Minority Interest Income_Manual Input
+Skipped: net=-134052.0, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=167008:167008:Prepaid expenses
+Skipped: net=5693883.0, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=168100:168100:Non current asset held for sale
+Skipped: net=-5522619.0, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=184995:184995:Current account - GBP
+Skipped: net=-37212.0, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=187012:187012:Current - Other receivables
+Skipped: net=-306253.51, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=224021:224021:Liabilities associated with the assets held for sale.
+Skipped: net=306253.51, entity=E107000:Project Blue Holdings Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=13112760.0, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-6900.0, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=6900.0, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=1334481.14, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512002:512002:Lusail City Tender Advertisements
+Skipped: net=-1919898.89, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512016:512016:Sundry expenses
+Skipped: net=-358.41, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512027:512027:Business meeting expenses
+Skipped: net=585776.16, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=FCC_Minority Interest Income_Manual Input:Minority Interest Income_Manual Input
+Skipped: net=-1334481.13, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512002:512002:Lusail City Tender Advertisements
+Skipped: net=1919898.89, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=512016:512016:Sundry expenses
+Skipped: net=-585417.76, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=FCC_Minority Interest Income_Manual Input:Minority Interest Income_Manual Input
+Skipped: net=-57538.74, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=512016:512016:Sundry expenses
+Skipped: net=45057.83, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=532011:532011:Amortisation of Right of use (Lease)
+Skipped: net=12480.91, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=534021:534021:Interest expense on lease liability
+Skipped: net=-17500.0, entity=026001:QDRE Investment Co. (Seychelles) Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=224021:224021:Liabilities associated with the assets held for sale.
+Skipped: net=17500.0, entity=026001:QDRE Investment Co. (Seychelles) Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=226002:226002:Accrued expenses
+Skipped: net=-25000.0, entity=026001:QDRE Investment Co. (Seychelles) Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=512001:512001:Audit expenses
+Skipped: net=-4792.22, entity=026001:QDRE Investment Co. (Seychelles) Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=514001:514001:Legal expenses- General
+Skipped: net=29792.22, entity=026001:QDRE Investment Co. (Seychelles) Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=FCCS_Discontinued Operations Income:Discontinued Operations Income
+Skipped: net=8627775.02, entity=E113000:Marafeq Qatar Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-8627775.02, entity=E113000:Marafeq Qatar Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315002]:315002:Transfer/reclassifications during the period
+Skipped: net=-188191.01, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=188191.01, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[314000].[315005]:315005:Minority_Interest
+Skipped: net=-9.05, entity=E114000:Project Russet (Holdings Company) Ltd, Jersey, icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=9.05, entity=E114000:Project Russet (Holdings Company) Ltd, Jersey, icp=FCCS_No Intercompany:No Intercompany, acct=[314000].[315005]:315005:Minority_Interest
+Skipped: net=-132.66, entity=E115000:Bawabat El Sharq Egypt Real_Estate, icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=132.66, entity=E115000:Bawabat El Sharq Egypt Real_Estate, icp=FCCS_No Intercompany:No Intercompany, acct=[314000].[315005]:315005:Minority_Interest
+Skipped: net=-16.0, entity=E103000:Qatar RE Partners C.Q.S.C. (under liquidation), icp=FCCS_No Intercompany:No Intercompany, acct=512045:512045:Bank charges account
+Skipped: net=16.0, entity=E103000:Qatar RE Partners C.Q.S.C. (under liquidation), icp=FCCS_No Intercompany:No Intercompany, acct=FCCS_Discontinued Operations Income:Discontinued Operations Income
+Skipped: net=26297323.0, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=120002:120002:Buildings - Cost
+Skipped: net=2445917.94, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=120003:120003:Machinery and equipment - Cost
+Skipped: net=15728703.39, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=120008:120008:Office and air conditioning equipment - Cost
+Skipped: net=-26297323.0, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=127001:127001:Building - Accumulated depreciation
+Skipped: net=-1083748.69, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=127002:127002:Machinery and Equipment - Accumulated depreciation
+Skipped: net=-15728703.39, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=127007:127007:Office and air conditioning Equipment - Accumulated depreciation
+Skipped: net=-1362169.25, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-20340466.09, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=165003:165003:Advances provided for related parties
+Skipped: net=88717872.52, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=165003:165003:Advances provided for related parties
+Skipped: net=-372121154.15, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=165003:165003:Advances provided for related parties
+Skipped: net=372121154.15, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=-54484231.68, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=167005:167005:Clients receivable
+Skipped: net=-291598988.71, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=-45221753.67, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=187012:187012:Current - Other receivables
+Skipped: net=391304974.06, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=187205:187205:Contract Assets
+Skipped: net=12984.28, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=-13260.5, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=183101:183101:Cash on hand.
+Skipped: net=276.22, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=185163:185163:Call account - QAR
+Skipped: net=41234.45, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=-41234.45, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=215001:215001:Employees' End of Service Benefits
+Skipped: net=-80576384.17, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=-9270829.02, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=222101:222101:Current portion of Loans and Borrowings
+Skipped: net=305872873.27, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=224000:224000:Due to related parties
+Skipped: net=74657809.26, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=226001:226001:Payable to subcontractors and suppliers
+Skipped: net=-88594665.58, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=-203643133.37, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=226029:226029:Project Accruals - current
+Skipped: net=1362169.61, entity=001033:PORR-SBG-HBK Joint Operation (Underground), icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=330182531.12, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=-262497034.02, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=171001:171001:Trading property held for sale - Current
+Skipped: net=-249687.0, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=-67435810.1, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-149352.0, entity=001006:Lusail RE Develop Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=149352.0, entity=001006:Lusail RE Develop Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=187012:187012:Current - Other receivables
+Skipped: net=-300000000.0, entity=001006:Lusail RE Develop Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=301001:301001:Dividend Payment
+Skipped: net=300000000.0, entity=001006:Lusail RE Develop Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-190165.44, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=185304:185304:CTLA CHELSEA BA 13 LP Disposals
+Skipped: net=190165.44, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=186951:186951:Restricted cash
+Skipped: net=29040.49, entity=E121000:QDRE & Tourism Co. LLC. (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=183101:183101:Cash on hand.
+Skipped: net=-29040.49, entity=E121000:QDRE & Tourism Co. LLC. (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=186151:186151:QNB EGP Time Deposit COR ACC 10296 1 10
+Skipped: net=52719.0, entity=001015:Barwa Al Khor S.P.C., icp=FCCS_No Intercompany:No Intercompany, acct=185996:185996:Savings account QAR
+Skipped: net=-52719.0, entity=001015:Barwa Al Khor S.P.C., icp=FCCS_No Intercompany:No Intercompany, acct=186961:186961:Savings account
+Skipped: net=-177998.63, entity=E120000:QDRE Development SAE (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=177998.63, entity=E120000:QDRE Development SAE (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=-1109.52, entity=E105000:Qatari Diar Real Estate Investment Company (QD Morocco), icp=FCCS_No Intercompany:No Intercompany, acct=[130000].[131105]:131105:Shares in SBM ( Societe des Bains De Mar)
+Skipped: net=3315725626.64, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=-3315725626.64, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=189999:189999:Trading Properties under development
+Skipped: net=-3259254584.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=3259254584.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=171001:171001:Trading property held for sale - Current
+Skipped: net=-1798734497.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=202116:202116:Provision for impairment loss on trading properties
+Skipped: net=1798734497.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=202118:202118:Provision for impairment on project under development
+Skipped: net=-369809.69, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=167010:167010:Advance corporate taxes
+Skipped: net=369809.69, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=187008:187008:Current - Prepaid expenses
+Skipped: net=7717906.61, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=187012:187012:Current - Other receivables
+Skipped: net=-7717906.61, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=187203:187203:Accrued Income
+Skipped: net=-19814528.87, entity=E121000:QDRE & Tourism Co. LLC. (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=120001:120001:Land - Cost
+Skipped: net=19814528.87, entity=E121000:QDRE & Tourism Co. LLC. (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=120002:120002:Buildings - Cost
+Skipped: net=-4655902.15, entity=013001:Qatari Diar UK Limited, icp=FCCS_No Intercompany:No Intercompany, acct=120002:120002:Buildings - Cost
+Skipped: net=359675.27, entity=013001:Qatari Diar UK Limited, icp=FCCS_No Intercompany:No Intercompany, acct=120004:120004:Furniture & Fixtures - Cost
+Skipped: net=162190.34, entity=013001:Qatari Diar UK Limited, icp=FCCS_No Intercompany:No Intercompany, acct=120007:120007:Computer equipment - Cost
+Skipped: net=4930690.79, entity=013001:Qatari Diar UK Limited, icp=FCCS_No Intercompany:No Intercompany, acct=120009:120009:Leasehold improvements - Cost
+Skipped: net=4655902.15, entity=013001:Qatari Diar UK Limited, icp=FCCS_No Intercompany:No Intercompany, acct=127001:127001:Building - Accumulated depreciation
+Skipped: net=-359675.27, entity=013001:Qatari Diar UK Limited, icp=FCCS_No Intercompany:No Intercompany, acct=127003:127003:Furniture & Fixtures - Accumulated depreciation
+Skipped: net=-162190.34, entity=013001:Qatari Diar UK Limited, icp=FCCS_No Intercompany:No Intercompany, acct=127006:127006:Computer equipment - Accumulated depreciation
+Skipped: net=-4930690.79, entity=013001:Qatari Diar UK Limited, icp=FCCS_No Intercompany:No Intercompany, acct=127008:127008:Leasehold improvements - Accumulated depreciation
+Skipped: net=531250.0, entity=021001:QDRE Investment Co Ltd . (Eritrea), icp=FCCS_No Intercompany:No Intercompany, acct=120005:120005:Motor vehicle - Cost
+Skipped: net=-531250.0, entity=021001:QDRE Investment Co Ltd . (Eritrea), icp=FCCS_No Intercompany:No Intercompany, acct=127004:127004:Motor vehicles - Accumulated depreciation
+Skipped: net=-612527.0, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=187205:187205:Contract Assets
+Skipped: net=-22526737.86, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=189001:189001:Inter company account - receivables
+Skipped: net=22469690.86, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=224000:224000:Due to related parties
+Skipped: net=809472184.27, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=226014:226014:Trade creditors - Project estimation
+Skipped: net=-808802610.27, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=226029:226029:Project Accruals - current
+Skipped: net=1781668.56, entity=E110000:Al Qatariya Development Co, Malta, icp=FCCS_No Intercompany:No Intercompany, acct=120005:120005:Motor vehicle - Cost
+Skipped: net=191656.94, entity=E110000:Al Qatariya Development Co, Malta, icp=FCCS_No Intercompany:No Intercompany, acct=120018:120018:Computer equipment - Cost clearing
+Skipped: net=-1781668.56, entity=E110000:Al Qatariya Development Co, Malta, icp=FCCS_No Intercompany:No Intercompany, acct=127004:127004:Motor vehicles - Accumulated depreciation
+Skipped: net=-191656.94, entity=E110000:Al Qatariya Development Co, Malta, icp=FCCS_No Intercompany:No Intercompany, acct=127006:127006:Computer equipment - Accumulated depreciation
+Skipped: net=69565.0, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=120004:120004:Furniture & Fixtures - Cost
+Skipped: net=317000.0, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=120005:120005:Motor vehicle - Cost
+Skipped: net=2598620.0, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=120018:120018:Computer equipment - Cost clearing
+Skipped: net=-69565.0, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=127003:127003:Furniture & Fixtures - Accumulated depreciation
+Skipped: net=-317000.0, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=127004:127004:Motor vehicles - Accumulated depreciation
+Skipped: net=-2598620.0, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=127006:127006:Computer equipment - Accumulated depreciation
+Skipped: net=-246914.0, entity=E103000:Qatar RE Partners C.Q.S.C. (under liquidation), icp=FCCS_No Intercompany:No Intercompany, acct=120004:120004:Furniture & Fixtures - Cost
+Skipped: net=-551058.0, entity=E103000:Qatar RE Partners C.Q.S.C. (under liquidation), icp=FCCS_No Intercompany:No Intercompany, acct=120007:120007:Computer equipment - Cost
+Skipped: net=-269769.0, entity=E103000:Qatar RE Partners C.Q.S.C. (under liquidation), icp=FCCS_No Intercompany:No Intercompany, acct=120009:120009:Leasehold improvements - Cost
+Skipped: net=246914.0, entity=E103000:Qatar RE Partners C.Q.S.C. (under liquidation), icp=FCCS_No Intercompany:No Intercompany, acct=127003:127003:Furniture & Fixtures - Accumulated depreciation
+Skipped: net=551058.0, entity=E103000:Qatar RE Partners C.Q.S.C. (under liquidation), icp=FCCS_No Intercompany:No Intercompany, acct=127006:127006:Computer equipment - Accumulated depreciation
+Skipped: net=269769.0, entity=E103000:Qatar RE Partners C.Q.S.C. (under liquidation), icp=FCCS_No Intercompany:No Intercompany, acct=127008:127008:Leasehold improvements - Accumulated depreciation
+Skipped: net=9803076.17, entity=E121000:QDRE & Tourism Co. LLC. (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=187012:187012:Current - Other receivables
+Skipped: net=-9803076.17, entity=E121000:QDRE & Tourism Co. LLC. (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=187205:187205:Contract Assets
+Skipped: net=-16101.76, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=167023:167023:Security Deposit
+Skipped: net=16101.76, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=187012:187012:Current - Other receivables
+Skipped: net=381000.0, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=187012:187012:Current - Other receivables
+Skipped: net=-381000.0, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=187019:187019:Interest receivables
+Skipped: net=-546671.0, entity=001015:Barwa Al Khor S.P.C., icp=FCCS_No Intercompany:No Intercompany, acct=187003:187003:Current - Advances to subcontractors & suppliers
+Skipped: net=546671.0, entity=001015:Barwa Al Khor S.P.C., icp=FCCS_No Intercompany:No Intercompany, acct=202130:202130:Provision for other receivables
+Skipped: net=-7299991.24, entity=010002:QDRE Investment Co. Yemen, icp=FCCS_No Intercompany:No Intercompany, acct=187003:187003:Current - Advances to subcontractors & suppliers
+Skipped: net=7299991.24, entity=010002:QDRE Investment Co. Yemen, icp=FCCS_No Intercompany:No Intercompany, acct=202130:202130:Provision for other receivables
+Skipped: net=-14283953.0, entity=001014:The Commercial Avenue W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=202129:202129:Provision for trade receivables
+Skipped: net=14283953.0, entity=001014:The Commercial Avenue W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=202130:202130:Provision for other receivables
+Skipped: net=-201265.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=172010:172010:Fuel-Inventory
+Skipped: net=201265.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=8992352.63, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=187014:187014:Advance to employees
+Skipped: net=-8992352.63, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-38167519.21, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[301010]:301010:Transfers to parent
+Skipped: net=38167519.21, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=431247081.59, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=-431247081.59, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=[314000].[315005]:315005:Minority_Interest
+Skipped: net=324945.12, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=120004:120004:Furniture & Fixtures - Cost
+Skipped: net=-324945.12, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=127003:127003:Furniture & Fixtures - Accumulated depreciation
+Skipped: net=-285077.68, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=120007:120007:Computer equipment - Cost
+Skipped: net=285077.68, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=127006:127006:Computer equipment - Accumulated depreciation
+Skipped: net=-2985185.0, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=120003:120003:Machinery and equipment - Cost
+Skipped: net=2985185.0, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=127002:127002:Machinery and Equipment - Accumulated depreciation
+Skipped: net=-48761190.97, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=120002:120002:Buildings - Cost
+Skipped: net=48761190.97, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=120004:120004:Furniture & Fixtures - Cost
+Skipped: net=48761190.97, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=127001:127001:Building - Accumulated depreciation
+Skipped: net=-48761190.97, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=127003:127003:Furniture & Fixtures - Accumulated depreciation
+Skipped: net=100000.0, entity=001039:Lusail Real Estate Management Co. (LREMC), icp=FCCS_No Intercompany:No Intercompany, acct=[310200].[310002]:310002:Legal_Reserve
+Skipped: net=-100000.0, entity=001039:Lusail Real Estate Management Co. (LREMC), icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=11256.64, entity=E120000:QDRE Development SAE (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=120006:120006:Computer Software - Cost
+Skipped: net=-11256.64, entity=E120000:QDRE Development SAE (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=127005:127005:Computer software - Accumulated depreciation
+Skipped: net=3341.69, entity=017001:QDRE Investment Co. L.L.C. (Syria), icp=FCCS_No Intercompany:No Intercompany, acct=120004:120004:Furniture & Fixtures - Cost
+Skipped: net=59498.62, entity=017001:QDRE Investment Co. L.L.C. (Syria), icp=FCCS_No Intercompany:No Intercompany, acct=120007:120007:Computer equipment - Cost
+Skipped: net=-3341.69, entity=017001:QDRE Investment Co. L.L.C. (Syria), icp=FCCS_No Intercompany:No Intercompany, acct=127003:127003:Furniture & Fixtures - Accumulated depreciation
+Skipped: net=-59498.62, entity=017001:QDRE Investment Co. L.L.C. (Syria), icp=FCCS_No Intercompany:No Intercompany, acct=127006:127006:Computer equipment - Accumulated depreciation
+Skipped: net=-173637.64, entity=010001:Al Yemania Al Qatariah REID Co., icp=FCCS_No Intercompany:No Intercompany, acct=120003:120003:Machinery and equipment - Cost
+Skipped: net=173636.12, entity=010001:Al Yemania Al Qatariah REID Co., icp=FCCS_No Intercompany:No Intercompany, acct=120007:120007:Computer equipment - Cost
+Skipped: net=173637.64, entity=010001:Al Yemania Al Qatariah REID Co., icp=FCCS_No Intercompany:No Intercompany, acct=127002:127002:Machinery and Equipment - Accumulated depreciation
+Skipped: net=-173636.12, entity=010001:Al Yemania Al Qatariah REID Co., icp=FCCS_No Intercompany:No Intercompany, acct=127006:127006:Computer equipment - Accumulated depreciation
+Skipped: net=847.3, entity=015003:QD Project Management Co., icp=FCCS_No Intercompany:No Intercompany, acct=120007:120007:Computer equipment - Cost
+Skipped: net=-847.3, entity=015003:QD Project Management Co., icp=FCCS_No Intercompany:No Intercompany, acct=127006:127006:Computer equipment - Accumulated depreciation
+Skipped: net=5043.67, entity=013003:Tasleem (UK) Limited, icp=FCCS_No Intercompany:No Intercompany, acct=120004:120004:Furniture & Fixtures - Cost
+Skipped: net=189925.68, entity=013003:Tasleem (UK) Limited, icp=FCCS_No Intercompany:No Intercompany, acct=120007:120007:Computer equipment - Cost
+Skipped: net=-5043.67, entity=013003:Tasleem (UK) Limited, icp=FCCS_No Intercompany:No Intercompany, acct=127003:127003:Furniture & Fixtures - Accumulated depreciation
+Skipped: net=-189925.68, entity=013003:Tasleem (UK) Limited, icp=FCCS_No Intercompany:No Intercompany, acct=127006:127006:Computer equipment - Accumulated depreciation
+Skipped: net=-569588.0, entity=001006:Lusail RE Develop Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=120006:120006:Computer Software - Cost
+Skipped: net=569588.0, entity=001006:Lusail RE Develop Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=127005:127005:Computer software - Accumulated depreciation
+Skipped: net=77297039.65, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=222119:222119:Advances from customers
+Skipped: net=-77297039.65, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=226005:226005:Client advances
+Skipped: net=2054954352.65, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[310300].[310005]:310005:Cash Flow Hedge_Revaluation
+Skipped: net=-2054954352.65, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=2362.0, entity=015003:QD Project Management Co., icp=FCCS_No Intercompany:No Intercompany, acct=[310200].[310002]:310002:Legal_Reserve
+Skipped: net=-2362.0, entity=015003:QD Project Management Co., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=69025.28, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=187034:187034:Customer receivable account
+Skipped: net=773.66, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=-773.66, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=36978.18, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[314000].[301004]:301004:Share in Translation reserve
+Skipped: net=-21164225.57, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=17576741.03, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[314000].[315005]:315005:Minority_Interest
+Skipped: net=2934988.36, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=432001:432001:Dividends income
+Skipped: net=615518.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=433003:433003:Interest income-Others
+Skipped: net=-324945.12, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=120004:120004:Furniture & Fixtures - Cost
+Skipped: net=284305.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=120007:120007:Computer equipment - Cost
+Skipped: net=324945.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=127003:127003:Furniture & Fixtures - Accumulated depreciation
+Skipped: net=-285078.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=127006:127006:Computer equipment - Accumulated depreciation
+Skipped: net=773.12, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=1576708.0, entity=E118000:QD SBG Group adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=187012:187012:Current - Other receivables
+Skipped: net=7.05, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-3702840.19, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=432006:432006:Gain/ loss on sale of investments
+Skipped: net=4033362.32, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=512016:512016:Sundry expenses
+Skipped: net=-330529.18, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=532011:532011:Amortisation of Right of use (Lease)
+Skipped: net=-274826119.97, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=274826119.97, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=189998:189998:Development work in progress
+Skipped: net=-13971785.38, entity=022001:QDREI  Co. Tajakistan Ltd, icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=13971785.38, entity=022001:QDREI  Co. Tajakistan Ltd, icp=FCCS_No Intercompany:No Intercompany, acct=189998:189998:Development work in progress
+Skipped: net=-330182531.12, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=262497034.02, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=189998:189998:Development work in progress
+Skipped: net=67685497.1, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=202118:202118:Provision for impairment on project under development
+Skipped: net=-1336558350.3, entity=E115000:Bawabat El Sharq Egypt Real_Estate, icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=1336558350.3, entity=E115000:Bawabat El Sharq Egypt Real_Estate, icp=FCCS_No Intercompany:No Intercompany, acct=189998:189998:Development work in progress
+Skipped: net=-3165384766.85, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=3165384766.85, entity=E117000:QD UK Holdings_LP, icp=FCCS_No Intercompany:No Intercompany, acct=189998:189998:Development work in progress
+Skipped: net=-2064941887.0, entity=001038:Lusail Plaza RED Co. LLC (Lusail Tower 1 SPV), icp=FCCS_No Intercompany:No Intercompany, acct=[189910].[121001]:121001:Property under_development
+Skipped: net=1328973942.0, entity=001038:Lusail Plaza RED Co. LLC (Lusail Tower 1 SPV), icp=FCCS_No Intercompany:No Intercompany, acct=189998:189998:Development work in progress
+Skipped: net=735967945.0, entity=001038:Lusail Plaza RED Co. LLC (Lusail Tower 1 SPV), icp=FCCS_No Intercompany:No Intercompany, acct=202118:202118:Provision for impairment on project under development
+Skipped: net=200000.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[310200].[310002]:310002:Legal_Reserve
+Skipped: net=-200000.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=266703858.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=432009:432009:Gain/ loss on sale of subsidiary
+Skipped: net=-266703858.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=520020:520020:Provision for additional funding
+Skipped: net=26887816.0, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=512016:512016:Sundry expenses
+Skipped: net=-26887816.0, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=540001:540001:Deferred income tax relating to origination & reversal of temp. diff.
+Skipped: net=749035640.97, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=167003:167003:Advances to subcontractors & suppliers
+Skipped: net=-749035640.97, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=1056607.6, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=167011:167011:Retentions receivable
+Skipped: net=-1056607.6, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=-3327852.0, entity=E118000:QD SBG Group adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=432002:432002:Share of results from associates/JV.
+Skipped: net=3327852.0, entity=E118000:QD SBG Group adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=520020:520020:Provision for additional funding
+Skipped: net=8863168.96, entity=E118000:QD SBG Group adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=222119:222119:Advances from customers
+Skipped: net=-8863168.96, entity=E118000:QD SBG Group adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=226005:226005:Client advances
+Skipped: net=-3641717.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=187034:187034:Customer receivable account
+Skipped: net=3641717.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=202129:202129:Provision for trade receivables
+Skipped: net=21062408.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=187012:187012:Current - Other receivables
+Skipped: net=36501.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=202129:202129:Provision for trade receivables
+Skipped: net=-21098909.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=-749035641.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=167003:167003:Advances to subcontractors & suppliers
+Skipped: net=-36773933.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=167012:167012:Other receivables
+Skipped: net=36773933.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=167998:167998:Advances and receivables from employees (Non Current Assets)
+Skipped: net=749035641.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=167999:167999:Client receivables (Non current assets)
+Skipped: net=-3995347.0, entity=E104000:Smeet_W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=167003:167003:Advances to subcontractors & suppliers
+Skipped: net=3995347.0, entity=E104000:Smeet_W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=167999:167999:Client receivables (Non current assets)
+Skipped: net=-130596874.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=167004:167004:Notes receivables
+Skipped: net=130596874.0, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=167999:167999:Client receivables (Non current assets)
+Skipped: net=-15448935.0, entity=E118000:QD SBG Group adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=167003:167003:Advances to subcontractors & suppliers
+Skipped: net=15448935.0, entity=E118000:QD SBG Group adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=167999:167999:Client receivables (Non current assets)
+Skipped: net=156830.0, entity=E103000:Qatar RE Partners C.Q.S.C. (under liquidation), icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-42389.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=512045:512045:Bank charges account
+Skipped: net=42389.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=512060:512060:Miscellaneous expenses
+Skipped: net=286590065.86, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=201101:201101:Government grants
+Skipped: net=253747045.26, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=201109:201109:Retentions
+Skipped: net=34636102.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=201112:201112:Withholding for Liquidated damages
+Skipped: net=11150656.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=202108:202108:Other provisions
+Skipped: net=7908368.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=202110:202110:Annual leave provision
+Skipped: net=348896250.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=202122:202122:Provision for future funding commitments
+Skipped: net=-253747044.17, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=222104:222104:Current portion of retention payable
+Skipped: net=700675.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=222117:222117:Tax retention
+Skipped: net=3885922.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=222118:222118:Unearned Income
+Skipped: net=123338.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=222121:222121:Accrued pension GCC - Employee contribution.
+Skipped: net=180777.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=222122:222122:Accrued pension GCC - Employer contribution
+Skipped: net=14576.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=224007:224007:Payables to employees.
+Skipped: net=-12403854.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=224011:224011:Deferred funding MOF
+Skipped: net=38713806.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=224015:224015:Advance received from MOF
+Skipped: net=605395170.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=224019:224019:Advances from Developers
+Skipped: net=-605172753.27, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=226005:226005:Client advances
+Skipped: net=151225.0, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=226006:226006:Taxes payable
+Skipped: net=-323807418.56, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=-11150656.34, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=229998:229998:Other Provisions
+Skipped: net=-385812249.78, entity=001001:QDRE Investment Company Q.S.C. (H), icp=FCCS_No Intercompany:No Intercompany, acct=229999:229999:Other provision (Disposal of Subsidiary)
+Skipped: net=-25845883.0, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=215001:215001:Employees' End of Service Benefits
+Skipped: net=25845883.0, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=215002:215002:Defined pensions and retirement benfits
+Skipped: net=327795888.0, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=222119:222119:Advances from customers
+Skipped: net=-327795888.0, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=226005:226005:Client advances
+Skipped: net=32271711.0, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=-32271711.0, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=229998:229998:Other Provisions
+Skipped: net=100000.0, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=[310200].[310002]:310002:Legal_Reserve
+Skipped: net=-100000.0, entity=001021:Legtafiya Asset Mng. Co., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=5638022.0, entity=E104000:Smeet_W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=222119:222119:Advances from customers
+Skipped: net=-5638022.0, entity=E104000:Smeet_W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=226005:226005:Client advances
+Skipped: net=528264.63, entity=E121000:QDRE & Tourism Co. LLC. (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=226006:226006:Taxes payable
+Skipped: net=-528264.63, entity=E121000:QDRE & Tourism Co. LLC. (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=70.0, entity=017001:QDRE Investment Co. L.L.C. (Syria), icp=FCCS_No Intercompany:No Intercompany, acct=222119:222119:Advances from customers
+Skipped: net=-70.0, entity=017001:QDRE Investment Co. L.L.C. (Syria), icp=FCCS_No Intercompany:No Intercompany, acct=226005:226005:Client advances
+Skipped: net=-38208.0, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=226001:226001:Payable to subcontractors and suppliers
+Skipped: net=18.0, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=226001:226001:Payable to subcontractors and suppliers
+Skipped: net=38190.0, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=226002:226002:Accrued expenses
+Skipped: net=127055.01, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=226006:226006:Taxes payable
+Skipped: net=-127055.01, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=18.07, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=201104:201104:Deferred tax liabilities - Non Current
+Skipped: net=-18.07, entity=E108000:QD US Real Estate Co., icp=FCCS_No Intercompany:No Intercompany, acct=226001:226001:Payable to subcontractors and suppliers
+Skipped: net=19957.0, entity=022001:QDREI  Co. Tajakistan Ltd, icp=FCCS_No Intercompany:No Intercompany, acct=222126:222126:Corporation Tax
+Skipped: net=-19957.0, entity=022001:QDREI  Co. Tajakistan Ltd, icp=FCCS_No Intercompany:No Intercompany, acct=226006:226006:Taxes payable
+Skipped: net=200214.0, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=202109:202109:Gratuity provision
+Skipped: net=-200214.0, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=215001:215001:Employees' End of Service Benefits
+Skipped: net=3117.62, entity=015003:QD Project Management Co., icp=FCCS_No Intercompany:No Intercompany, acct=222128:222128:VAT Payable
+Skipped: net=564418.27, entity=015003:QD Project Management Co., icp=FCCS_No Intercompany:No Intercompany, acct=226006:226006:Taxes payable
+Skipped: net=-567535.89, entity=015003:QD Project Management Co., icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=21023782.2, entity=E113000:Marafeq Qatar Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=222119:222119:Advances from customers
+Skipped: net=-21023782.2, entity=E113000:Marafeq Qatar Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=226005:226005:Client advances
+Skipped: net=534465.0, entity=E114000:Project Russet (Holdings Company) Ltd, Jersey, icp=FCCS_No Intercompany:No Intercompany, acct=226002:226002:Accrued expenses
+Skipped: net=-534465.0, entity=E114000:Project Russet (Holdings Company) Ltd, Jersey, icp=FCCS_No Intercompany:No Intercompany, acct=226029:226029:Project Accruals - current
+Skipped: net=330552.0, entity=E115000:Bawabat El Sharq Egypt Real_Estate, icp=FCCS_No Intercompany:No Intercompany, acct=222126:222126:Corporation Tax
+Skipped: net=-330552.0, entity=E115000:Bawabat El Sharq Egypt Real_Estate, icp=FCCS_No Intercompany:No Intercompany, acct=226006:226006:Taxes payable
+Skipped: net=-364634.08, entity=E124000:QDRE Investment Company Tozeur Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=202108:202108:Other provisions
+Skipped: net=710703.03, entity=E124000:QDRE Investment Company Tozeur Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=226006:226006:Taxes payable
+Skipped: net=-710703.03, entity=E124000:QDRE Investment Company Tozeur Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=364634.08, entity=E124000:QDRE Investment Company Tozeur Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=227002:227002:Other Payables - Non-current
+Skipped: net=15661324.0, entity=001014:The Commercial Avenue W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=222119:222119:Advances from customers
+Skipped: net=-15661324.0, entity=001014:The Commercial Avenue W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=226005:226005:Client advances
+Skipped: net=3555973.86, entity=013011:Qatari Diar Europe LLP, icp=FCCS_No Intercompany:No Intercompany, acct=226006:226006:Taxes payable
+Skipped: net=-3555973.86, entity=013011:Qatari Diar Europe LLP, icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=452523697.0, entity=E118000:QD SBG Group adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=-452523697.0, entity=E118000:QD SBG Group adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=229999:229999:Other provision (Disposal of Subsidiary)
+Skipped: net=-10073375.37, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=201999:201999:Finance Lease Payable
+Skipped: net=10073375.37, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=213002:213002:Lease liability - Non-current
+Skipped: net=58310502.0, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=-58368264.0, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=229998:229998:Other Provisions
+Skipped: net=57762.0, entity=E117100:QD UK Holdings LP adjusted, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=457010.77, entity=E120000:QDRE Development SAE (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=202115:202115:Provision for future losses on projects - B/S
+Skipped: net=-457010.77, entity=E120000:QDRE Development SAE (Egypt) Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=227002:227002:Other Payables - Non-current
+Skipped: net=68179.0, entity=E123000:QD Asia Pacific Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=226002:226002:Accrued expenses
+Skipped: net=-68179.0, entity=E123000:QD Asia Pacific Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=226029:226029:Project Accruals - current
+Skipped: net=68526.0, entity=011003:Diar Sulaymaniye (H), icp=FCCS_No Intercompany:No Intercompany, acct=222126:222126:Corporation Tax
+Skipped: net=-68526.0, entity=011003:Diar Sulaymaniye (H), icp=FCCS_No Intercompany:No Intercompany, acct=226006:226006:Taxes payable
+Skipped: net=-192151.41, entity=003010:Qatari Diar Jersey Limited, icp=FCCS_No Intercompany:No Intercompany, acct=224021:224021:Liabilities associated with the assets held for sale.
+Skipped: net=192151.41, entity=003010:Qatari Diar Jersey Limited, icp=FCCS_No Intercompany:No Intercompany, acct=226002:226002:Accrued expenses
+Skipped: net=-11.0, entity=001006:Lusail RE Develop Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=201106:201106:Retention payable - Withholding Tax
+Skipped: net=91760.0, entity=001006:Lusail RE Develop Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=201112:201112:Withholding for Liquidated damages
+Skipped: net=11.0, entity=001006:Lusail RE Develop Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=222104:222104:Current portion of retention payable
+Skipped: net=-91760.0, entity=001006:Lusail RE Develop Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=-2608.0, entity=013024:QDUK Holdings GP LLP, icp=FCCS_No Intercompany:No Intercompany, acct=226002:226002:Accrued expenses
+Skipped: net=-20.0, entity=013024:QDUK Holdings GP LLP, icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=-590.0, entity=013024:QDUK Holdings GP LLP, icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=26007762.52, entity=E104000:Smeet_W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=212000:212000:Lease liability
+Skipped: net=-26007762.52, entity=E104000:Smeet_W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=213002:213002:Lease liability - Non-current
+Skipped: net=-49954.0, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=222128:222128:VAT Payable
+Skipped: net=13.0, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=226001:226001:Payable to subcontractors and suppliers
+Skipped: net=62765.0, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=-12824.0, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=999999:999999:Suspense Account
+Skipped: net=8624.02, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=222121:222121:Accrued pension GCC - Employee contribution.
+Skipped: net=13474.98, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=222122:222122:Accrued pension GCC - Employer contribution
+Skipped: net=-22099.0, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=226008:226008:Other payables - current liabilities.
+Skipped: net=5043278.17, entity=E104000:Smeet_W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=226002:226002:Accrued expenses
+Skipped: net=-5043278.17, entity=E104000:Smeet_W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=226029:226029:Project Accruals - current
+Skipped: net=20298037.41, entity=E113000:Marafeq Qatar Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=226002:226002:Accrued expenses
+Skipped: net=-20298037.41, entity=E113000:Marafeq Qatar Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=226029:226029:Project Accruals - current
+Skipped: net=-6687094.45, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[314000].[301005]:301005:Profit during the period
+Skipped: net=6687094.45, entity=E111000:Qatari Resorts Co. Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=FCC_Minority Interest Income_Manual Input:Minority Interest Income_Manual Input
+Skipped: net=193397.88, entity=003010:Qatari Diar Jersey Limited, icp=FCCS_No Intercompany:No Intercompany, acct=168100:168100:Non current asset held for sale
+Skipped: net=-193397.88, entity=003010:Qatari Diar Jersey Limited, icp=FCCS_No Intercompany:No Intercompany, acct=184331:184331:HSBC Current Account-GBP
+Skipped: net=120000000.86, entity=E113000:Marafeq Qatar Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=301001:301001:Dividend Payment
+Skipped: net=15000000.0, entity=E113000:Marafeq Qatar Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=[310200].[310002]:310002:Legal_Reserve
+Skipped: net=-135000000.86, entity=E113000:Marafeq Qatar Co. W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=125000000.0, entity=001015:Barwa Al Khor S.P.C., icp=FCCS_No Intercompany:No Intercompany, acct=[310200].[310002]:310002:Legal_Reserve
+Skipped: net=-125000000.0, entity=001015:Barwa Al Khor S.P.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=125.0, entity=001015:Barwa Al Khor S.P.C., icp=FCCS_No Intercompany:No Intercompany, acct=512016:512016:Sundry expenses
+Skipped: net=-125.0, entity=001015:Barwa Al Khor S.P.C., icp=FCCS_No Intercompany:No Intercompany, acct=512045:512045:Bank charges account
+Skipped: net=74800000.0, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[310100].[310001]:310001:Share_Capital
+Skipped: net=38500000.0, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[310200].[310002]:310002:Legal_Reserve
+Skipped: net=-113300000.0, entity=E102000:QDVC_Q.S.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=40905.73, entity=E116000:QD Triangle (Holding Company) Ltd, icp=FCCS_No Intercompany:No Intercompany, acct=168100:168100:Non current asset held for sale
+Skipped: net=-40905.73, entity=E116000:QD Triangle (Holding Company) Ltd, icp=FCCS_No Intercompany:No Intercompany, acct=184331:184331:HSBC Current Account-GBP
+Skipped: net=-167017.41, entity=E116000:QD Triangle (Holding Company) Ltd, icp=FCCS_No Intercompany:No Intercompany, acct=224021:224021:Liabilities associated with the assets held for sale.
+Skipped: net=167017.41, entity=E116000:QD Triangle (Holding Company) Ltd, icp=FCCS_No Intercompany:No Intercompany, acct=226002:226002:Accrued expenses
+Skipped: net=25000000.0, entity=001014:The Commercial Avenue W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=[310200].[310002]:310002:Legal_Reserve
+Skipped: net=-25000000.0, entity=001014:The Commercial Avenue W.L.L., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-240511.82, entity=E125000:Qatari Diar for Hotel Services Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=[310100].[310001]:310001:Share_Capital
+Skipped: net=202227.24, entity=E125000:Qatari Diar for Hotel Services Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=38284.58, entity=E125000:Qatari Diar for Hotel Services Subgroup, icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=1331588.16, entity=013011:Qatari Diar Europe LLP, icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-371.21, entity=013011:Qatari Diar Europe LLP, icp=FCCS_No Intercompany:No Intercompany, acct=430016:430016:Other income
+Skipped: net=225126.84, entity=013011:Qatari Diar Europe LLP, icp=FCCS_No Intercompany:No Intercompany, acct=512016:512016:Sundry expenses
+Skipped: net=-1556343.57, entity=013011:Qatari Diar Europe LLP, icp=FCCS_No Intercompany:No Intercompany, acct=516401:516401:Other allowances and costs
+Skipped: net=-0.22, entity=013011:Qatari Diar Europe LLP, icp=FCCS_No Intercompany:No Intercompany, acct=518018:518018:Other marketing expenses
+Skipped: net=-260691.01, entity=E106000:Project Red Group Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=514001:514001:Legal expenses- General
+Skipped: net=260691.01, entity=E106000:Project Red Group Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=FCCS_Discontinued Operations Income:Discontinued Operations Income
+Skipped: net=7696.52, entity=E106000:Project Red Group Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=168100:168100:Non current asset held for sale
+Skipped: net=-7696.52, entity=E106000:Project Red Group Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=183101:183101:Cash on hand.
+Skipped: net=-196148.12, entity=E106000:Project Red Group Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=224021:224021:Liabilities associated with the assets held for sale.
+Skipped: net=8602.68, entity=E106000:Project Red Group Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=226001:226001:Payable to subcontractors and suppliers
+Skipped: net=187545.44, entity=E106000:Project Red Group Ltd., icp=FCCS_No Intercompany:No Intercompany, acct=226002:226002:Accrued expenses
+Skipped: net=146814.87, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=-146814.87, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=432007:432007:Gain/ loss on changes in the fair values of Investment property
+Skipped: net=9666268.08, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=430999:430999:Realized gain/(loss) on foreign currency transactions
+Skipped: net=-9666268.08, entity=E101000:QDHP & QD Europe Sarl, icp=FCCS_No Intercompany:No Intercompany, acct=514006:514006:Acquisitions mergers and disposal
+Skipped: net=-201778.66, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[301011]:301011:CTA of Minority Interest
+Skipped: net=201778.66, entity=E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi, icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=-67685497.1, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=202118:202118:Provision for impairment on project under development
+Skipped: net=20331094.03, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[314000].[301005]:301005:Profit during the period
+Skipped: net=249687.0, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=67435810.1, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-20331094.03, entity=E112000:Qatari Diar Development Company L.L.C., icp=FCCS_No Intercompany:No Intercompany, acct=FCC_Minority Interest Income_Manual Input:Minority Interest Income_Manual Input
+Skipped: net=-207349.22, entity=011003:Diar Sulaymaniye (H), icp=FCCS_No Intercompany:No Intercompany, acct=[312000].[310004]:310004:Translation_Reserve
+Skipped: net=1110336.96, entity=011003:Diar Sulaymaniye (H), icp=FCCS_No Intercompany:No Intercompany, acct=[FCCS_Retained Earnings].[315001]:315001:Retained earnings_
+Skipped: net=-902987.74, entity=011003:Diar Sulaymaniye (H), icp=FCCS_No Intercompany:No Intercompany, acct=538001:538001:Current income tax net charge/ reversal during the period

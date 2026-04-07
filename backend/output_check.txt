@@ -1,0 +1,8 @@
+Was it in base ICM? False
+Found 007009 / E117100 in OUTPUT at row 179
+  Col 17 (534018 - 534018:Interest expense - relat): -17882306.93
+  Col 22 (Variance): -17882306.93
+  Col 24 (534018 - 534018:Interest expense - relat): 7934061.83
+  Col 28 (Variance): 7934061.83
+  Col 29 (Total): -9948245.1
+Was it in output? True

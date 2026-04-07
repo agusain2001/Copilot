@@ -1,0 +1,10 @@
+DEBUG E117100->007009: code=534018 ent_key=('117100', '007009', '534018') can_match=True updates_has=True raw=7934061.83
+DEBUG E117100->007009: code=433002 ent_key=('117100', '007009', '433002') can_match=True updates_has=False raw=None
+DEBUG E117100->007009: code=111006 ent_key=('117100', '007009', '111006') can_match=True updates_has=False raw=None
+DEBUG E117100->007009: code=120030 ent_key=('117100', '007009', '120030') can_match=True updates_has=False raw=None
+DEBUG E117100->007009: code=121015 ent_key=('117100', '007009', '121015') can_match=True updates_has=False raw=None
+DEBUG E117100->007009: code=534018 ent_key=('117100', '007009', '534018') can_match=True updates_has=no_updates raw=None
+DEBUG E117100->007009: code=433002 ent_key=('117100', '007009', '433002') can_match=True updates_has=no_updates raw=None
+DEBUG E117100->007009: code=111006 ent_key=('117100', '007009', '111006') can_match=True updates_has=no_updates raw=None
+DEBUG E117100->007009: code=120030 ent_key=('117100', '007009', '120030') can_match=True updates_has=no_updates raw=None
+DEBUG E117100->007009: code=121015 ent_key=('117100', '007009', '121015') can_match=True updates_has=no_updates raw=None

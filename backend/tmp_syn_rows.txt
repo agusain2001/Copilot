@@ -1,0 +1,4 @@
+Row 200: Entity='E117100:QD UK Holdings LP adjusted' Partner='ICP_007009:QD Europe Chancery S.a.r.l. ICP'
+Row 201: Entity='E117100:QD UK Holdings LP adjusted' Partner='ICP_007012:GS 16  S.ar.l. ICP'
+Row 202: Entity='E117100:QD UK Holdings LP adjusted' Partner='ICP_013001:Qatari Diar UK Limited ICP'
+Row 203: Entity='E117100:QD UK Holdings LP adjusted' Partner='ICP_013011:Qatari Diar Europe LLP ICP'

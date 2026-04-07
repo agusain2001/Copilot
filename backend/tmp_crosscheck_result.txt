@@ -1,0 +1,199 @@
+================================================================================
+  CROSS-CHECK: ICM Output vs Source Journals
+================================================================================
+
+Parent journal: 35 entries, 19 primary keys, 15 fallback keys
+Contribution journal: 9 entries, 3 primary keys, 4 fallback keys
+
+--- PARENT JOURNAL: All (entity, icp, account) -> net value ---
+  ('001001', 'ICP_E101000', '534018') -> net=-116.79 (primary, 1 entries)
+    Row 49: debit=0.00, credit=116.79, signed=-116.79
+  ('001001', 'ICP_E108000', '534018') -> net=465978.46 (primary, 1 entries)
+    Row 62: debit=465978.46, credit=0.00, signed=465978.46
+  ('001001', 'ICP_E111000', '120030') -> net=-1555338.34 (primary, 1 entries)
+    Row 79: debit=0.00, credit=1555338.34, signed=-1555338.34
+  ('001001', 'ICP_E118000', '111006') -> net=43170.00 (primary, 1 entries)
+    Row 413: debit=43170.00, credit=0.00, signed=43170.00
+  ('001002', 'ICP_E101000', '433002') -> net=69247729.00 (primary, 1 entries)
+    Row 60: debit=0.00, credit=69247729.00, signed=69247729.00
+  ('001032', 'ICP_001033', '534018') -> net=192160.00 (primary, 1 entries)
+    Row 227: debit=192160.00, credit=0.00, signed=192160.00
+  ('001033', 'ICP_001032', '121015') -> net=-88717872.52 (primary, 1 entries)
+    Row 212: debit=0.00, credit=88717872.52, signed=-88717872.52
+  ('005002', 'ICP_E105000', '433002') -> net=69025.28 (primary, 1 entries)
+    Row 350: debit=0.00, credit=69025.28, signed=69025.28
+  ('005003', 'ICP_E103000', '433002') -> net=-3218.00 (primary, 1 entries)
+    Row 498: debit=3218.00, credit=0.00, signed=-3218.00
+  ('007009', 'ICP_E117100', '534018') -> net=-17882306.93 (primary, 1 entries)
+    Row 41: debit=0.00, credit=17882306.93, signed=-17882306.93
+  ('007012', 'ICP_E117100', '534018') -> net=4.65 (primary, 1 entries)
+    Row 44: debit=4.65, credit=0.00, signed=4.65
+  ('009002', 'ICP_E112000', '121015') -> net=20340466.09 (primary, 1 entries)
+    Row 211: debit=20340466.09, credit=0.00, signed=20340466.09
+  ('013001', 'ICP_E117100', '433002') -> net=-2315402.68 (primary, 1 entries)
+    Row 87: debit=2315402.68, credit=0.00, signed=-2315402.68
+  ('013001', 'ICP_E117100', '534018') -> net=1395.30 (primary, 1 entries)
+    Row 90: debit=1395.30, credit=0.00, signed=1395.30
+  ('013011', 'ICP_E101000', '433002') -> net=1.75 (primary, 1 entries)
+    Row 52: debit=0.00, credit=1.75, signed=1.75
+  ('013011', 'ICP_E117100', '433002') -> net=125000.28 (primary, 1 entries)
+    Row 93: debit=0.00, credit=125000.28, signed=125000.28
+  ('013014', 'ICP_E101000', '433002') -> net=-1313435.12 (primary, 1 entries)
+    Row 54: debit=1313435.12, credit=0.00, signed=-1313435.12
+  ('022001', 'ICP_001001', '120030') -> net=-26035079.04 (primary, 1 entries)
+    Row 68: debit=0.00, credit=26035079.04, signed=-26035079.04
+  ('027009', 'ICP_E108000', '433002') -> net=-26035079.04 (primary, 1 entries)
+    Row 67: debit=26035079.04, credit=0.00, signed=-26035079.04
+  ('101000', 'ICP_001001', '534018') -> net=4147686.72 (fallback, 1 entries)
+    Row 48: debit=4147686.72, credit=0.00, signed=4147686.72
+  ('101000', 'ICP_001002', '534018') -> net=-3635532.44 (fallback, 1 entries)
+    Row 58: debit=0.00, credit=3635532.44, signed=-3635532.44
+  ('101000', 'ICP_013011', '534018') -> net=8722.03 (fallback, 1 entries)
+    Row 50: debit=8722.03, credit=0.00, signed=8722.03
+  ('101000', 'ICP_013014', '433002') -> net=-1.96 (fallback, 1 entries)
+    Row 53: debit=1.96, credit=0.00, signed=-1.96
+  ('103000', 'ICP_005003', '111006') -> net=-200000.00 (fallback, 1 entries)
+    Row 414: debit=0.00, credit=200000.00, signed=-200000.00
+  ('105000', 'ICP_005002', '111006') -> net=1109.52 (fallback, 1 entries)
+    Row 249: debit=1109.52, credit=0.00, signed=1109.52
+  ('108000', 'ICP_001001', '534018') -> net=69254195.50 (fallback, 1 entries)
+    Row 61: debit=69254195.50, credit=0.00, signed=69254195.50
+  ('108000', 'ICP_027009', '534018') -> net=-465978.46 (fallback, 1 entries)
+    Row 63: debit=0.00, credit=465978.46, signed=-465978.46
+  ('111000', 'ICP_001001', '534018') -> net=-11700.00 (fallback, 1 entries)
+    Row 69: debit=0.00, credit=11700.00, signed=-11700.00
+  ('112000', 'ICP_009002', '111006') -> net=-13112760.00 (fallback, 1 entries)
+    Row 174: debit=0.00, credit=13112760.00, signed=-13112760.00
+  ('117100', 'ICP_007009', '534018') -> net=7934061.83 (fallback, 1 entries)
+    Row 39: debit=7934061.83, credit=0.00, signed=7934061.83
+  ('117100', 'ICP_007012', '534018') -> net=9830437.32 (fallback, 1 entries)
+    Row 42: debit=9830437.32, credit=0.00, signed=9830437.32
+  ('117100', 'ICP_013001', '433002') -> net=-116407.55 (fallback, 2 entries)
+    Row 85: debit=117802.85, credit=0.00, signed=-117802.85
+    Row 89: debit=0.00, credit=1395.30, signed=1395.30
+  ('117100', 'ICP_013011', '433002') -> net=2315402.68 (fallback, 1 entries)
+    Row 91: debit=0.00, credit=2315402.68, signed=2315402.68
+  ('118000', 'ICP_001001', '121015') -> net=-1576708.00 (fallback, 1 entries)
+    Row 363: debit=0.00, credit=1576708.00, signed=-1576708.00
+
+--- CONTRIBUTION JOURNAL: All (entity, icp, account) -> net value ---
+  ('016003', 'ICP_016001', '165003') -> net=-1.00 (primary, 1 entries)
+    Row 258: debit=0.00, credit=1.00, signed=-1.00
+  ('109000', 'ICP_011002', '315005') -> net=431247081.59 (fallback, 1 entries)
+    Row 223: debit=0.00, credit=431247081.59, signed=431247081.59
+  ('111100', 'ICP_001011', 'Plug_InvSh') -> net=-3167434180.00 (fallback, 1 entries)
+    Row 368: debit=0.00, credit=3167434180.00, signed=-3167434180.00
+  ('117000A', 'ICP_001001', '224000') -> net=-64502.00 (primary, 1 entries)
+    Row 418: debit=64502.00, credit=0.00, signed=-64502.00
+  ('117000A', 'ICP_013013', '310001') -> net=64502.00 (primary, 1 entries)
+    Row 419: debit=0.00, credit=64502.00, signed=64502.00
+
+
+ICM Output: 171 data rows, header at row 32
+Headers:
+  Col   1: Entity
+  Col   2: Partner
+  Col   3: 534018 - 534018:Interest expense - related parties Entity
+  Col   4: 433002 - 433002:Interest income - related parties Entity
+  Col   5: 111006 - 111006:111006 Entity
+  Col   6: 120030 - 120030:120030 Entity
+  Col   7: 121015 - 121015:121015 Entity
+  Col   8: Variance
+  Col   9: 433002 - 433002:Interest income - related parties Partner
+  Col  10: 534018 - 534018:Interest expense - related parties Partner
+  Col  11: 111006 - 111006:111006 Partner
+  Col  12: 120030 - 120030:120030 Partner
+  Col  13: 121015 - 121015:121015 Partner
+  Col  14: Variance
+  Col  15: Total
+  Col  17: 534018 - 534018:Interest expense - related parties Entity
+  Col  18: 433002 - 433002:Interest income - related parties Entity
+  Col  19: 111006 - 111006:111006 Entity
+  Col  20: 120030 - 120030:120030 Entity
+  Col  21: 121015 - 121015:121015 Entity
+  Col  22: Variance
+  Col  23: 433002 - 433002:Interest income - related parties Partner
+  Col  24: 534018 - 534018:Interest expense - related parties Partner
+  Col  25: 111006 - 111006:111006 Partner
+  Col  26: 120030 - 120030:120030 Partner
+  Col  27: 121015 - 121015:121015 Partner
+  Col  28: Variance
+  Col  29: Total
+  Col  30: 188600:Intercompany Balances Plug A/c
+(Entity → Parent)
+  Col  32: 534018 - 534018:Interest expense - related parties Entity
+  Col  33: 433002 - 433002:Interest income - related parties Entity
+  Col  34: 111006 - 111006:111006 Entity
+  Col  35: 120030 - 120030:120030 Entity
+  Col  36: 121015 - 121015:121015 Entity
+  Col  37: Variance
+  Col  38: 433002 - 433002:Interest income - related parties Partner
+  Col  39: 534018 - 534018:Interest expense - related parties Partner
+  Col  40: 111006 - 111006:111006 Partner
+  Col  41: 120030 - 120030:120030 Partner
+  Col  42: 121015 - 121015:121015 Partner
+  Col  43: Variance
+  Col  44: Total
+  Col  45: 188600:Intercompany Balances Plug A/c
+(Parent → Entity)
+  Col  47: 188600:Intercompany Balances Plug A/c
+  Col  48: Total
+  Col  50: Final Total
+
+Column mapping:
+  Col   3: block=base, side=entity, account=534018
+  Col   4: block=base, side=entity, account=433002
+  Col   5: block=base, side=entity, account=111006
+  Col   6: block=base, side=entity, account=120030
+  Col   7: block=base, side=entity, account=121015
+  Col   9: block=base, side=partner, account=433002
+  Col  10: block=base, side=partner, account=534018
+  Col  11: block=base, side=partner, account=111006
+  Col  12: block=base, side=partner, account=120030
+  Col  13: block=base, side=partner, account=121015
+  Col  17: block=parent, side=entity, account=534018
+  Col  18: block=parent, side=entity, account=433002
+  Col  19: block=parent, side=entity, account=111006
+  Col  20: block=parent, side=entity, account=120030
+  Col  21: block=parent, side=entity, account=121015
+  Col  23: block=parent, side=partner, account=433002
+  Col  24: block=parent, side=partner, account=534018
+  Col  25: block=parent, side=partner, account=111006
+  Col  26: block=parent, side=partner, account=120030
+  Col  27: block=parent, side=partner, account=121015
+  Col  32: block=contrib, side=entity, account=534018
+  Col  33: block=contrib, side=entity, account=433002
+  Col  34: block=contrib, side=entity, account=111006
+  Col  35: block=contrib, side=entity, account=120030
+  Col  36: block=contrib, side=entity, account=121015
+  Col  38: block=contrib, side=partner, account=433002
+  Col  39: block=contrib, side=partner, account=534018
+  Col  40: block=contrib, side=partner, account=111006
+  Col  41: block=contrib, side=partner, account=120030
+  Col  42: block=contrib, side=partner, account=121015
+
+================================================================================
+  DETAILED CROSS-CHECK
+================================================================================
+
+
+================================================================================
+  JOURNAL VALUES NOT FOUND IN OUTPUT
+================================================================================
+
+  Contrib ('016003', 'ICP_016001', '165003') -> net=-1.00 NOT FOUND in any output row
+  Contrib ('109000', 'ICP_011002', '315005') -> net=431247081.59 NOT FOUND in any output row
+  Contrib ('111100', 'ICP_001011', 'Plug_InvSh') -> net=-3167434180.00 NOT FOUND in any output row
+  Contrib ('117000A', 'ICP_001001', '224000') -> net=-64502.00 NOT FOUND in any output row
+  Contrib ('117000A', 'ICP_013013', '310001') -> net=64502.00 NOT FOUND in any output row
+
+================================================================================
+  SUMMARY
+================================================================================
+
+Total cells checked: 67
+Correct matches: 67
+Mismatches: 0
+Parent journal keys not in output: 0
+Contribution journal keys not in output: 5
+

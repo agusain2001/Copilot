@@ -1,0 +1,31 @@
+=== ALL E117100 rows ===
+Row 153: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013013 - QD UK Holdings LP (H) ICP
+  Values: ['534018 - 534018:Interest expense - relat=-108525628', 'Variance=-108525628', 'Total=-108525628', 'Final Total=-108525628']
+Row 154: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013007 - CB 1_3 LP ICP
+  Values: ['433002 - 433002:Interest income - relate=-100163395', 'Variance=100163395', 'Total=100163395', 'Final Total=100163395']
+Row 155: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013012 - 16 GS LLP ICP
+  Values: ['433002 - 433002:Interest income - relate=-8366746', 'Variance=8366746', 'Total=8366746', 'Final Total=8366746']
+Row 156: Entity=E117100 - QD UK Holdings LP adjusted | Partner=
+  [NO VALUES]
+Row 200: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_007009:QD Europe Chancery S.a.r.l. ICP
+  Values: ['534018 - 534018:Interest expense - relat=7934061.83', 'Variance=7934061.83', '534018 - 534018:Interest expense - relat=-17882306.93', 'Variance=-17882306.93', 'Total=-9948245.1', 'Final Total=-9948245.1']
+Row 201: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_007012:GS 16  S.ar.l. ICP
+  Values: ['534018 - 534018:Interest expense - relat=9830437.32', 'Variance=9830437.32', '534018 - 534018:Interest expense - relat=4.65', 'Variance=4.65', 'Total=9830441.97', 'Final Total=9830441.97']
+Row 202: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013001:Qatari Diar UK Limited ICP
+  Values: ['433002 - 433002:Interest income - relate=-116407.55', 'Variance=116407.55', '433002 - 433002:Interest income - relate=-2315402.68', '534018 - 534018:Interest expense - relat=1395.3', 'Variance=2316797.98', 'Total=2433205.53', 'Final Total=2433205.53']
+Row 203: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013011:Qatari Diar Europe LLP ICP
+  Values: ['433002 - 433002:Interest income - relate=2315402.68', 'Variance=-2315402.68', '433002 - 433002:Interest income - relate=125000.28', 'Variance=-125000.28', 'Total=-2440402.96', 'Final Total=-2440402.96']
+
+
+=== ALL E101000 rows ===
+Row 71: Entity=E101000 - QDHP & QD Europe Sarl | Partner=ICP_007001 - QD Europe S.a.r.l. (H) ICP
+Row 72: Entity=E101000 - QDHP & QD Europe Sarl | Partner=ICP_007006 - Casinvest S.a.r.l. (H) ICP
+Row 73: Entity=E101000 - QDHP & QD Europe Sarl | Partner=ICP_007011 - GPS Holdings S.a.r.l. ICP
+Row 74: Entity=E101000 - QDHP & QD Europe Sarl | Partner=ICP_007004 - QD VEO S.a.r.l. (H) ICP
+Row 75: Entity=E101000 - QDHP & QD Europe Sarl | Partner=ICP_007005 - VELO Investissement ICP
+Row 76: Entity=E101000 - QDHP & QD Europe Sarl | Partner=ICP_032002 - QD Hotel & Property Investment Montenegro 
+Row 77: Entity=E101000 - QDHP & QD Europe Sarl | Partner=
+Row 189: Entity=E101000 - QDHP & QD Europe Sarl | Partner=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP
+Row 190: Entity=E101000 - QDHP & QD Europe Sarl | Partner=ICP_001002:Qatari Resorts Co. Q.S.C. (H) ICP
+Row 191: Entity=E101000 - QDHP & QD Europe Sarl | Partner=ICP_013011:Qatari Diar Europe LLP ICP
+Row 192: Entity=E101000 - QDHP & QD Europe Sarl | Partner=ICP_013014:30 GS LLP ICP

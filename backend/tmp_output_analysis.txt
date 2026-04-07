@@ -1,0 +1,1466 @@
+=== OUTPUT ANALYSIS ===
+Output: uploads\reports\31\outputs\ICM_Output_31_test.xlsx
+Max rows: 203, Max cols: 50
+
+Header row 32:
+  Col 1: Entity
+  Col 2: Partner
+  Col 3: 534018 - 534018:Interest expense - related parties Entity
+  Col 4: 433002 - 433002:Interest income - related parties Entity
+  Col 5: 111006 - 111006:111006 Entity
+  Col 6: 120030 - 120030:120030 Entity
+  Col 7: 121015 - 121015:121015 Entity
+  Col 8: Variance
+  Col 9: 433002 - 433002:Interest income - related parties Partner
+  Col 10: 534018 - 534018:Interest expense - related parties Partner
+  Col 11: 111006 - 111006:111006 Partner
+  Col 12: 120030 - 120030:120030 Partner
+  Col 13: 121015 - 121015:121015 Partner
+  Col 14: Variance
+  Col 15: Total
+  Col 17: 534018 - 534018:Interest expense - related parties Entity
+  Col 18: 433002 - 433002:Interest income - related parties Entity
+  Col 19: 111006 - 111006:111006 Entity
+  Col 20: 120030 - 120030:120030 Entity
+  Col 21: 121015 - 121015:121015 Entity
+  Col 22: Variance
+  Col 23: 433002 - 433002:Interest income - related parties Partner
+  Col 24: 534018 - 534018:Interest expense - related parties Partner
+  Col 25: 111006 - 111006:111006 Partner
+  Col 26: 120030 - 120030:120030 Partner
+  Col 27: 121015 - 121015:121015 Partner
+  Col 28: Variance
+  Col 29: Total
+  Col 30: 188600:Intercompany Balances Plug A/c
+(Entity → Parent)
+  Col 32: 534018 - 534018:Interest expense - related parties Entity
+  Col 33: 433002 - 433002:Interest income - related parties Entity
+  Col 34: 111006 - 111006:111006 Entity
+  Col 35: 120030 - 120030:120030 Entity
+  Col 36: 121015 - 121015:121015 Entity
+  Col 37: Variance
+  Col 38: 433002 - 433002:Interest income - related parties Partner
+  Col 39: 534018 - 534018:Interest expense - related parties Partner
+  Col 40: 111006 - 111006:111006 Partner
+  Col 41: 120030 - 120030:120030 Partner
+  Col 42: 121015 - 121015:121015 Partner
+  Col 43: Variance
+  Col 44: Total
+  Col 45: 188600:Intercompany Balances Plug A/c
+(Parent → Entity)
+  Col 47: 188600:Intercompany Balances Plug A/c
+  Col 48: Total
+
+=== ROWS WITH DATA ===
+
+Row 33: [HAS DATA]
+  Entity: 001001 - QDRE Investment Company Q.S.C. 
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -1093750
+  Col  10 (534018 - 534018:Interest expense - relat): -1250969225
+  Col  14 (Variance): -1249875475
+  Col  15 (Total): -1249875475
+  Col  50 (Final Total): -1249875475
+
+Row 34: [HAS DATA]
+  Entity: 001001 - QDRE Investment Company Q.S.C. 
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -1093750
+  Col  10 (534018 - 534018:Interest expense - relat): -1250969225
+  Col  14 (Variance): -1249875475
+  Col  15 (Total): -1249875475
+  Col  50 (Final Total): -1249875475
+
+Row 35: [HAS DATA]
+  Entity: 007001 - QD Europe S.a.r.l. (H)
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -70357955
+  Col  10 (534018 - 534018:Interest expense - relat): -75848302
+  Col  14 (Variance): -5490347
+  Col  15 (Total): -5490347
+  Col  50 (Final Total): -5490347
+
+Row 36: [HAS DATA]
+  Entity: 007001 - QD Europe S.a.r.l. (H)
+  Partner: ICP_E101100 - QD Europe_S.a.r.l. ICP
+  Col  10 (534018 - 534018:Interest expense - relat): -75848302
+  Col  14 (Variance): -75848302
+  Col  15 (Total): -75848302
+  Col  50 (Final Total): -75848302
+
+Row 37: [HAS DATA]
+  Entity: 007001 - QD Europe S.a.r.l. (H)
+  Partner: ICP_E101000 - QDHP & QD Europe Sarl ICP
+  Col  10 (534018 - 534018:Interest expense - relat): -75848302
+  Col  14 (Variance): -75848302
+  Col  15 (Total): -75848302
+  Col  50 (Final Total): -75848302
+
+Row 38: [HAS DATA]
+  Entity: 007001 - QD Europe S.a.r.l. (H)
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -70357955
+  Col  10 (534018 - 534018:Interest expense - relat): -227544906
+  Col  14 (Variance): -157186951
+  Col  15 (Total): -157186951
+  Col  50 (Final Total): -157186951
+
+Row 39: [HAS DATA]
+  Entity: 007004 - QD VEO S.a.r.l. (H)
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -54010964
+  Col  10 (534018 - 534018:Interest expense - relat): -6254857
+  Col  14 (Variance): 47756107
+  Col  15 (Total): 47756107
+  Col  50 (Final Total): 47756107
+
+Row 40: [HAS DATA]
+  Entity: 007004 - QD VEO S.a.r.l. (H)
+  Partner: ICP_E101100 - QD Europe_S.a.r.l. ICP
+  Col   9 (433002 - 433002:Interest income - relate): -54010964
+  Col  10 (534018 - 534018:Interest expense - relat): -6254857
+  Col  14 (Variance): 47756107
+  Col  15 (Total): 47756107
+  Col  50 (Final Total): 47756107
+
+Row 41: [HAS DATA]
+  Entity: 007004 - QD VEO S.a.r.l. (H)
+  Partner: ICP_E101110 - QD VEO_S.a.r.l. ICP
+  Col  10 (534018 - 534018:Interest expense - relat): -6254857
+  Col  14 (Variance): -6254857
+  Col  15 (Total): -6254857
+  Col  50 (Final Total): -6254857
+
+Row 42: [HAS DATA]
+  Entity: 007004 - QD VEO S.a.r.l. (H)
+  Partner: ICP_E101000 - QDHP & QD Europe Sarl ICP
+  Col   9 (433002 - 433002:Interest income - relate): -54010964
+  Col  10 (534018 - 534018:Interest expense - relat): -6254857
+  Col  14 (Variance): 47756107
+  Col  15 (Total): 47756107
+  Col  50 (Final Total): 47756107
+
+Row 43: [HAS DATA]
+  Entity: 007004 - QD VEO S.a.r.l. (H)
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -162032892
+  Col  10 (534018 - 534018:Interest expense - relat): -25019428
+  Col  14 (Variance): 137013464
+  Col  15 (Total): 137013464
+  Col  50 (Final Total): 137013464
+
+Row 44: [HAS DATA]
+  Entity: 007005 - VELO Investissement
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -6254857
+  Col  14 (Variance): 6254857
+  Col  15 (Total): 6254857
+  Col  50 (Final Total): 6254857
+
+Row 45: [HAS DATA]
+  Entity: 007005 - VELO Investissement
+  Partner: ICP_E101100 - QD Europe_S.a.r.l. ICP
+  Col   9 (433002 - 433002:Interest income - relate): -6254857
+  Col  14 (Variance): 6254857
+  Col  15 (Total): 6254857
+  Col  50 (Final Total): 6254857
+
+Row 46: [HAS DATA]
+  Entity: 007005 - VELO Investissement
+  Partner: ICP_E101110 - QD VEO_S.a.r.l. ICP
+  Col   9 (433002 - 433002:Interest income - relate): -6254857
+  Col  14 (Variance): 6254857
+  Col  15 (Total): 6254857
+  Col  50 (Final Total): 6254857
+
+Row 47: [HAS DATA]
+  Entity: 007005 - VELO Investissement
+  Partner: ICP_E101000 - QDHP & QD Europe Sarl ICP
+  Col   9 (433002 - 433002:Interest income - relate): -6254857
+  Col  14 (Variance): 6254857
+  Col  15 (Total): 6254857
+  Col  50 (Final Total): 6254857
+
+Row 48: [HAS DATA]
+  Entity: 007005 - VELO Investissement
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -25019428
+  Col  14 (Variance): 25019428
+  Col  15 (Total): 25019428
+  Col  50 (Final Total): 25019428
+
+Row 49: [HAS DATA]
+  Entity: E101110 - QD VEO_S.a.r.l.
+  Partner: ICP_007004 - QD VEO S.a.r.l. (H) ICP
+  Col   3 (534018 - 534018:Interest expense - relat): -6254857
+  Col   8 (Variance): -6254857
+  Col  15 (Total): -6254857
+  Col  50 (Final Total): -6254857
+
+Row 50: [HAS DATA]
+  Entity: E101110 - QD VEO_S.a.r.l.
+  Partner: ICP_007005 - VELO Investissement ICP
+  Col   4 (433002 - 433002:Interest income - relate): -6254857
+  Col   8 (Variance): 6254857
+  Col  15 (Total): 6254857
+  Col  50 (Final Total): 6254857
+
+Row 51: [HAS DATA]
+  Entity: E101110 - QD VEO_S.a.r.l.
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -6254857
+  Col   4 (433002 - 433002:Interest income - relate): -6254857
+
+Row 52: [HAS DATA]
+  Entity: 007006 - Casinvest S.a.r.l. (H)
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -8127623
+  Col  14 (Variance): 8127623
+  Col  15 (Total): 8127623
+  Col  50 (Final Total): 8127623
+
+Row 53: [HAS DATA]
+  Entity: 007006 - Casinvest S.a.r.l. (H)
+  Partner: ICP_E101100 - QD Europe_S.a.r.l. ICP
+  Col   9 (433002 - 433002:Interest income - relate): -8127623
+  Col  14 (Variance): 8127623
+  Col  15 (Total): 8127623
+  Col  50 (Final Total): 8127623
+
+Row 54: [HAS DATA]
+  Entity: 007006 - Casinvest S.a.r.l. (H)
+  Partner: ICP_E101000 - QDHP & QD Europe Sarl ICP
+  Col   9 (433002 - 433002:Interest income - relate): -8127623
+  Col  14 (Variance): 8127623
+  Col  15 (Total): 8127623
+  Col  50 (Final Total): 8127623
+
+Row 55: [HAS DATA]
+  Entity: 007006 - Casinvest S.a.r.l. (H)
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -24382869
+  Col  14 (Variance): 24382869
+  Col  15 (Total): 24382869
+  Col  50 (Final Total): 24382869
+
+Row 56: [HAS DATA]
+  Entity: 032002 - QD Hotel & Property Investment 
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -8706694
+  Col  14 (Variance): 8706694
+  Col  15 (Total): 8706694
+  Col  50 (Final Total): 8706694
+
+Row 57: [HAS DATA]
+  Entity: 032002 - QD Hotel & Property Investment 
+  Partner: ICP_E101100 - QD Europe_S.a.r.l. ICP
+  Col   9 (433002 - 433002:Interest income - relate): -8706694
+  Col  14 (Variance): 8706694
+  Col  15 (Total): 8706694
+  Col  50 (Final Total): 8706694
+
+Row 58: [HAS DATA]
+  Entity: 032002 - QD Hotel & Property Investment 
+  Partner: ICP_E101000 - QDHP & QD Europe Sarl ICP
+  Col   9 (433002 - 433002:Interest income - relate): -8706694
+  Col  14 (Variance): 8706694
+  Col  15 (Total): 8706694
+  Col  50 (Final Total): 8706694
+
+Row 59: [HAS DATA]
+  Entity: 032002 - QD Hotel & Property Investment 
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -26120082
+  Col  14 (Variance): 26120082
+  Col  15 (Total): 26120082
+  Col  50 (Final Total): 26120082
+
+Row 60: [HAS DATA]
+  Entity: 007011 - GPS Holdings S.a.r.l.
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -5015593
+  Col  14 (Variance): 5015593
+  Col  15 (Total): 5015593
+  Col  50 (Final Total): 5015593
+
+Row 61: [HAS DATA]
+  Entity: 007011 - GPS Holdings S.a.r.l.
+  Partner: ICP_E101100 - QD Europe_S.a.r.l. ICP
+  Col   9 (433002 - 433002:Interest income - relate): -5015593
+  Col  14 (Variance): 5015593
+  Col  15 (Total): 5015593
+  Col  50 (Final Total): 5015593
+
+Row 62: [HAS DATA]
+  Entity: 007011 - GPS Holdings S.a.r.l.
+  Partner: ICP_E101000 - QDHP & QD Europe Sarl ICP
+  Col   9 (433002 - 433002:Interest income - relate): -5015593
+  Col  14 (Variance): 5015593
+  Col  15 (Total): 5015593
+  Col  50 (Final Total): 5015593
+
+Row 63: [HAS DATA]
+  Entity: 007011 - GPS Holdings S.a.r.l.
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -15046779
+  Col  14 (Variance): 15046779
+  Col  15 (Total): 15046779
+  Col  50 (Final Total): 15046779
+
+Row 64: [HAS DATA]
+  Entity: E101100 - QD Europe_S.a.r.l.
+  Partner: ICP_007001 - QD Europe S.a.r.l. (H) ICP
+  Col   3 (534018 - 534018:Interest expense - relat): -75848302
+  Col   8 (Variance): -75848302
+  Col  15 (Total): -75848302
+  Col  50 (Final Total): -75848302
+
+Row 65: [HAS DATA]
+  Entity: E101100 - QD Europe_S.a.r.l.
+  Partner: ICP_007006 - Casinvest S.a.r.l. (H) ICP
+  Col   4 (433002 - 433002:Interest income - relate): -8127623
+  Col   8 (Variance): 8127623
+  Col  15 (Total): 8127623
+  Col  50 (Final Total): 8127623
+
+Row 66: [HAS DATA]
+  Entity: E101100 - QD Europe_S.a.r.l.
+  Partner: ICP_007011 - GPS Holdings S.a.r.l. ICP
+  Col   4 (433002 - 433002:Interest income - relate): -5015593
+  Col   8 (Variance): 5015593
+  Col  15 (Total): 5015593
+  Col  50 (Final Total): 5015593
+
+Row 67: [HAS DATA]
+  Entity: E101100 - QD Europe_S.a.r.l.
+  Partner: ICP_007004 - QD VEO S.a.r.l. (H) ICP
+  Col   3 (534018 - 534018:Interest expense - relat): -6254857
+  Col   4 (433002 - 433002:Interest income - relate): -54010964
+  Col   8 (Variance): 47756107
+  Col  15 (Total): 47756107
+  Col  50 (Final Total): 47756107
+
+Row 68: [HAS DATA]
+  Entity: E101100 - QD Europe_S.a.r.l.
+  Partner: ICP_007005 - VELO Investissement ICP
+  Col   4 (433002 - 433002:Interest income - relate): -6254857
+  Col   8 (Variance): 6254857
+  Col  15 (Total): 6254857
+  Col  50 (Final Total): 6254857
+
+Row 69: [HAS DATA]
+  Entity: E101100 - QD Europe_S.a.r.l.
+  Partner: ICP_032002 - QD Hotel & Property Investm
+  Col   4 (433002 - 433002:Interest income - relate): -8706694
+  Col   8 (Variance): 8706694
+  Col  15 (Total): 8706694
+  Col  50 (Final Total): 8706694
+
+Row 70: [HAS DATA]
+  Entity: E101100 - QD Europe_S.a.r.l.
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -82103159
+  Col   4 (433002 - 433002:Interest income - relate): -82115731
+  Col   8 (Variance): 12572
+  Col  15 (Total): 12572
+  Col  50 (Final Total): 12572
+
+Row 71: [HAS DATA]
+  Entity: E101000 - QDHP & QD Europe Sarl
+  Partner: ICP_007001 - QD Europe S.a.r.l. (H) ICP
+  Col   3 (534018 - 534018:Interest expense - relat): -75848302
+  Col   8 (Variance): -75848302
+  Col  15 (Total): -75848302
+  Col  50 (Final Total): -75848302
+
+Row 72: [HAS DATA]
+  Entity: E101000 - QDHP & QD Europe Sarl
+  Partner: ICP_007006 - Casinvest S.a.r.l. (H) ICP
+  Col   4 (433002 - 433002:Interest income - relate): -8127623
+  Col   8 (Variance): 8127623
+  Col  15 (Total): 8127623
+  Col  50 (Final Total): 8127623
+
+Row 73: [HAS DATA]
+  Entity: E101000 - QDHP & QD Europe Sarl
+  Partner: ICP_007011 - GPS Holdings S.a.r.l. ICP
+  Col   4 (433002 - 433002:Interest income - relate): -5015593
+  Col   8 (Variance): 5015593
+  Col  15 (Total): 5015593
+  Col  50 (Final Total): 5015593
+
+Row 74: [HAS DATA]
+  Entity: E101000 - QDHP & QD Europe Sarl
+  Partner: ICP_007004 - QD VEO S.a.r.l. (H) ICP
+  Col   3 (534018 - 534018:Interest expense - relat): -6254857
+  Col   4 (433002 - 433002:Interest income - relate): -54010964
+  Col   8 (Variance): 47756107
+  Col  15 (Total): 47756107
+  Col  50 (Final Total): 47756107
+
+Row 75: [HAS DATA]
+  Entity: E101000 - QDHP & QD Europe Sarl
+  Partner: ICP_007005 - VELO Investissement ICP
+  Col   4 (433002 - 433002:Interest income - relate): -6254857
+  Col   8 (Variance): 6254857
+  Col  15 (Total): 6254857
+  Col  50 (Final Total): 6254857
+
+Row 76: [HAS DATA]
+  Entity: E101000 - QDHP & QD Europe Sarl
+  Partner: ICP_032002 - QD Hotel & Property Investm
+  Col   4 (433002 - 433002:Interest income - relate): -8706694
+  Col   8 (Variance): 8706694
+  Col  15 (Total): 8706694
+  Col  50 (Final Total): 8706694
+
+Row 77: [HAS DATA]
+  Entity: E101000 - QDHP & QD Europe Sarl
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -82103159
+  Col   4 (433002 - 433002:Interest income - relate): -82115731
+  Col   8 (Variance): 12572
+  Col  15 (Total): 12572
+  Col  50 (Final Total): 12572
+
+Row 78: [HAS DATA]
+  Entity: 002001 - QDRE & Tourism Co. LLC. (Egypt)
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -347069632
+  Col  14 (Variance): 347069632
+  Col  15 (Total): 347069632
+  Col  50 (Final Total): 347069632
+
+Row 79: [HAS DATA]
+  Entity: 002001 - QDRE & Tourism Co. LLC. (Egypt)
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -347069632
+  Col  14 (Variance): 347069632
+  Col  15 (Total): 347069632
+  Col  50 (Final Total): 347069632
+
+Row 80: [HAS DATA]
+  Entity: 019002 - QD US Real Estate Company (H)
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -192395642
+  Col  14 (Variance): 192395642
+  Col  15 (Total): 192395642
+  Col  50 (Final Total): 192395642
+
+Row 81: [HAS DATA]
+  Entity: 019002 - QD US Real Estate Company (H)
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -192395642
+  Col  14 (Variance): 192395642
+  Col  15 (Total): 192395642
+  Col  50 (Final Total): 192395642
+
+Row 82: [HAS DATA]
+  Entity: 019003 - QD US Parcel A (Residential) Co
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col  10 (534018 - 534018:Interest expense - relat): -6634143
+  Col  14 (Variance): -6634143
+  Col  15 (Total): -6634143
+  Col  50 (Final Total): -6634143
+
+Row 83: [HAS DATA]
+  Entity: 019003 - QD US Parcel A (Residential) Co
+  Partner: ICP_E108000 - QD US Real Estate Co. ICP
+  Col  10 (534018 - 534018:Interest expense - relat): -6634143
+  Col  14 (Variance): -6634143
+  Col  15 (Total): -6634143
+  Col  50 (Final Total): -6634143
+
+Row 84: [HAS DATA]
+  Entity: 019003 - QD US Parcel A (Residential) Co
+  Partner: ICP_E108400 - QD US Parcel A (Residentia
+  Col  10 (534018 - 534018:Interest expense - relat): -6634143
+  Col  14 (Variance): -6634143
+  Col  15 (Total): -6634143
+  Col  50 (Final Total): -6634143
+
+Row 85: [HAS DATA]
+  Entity: 019003 - QD US Parcel A (Residential) Co
+  Partner: 
+  Col  10 (534018 - 534018:Interest expense - relat): -19902429
+  Col  14 (Variance): -19902429
+  Col  15 (Total): -19902429
+  Col  50 (Final Total): -19902429
+
+Row 86: [HAS DATA]
+  Entity: 027001 - CityCenter DC Residential
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -6634143
+  Col  14 (Variance): 6634143
+  Col  15 (Total): 6634143
+  Col  50 (Final Total): 6634143
+
+Row 87: [HAS DATA]
+  Entity: 027001 - CityCenter DC Residential
+  Partner: ICP_E108000 - QD US Real Estate Co. ICP
+  Col   9 (433002 - 433002:Interest income - relate): -6634143
+  Col  14 (Variance): 6634143
+  Col  15 (Total): 6634143
+  Col  50 (Final Total): 6634143
+
+Row 88: [HAS DATA]
+  Entity: 027001 - CityCenter DC Residential
+  Partner: ICP_E108400 - QD US Parcel A (Residentia
+  Col   9 (433002 - 433002:Interest income - relate): -6634143
+  Col  14 (Variance): 6634143
+  Col  15 (Total): 6634143
+  Col  50 (Final Total): 6634143
+
+Row 89: [HAS DATA]
+  Entity: 027001 - CityCenter DC Residential
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -19902429
+  Col  14 (Variance): 19902429
+  Col  15 (Total): 19902429
+  Col  50 (Final Total): 19902429
+
+Row 90: [HAS DATA]
+  Entity: E108400 - QD US Parcel A (Residential) C
+  Partner: ICP_027001 - CityCenter DC Residential I
+  Col   4 (433002 - 433002:Interest income - relate): -6634143
+  Col   8 (Variance): 6634143
+  Col  15 (Total): 6634143
+  Col  50 (Final Total): 6634143
+
+Row 91: [HAS DATA]
+  Entity: E108400 - QD US Parcel A (Residential) C
+  Partner: ICP_019003 - QD US Parcel A (Residential
+  Col   3 (534018 - 534018:Interest expense - relat): -6634143
+  Col   8 (Variance): -6634143
+  Col  15 (Total): -6634143
+  Col  50 (Final Total): -6634143
+
+Row 92: [HAS DATA]
+  Entity: E108400 - QD US Parcel A (Residential) C
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -6634143
+  Col   4 (433002 - 433002:Interest income - relate): -6634143
+
+Row 93: [HAS DATA]
+  Entity: 013004 - CCDC Parcel B Hotel Corp.
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col  10 (534018 - 534018:Interest expense - relat): -21380281
+  Col  14 (Variance): -21380281
+  Col  15 (Total): -21380281
+  Col  50 (Final Total): -21380281
+
+Row 94: [HAS DATA]
+  Entity: 013004 - CCDC Parcel B Hotel Corp.
+  Partner: ICP_E108000 - QD US Real Estate Co. ICP
+  Col  10 (534018 - 534018:Interest expense - relat): -21380281
+  Col  14 (Variance): -21380281
+  Col  15 (Total): -21380281
+  Col  50 (Final Total): -21380281
+
+Row 95: [HAS DATA]
+  Entity: 013004 - CCDC Parcel B Hotel Corp.
+  Partner: ICP_E108600 - CCDC Parcel B Hotel Corpor
+  Col  10 (534018 - 534018:Interest expense - relat): -21380281
+  Col  14 (Variance): -21380281
+  Col  15 (Total): -21380281
+  Col  50 (Final Total): -21380281
+
+Row 96: [HAS DATA]
+  Entity: 013004 - CCDC Parcel B Hotel Corp.
+  Partner: 
+  Col  10 (534018 - 534018:Interest expense - relat): -64140843
+  Col  14 (Variance): -64140843
+  Col  15 (Total): -64140843
+  Col  50 (Final Total): -64140843
+
+Row 97: [HAS DATA]
+  Entity: 027006 - CityCenter Parcel B Hotel Corp.
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -21380281
+  Col  14 (Variance): 21380281
+  Col  15 (Total): 21380281
+  Col  50 (Final Total): 21380281
+
+Row 98: [HAS DATA]
+  Entity: 027006 - CityCenter Parcel B Hotel Corp.
+  Partner: ICP_E108000 - QD US Real Estate Co. ICP
+  Col   9 (433002 - 433002:Interest income - relate): -21380281
+  Col  14 (Variance): 21380281
+  Col  15 (Total): 21380281
+  Col  50 (Final Total): 21380281
+
+Row 99: [HAS DATA]
+  Entity: 027006 - CityCenter Parcel B Hotel Corp.
+  Partner: ICP_E108600 - CCDC Parcel B Hotel Corpor
+  Col   9 (433002 - 433002:Interest income - relate): -21380281
+  Col  14 (Variance): 21380281
+  Col  15 (Total): 21380281
+  Col  50 (Final Total): 21380281
+
+Row 100: [HAS DATA]
+  Entity: 027006 - CityCenter Parcel B Hotel Corp.
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -64140843
+  Col  14 (Variance): 64140843
+  Col  15 (Total): 64140843
+  Col  50 (Final Total): 64140843
+
+Row 101: [HAS DATA]
+  Entity: E108600 - CCDC Parcel B Hotel Corporatio
+  Partner: ICP_013004 - CCDC Parcel B Hotel Corp. I
+  Col   3 (534018 - 534018:Interest expense - relat): -21380281
+  Col   8 (Variance): -21380281
+  Col  15 (Total): -21380281
+  Col  50 (Final Total): -21380281
+
+Row 102: [HAS DATA]
+  Entity: E108600 - CCDC Parcel B Hotel Corporatio
+  Partner: ICP_027006 - CityCenter Parcel B Hotel C
+  Col   4 (433002 - 433002:Interest income - relate): -21380281
+  Col   8 (Variance): 21380281
+  Col  15 (Total): 21380281
+  Col  50 (Final Total): 21380281
+
+Row 103: [HAS DATA]
+  Entity: E108600 - CCDC Parcel B Hotel Corporatio
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -21380281
+  Col   4 (433002 - 433002:Interest income - relate): -21380281
+
+Row 104: [HAS DATA]
+  Entity: 013005 - CCDC Parcel B Retail Corp.
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col  10 (534018 - 534018:Interest expense - relat): -3812297
+  Col  14 (Variance): -3812297
+  Col  15 (Total): -3812297
+  Col  50 (Final Total): -3812297
+
+Row 105: [HAS DATA]
+  Entity: 013005 - CCDC Parcel B Retail Corp.
+  Partner: ICP_E108000 - QD US Real Estate Co. ICP
+  Col  10 (534018 - 534018:Interest expense - relat): -3812297
+  Col  14 (Variance): -3812297
+  Col  15 (Total): -3812297
+  Col  50 (Final Total): -3812297
+
+Row 106: [HAS DATA]
+  Entity: 013005 - CCDC Parcel B Retail Corp.
+  Partner: ICP_E108700 - CCDC Parcel B Retail Corpo
+  Col  10 (534018 - 534018:Interest expense - relat): -3812297
+  Col  14 (Variance): -3812297
+  Col  15 (Total): -3812297
+  Col  50 (Final Total): -3812297
+
+Row 107: [HAS DATA]
+  Entity: 013005 - CCDC Parcel B Retail Corp.
+  Partner: 
+  Col  10 (534018 - 534018:Interest expense - relat): -11436891
+  Col  14 (Variance): -11436891
+  Col  15 (Total): -11436891
+  Col  50 (Final Total): -11436891
+
+Row 108: [HAS DATA]
+  Entity: 027007 - CityCenter Parcel B Retail Corp
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -3812297
+  Col  14 (Variance): 3812297
+  Col  15 (Total): 3812297
+  Col  50 (Final Total): 3812297
+
+Row 109: [HAS DATA]
+  Entity: 027007 - CityCenter Parcel B Retail Corp
+  Partner: ICP_E108000 - QD US Real Estate Co. ICP
+  Col   9 (433002 - 433002:Interest income - relate): -3812297
+  Col  14 (Variance): 3812297
+  Col  15 (Total): 3812297
+  Col  50 (Final Total): 3812297
+
+Row 110: [HAS DATA]
+  Entity: 027007 - CityCenter Parcel B Retail Corp
+  Partner: ICP_E108700 - CCDC Parcel B Retail Corpo
+  Col   9 (433002 - 433002:Interest income - relate): -3812297
+  Col  14 (Variance): 3812297
+  Col  15 (Total): 3812297
+  Col  50 (Final Total): 3812297
+
+Row 111: [HAS DATA]
+  Entity: 027007 - CityCenter Parcel B Retail Corp
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -11436891
+  Col  14 (Variance): 11436891
+  Col  15 (Total): 11436891
+  Col  50 (Final Total): 11436891
+
+Row 112: [HAS DATA]
+  Entity: E108700 - CCDC Parcel B Retail Corporati
+  Partner: ICP_013005 - CCDC Parcel B Retail Corp. 
+  Col   3 (534018 - 534018:Interest expense - relat): -3812297
+  Col   8 (Variance): -3812297
+  Col  15 (Total): -3812297
+  Col  50 (Final Total): -3812297
+
+Row 113: [HAS DATA]
+  Entity: E108700 - CCDC Parcel B Retail Corporati
+  Partner: ICP_027007 - CityCenter Parcel B Retail 
+  Col   4 (433002 - 433002:Interest income - relate): -3812297
+  Col   8 (Variance): 3812297
+  Col  15 (Total): 3812297
+  Col  50 (Final Total): 3812297
+
+Row 114: [HAS DATA]
+  Entity: E108700 - CCDC Parcel B Retail Corporati
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -3812297
+  Col   4 (433002 - 433002:Interest income - relate): -3812297
+
+Row 115: [HAS DATA]
+  Entity: 027008 - LIC Gotham (US) Inc.
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -75123439
+  Col  14 (Variance): 75123439
+  Col  15 (Total): 75123439
+  Col  50 (Final Total): 75123439
+
+Row 116: [HAS DATA]
+  Entity: 027008 - LIC Gotham (US) Inc.
+  Partner: ICP_E108000 - QD US Real Estate Co. ICP
+  Col   9 (433002 - 433002:Interest income - relate): -75123439
+  Col  14 (Variance): 75123439
+  Col  15 (Total): 75123439
+  Col  50 (Final Total): 75123439
+
+Row 117: [HAS DATA]
+  Entity: 027008 - LIC Gotham (US) Inc.
+  Partner: ICP_E108800 - LIC Gotham (UK) Limited IC
+  Col   9 (433002 - 433002:Interest income - relate): -75123439
+  Col  14 (Variance): 75123439
+  Col  15 (Total): 75123439
+  Col  50 (Final Total): 75123439
+
+Row 118: [HAS DATA]
+  Entity: 027008 - LIC Gotham (US) Inc.
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -225370317
+  Col  14 (Variance): 225370317
+  Col  15 (Total): 225370317
+  Col  50 (Final Total): 225370317
+
+Row 119: [HAS DATA]
+  Entity: 013006 - LIC Gotham (UK) Ltd. (H)
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col  10 (534018 - 534018:Interest expense - relat): -75123439
+  Col  14 (Variance): -75123439
+  Col  15 (Total): -75123439
+  Col  50 (Final Total): -75123439
+
+Row 120: [HAS DATA]
+  Entity: 013006 - LIC Gotham (UK) Ltd. (H)
+  Partner: ICP_E108000 - QD US Real Estate Co. ICP
+  Col  10 (534018 - 534018:Interest expense - relat): -75123439
+  Col  14 (Variance): -75123439
+  Col  15 (Total): -75123439
+  Col  50 (Final Total): -75123439
+
+Row 121: [HAS DATA]
+  Entity: 013006 - LIC Gotham (UK) Ltd. (H)
+  Partner: ICP_E108800 - LIC Gotham (UK) Limited IC
+  Col  10 (534018 - 534018:Interest expense - relat): -75123439
+  Col  14 (Variance): -75123439
+  Col  15 (Total): -75123439
+  Col  50 (Final Total): -75123439
+
+Row 122: [HAS DATA]
+  Entity: 013006 - LIC Gotham (UK) Ltd. (H)
+  Partner: 
+  Col  10 (534018 - 534018:Interest expense - relat): -225370317
+  Col  14 (Variance): -225370317
+  Col  15 (Total): -225370317
+  Col  50 (Final Total): -225370317
+
+Row 123: [HAS DATA]
+  Entity: E108800 - LIC Gotham (UK) Limited
+  Partner: ICP_027008 - LIC Gotham (US) Inc. ICP
+  Col   4 (433002 - 433002:Interest income - relate): -75123439
+  Col   8 (Variance): 75123439
+  Col  15 (Total): 75123439
+  Col  50 (Final Total): 75123439
+
+Row 124: [HAS DATA]
+  Entity: E108800 - LIC Gotham (UK) Limited
+  Partner: ICP_013006 - LIC Gotham (UK) Ltd. (H) IC
+  Col   3 (534018 - 534018:Interest expense - relat): -75123439
+  Col   8 (Variance): -75123439
+  Col  15 (Total): -75123439
+  Col  50 (Final Total): -75123439
+
+Row 125: [HAS DATA]
+  Entity: E108800 - LIC Gotham (UK) Limited
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -75123439
+  Col   4 (433002 - 433002:Interest income - relate): -75123439
+
+Row 126: [HAS DATA]
+  Entity: E108000 - QD US Real Estate Co.
+  Partner: ICP_027001 - CityCenter DC Residential I
+  Col   4 (433002 - 433002:Interest income - relate): -6634143
+  Col   8 (Variance): 6634143
+  Col  15 (Total): 6634143
+  Col  50 (Final Total): 6634143
+
+Row 127: [HAS DATA]
+  Entity: E108000 - QD US Real Estate Co.
+  Partner: ICP_019003 - QD US Parcel A (Residential
+  Col   3 (534018 - 534018:Interest expense - relat): -6634143
+  Col   8 (Variance): -6634143
+  Col  15 (Total): -6634143
+  Col  50 (Final Total): -6634143
+
+Row 128: [HAS DATA]
+  Entity: E108000 - QD US Real Estate Co.
+  Partner: ICP_013004 - CCDC Parcel B Hotel Corp. I
+  Col   3 (534018 - 534018:Interest expense - relat): -21380281
+  Col   8 (Variance): -21380281
+  Col  15 (Total): -21380281
+  Col  50 (Final Total): -21380281
+
+Row 129: [HAS DATA]
+  Entity: E108000 - QD US Real Estate Co.
+  Partner: ICP_027006 - CityCenter Parcel B Hotel C
+  Col   4 (433002 - 433002:Interest income - relate): -21380281
+  Col   8 (Variance): 21380281
+  Col  15 (Total): 21380281
+  Col  50 (Final Total): 21380281
+
+Row 130: [HAS DATA]
+  Entity: E108000 - QD US Real Estate Co.
+  Partner: ICP_013005 - CCDC Parcel B Retail Corp. 
+  Col   3 (534018 - 534018:Interest expense - relat): -3812297
+  Col   8 (Variance): -3812297
+  Col  15 (Total): -3812297
+  Col  50 (Final Total): -3812297
+
+Row 131: [HAS DATA]
+  Entity: E108000 - QD US Real Estate Co.
+  Partner: ICP_027007 - CityCenter Parcel B Retail 
+  Col   4 (433002 - 433002:Interest income - relate): -3812297
+  Col   8 (Variance): 3812297
+  Col  15 (Total): 3812297
+  Col  50 (Final Total): 3812297
+
+Row 132: [HAS DATA]
+  Entity: E108000 - QD US Real Estate Co.
+  Partner: ICP_027008 - LIC Gotham (US) Inc. ICP
+  Col   4 (433002 - 433002:Interest income - relate): -75123439
+  Col   8 (Variance): 75123439
+  Col  15 (Total): 75123439
+  Col  50 (Final Total): 75123439
+
+Row 133: [HAS DATA]
+  Entity: E108000 - QD US Real Estate Co.
+  Partner: ICP_013006 - LIC Gotham (UK) Ltd. (H) IC
+  Col   3 (534018 - 534018:Interest expense - relat): -75123439
+  Col   8 (Variance): -75123439
+  Col  15 (Total): -75123439
+  Col  50 (Final Total): -75123439
+
+Row 134: [HAS DATA]
+  Entity: E108000 - QD US Real Estate Co.
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -106950160
+  Col   4 (433002 - 433002:Interest income - relate): -106950160
+
+Row 135: [HAS DATA]
+  Entity: 001008 - Qatari Diar Infrastructure Co. 
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -289413170
+  Col  14 (Variance): 289413170
+  Col  15 (Total): 289413170
+  Col  50 (Final Total): 289413170
+
+Row 136: [HAS DATA]
+  Entity: 001008 - Qatari Diar Infrastructure Co. 
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -289413170
+  Col  14 (Variance): 289413170
+  Col  15 (Total): 289413170
+  Col  50 (Final Total): 289413170
+
+Row 137: [HAS DATA]
+  Entity: 013013 - QD UK Holdings LP (H)
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col  10 (534018 - 534018:Interest expense - relat): -108525628
+  Col  14 (Variance): -108525628
+  Col  15 (Total): -108525628
+  Col  50 (Final Total): -108525628
+
+Row 138: [HAS DATA]
+  Entity: 013013 - QD UK Holdings LP (H)
+  Partner: ICP_E117000 - QD UK Holdings_LP ICP
+  Col  10 (534018 - 534018:Interest expense - relat): -108525628
+  Col  14 (Variance): -108525628
+  Col  15 (Total): -108525628
+  Col  50 (Final Total): -108525628
+
+Row 139: [HAS DATA]
+  Entity: 013013 - QD UK Holdings LP (H)
+  Partner: ICP_E117100 - QD UK Holdings LP adjusted
+  Col  10 (534018 - 534018:Interest expense - relat): -108525628
+  Col  14 (Variance): -108525628
+  Col  15 (Total): -108525628
+  Col  50 (Final Total): -108525628
+
+Row 140: [HAS DATA]
+  Entity: 013013 - QD UK Holdings LP (H)
+  Partner: 
+  Col  10 (534018 - 534018:Interest expense - relat): -325576884
+  Col  14 (Variance): -325576884
+  Col  15 (Total): -325576884
+  Col  50 (Final Total): -325576884
+
+Row 141: [HAS DATA]
+  Entity: 013007 - CB 1_3 LP
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -100163395
+  Col  14 (Variance): 100163395
+  Col  15 (Total): 100163395
+  Col  50 (Final Total): 100163395
+
+Row 142: [HAS DATA]
+  Entity: 013007 - CB 1_3 LP
+  Partner: ICP_E117000 - QD UK Holdings_LP ICP
+  Col   9 (433002 - 433002:Interest income - relate): -100163395
+  Col  14 (Variance): 100163395
+  Col  15 (Total): 100163395
+  Col  50 (Final Total): 100163395
+
+Row 143: [HAS DATA]
+  Entity: 013007 - CB 1_3 LP
+  Partner: ICP_E117100 - QD UK Holdings LP adjusted
+  Col   9 (433002 - 433002:Interest income - relate): -100163395
+  Col  14 (Variance): 100163395
+  Col  15 (Total): 100163395
+  Col  50 (Final Total): 100163395
+
+Row 144: [HAS DATA]
+  Entity: 013007 - CB 1_3 LP
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -300490185
+  Col  14 (Variance): 300490185
+  Col  15 (Total): 300490185
+  Col  50 (Final Total): 300490185
+
+Row 145: [HAS DATA]
+  Entity: 013012 - 16 GS LLP
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -8366746
+  Col  14 (Variance): 8366746
+  Col  15 (Total): 8366746
+  Col  50 (Final Total): 8366746
+
+Row 146: [HAS DATA]
+  Entity: 013012 - 16 GS LLP
+  Partner: ICP_E117000 - QD UK Holdings_LP ICP
+  Col   9 (433002 - 433002:Interest income - relate): -8366746
+  Col  14 (Variance): 8366746
+  Col  15 (Total): 8366746
+  Col  50 (Final Total): 8366746
+
+Row 147: [HAS DATA]
+  Entity: 013012 - 16 GS LLP
+  Partner: ICP_E117100 - QD UK Holdings LP adjusted
+  Col   9 (433002 - 433002:Interest income - relate): -8366746
+  Col  14 (Variance): 8366746
+  Col  15 (Total): 8366746
+  Col  50 (Final Total): 8366746
+
+Row 148: [HAS DATA]
+  Entity: 013012 - 16 GS LLP
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -25100238
+  Col  14 (Variance): 25100238
+  Col  15 (Total): 25100238
+  Col  50 (Final Total): 25100238
+
+Row 149: [HAS DATA]
+  Entity: E117000 - QD UK Holdings_LP
+  Partner: ICP_013013 - QD UK Holdings LP (H) ICP
+  Col   3 (534018 - 534018:Interest expense - relat): -108525628
+  Col   8 (Variance): -108525628
+  Col  15 (Total): -108525628
+  Col  50 (Final Total): -108525628
+
+Row 150: [HAS DATA]
+  Entity: E117000 - QD UK Holdings_LP
+  Partner: ICP_013007 - CB 1_3 LP ICP
+  Col   4 (433002 - 433002:Interest income - relate): -100163395
+  Col   8 (Variance): 100163395
+  Col  15 (Total): 100163395
+  Col  50 (Final Total): 100163395
+
+Row 151: [HAS DATA]
+  Entity: E117000 - QD UK Holdings_LP
+  Partner: ICP_013012 - 16 GS LLP ICP
+  Col   4 (433002 - 433002:Interest income - relate): -8366746
+  Col   8 (Variance): 8366746
+  Col  15 (Total): 8366746
+  Col  50 (Final Total): 8366746
+
+Row 152: [HAS DATA]
+  Entity: E117000 - QD UK Holdings_LP
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -108525628
+  Col   4 (433002 - 433002:Interest income - relate): -108530141
+  Col   8 (Variance): 4513
+  Col  15 (Total): 4513
+  Col  50 (Final Total): 4513
+
+Row 153: [HAS DATA]
+  Entity: E117100 - QD UK Holdings LP adjusted
+  Partner: ICP_013013 - QD UK Holdings LP (H) ICP
+  Col   3 (534018 - 534018:Interest expense - relat): -108525628
+  Col   8 (Variance): -108525628
+  Col  15 (Total): -108525628
+  Col  50 (Final Total): -108525628
+
+Row 154: [HAS DATA]
+  Entity: E117100 - QD UK Holdings LP adjusted
+  Partner: ICP_013007 - CB 1_3 LP ICP
+  Col   4 (433002 - 433002:Interest income - relate): -100163395
+  Col   8 (Variance): 100163395
+  Col  15 (Total): 100163395
+  Col  50 (Final Total): 100163395
+
+Row 155: [HAS DATA]
+  Entity: E117100 - QD UK Holdings LP adjusted
+  Partner: ICP_013012 - 16 GS LLP ICP
+  Col   4 (433002 - 433002:Interest income - relate): -8366746
+  Col   8 (Variance): 8366746
+  Col  15 (Total): 8366746
+  Col  50 (Final Total): 8366746
+
+Row 156: [HAS DATA]
+  Entity: E117100 - QD UK Holdings LP adjusted
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -108525628
+  Col   4 (433002 - 433002:Interest income - relate): -108530141
+  Col   8 (Variance): 4513
+  Col  15 (Total): 4513
+  Col  50 (Final Total): 4513
+
+Row 157: [HAS DATA]
+  Entity: 001033 - PORR-SBG-HBK Joint Operation (U
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col  10 (534018 - 534018:Interest expense - relat): -382813
+  Col  14 (Variance): -382813
+  Col  15 (Total): -382813
+  Col  50 (Final Total): -382813
+
+Row 158: [HAS DATA]
+  Entity: 001033 - PORR-SBG-HBK Joint Operation (U
+  Partner: 
+  Col  10 (534018 - 534018:Interest expense - relat): -382813
+  Col  14 (Variance): -382813
+  Col  15 (Total): -382813
+  Col  50 (Final Total): -382813
+
+Row 159: [HAS DATA]
+  Entity: 007010 - QD America Ltd.
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -101993179
+  Col  14 (Variance): 101993179
+  Col  15 (Total): 101993179
+  Col  50 (Final Total): 101993179
+
+Row 160: [HAS DATA]
+  Entity: 007010 - QD America Ltd.
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -101993179
+  Col  14 (Variance): 101993179
+  Col  15 (Total): 101993179
+  Col  50 (Final Total): 101993179
+
+Row 161: [HAS DATA]
+  Entity: 030001 - QD Asia Pacific (H)
+  Partner: ICP_E100000 - QDRE Investment Company Q.
+  Col   9 (433002 - 433002:Interest income - relate): -249739644
+  Col  14 (Variance): 249739644
+  Col  15 (Total): 249739644
+  Col  50 (Final Total): 249739644
+
+Row 162: [HAS DATA]
+  Entity: 030001 - QD Asia Pacific (H)
+  Partner: 
+  Col   9 (433002 - 433002:Interest income - relate): -249739644
+  Col  14 (Variance): 249739644
+  Col  15 (Total): 249739644
+  Col  50 (Final Total): 249739644
+
+Row 163: [HAS DATA]
+  Entity: Grand Total
+  Partner: 
+  Col   3 (534018 - 534018:Interest expense - relat): -601412751
+  Col   4 (433002 - 433002:Interest income - relate): -601446921
+  Col   8 (Variance): 34170
+  Col   9 (433002 - 433002:Interest income - relate): -2151105925
+  Col  10 (534018 - 534018:Interest expense - relat): -2150343736
+  Col  14 (Variance): 762189
+  Col  15 (Total): 796359
+  Col  50 (Final Total): 796359
+
+Row 164: [EMPTY]
+  Entity: Plug Account: 188600 - 188600:Intercompa
+  Partner: 
+
+Row 165: [EMPTY]
+  Entity: Eliminating Accounts
+  Partner: 
+
+Row 166: [EMPTY]
+  Entity: 111006 - 111006:Inv. prop. under constru
+  Partner: 
+
+Row 167: [EMPTY]
+  Entity: 121015 - 121015:PUD- Capitalized Interco
+  Partner: 
+
+Row 168: [EMPTY]
+  Entity: 120030 - 120030:PPE - Project in progres
+  Partner: 
+
+Row 169: [EMPTY]
+  Entity: 534018 - 534018:Interest expense - relat
+  Partner: 
+
+Row 170: [EMPTY]
+  Entity: 433002 - 433002:Interest income - relate
+  Partner: 
+
+Row 171: [HAS DATA]
+  Entity: 001001:QDRE Investment Company Q.S.C. (H
+  Partner: ICP_E101000:QDHP & QD Europe Sarl
+  Col  17 (534018 - 534018:Interest expense - relat): -116.79
+  Col  22 (Variance): -116.79
+  Col  24 (534018 - 534018:Interest expense - relat): 4147686.72
+  Col  28 (Variance): 4147686.72
+  Col  29 (Total): 4147569.93
+  Col  50 (Final Total): 4147569.93
+
+Row 172: [HAS DATA]
+  Entity: 001001:QDRE Investment Company Q.S.C. (H
+  Partner: ICP_E108000:QD US Real Estate Co.
+  Col  17 (534018 - 534018:Interest expense - relat): 465978.46
+  Col  22 (Variance): 465978.46
+  Col  24 (534018 - 534018:Interest expense - relat): 69254195.5
+  Col  28 (Variance): 69254195.5
+  Col  29 (Total): 69720173.96
+  Col  50 (Final Total): 69720173.96
+
+Row 173: [HAS DATA]
+  Entity: 001001:QDRE Investment Company Q.S.C. (H
+  Partner: ICP_E111000:Qatari Resorts Co. Q.S.C.
+  Col  20 (120030 - 120030:120030 Entity): -1555338.34
+  Col  22 (Variance): -1555338.34
+  Col  24 (534018 - 534018:Interest expense - relat): -11700
+  Col  28 (Variance): -11700
+  Col  29 (Total): -1567038.34
+  Col  50 (Final Total): -1567038.34
+
+Row 174: [HAS DATA]
+  Entity: 001001:QDRE Investment Company Q.S.C. (H
+  Partner: ICP_E118000:QD SBG Group adjusted
+  Col  19 (111006 - 111006:111006 Entity): 43170
+  Col  22 (Variance): 43170
+  Col  27 (121015 - 121015:121015 Partner): -1576708
+  Col  28 (Variance): -1576708
+  Col  29 (Total): -1533538
+  Col  50 (Final Total): -1533538
+
+Row 175: [HAS DATA]
+  Entity: 001002:Qatari Resorts Co. Q.S.C. (H) ICP
+  Partner: ICP_E101000:QDHP & QD Europe Sarl
+  Col  18 (433002 - 433002:Interest income - relate): 69247729
+  Col  22 (Variance): -69247729
+  Col  24 (534018 - 534018:Interest expense - relat): -3635532.44
+  Col  28 (Variance): -3635532.44
+  Col  29 (Total): -72883261.44
+  Col  50 (Final Total): -72883261.44
+
+Row 176: [HAS DATA]
+  Entity: 001032:SBG-PORR-HBK Joint Operation (Ele
+  Partner: ICP_001033:PORR-SBG-HBK Joint Operation 
+  Col  17 (534018 - 534018:Interest expense - relat): 192160
+  Col  22 (Variance): 192160
+  Col  27 (121015 - 121015:121015 Partner): -88717872.52
+  Col  28 (Variance): -88717872.52
+  Col  29 (Total): -88525712.52
+  Col  50 (Final Total): -88525712.52
+
+Row 177: [HAS DATA]
+  Entity: 001033:PORR-SBG-HBK Joint Operation (Und
+  Partner: ICP_001032:SBG-PORR-HBK Joint Operation 
+  Col  21 (121015 - 121015:121015 Entity): -88717872.52
+  Col  22 (Variance): -88717872.52
+  Col  24 (534018 - 534018:Interest expense - relat): 192160
+  Col  28 (Variance): 192160
+  Col  29 (Total): -88525712.52
+  Col  50 (Final Total): -88525712.52
+
+Row 178: [HAS DATA]
+  Entity: 005002:Al Maha Morocco ICP
+  Partner: ICP_E105000:Qatari Diar Real Estate Inve
+  Col  18 (433002 - 433002:Interest income - relate): 69025.28
+  Col  22 (Variance): -69025.28
+  Col  25 (111006 - 111006:111006 Partner): 1109.52
+  Col  28 (Variance): 1109.52
+  Col  29 (Total): -67915.76
+  Col  50 (Final Total): -67915.76
+
+Row 179: [HAS DATA]
+  Entity: 005003:Morocco RE Brok Serv(under liquid
+  Partner: ICP_E103000:Qatar RE Partners C.Q.S.C. (
+  Col  18 (433002 - 433002:Interest income - relate): -3218
+  Col  22 (Variance): 3218
+  Col  25 (111006 - 111006:111006 Partner): -200000
+  Col  28 (Variance): -200000
+  Col  29 (Total): -196782
+  Col  50 (Final Total): -196782
+
+Row 180: [HAS DATA]
+  Entity: 007009:QD UK Holdings LP adjusted
+  Partner: ICP_E117100:QD UK Holdings LP adjusted
+  Col  17 (534018 - 534018:Interest expense - relat): -17882306.93
+  Col  22 (Variance): -17882306.93
+  Col  24 (534018 - 534018:Interest expense - relat): 7934061.83
+  Col  28 (Variance): 7934061.83
+  Col  29 (Total): -9948245.1
+  Col  50 (Final Total): -9948245.1
+
+Row 181: [HAS DATA]
+  Entity: 007012:QD UK Holdings LP adjusted
+  Partner: ICP_E117100:QD UK Holdings LP adjusted
+  Col  17 (534018 - 534018:Interest expense - relat): 4.65
+  Col  22 (Variance): 4.65
+  Col  24 (534018 - 534018:Interest expense - relat): 9830437.32
+  Col  28 (Variance): 9830437.32
+  Col  29 (Total): 9830441.97
+  Col  50 (Final Total): 9830441.97
+
+Row 182: [HAS DATA]
+  Entity: 009002:QD Ras Al Hadd Development ICP
+  Partner: ICP_E112000:Qatari Diar Development Comp
+  Col  21 (121015 - 121015:121015 Entity): 20340466.09
+  Col  22 (Variance): 20340466.09
+  Col  25 (111006 - 111006:111006 Partner): -13112760
+  Col  28 (Variance): -13112760
+  Col  29 (Total): 7227706.09
+  Col  50 (Final Total): 7227706.09
+
+Row 183: [HAS DATA]
+  Entity: 013001:Qatari Diar UK Limited
+  Partner: ICP_E117100:QD UK Holdings LP adjusted
+  Col  17 (534018 - 534018:Interest expense - relat): 1395.3
+  Col  18 (433002 - 433002:Interest income - relate): -2315402.68
+  Col  22 (Variance): 2316797.98
+  Col  23 (433002 - 433002:Interest income - relate): -116407.55
+  Col  28 (Variance): 116407.55
+  Col  29 (Total): 2433205.53
+  Col  50 (Final Total): 2433205.53
+
+Row 184: [HAS DATA]
+  Entity: 013011:Qatari Diar Europe LLP
+  Partner: ICP_E101000:QDHP & QD Europe Sarl
+  Col  18 (433002 - 433002:Interest income - relate): 1.75
+  Col  22 (Variance): -1.75
+  Col  24 (534018 - 534018:Interest expense - relat): 8722.03
+  Col  28 (Variance): 8722.03
+  Col  29 (Total): 8720.28
+  Col  50 (Final Total): 8720.28
+
+Row 185: [HAS DATA]
+  Entity: 013011:Qatari Diar Europe LLP
+  Partner: ICP_E117100:QD UK Holdings LP adjusted
+  Col  18 (433002 - 433002:Interest income - relate): 125000.28
+  Col  22 (Variance): -125000.28
+  Col  23 (433002 - 433002:Interest income - relate): 2315402.68
+  Col  28 (Variance): -2315402.68
+  Col  29 (Total): -2440402.96
+  Col  50 (Final Total): -2440402.96
+
+Row 186: [HAS DATA]
+  Entity: 013014:30 GS LLP ICP
+  Partner: ICP_E101000:QDHP & QD Europe Sarl
+  Col  18 (433002 - 433002:Interest income - relate): -1313435.12
+  Col  22 (Variance): 1313435.12
+  Col  23 (433002 - 433002:Interest income - relate): -1.96
+  Col  28 (Variance): 1.96
+  Col  29 (Total): 1313437.08
+  Col  50 (Final Total): 1313437.08
+
+Row 187: [HAS DATA]
+  Entity: 022001:QDREI  Co. Tajakistan Ltd
+  Partner: ICP_001001:QDRE Investment Company Q.S.C
+  Col  20 (120030 - 120030:120030 Entity): -26035079.04
+  Col  22 (Variance): -26035079.04
+  Col  29 (Total): -26035079.04
+  Col  50 (Final Total): -26035079.04
+
+Row 188: [HAS DATA]
+  Entity: 027009:QD Americas Inc. - Delaware ICP
+  Partner: ICP_E108000:QD US Real Estate Co.
+  Col  18 (433002 - 433002:Interest income - relate): -26035079.04
+  Col  22 (Variance): 26035079.04
+  Col  24 (534018 - 534018:Interest expense - relat): -465978.46
+  Col  28 (Variance): -465978.46
+  Col  29 (Total): 25569100.58
+  Col  50 (Final Total): 25569100.58
+
+Row 189: [HAS DATA]
+  Entity: E101000:QDHP & QD Europe Sarl
+  Partner: ICP_001001:QDRE Investment Company Q.S.C
+  Col  17 (534018 - 534018:Interest expense - relat): 4147686.72
+  Col  22 (Variance): 4147686.72
+  Col  24 (534018 - 534018:Interest expense - relat): -116.79
+  Col  28 (Variance): -116.79
+  Col  29 (Total): 4147569.93
+  Col  50 (Final Total): 4147569.93
+
+Row 190: [HAS DATA]
+  Entity: E101000:QDHP & QD Europe Sarl
+  Partner: ICP_001002:Qatari Resorts Co. Q.S.C. (H)
+  Col  17 (534018 - 534018:Interest expense - relat): -3635532.44
+  Col  22 (Variance): -3635532.44
+  Col  23 (433002 - 433002:Interest income - relate): 69247729
+  Col  28 (Variance): -69247729
+  Col  29 (Total): -72883261.44
+  Col  50 (Final Total): -72883261.44
+
+Row 191: [HAS DATA]
+  Entity: E101000:QDHP & QD Europe Sarl
+  Partner: ICP_013011:Qatari Diar Europe LLP ICP
+  Col  17 (534018 - 534018:Interest expense - relat): 8722.03
+  Col  22 (Variance): 8722.03
+  Col  23 (433002 - 433002:Interest income - relate): 1.75
+  Col  28 (Variance): -1.75
+  Col  29 (Total): 8720.28
+  Col  50 (Final Total): 8720.28
+
+Row 192: [HAS DATA]
+  Entity: E101000:QDHP & QD Europe Sarl
+  Partner: ICP_013014:30 GS LLP ICP
+  Col  18 (433002 - 433002:Interest income - relate): -1.96
+  Col  22 (Variance): 1.96
+  Col  23 (433002 - 433002:Interest income - relate): -1313435.12
+  Col  28 (Variance): 1313435.12
+  Col  29 (Total): 1313437.08
+  Col  50 (Final Total): 1313437.08
+
+Row 193: [HAS DATA]
+  Entity: E103000:Qatar RE Partners C.Q.S.C. (unde
+  Partner: ICP_005003:Morocco RE Brok Serv(under li
+  Col  19 (111006 - 111006:111006 Entity): -200000
+  Col  22 (Variance): -200000
+  Col  23 (433002 - 433002:Interest income - relate): -3218
+  Col  28 (Variance): 3218
+  Col  29 (Total): -196782
+  Col  50 (Final Total): -196782
+
+Row 194: [HAS DATA]
+  Entity: E105000:Qatari Diar Real Estate Investme
+  Partner: ICP_005002:Al Maha Morocco ICP
+  Col  19 (111006 - 111006:111006 Entity): 1109.52
+  Col  22 (Variance): 1109.52
+  Col  23 (433002 - 433002:Interest income - relate): 69025.28
+  Col  28 (Variance): -69025.28
+  Col  29 (Total): -67915.76
+  Col  50 (Final Total): -67915.76
+
+Row 195: [HAS DATA]
+  Entity: E108000:QD US Real Estate Co.
+  Partner: ICP_001001:QDRE Investment Company Q.S.C
+  Col  17 (534018 - 534018:Interest expense - relat): 69254195.5
+  Col  22 (Variance): 69254195.5
+  Col  24 (534018 - 534018:Interest expense - relat): 465978.46
+  Col  28 (Variance): 465978.46
+  Col  29 (Total): 69720173.96
+  Col  50 (Final Total): 69720173.96
+
+Row 196: [HAS DATA]
+  Entity: E108000:QD US Real Estate Co.
+  Partner: ICP_027009:QD Americas Inc. - Delaware I
+  Col  17 (534018 - 534018:Interest expense - relat): -465978.46
+  Col  22 (Variance): -465978.46
+  Col  23 (433002 - 433002:Interest income - relate): -26035079.04
+  Col  28 (Variance): 26035079.04
+  Col  29 (Total): 25569100.58
+  Col  50 (Final Total): 25569100.58
+
+Row 197: [HAS DATA]
+  Entity: E111000:Qatari Resorts Co. Q.S.C.
+  Partner: ICP_001001:QDRE Investment Company Q.S.C
+  Col  17 (534018 - 534018:Interest expense - relat): -11700
+  Col  22 (Variance): -11700
+  Col  26 (120030 - 120030:120030 Partner): -1555338.34
+  Col  28 (Variance): -1555338.34
+  Col  29 (Total): -1567038.34
+  Col  50 (Final Total): -1567038.34
+
+Row 198: [HAS DATA]
+  Entity: E112000:Qatari Diar Development Company 
+  Partner: ICP_009002:QD Ras Al Hadd Development IC
+  Col  19 (111006 - 111006:111006 Entity): -13112760
+  Col  22 (Variance): -13112760
+  Col  27 (121015 - 121015:121015 Partner): 20340466.09
+  Col  28 (Variance): 20340466.09
+  Col  29 (Total): 7227706.09
+  Col  50 (Final Total): 7227706.09
+
+Row 199: [HAS DATA]
+  Entity: E117100:QD UK Holdings LP adjusted
+  Partner: ICP_007009:QD Europe Chancery S.a.r.l. I
+  Col  17 (534018 - 534018:Interest expense - relat): 7934061.83
+  Col  22 (Variance): 7934061.83
+  Col  24 (534018 - 534018:Interest expense - relat): -17882306.93
+  Col  28 (Variance): -17882306.93
+  Col  29 (Total): -9948245.1
+  Col  50 (Final Total): -9948245.1
+
+Row 200: [HAS DATA]
+  Entity: E117100:QD UK Holdings LP adjusted
+  Partner: ICP_007012:GS 16  S.ar.l. ICP
+  Col  17 (534018 - 534018:Interest expense - relat): 9830437.32
+  Col  22 (Variance): 9830437.32
+  Col  24 (534018 - 534018:Interest expense - relat): 4.65
+  Col  28 (Variance): 4.65
+  Col  29 (Total): 9830441.97
+  Col  50 (Final Total): 9830441.97
+
+Row 201: [HAS DATA]
+  Entity: E117100:QD UK Holdings LP adjusted
+  Partner: ICP_013001:Qatari Diar UK Limited ICP
+  Col  18 (433002 - 433002:Interest income - relate): -116407.55
+  Col  22 (Variance): 116407.55
+  Col  23 (433002 - 433002:Interest income - relate): -2315402.68
+  Col  24 (534018 - 534018:Interest expense - relat): 1395.3
+  Col  28 (Variance): 2316797.98
+  Col  29 (Total): 2433205.53
+  Col  50 (Final Total): 2433205.53
+
+Row 202: [HAS DATA]
+  Entity: E117100:QD UK Holdings LP adjusted
+  Partner: ICP_013011:Qatari Diar Europe LLP ICP
+  Col  18 (433002 - 433002:Interest income - relate): 2315402.68
+  Col  22 (Variance): -2315402.68
+  Col  23 (433002 - 433002:Interest income - relate): 125000.28
+  Col  28 (Variance): -125000.28
+  Col  29 (Total): -2440402.96
+  Col  50 (Final Total): -2440402.96
+
+Row 203: [HAS DATA]
+  Entity: E118000:QD SBG Group adjusted
+  Partner: ICP_001001:QDRE Investment Company Q.S.C
+  Col  21 (121015 - 121015:121015 Entity): -1576708
+  Col  22 (Variance): -1576708
+  Col  25 (111006 - 111006:111006 Partner): 43170
+  Col  28 (Variance): 43170
+  Col  29 (Total): -1533538
+  Col  50 (Final Total): -1533538

@@ -1,0 +1,53 @@
+=== PARTNERLESS ROWS CHECK ===
+  [OK] Row 34: Entity='001001 - QDRE Investment Company Q.S.C. (H)' Partner=EMPTY — NO values
+  [OK] Row 38: Entity='007001 - QD Europe S.a.r.l. (H)' Partner=EMPTY — NO values
+  [OK] Row 43: Entity='007004 - QD VEO S.a.r.l. (H)' Partner=EMPTY — NO values
+  [OK] Row 48: Entity='007005 - VELO Investissement' Partner=EMPTY — NO values
+  [OK] Row 51: Entity='E101110 - QD VEO_S.a.r.l.' Partner=EMPTY — NO values
+  [OK] Row 55: Entity='007006 - Casinvest S.a.r.l. (H)' Partner=EMPTY — NO values
+  [OK] Row 59: Entity='032002 - QD Hotel & Property Investment Montenegro' Partner=EMPTY — NO values
+  [OK] Row 63: Entity='007011 - GPS Holdings S.a.r.l.' Partner=EMPTY — NO values
+  [OK] Row 70: Entity='E101100 - QD Europe_S.a.r.l.' Partner=EMPTY — NO values
+  [OK] Row 77: Entity='E101000 - QDHP & QD Europe Sarl' Partner=EMPTY — NO values
+  [OK] Row 79: Entity='002001 - QDRE & Tourism Co. LLC. (Egypt)' Partner=EMPTY — NO values
+  [OK] Row 81: Entity='019002 - QD US Real Estate Company (H)' Partner=EMPTY — NO values
+  [OK] Row 85: Entity='019003 - QD US Parcel A (Residential) Company (H)' Partner=EMPTY — NO values
+  [OK] Row 89: Entity='027001 - CityCenter DC Residential' Partner=EMPTY — NO values
+  [OK] Row 92: Entity='E108400 - QD US Parcel A (Residential) Co.' Partner=EMPTY — NO values
+  [OK] Row 96: Entity='013004 - CCDC Parcel B Hotel Corp.' Partner=EMPTY — NO values
+  [OK] Row 100: Entity='027006 - CityCenter Parcel B Hotel Corp.' Partner=EMPTY — NO values
+  [OK] Row 103: Entity='E108600 - CCDC Parcel B Hotel Corporation' Partner=EMPTY — NO values
+  [OK] Row 107: Entity='013005 - CCDC Parcel B Retail Corp.' Partner=EMPTY — NO values
+  [OK] Row 111: Entity='027007 - CityCenter Parcel B Retail Corp.' Partner=EMPTY — NO values
+  [OK] Row 114: Entity='E108700 - CCDC Parcel B Retail Corporation' Partner=EMPTY — NO values
+  [OK] Row 118: Entity='027008 - LIC Gotham (US) Inc.' Partner=EMPTY — NO values
+  [OK] Row 122: Entity='013006 - LIC Gotham (UK) Ltd. (H)' Partner=EMPTY — NO values
+  [OK] Row 125: Entity='E108800 - LIC Gotham (UK) Limited' Partner=EMPTY — NO values
+  [OK] Row 134: Entity='E108000 - QD US Real Estate Co.' Partner=EMPTY — NO values
+  [OK] Row 136: Entity='001008 - Qatari Diar Infrastructure Co. L.L.C. (H)' Partner=EMPTY — NO values
+  [OK] Row 140: Entity='013013 - QD UK Holdings LP (H)' Partner=EMPTY — NO values
+  [OK] Row 144: Entity='013007 - CB 1_3 LP' Partner=EMPTY — NO values
+  [OK] Row 148: Entity='013012 - 16 GS LLP' Partner=EMPTY — NO values
+  [OK] Row 152: Entity='E117000 - QD UK Holdings_LP' Partner=EMPTY — NO values
+  [OK] Row 156: Entity='E117100 - QD UK Holdings LP adjusted' Partner=EMPTY — NO values
+  [OK] Row 158: Entity='001033 - PORR-SBG-HBK Joint Operation (Underground' Partner=EMPTY — NO values
+  [OK] Row 160: Entity='007010 - QD America Ltd.' Partner=EMPTY — NO values
+  [OK] Row 162: Entity='030001 - QD Asia Pacific (H)' Partner=EMPTY — NO values
+  [OK] Row 163: Entity='Grand Total' Partner=EMPTY — NO values
+  [OK] Row 164: Entity='Plug Account: 188600 - 188600:Intercompany Interes' Partner=EMPTY — NO values
+  [OK] Row 165: Entity='Eliminating Accounts' Partner=EMPTY — NO values
+  [OK] Row 166: Entity='111006 - 111006:Inv. prop. under construction - Ca' Partner=EMPTY — NO values
+  [OK] Row 167: Entity='121015 - 121015:PUD- Capitalized Intercompany Inte' Partner=EMPTY — NO values
+  [OK] Row 168: Entity='120030 - 120030:PPE - Project in progress - Capita' Partner=EMPTY — NO values
+  [OK] Row 169: Entity='534018 - 534018:Interest expense - related parties' Partner=EMPTY — NO values
+  [OK] Row 170: Entity='433002 - 433002:Interest income - related parties' Partner=EMPTY — NO values
+
+
+=== SUMMARY ===
+Partnered rows (have values): 130
+Partnerless rows (CLEAN, no values): 42
+Partnerless rows with values (VIOLATIONS): 0
+
+=== PARTNERED ROW VALUE COMPARISON ===
+Common paired rows: 114
+Mismatches (partnered only): 0

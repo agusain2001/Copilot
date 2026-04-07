@@ -1,0 +1,205 @@
+Journal indices: {'entity': 3, 'acct': 4, 'icp': 5, 'debit': 12, 'credit': 13}
+
+=== RAW PARENT JOURNAL ENTRIES for E117100 ===
+Row 37:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 224000:224000:Due to related parties -> code=224000
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=156050.35, Credit=0.0
+  apply_sign(156050.35, 0.0, 224000) = -156050.35
+
+Row 38:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 999999:999999:Suspense Account -> code=999999
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=0.0, Credit=156050.35
+  apply_sign(0.0, 156050.35, 999999) = -156050.35
+
+Row 39:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 534018 - 534018:Interest expense - related parties -> code=534018
+  ICP: ICP_007009:QD Europe Chancery S.a.r.l. ICP -> num=007009
+  Debit=7934061.83, Credit=0.0
+  apply_sign(7934061.83, 0.0, 534018) = 7934061.83
+
+Row 40:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 999999:999999:Suspense Account -> code=999999
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=0.0, Credit=7934061.83
+  apply_sign(0.0, 7934061.83, 999999) = -7934061.83
+
+Row 42:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 534018 - 534018:Interest expense - related parties -> code=534018
+  ICP: ICP_007012:GS 16  S.ar.l. ICP -> num=007012
+  Debit=9830437.32, Credit=0.0
+  apply_sign(9830437.32, 0.0, 534018) = 9830437.32
+
+Row 43:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 999999:999999:Suspense Account -> code=999999
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=8051869.61, Credit=0.0
+  apply_sign(8051869.61, 0.0, 999999) = 8051869.61
+
+Row 45:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 999999:999999:Suspense Account -> code=999999
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=0.0, Credit=4.65
+  apply_sign(0.0, 4.65, 999999) = -4.65
+
+Row 85:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 433002 - 433002:Interest income - related parties -> code=433002
+  ICP: ICP_013001:Qatari Diar UK Limited ICP -> num=013001
+  Debit=117802.85, Credit=0.0
+  apply_sign(117802.85, 0.0, 433002) = -117802.85
+
+Row 86:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 999999:999999:Suspense Account -> code=999999
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=0.0, Credit=117802.85
+  apply_sign(0.0, 117802.85, 999999) = -117802.85
+
+Row 88:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 999999:999999:Suspense Account -> code=999999
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=0.0, Credit=2315402.68
+  apply_sign(0.0, 2315402.68, 999999) = -2315402.68
+
+Row 89:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 433002 - 433002:Interest income - related parties -> code=433002
+  ICP: ICP_013001:Qatari Diar UK Limited ICP -> num=013001
+  Debit=0.0, Credit=1395.3
+  apply_sign(0.0, 1395.3, 433002) = 1395.3
+
+Row 91:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 433002 - 433002:Interest income - related parties -> code=433002
+  ICP: ICP_013011:Qatari Diar Europe LLP ICP -> num=013011
+  Debit=0.0, Credit=2315402.68
+  apply_sign(0.0, 2315402.68, 433002) = 2315402.68
+
+Row 92:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 999999:999999:Suspense Account -> code=999999
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=2315402.68, Credit=0.0
+  apply_sign(2315402.68, 0.0, 999999) = 2315402.68
+
+Row 94:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 999999:999999:Suspense Account -> code=999999
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=125000.28, Credit=0.0
+  apply_sign(125000.28, 0.0, 999999) = 125000.28
+
+Row 391:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 167011:167011:Retentions receivable -> code=167011
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=1056607.6, Credit=0.0
+  apply_sign(1056607.6, 0.0, 167011) = 1056607.6
+
+Row 392:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 167012:167012:Other receivables -> code=167012
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=0.0, Credit=1056607.6
+  apply_sign(0.0, 1056607.6, 167012) = -1056607.6
+
+Row 481:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 201999:201999:Finance Lease Payable -> code=201999
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=0.0, Credit=10073375.37
+  apply_sign(0.0, 10073375.37, 201999) = 10073375.37
+
+Row 482:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 213002:213002:Lease liability - Non-current -> code=213002
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=10073375.37, Credit=0.0
+  apply_sign(10073375.37, 0.0, 213002) = -10073375.37
+
+Row 483:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 226008:226008:Other payables - current liabilities. -> code=226008
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=58310502.0, Credit=0.0
+  apply_sign(58310502.0, 0.0, 226008) = -58310502.0
+
+Row 484:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 229998:229998:Other Provisions -> code=229998
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=0.0, Credit=58368264.0
+  apply_sign(0.0, 58368264.0, 229998) = 58368264.0
+
+Row 485:
+  Entity: E117100:QD UK Holdings LP adjusted
+  Account: 999999:999999:Suspense Account -> code=999999
+  ICP: FCCS_No Intercompany:No Intercompany -> num=
+  Debit=57762.0, Credit=0.0
+  apply_sign(57762.0, 0.0, 999999) = 57762.0
+
+
+=== OUTPUT VALUES for E117100 rows ===
+
+Row 153: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013013 - QD UK Holdings LP (H) ICP
+  Col 3 (534018 - 534018:Interest expense - related parties Entity): -108525628
+  Col 8 (Variance): -108525628
+  Col 15 (Total): -108525628
+  Col 50 (Final Total): -108525628
+
+Row 154: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013007 - CB 1_3 LP ICP
+  Col 4 (433002 - 433002:Interest income - related parties Entity): -100163395
+  Col 8 (Variance): 100163395
+  Col 15 (Total): 100163395
+  Col 50 (Final Total): 100163395
+
+Row 155: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013012 - 16 GS LLP ICP
+  Col 4 (433002 - 433002:Interest income - related parties Entity): -8366746
+  Col 8 (Variance): 8366746
+  Col 15 (Total): 8366746
+  Col 50 (Final Total): 8366746
+
+Row 156: Entity=E117100 - QD UK Holdings LP adjusted | Partner=
+
+Row 200: Entity=E117100:QD UK Holdings LP adjusted | Partner=ICP_007009:QD Europe Chancery S.a.r.l. ICP
+  Col 17 (534018 - 534018:Interest expense - related parties Entity): 7934061.83
+  Col 22 (Variance): 7934061.83
+  Col 24 (534018 - 534018:Interest expense - related parties Partner): -17882306.93
+  Col 28 (Variance): -17882306.93
+  Col 29 (Total): -9948245.1
+  Col 50 (Final Total): -9948245.1
+
+Row 201: Entity=E117100:QD UK Holdings LP adjusted | Partner=ICP_007012:GS 16  S.ar.l. ICP
+  Col 17 (534018 - 534018:Interest expense - related parties Entity): 9830437.32
+  Col 22 (Variance): 9830437.32
+  Col 24 (534018 - 534018:Interest expense - related parties Partner): 4.65
+  Col 28 (Variance): 4.65
+  Col 29 (Total): 9830441.97
+  Col 50 (Final Total): 9830441.97
+
+Row 202: Entity=E117100:QD UK Holdings LP adjusted | Partner=ICP_013001:Qatari Diar UK Limited ICP
+  Col 18 (433002 - 433002:Interest income - related parties Entity): -116407.55
+  Col 22 (Variance): 116407.55
+  Col 23 (433002 - 433002:Interest income - related parties Partner): -2315402.68
+  Col 24 (534018 - 534018:Interest expense - related parties Partner): 1395.3
+  Col 28 (Variance): 2316797.98
+  Col 29 (Total): 2433205.53
+  Col 50 (Final Total): 2433205.53
+
+Row 203: Entity=E117100:QD UK Holdings LP adjusted | Partner=ICP_013011:Qatari Diar Europe LLP ICP
+  Col 18 (433002 - 433002:Interest income - related parties Entity): 2315402.68
+  Col 22 (Variance): -2315402.68
+  Col 23 (433002 - 433002:Interest income - related parties Partner): 125000.28
+  Col 28 (Variance): -125000.28
+  Col 29 (Total): -2440402.96
+  Col 50 (Final Total): -2440402.96
