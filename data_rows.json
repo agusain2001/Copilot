@@ -1,0 +1,1298 @@
+[
+  {
+    "row_num": 33,
+    "entity": "001001 - QDRE Investment Company Q.S.C. (H)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "001001",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 35,
+    "entity": "001001 - QDRE Investment Company Q.S.C. (H)",
+    "partner": "",
+    "entity_code": "001001",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 37,
+    "entity": "007001 - QD Europe S.a.r.l. (H)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "007001",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 39,
+    "entity": "007001 - QD Europe S.a.r.l. (H)",
+    "partner": "ICP_E101100 - QD Europe_S.a.r.l. ICP",
+    "entity_code": "007001",
+    "partner_code": "ICP_E101100",
+    "partner_num": "101100"
+  },
+  {
+    "row_num": 41,
+    "entity": "007001 - QD Europe S.a.r.l. (H)",
+    "partner": "ICP_E101000 - QDHP & QD Europe Sarl ICP",
+    "entity_code": "007001",
+    "partner_code": "ICP_E101000",
+    "partner_num": "101000"
+  },
+  {
+    "row_num": 43,
+    "entity": "007001 - QD Europe S.a.r.l. (H)",
+    "partner": "",
+    "entity_code": "007001",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 45,
+    "entity": "007004 - QD VEO S.a.r.l. (H)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "007004",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 47,
+    "entity": "007004 - QD VEO S.a.r.l. (H)",
+    "partner": "ICP_E101100 - QD Europe_S.a.r.l. ICP",
+    "entity_code": "007004",
+    "partner_code": "ICP_E101100",
+    "partner_num": "101100"
+  },
+  {
+    "row_num": 49,
+    "entity": "007004 - QD VEO S.a.r.l. (H)",
+    "partner": "ICP_E101110 - QD VEO_S.a.r.l. ICP",
+    "entity_code": "007004",
+    "partner_code": "ICP_E101110",
+    "partner_num": "101110"
+  },
+  {
+    "row_num": 51,
+    "entity": "007004 - QD VEO S.a.r.l. (H)",
+    "partner": "ICP_E101000 - QDHP & QD Europe Sarl ICP",
+    "entity_code": "007004",
+    "partner_code": "ICP_E101000",
+    "partner_num": "101000"
+  },
+  {
+    "row_num": 53,
+    "entity": "007004 - QD VEO S.a.r.l. (H)",
+    "partner": "",
+    "entity_code": "007004",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 55,
+    "entity": "007005 - VELO Investissement",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "007005",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 57,
+    "entity": "007005 - VELO Investissement",
+    "partner": "ICP_E101100 - QD Europe_S.a.r.l. ICP",
+    "entity_code": "007005",
+    "partner_code": "ICP_E101100",
+    "partner_num": "101100"
+  },
+  {
+    "row_num": 59,
+    "entity": "007005 - VELO Investissement",
+    "partner": "ICP_E101110 - QD VEO_S.a.r.l. ICP",
+    "entity_code": "007005",
+    "partner_code": "ICP_E101110",
+    "partner_num": "101110"
+  },
+  {
+    "row_num": 61,
+    "entity": "007005 - VELO Investissement",
+    "partner": "ICP_E101000 - QDHP & QD Europe Sarl ICP",
+    "entity_code": "007005",
+    "partner_code": "ICP_E101000",
+    "partner_num": "101000"
+  },
+  {
+    "row_num": 63,
+    "entity": "007005 - VELO Investissement",
+    "partner": "",
+    "entity_code": "007005",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 65,
+    "entity": "E101110 - QD VEO_S.a.r.l.",
+    "partner": "ICP_007004 - QD VEO S.a.r.l. (H) ICP",
+    "entity_code": "101110",
+    "partner_code": "ICP_007004",
+    "partner_num": "007004"
+  },
+  {
+    "row_num": 67,
+    "entity": "E101110 - QD VEO_S.a.r.l.",
+    "partner": "ICP_007005 - VELO Investissement ICP",
+    "entity_code": "101110",
+    "partner_code": "ICP_007005",
+    "partner_num": "007005"
+  },
+  {
+    "row_num": 69,
+    "entity": "E101110 - QD VEO_S.a.r.l.",
+    "partner": "",
+    "entity_code": "101110",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 71,
+    "entity": "007006 - Casinvest S.a.r.l. (H)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "007006",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 73,
+    "entity": "007006 - Casinvest S.a.r.l. (H)",
+    "partner": "ICP_E101100 - QD Europe_S.a.r.l. ICP",
+    "entity_code": "007006",
+    "partner_code": "ICP_E101100",
+    "partner_num": "101100"
+  },
+  {
+    "row_num": 75,
+    "entity": "007006 - Casinvest S.a.r.l. (H)",
+    "partner": "ICP_E101000 - QDHP & QD Europe Sarl ICP",
+    "entity_code": "007006",
+    "partner_code": "ICP_E101000",
+    "partner_num": "101000"
+  },
+  {
+    "row_num": 77,
+    "entity": "007006 - Casinvest S.a.r.l. (H)",
+    "partner": "",
+    "entity_code": "007006",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 79,
+    "entity": "032002 - QD Hotel & Property Investment Montenegro Doo",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "032002",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 81,
+    "entity": "032002 - QD Hotel & Property Investment Montenegro Doo",
+    "partner": "ICP_E101100 - QD Europe_S.a.r.l. ICP",
+    "entity_code": "032002",
+    "partner_code": "ICP_E101100",
+    "partner_num": "101100"
+  },
+  {
+    "row_num": 83,
+    "entity": "032002 - QD Hotel & Property Investment Montenegro Doo",
+    "partner": "ICP_E101000 - QDHP & QD Europe Sarl ICP",
+    "entity_code": "032002",
+    "partner_code": "ICP_E101000",
+    "partner_num": "101000"
+  },
+  {
+    "row_num": 85,
+    "entity": "032002 - QD Hotel & Property Investment Montenegro Doo",
+    "partner": "",
+    "entity_code": "032002",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 87,
+    "entity": "007011 - GPS Holdings S.a.r.l.",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "007011",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 89,
+    "entity": "007011 - GPS Holdings S.a.r.l.",
+    "partner": "ICP_E101100 - QD Europe_S.a.r.l. ICP",
+    "entity_code": "007011",
+    "partner_code": "ICP_E101100",
+    "partner_num": "101100"
+  },
+  {
+    "row_num": 91,
+    "entity": "007011 - GPS Holdings S.a.r.l.",
+    "partner": "ICP_E101000 - QDHP & QD Europe Sarl ICP",
+    "entity_code": "007011",
+    "partner_code": "ICP_E101000",
+    "partner_num": "101000"
+  },
+  {
+    "row_num": 93,
+    "entity": "007011 - GPS Holdings S.a.r.l.",
+    "partner": "",
+    "entity_code": "007011",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 95,
+    "entity": "E101100 - QD Europe_S.a.r.l.",
+    "partner": "ICP_007001 - QD Europe S.a.r.l. (H) ICP",
+    "entity_code": "101100",
+    "partner_code": "ICP_007001",
+    "partner_num": "007001"
+  },
+  {
+    "row_num": 97,
+    "entity": "E101100 - QD Europe_S.a.r.l.",
+    "partner": "ICP_007006 - Casinvest S.a.r.l. (H) ICP",
+    "entity_code": "101100",
+    "partner_code": "ICP_007006",
+    "partner_num": "007006"
+  },
+  {
+    "row_num": 99,
+    "entity": "E101100 - QD Europe_S.a.r.l.",
+    "partner": "ICP_007011 - GPS Holdings S.a.r.l. ICP",
+    "entity_code": "101100",
+    "partner_code": "ICP_007011",
+    "partner_num": "007011"
+  },
+  {
+    "row_num": 101,
+    "entity": "E101100 - QD Europe_S.a.r.l.",
+    "partner": "ICP_007004 - QD VEO S.a.r.l. (H) ICP",
+    "entity_code": "101100",
+    "partner_code": "ICP_007004",
+    "partner_num": "007004"
+  },
+  {
+    "row_num": 103,
+    "entity": "E101100 - QD Europe_S.a.r.l.",
+    "partner": "ICP_007005 - VELO Investissement ICP",
+    "entity_code": "101100",
+    "partner_code": "ICP_007005",
+    "partner_num": "007005"
+  },
+  {
+    "row_num": 105,
+    "entity": "E101100 - QD Europe_S.a.r.l.",
+    "partner": "ICP_032002 - QD Hotel & Property Investment Montenegro Doo ICP",
+    "entity_code": "101100",
+    "partner_code": "ICP_032002",
+    "partner_num": "032002"
+  },
+  {
+    "row_num": 107,
+    "entity": "E101100 - QD Europe_S.a.r.l.",
+    "partner": "",
+    "entity_code": "101100",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 109,
+    "entity": "E101000 - QDHP & QD Europe Sarl",
+    "partner": "ICP_007001 - QD Europe S.a.r.l. (H) ICP",
+    "entity_code": "101000",
+    "partner_code": "ICP_007001",
+    "partner_num": "007001"
+  },
+  {
+    "row_num": 111,
+    "entity": "E101000 - QDHP & QD Europe Sarl",
+    "partner": "ICP_007006 - Casinvest S.a.r.l. (H) ICP",
+    "entity_code": "101000",
+    "partner_code": "ICP_007006",
+    "partner_num": "007006"
+  },
+  {
+    "row_num": 113,
+    "entity": "E101000 - QDHP & QD Europe Sarl",
+    "partner": "ICP_007011 - GPS Holdings S.a.r.l. ICP",
+    "entity_code": "101000",
+    "partner_code": "ICP_007011",
+    "partner_num": "007011"
+  },
+  {
+    "row_num": 115,
+    "entity": "E101000 - QDHP & QD Europe Sarl",
+    "partner": "ICP_007004 - QD VEO S.a.r.l. (H) ICP",
+    "entity_code": "101000",
+    "partner_code": "ICP_007004",
+    "partner_num": "007004"
+  },
+  {
+    "row_num": 117,
+    "entity": "E101000 - QDHP & QD Europe Sarl",
+    "partner": "ICP_007005 - VELO Investissement ICP",
+    "entity_code": "101000",
+    "partner_code": "ICP_007005",
+    "partner_num": "007005"
+  },
+  {
+    "row_num": 119,
+    "entity": "E101000 - QDHP & QD Europe Sarl",
+    "partner": "ICP_032002 - QD Hotel & Property Investment Montenegro Doo ICP",
+    "entity_code": "101000",
+    "partner_code": "ICP_032002",
+    "partner_num": "032002"
+  },
+  {
+    "row_num": 121,
+    "entity": "E101000 - QDHP & QD Europe Sarl",
+    "partner": "",
+    "entity_code": "101000",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 123,
+    "entity": "002001 - QDRE & Tourism Co. LLC. (Egypt)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "002001",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 125,
+    "entity": "002001 - QDRE & Tourism Co. LLC. (Egypt)",
+    "partner": "",
+    "entity_code": "002001",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 127,
+    "entity": "019002 - QD US Real Estate Company (H)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "019002",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 129,
+    "entity": "019002 - QD US Real Estate Company (H)",
+    "partner": "",
+    "entity_code": "019002",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 131,
+    "entity": "019003 - QD US Parcel A (Residential) Company (H)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "019003",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 133,
+    "entity": "019003 - QD US Parcel A (Residential) Company (H)",
+    "partner": "ICP_E108000 - QD US Real Estate Co. ICP",
+    "entity_code": "019003",
+    "partner_code": "ICP_E108000",
+    "partner_num": "108000"
+  },
+  {
+    "row_num": 135,
+    "entity": "019003 - QD US Parcel A (Residential) Company (H)",
+    "partner": "ICP_E108400 - QD US Parcel A (Residential) Co. ICP",
+    "entity_code": "019003",
+    "partner_code": "ICP_E108400",
+    "partner_num": "108400"
+  },
+  {
+    "row_num": 137,
+    "entity": "019003 - QD US Parcel A (Residential) Company (H)",
+    "partner": "",
+    "entity_code": "019003",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 139,
+    "entity": "027001 - CityCenter DC Residential",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "027001",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 141,
+    "entity": "027001 - CityCenter DC Residential",
+    "partner": "ICP_E108000 - QD US Real Estate Co. ICP",
+    "entity_code": "027001",
+    "partner_code": "ICP_E108000",
+    "partner_num": "108000"
+  },
+  {
+    "row_num": 143,
+    "entity": "027001 - CityCenter DC Residential",
+    "partner": "ICP_E108400 - QD US Parcel A (Residential) Co. ICP",
+    "entity_code": "027001",
+    "partner_code": "ICP_E108400",
+    "partner_num": "108400"
+  },
+  {
+    "row_num": 145,
+    "entity": "027001 - CityCenter DC Residential",
+    "partner": "",
+    "entity_code": "027001",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 147,
+    "entity": "E108400 - QD US Parcel A (Residential) Co.",
+    "partner": "ICP_027001 - CityCenter DC Residential ICP",
+    "entity_code": "108400",
+    "partner_code": "ICP_027001",
+    "partner_num": "027001"
+  },
+  {
+    "row_num": 149,
+    "entity": "E108400 - QD US Parcel A (Residential) Co.",
+    "partner": "ICP_019003 - QD US Parcel A (Residential) Company (H) ICP",
+    "entity_code": "108400",
+    "partner_code": "ICP_019003",
+    "partner_num": "019003"
+  },
+  {
+    "row_num": 151,
+    "entity": "E108400 - QD US Parcel A (Residential) Co.",
+    "partner": "",
+    "entity_code": "108400",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 153,
+    "entity": "013004 - CCDC Parcel B Hotel Corp.",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "013004",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 155,
+    "entity": "013004 - CCDC Parcel B Hotel Corp.",
+    "partner": "ICP_E108000 - QD US Real Estate Co. ICP",
+    "entity_code": "013004",
+    "partner_code": "ICP_E108000",
+    "partner_num": "108000"
+  },
+  {
+    "row_num": 157,
+    "entity": "013004 - CCDC Parcel B Hotel Corp.",
+    "partner": "ICP_E108600 - CCDC Parcel B Hotel Corporation ICP",
+    "entity_code": "013004",
+    "partner_code": "ICP_E108600",
+    "partner_num": "108600"
+  },
+  {
+    "row_num": 159,
+    "entity": "013004 - CCDC Parcel B Hotel Corp.",
+    "partner": "",
+    "entity_code": "013004",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 161,
+    "entity": "027006 - CityCenter Parcel B Hotel Corp.",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "027006",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 163,
+    "entity": "027006 - CityCenter Parcel B Hotel Corp.",
+    "partner": "ICP_E108000 - QD US Real Estate Co. ICP",
+    "entity_code": "027006",
+    "partner_code": "ICP_E108000",
+    "partner_num": "108000"
+  },
+  {
+    "row_num": 165,
+    "entity": "027006 - CityCenter Parcel B Hotel Corp.",
+    "partner": "ICP_E108600 - CCDC Parcel B Hotel Corporation ICP",
+    "entity_code": "027006",
+    "partner_code": "ICP_E108600",
+    "partner_num": "108600"
+  },
+  {
+    "row_num": 167,
+    "entity": "027006 - CityCenter Parcel B Hotel Corp.",
+    "partner": "",
+    "entity_code": "027006",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 169,
+    "entity": "E108600 - CCDC Parcel B Hotel Corporation",
+    "partner": "ICP_013004 - CCDC Parcel B Hotel Corp. ICP",
+    "entity_code": "108600",
+    "partner_code": "ICP_013004",
+    "partner_num": "013004"
+  },
+  {
+    "row_num": 171,
+    "entity": "E108600 - CCDC Parcel B Hotel Corporation",
+    "partner": "ICP_027006 - CityCenter Parcel B Hotel Corp. ICP",
+    "entity_code": "108600",
+    "partner_code": "ICP_027006",
+    "partner_num": "027006"
+  },
+  {
+    "row_num": 173,
+    "entity": "E108600 - CCDC Parcel B Hotel Corporation",
+    "partner": "",
+    "entity_code": "108600",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 175,
+    "entity": "013005 - CCDC Parcel B Retail Corp.",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "013005",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 177,
+    "entity": "013005 - CCDC Parcel B Retail Corp.",
+    "partner": "ICP_E108000 - QD US Real Estate Co. ICP",
+    "entity_code": "013005",
+    "partner_code": "ICP_E108000",
+    "partner_num": "108000"
+  },
+  {
+    "row_num": 179,
+    "entity": "013005 - CCDC Parcel B Retail Corp.",
+    "partner": "ICP_E108700 - CCDC Parcel B Retail Corporation ICP",
+    "entity_code": "013005",
+    "partner_code": "ICP_E108700",
+    "partner_num": "108700"
+  },
+  {
+    "row_num": 181,
+    "entity": "013005 - CCDC Parcel B Retail Corp.",
+    "partner": "",
+    "entity_code": "013005",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 183,
+    "entity": "027007 - CityCenter Parcel B Retail Corp.",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "027007",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 185,
+    "entity": "027007 - CityCenter Parcel B Retail Corp.",
+    "partner": "ICP_E108000 - QD US Real Estate Co. ICP",
+    "entity_code": "027007",
+    "partner_code": "ICP_E108000",
+    "partner_num": "108000"
+  },
+  {
+    "row_num": 187,
+    "entity": "027007 - CityCenter Parcel B Retail Corp.",
+    "partner": "ICP_E108700 - CCDC Parcel B Retail Corporation ICP",
+    "entity_code": "027007",
+    "partner_code": "ICP_E108700",
+    "partner_num": "108700"
+  },
+  {
+    "row_num": 189,
+    "entity": "027007 - CityCenter Parcel B Retail Corp.",
+    "partner": "",
+    "entity_code": "027007",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 191,
+    "entity": "E108700 - CCDC Parcel B Retail Corporation",
+    "partner": "ICP_013005 - CCDC Parcel B Retail Corp. ICP",
+    "entity_code": "108700",
+    "partner_code": "ICP_013005",
+    "partner_num": "013005"
+  },
+  {
+    "row_num": 193,
+    "entity": "E108700 - CCDC Parcel B Retail Corporation",
+    "partner": "ICP_027007 - CityCenter Parcel B Retail Corp. ICP",
+    "entity_code": "108700",
+    "partner_code": "ICP_027007",
+    "partner_num": "027007"
+  },
+  {
+    "row_num": 195,
+    "entity": "E108700 - CCDC Parcel B Retail Corporation",
+    "partner": "",
+    "entity_code": "108700",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 197,
+    "entity": "027008 - LIC Gotham (US) Inc.",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "027008",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 199,
+    "entity": "027008 - LIC Gotham (US) Inc.",
+    "partner": "ICP_E108000 - QD US Real Estate Co. ICP",
+    "entity_code": "027008",
+    "partner_code": "ICP_E108000",
+    "partner_num": "108000"
+  },
+  {
+    "row_num": 201,
+    "entity": "027008 - LIC Gotham (US) Inc.",
+    "partner": "ICP_E108800 - LIC Gotham (UK) Limited ICP",
+    "entity_code": "027008",
+    "partner_code": "ICP_E108800",
+    "partner_num": "108800"
+  },
+  {
+    "row_num": 203,
+    "entity": "027008 - LIC Gotham (US) Inc.",
+    "partner": "",
+    "entity_code": "027008",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 205,
+    "entity": "013006 - LIC Gotham (UK) Ltd. (H)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "013006",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 207,
+    "entity": "013006 - LIC Gotham (UK) Ltd. (H)",
+    "partner": "ICP_E108000 - QD US Real Estate Co. ICP",
+    "entity_code": "013006",
+    "partner_code": "ICP_E108000",
+    "partner_num": "108000"
+  },
+  {
+    "row_num": 209,
+    "entity": "013006 - LIC Gotham (UK) Ltd. (H)",
+    "partner": "ICP_E108800 - LIC Gotham (UK) Limited ICP",
+    "entity_code": "013006",
+    "partner_code": "ICP_E108800",
+    "partner_num": "108800"
+  },
+  {
+    "row_num": 211,
+    "entity": "013006 - LIC Gotham (UK) Ltd. (H)",
+    "partner": "",
+    "entity_code": "013006",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 213,
+    "entity": "E108800 - LIC Gotham (UK) Limited",
+    "partner": "ICP_027008 - LIC Gotham (US) Inc. ICP",
+    "entity_code": "108800",
+    "partner_code": "ICP_027008",
+    "partner_num": "027008"
+  },
+  {
+    "row_num": 215,
+    "entity": "E108800 - LIC Gotham (UK) Limited",
+    "partner": "ICP_013006 - LIC Gotham (UK) Ltd. (H) ICP",
+    "entity_code": "108800",
+    "partner_code": "ICP_013006",
+    "partner_num": "013006"
+  },
+  {
+    "row_num": 217,
+    "entity": "E108800 - LIC Gotham (UK) Limited",
+    "partner": "",
+    "entity_code": "108800",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 219,
+    "entity": "E108000 - QD US Real Estate Co.",
+    "partner": "ICP_027001 - CityCenter DC Residential ICP",
+    "entity_code": "108000",
+    "partner_code": "ICP_027001",
+    "partner_num": "027001"
+  },
+  {
+    "row_num": 221,
+    "entity": "E108000 - QD US Real Estate Co.",
+    "partner": "ICP_019003 - QD US Parcel A (Residential) Company (H) ICP",
+    "entity_code": "108000",
+    "partner_code": "ICP_019003",
+    "partner_num": "019003"
+  },
+  {
+    "row_num": 223,
+    "entity": "E108000 - QD US Real Estate Co.",
+    "partner": "ICP_013004 - CCDC Parcel B Hotel Corp. ICP",
+    "entity_code": "108000",
+    "partner_code": "ICP_013004",
+    "partner_num": "013004"
+  },
+  {
+    "row_num": 225,
+    "entity": "E108000 - QD US Real Estate Co.",
+    "partner": "ICP_027006 - CityCenter Parcel B Hotel Corp. ICP",
+    "entity_code": "108000",
+    "partner_code": "ICP_027006",
+    "partner_num": "027006"
+  },
+  {
+    "row_num": 227,
+    "entity": "E108000 - QD US Real Estate Co.",
+    "partner": "ICP_013005 - CCDC Parcel B Retail Corp. ICP",
+    "entity_code": "108000",
+    "partner_code": "ICP_013005",
+    "partner_num": "013005"
+  },
+  {
+    "row_num": 229,
+    "entity": "E108000 - QD US Real Estate Co.",
+    "partner": "ICP_027007 - CityCenter Parcel B Retail Corp. ICP",
+    "entity_code": "108000",
+    "partner_code": "ICP_027007",
+    "partner_num": "027007"
+  },
+  {
+    "row_num": 231,
+    "entity": "E108000 - QD US Real Estate Co.",
+    "partner": "ICP_027008 - LIC Gotham (US) Inc. ICP",
+    "entity_code": "108000",
+    "partner_code": "ICP_027008",
+    "partner_num": "027008"
+  },
+  {
+    "row_num": 233,
+    "entity": "E108000 - QD US Real Estate Co.",
+    "partner": "ICP_013006 - LIC Gotham (UK) Ltd. (H) ICP",
+    "entity_code": "108000",
+    "partner_code": "ICP_013006",
+    "partner_num": "013006"
+  },
+  {
+    "row_num": 235,
+    "entity": "E108000 - QD US Real Estate Co.",
+    "partner": "",
+    "entity_code": "108000",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 237,
+    "entity": "001008 - Qatari Diar Infrastructure Co. L.L.C. (H)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "001008",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 239,
+    "entity": "001008 - Qatari Diar Infrastructure Co. L.L.C. (H)",
+    "partner": "",
+    "entity_code": "001008",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 241,
+    "entity": "013013 - QD UK Holdings LP (H)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "013013",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 243,
+    "entity": "013013 - QD UK Holdings LP (H)",
+    "partner": "ICP_E117000 - QD UK Holdings_LP ICP",
+    "entity_code": "013013",
+    "partner_code": "ICP_E117000",
+    "partner_num": "117000"
+  },
+  {
+    "row_num": 245,
+    "entity": "013013 - QD UK Holdings LP (H)",
+    "partner": "ICP_E117100 - QD UK Holdings LP adjusted ICP",
+    "entity_code": "013013",
+    "partner_code": "ICP_E117100",
+    "partner_num": "117100"
+  },
+  {
+    "row_num": 247,
+    "entity": "013013 - QD UK Holdings LP (H)",
+    "partner": "",
+    "entity_code": "013013",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 249,
+    "entity": "013007 - CB 1_3 LP",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "013007",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 251,
+    "entity": "013007 - CB 1_3 LP",
+    "partner": "ICP_E117000 - QD UK Holdings_LP ICP",
+    "entity_code": "013007",
+    "partner_code": "ICP_E117000",
+    "partner_num": "117000"
+  },
+  {
+    "row_num": 253,
+    "entity": "013007 - CB 1_3 LP",
+    "partner": "ICP_E117100 - QD UK Holdings LP adjusted ICP",
+    "entity_code": "013007",
+    "partner_code": "ICP_E117100",
+    "partner_num": "117100"
+  },
+  {
+    "row_num": 255,
+    "entity": "013007 - CB 1_3 LP",
+    "partner": "",
+    "entity_code": "013007",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 257,
+    "entity": "013012 - 16 GS LLP",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "013012",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 259,
+    "entity": "013012 - 16 GS LLP",
+    "partner": "ICP_E117000 - QD UK Holdings_LP ICP",
+    "entity_code": "013012",
+    "partner_code": "ICP_E117000",
+    "partner_num": "117000"
+  },
+  {
+    "row_num": 261,
+    "entity": "013012 - 16 GS LLP",
+    "partner": "ICP_E117100 - QD UK Holdings LP adjusted ICP",
+    "entity_code": "013012",
+    "partner_code": "ICP_E117100",
+    "partner_num": "117100"
+  },
+  {
+    "row_num": 263,
+    "entity": "013012 - 16 GS LLP",
+    "partner": "",
+    "entity_code": "013012",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 265,
+    "entity": "E117000 - QD UK Holdings_LP",
+    "partner": "ICP_013013 - QD UK Holdings LP (H) ICP",
+    "entity_code": "117000",
+    "partner_code": "ICP_013013",
+    "partner_num": "013013"
+  },
+  {
+    "row_num": 267,
+    "entity": "E117000 - QD UK Holdings_LP",
+    "partner": "ICP_013007 - CB 1_3 LP ICP",
+    "entity_code": "117000",
+    "partner_code": "ICP_013007",
+    "partner_num": "013007"
+  },
+  {
+    "row_num": 269,
+    "entity": "E117000 - QD UK Holdings_LP",
+    "partner": "ICP_013012 - 16 GS LLP ICP",
+    "entity_code": "117000",
+    "partner_code": "ICP_013012",
+    "partner_num": "013012"
+  },
+  {
+    "row_num": 271,
+    "entity": "E117000 - QD UK Holdings_LP",
+    "partner": "",
+    "entity_code": "117000",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 273,
+    "entity": "E117100 - QD UK Holdings LP adjusted",
+    "partner": "ICP_013013 - QD UK Holdings LP (H) ICP",
+    "entity_code": "117100",
+    "partner_code": "ICP_013013",
+    "partner_num": "013013"
+  },
+  {
+    "row_num": 275,
+    "entity": "E117100 - QD UK Holdings LP adjusted",
+    "partner": "ICP_013007 - CB 1_3 LP ICP",
+    "entity_code": "117100",
+    "partner_code": "ICP_013007",
+    "partner_num": "013007"
+  },
+  {
+    "row_num": 277,
+    "entity": "E117100 - QD UK Holdings LP adjusted",
+    "partner": "ICP_013012 - 16 GS LLP ICP",
+    "entity_code": "117100",
+    "partner_code": "ICP_013012",
+    "partner_num": "013012"
+  },
+  {
+    "row_num": 279,
+    "entity": "E117100 - QD UK Holdings LP adjusted",
+    "partner": "",
+    "entity_code": "117100",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 281,
+    "entity": "001033 - PORR-SBG-HBK Joint Operation (Underground)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "001033",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 283,
+    "entity": "001033 - PORR-SBG-HBK Joint Operation (Underground)",
+    "partner": "",
+    "entity_code": "001033",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 285,
+    "entity": "007010 - QD America Ltd.",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "007010",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 287,
+    "entity": "007010 - QD America Ltd.",
+    "partner": "",
+    "entity_code": "007010",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 289,
+    "entity": "030001 - QD Asia Pacific (H)",
+    "partner": "ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP",
+    "entity_code": "030001",
+    "partner_code": "ICP_E100000",
+    "partner_num": "100000"
+  },
+  {
+    "row_num": 291,
+    "entity": "030001 - QD Asia Pacific (H)",
+    "partner": "",
+    "entity_code": "030001",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 293,
+    "entity": "Grand Total",
+    "partner": "",
+    "entity_code": "",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 296,
+    "entity": "Plug Account: 188600 - 188600:Intercompany Interest Plug A/c",
+    "partner": "",
+    "entity_code": "",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 297,
+    "entity": "Eliminating Accounts",
+    "partner": "",
+    "entity_code": "",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 298,
+    "entity": "111006 - 111006:Inv. prop. under construction - Capitalized Intercompany Interest",
+    "partner": "",
+    "entity_code": "111006",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 299,
+    "entity": "121015 - 121015:PUD- Capitalized Intercompany Interest",
+    "partner": "",
+    "entity_code": "121015",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 300,
+    "entity": "120030 - 120030:PPE - Project in progress - Capitalized Intercompany Interest",
+    "partner": "",
+    "entity_code": "120030",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 301,
+    "entity": "534018 - 534018:Interest expense - related parties",
+    "partner": "",
+    "entity_code": "534018",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": 302,
+    "entity": "433002 - 433002:Interest income - related parties",
+    "partner": "",
+    "entity_code": "433002",
+    "partner_code": "",
+    "partner_num": ""
+  },
+  {
+    "row_num": null,
+    "entity": "ICP_001001:QDRE Investment Company Q.S.C. (H) ICP",
+    "partner": "E101000:QDHP & QD Europe Sarl",
+    "entity_code": "001001",
+    "partner_code": "ICP_101000",
+    "partner_num": "101000"
+  },
+  {
+    "row_num": null,
+    "entity": "ICP_001001:QDRE Investment Company Q.S.C. (H) ICP",
+    "partner": "E108000:QD US Real Estate Co.",
+    "entity_code": "001001",
+    "partner_code": "ICP_108000",
+    "partner_num": "108000"
+  },
+  {
+    "row_num": null,
+    "entity": "001002:Qatari Resorts Co. Q.S.C. (H) ICP",
+    "partner": "E101000:QDHP & QD Europe Sarl",
+    "entity_code": "001002",
+    "partner_code": "ICP_101000",
+    "partner_num": "101000"
+  },
+  {
+    "row_num": null,
+    "entity": "001032:SBG-PORR-HBK Joint Operation (Elevated)",
+    "partner": "001033:PORR-SBG-HBK Joint Operation (Underground)",
+    "entity_code": "001032",
+    "partner_code": "ICP_001033",
+    "partner_num": "001033"
+  },
+  {
+    "row_num": null,
+    "entity": "005002:Al Maha Morocco ICP",
+    "partner": "ICP_E105000:Qatari Diar Real Estate Investment Company (QD Morocco)",
+    "entity_code": "005002",
+    "partner_code": "ICP_105000",
+    "partner_num": "105000"
+  },
+  {
+    "row_num": null,
+    "entity": "ICP_005003:Morocco RE Brok Serv(under liquidation) ICP",
+    "partner": "E103000:Qatar RE Partners C.Q.S.C. (under liquidation)",
+    "entity_code": "005003",
+    "partner_code": "ICP_103000",
+    "partner_num": "103000"
+  },
+  {
+    "row_num": null,
+    "entity": "007009:QD UK Holdings LP adjusted",
+    "partner": "E117100:QD UK Holdings LP adjusted",
+    "entity_code": "007009",
+    "partner_code": "ICP_117100",
+    "partner_num": "117100"
+  },
+  {
+    "row_num": null,
+    "entity": "007012:QD UK Holdings LP adjusted",
+    "partner": "E117100:QD UK Holdings LP adjusted",
+    "entity_code": "007012",
+    "partner_code": "ICP_117100",
+    "partner_num": "117100"
+  },
+  {
+    "row_num": null,
+    "entity": "013001:Qatari Diar UK Limited",
+    "partner": "E117100:QD UK Holdings LP adjusted",
+    "entity_code": "013001",
+    "partner_code": "ICP_117100",
+    "partner_num": "117100"
+  },
+  {
+    "row_num": null,
+    "entity": "013011:Qatari Diar Europe LLP",
+    "partner": "E101000:QDHP & QD Europe Sarl",
+    "entity_code": "013011",
+    "partner_code": "ICP_101000",
+    "partner_num": "101000"
+  },
+  {
+    "row_num": null,
+    "entity": "013011:Qatari Diar Europe LLP",
+    "partner": "E117100:QD UK Holdings LP adjusted",
+    "entity_code": "013011",
+    "partner_code": "ICP_117100",
+    "partner_num": "117100"
+  },
+  {
+    "row_num": null,
+    "entity": "013014:30 GS LLP ICP",
+    "partner": "E101000:QDHP & QD Europe Sarl",
+    "entity_code": "013014",
+    "partner_code": "ICP_101000",
+    "partner_num": "101000"
+  },
+  {
+    "row_num": null,
+    "entity": "027009:QD Americas Inc. - Delaware ICP",
+    "partner": "E108000:QD US Real Estate Co.",
+    "entity_code": "027009",
+    "partner_code": "ICP_108000",
+    "partner_num": "108000"
+  },
+  {
+    "row_num": null,
+    "entity": "E101000:QDHP & QD Europe Sarl",
+    "partner": "ICP_001001:QDRE Investment Company Q.S.C. (H) ICP",
+    "entity_code": "101000",
+    "partner_code": "ICP_001001",
+    "partner_num": "001001"
+  },
+  {
+    "row_num": null,
+    "entity": "E101000:QDHP & QD Europe Sarl",
+    "partner": "001002:Qatari Resorts Co. Q.S.C. (H) ICP",
+    "entity_code": "101000",
+    "partner_code": "ICP_001002",
+    "partner_num": "001002"
+  },
+  {
+    "row_num": null,
+    "entity": "E101000:QDHP & QD Europe Sarl",
+    "partner": "013011:Qatari Diar Europe LLP",
+    "entity_code": "101000",
+    "partner_code": "ICP_013011",
+    "partner_num": "013011"
+  },
+  {
+    "row_num": null,
+    "entity": "E101000:QDHP & QD Europe Sarl",
+    "partner": "013014:30 GS LLP ICP",
+    "entity_code": "101000",
+    "partner_code": "ICP_013014",
+    "partner_num": "013014"
+  },
+  {
+    "row_num": null,
+    "entity": "E108000:QD US Real Estate Co.",
+    "partner": "ICP_001001:QDRE Investment Company Q.S.C. (H) ICP",
+    "entity_code": "108000",
+    "partner_code": "ICP_001001",
+    "partner_num": "001001"
+  },
+  {
+    "row_num": null,
+    "entity": "E108000:QD US Real Estate Co.",
+    "partner": "027009:QD Americas Inc. - Delaware ICP",
+    "entity_code": "108000",
+    "partner_code": "ICP_027009",
+    "partner_num": "027009"
+  },
+  {
+    "row_num": null,
+    "entity": "E111000:Qatari Resorts Co. Q.S.C.",
+    "partner": "ICP_001001:QDRE Investment Company Q.S.C. (H) ICP",
+    "entity_code": "111000",
+    "partner_code": "ICP_001001",
+    "partner_num": "001001"
+  },
+  {
+    "row_num": null,
+    "entity": "E117100:QD UK Holdings LP adjusted",
+    "partner": "007009:QD UK Holdings LP adjusted",
+    "entity_code": "117100",
+    "partner_code": "ICP_007009",
+    "partner_num": "007009"
+  },
+  {
+    "row_num": null,
+    "entity": "E117100:QD UK Holdings LP adjusted",
+    "partner": "007012:QD UK Holdings LP adjusted",
+    "entity_code": "117100",
+    "partner_code": "ICP_007012",
+    "partner_num": "007012"
+  },
+  {
+    "row_num": null,
+    "entity": "E117100:QD UK Holdings LP adjusted",
+    "partner": "013001:Qatari Diar UK Limited",
+    "entity_code": "117100",
+    "partner_code": "ICP_013001",
+    "partner_num": "013001"
+  },
+  {
+    "row_num": null,
+    "entity": "E117100:QD UK Holdings LP adjusted",
+    "partner": "013011:Qatari Diar Europe LLP",
+    "entity_code": "117100",
+    "partner_code": "ICP_013011",
+    "partner_num": "013011"
+  }
+]

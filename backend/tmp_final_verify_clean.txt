@@ -1,0 +1,28 @@
+REF: 188 rows x 50 cols
+NEW: 204 rows x 50 cols
+REF data rows: 156
+NEW data rows: 172
+Common: 156, Only REF: 0, Only NEW: 16
+
+
+--- ONLY IN NEW (16) ---
+  ('E101000:QDHP & QD Europe Sarl', 'ICP_001001:QDRE Investment Company Q.S.C. (H) ICP')
+  ('E101000:QDHP & QD Europe Sarl', 'ICP_001002:Qatari Resorts Co. Q.S.C. (H) ICP')
+  ('E101000:QDHP & QD Europe Sarl', 'ICP_013011:Qatari Diar Europe LLP ICP')
+  ('E101000:QDHP & QD Europe Sarl', 'ICP_013014:30 GS LLP ICP')
+  ('E103000:Qatar RE Partners C.Q.S.C. (under liquidation)', 'ICP_005003:Morocco RE Brok Serv(under liquidation) ICP')
+  ('E105000:Qatari Diar Real Estate Investment Company (QD Morocco)', 'ICP_005002:Al Maha Morocco ICP')
+  ('E108000:QD US Real Estate Co.', 'ICP_001001:QDRE Investment Company Q.S.C. (H) ICP')
+  ('E108000:QD US Real Estate Co.', 'ICP_027009:QD Americas Inc. - Delaware ICP')
+  ('E111000:Qatari Resorts Co. Q.S.C.', 'ICP_001001:QDRE Investment Company Q.S.C. (H) ICP')
+  ('E111100:Qatari Diar Infrastructure Co. L.L.C.', 'ICP_001011:Seef Lusail For Real Estate Development Company ICP')
+  ('E112000:Qatari Diar Development Company L.L.C.', 'ICP_009002:QD Ras Al Hadd Development ICP')
+  ('E117100:QD UK Holdings LP adjusted', 'ICP_007009:QD Europe Chancery S.a.r.l. ICP')
+  ('E117100:QD UK Holdings LP adjusted', 'ICP_007012:GS 16  S.ar.l. ICP')
+  ('E117100:QD UK Holdings LP adjusted', 'ICP_013001:Qatari Diar UK Limited ICP')
+  ('E117100:QD UK Holdings LP adjusted', 'ICP_013011:Qatari Diar Europe LLP ICP')
+  ('E118000:QD SBG Group adjusted', 'ICP_001001:QDRE Investment Company Q.S.C. (H) ICP')
+
+--- VALUE COMPARISON (common=156) ---
+
+Total mismatches: 0

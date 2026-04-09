@@ -1,0 +1,46 @@
+Sheet: Sheet1 (max_col=16)
+
+Entity-side columns:
+  code=165003 series=S1 tag=Entity
+  code=189001 series=S1 tag=Entity
+  code=224000 series=S2 tag=Entity
+  code=224009 series=S2 tag=Entity
+
+Partner-side columns:
+  code=224000 series=S2 tag=Partner
+  code=224009 series=S2 tag=Partner
+  code=165003 series=S1 tag=Partner
+  code=189001 series=S1 tag=Partner
+  code=189014 series=S1 tag=Partner
+  *** code=189501 desc=189501 - 189501:Due from Related Party - Non-current Partner series=S1 tag=Partner
+
+
+=== OUTPUT FILE HEADERS ===
+  Col 14: 189501 - 189501:189501 Entity
+  Col 24: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col 48: 189501 - 189501:189501 Entity
+  Col 58: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col 83: 189501 - 189501:189501 Entity
+  Col 93: 189501 - 189501:Due from Related Party - Non-current Partner
+
+=== OUTPUT ROW 438 DETAIL ===
+  col1 (Entity): 189501 - 189501:Due from Related Party - Non-current
+  col2 (Partner): None
+
+=== ICM SOURCE: Rows around entity 189501 ===
+
+=== JOURNAL 1: entries with account_code=189501 ===
+  Row 68: ent_code=022001 acct_code=189501 icp_code=ICP_001001
+           ent_raw=022001:QDREI  Co. Tajakistan Ltd
+           acct_raw=[165000].[189501]:189501:Due from Related Party - Non-current
+           icp_raw=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP
+           debit=None credit=26035079.04
+
+  Row 79: ent_code=101000 acct_code=189501 icp_code=ICP_001001
+           ent_raw=E101000:QDHP & QD Europe Sarl
+           acct_raw=[165000].[189501]:189501:Due from Related Party - Non-current
+           icp_raw=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP
+           debit=None credit=1555338.34
+
+
+=== JOURNAL 2: entries with account_code=189501 ===

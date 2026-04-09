@@ -1,0 +1,189 @@
+MAX ROW: 188
+Row 1: ENT= | PRT=
+Row 2: ENT= | PRT=
+Row 3: ENT= | PRT=
+Row 4: ENT= | PRT=
+Row 5: ENT= | PRT=
+Row 6: ENT= | PRT=
+Row 7: ENT= | PRT=
+Row 8: ENT= | PRT=
+Row 9: ENT= | PRT=
+Row 10: ENT= | PRT=
+Row 11: ENT= | PRT=
+Row 12: ENT= | PRT=
+Row 13: ENT= | PRT=
+Row 14: ENT= | PRT=
+Row 15: ENT= | PRT=
+Row 16: ENT= | PRT=
+Row 17: ENT= | PRT=
+Row 18: ENT= | PRT=
+Row 19: ENT= | PRT=
+Row 20: ENT= | PRT=
+Row 21: ENT= | PRT=
+Row 22: ENT= | PRT=
+Row 23: ENT= | PRT=
+Row 24: ENT= | PRT=
+Row 25: ENT= | PRT=
+Row 26: ENT= | PRT=
+Row 27: ENT= | PRT=
+Row 28: ENT= | PRT=
+Row 29: ENT= | PRT=
+Row 30: ENT= | PRT=
+Row 31: ENT= | PRT=
+Row 32: ENT=Entity | PRT=Partner
+Row 33: ENT=001001 - QDRE Investment Company Q.S.C. (H) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 34: ENT=001001 - QDRE Investment Company Q.S.C. (H) | PRT=
+Row 35: ENT=007001 - QD Europe S.a.r.l. (H) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 36: ENT=007001 - QD Europe S.a.r.l. (H) | PRT=ICP_E101100 - QD Europe_S.a.r.l. ICP
+Row 37: ENT=007001 - QD Europe S.a.r.l. (H) | PRT=ICP_E101000 - QDHP & QD Europe Sarl ICP
+Row 38: ENT=007001 - QD Europe S.a.r.l. (H) | PRT=
+Row 39: ENT=007004 - QD VEO S.a.r.l. (H) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 40: ENT=007004 - QD VEO S.a.r.l. (H) | PRT=ICP_E101100 - QD Europe_S.a.r.l. ICP
+Row 41: ENT=007004 - QD VEO S.a.r.l. (H) | PRT=ICP_E101110 - QD VEO_S.a.r.l. ICP
+Row 42: ENT=007004 - QD VEO S.a.r.l. (H) | PRT=ICP_E101000 - QDHP & QD Europe Sarl ICP
+Row 43: ENT=007004 - QD VEO S.a.r.l. (H) | PRT=
+Row 44: ENT=007005 - VELO Investissement | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 45: ENT=007005 - VELO Investissement | PRT=ICP_E101100 - QD Europe_S.a.r.l. ICP
+Row 46: ENT=007005 - VELO Investissement | PRT=ICP_E101110 - QD VEO_S.a.r.l. ICP
+Row 47: ENT=007005 - VELO Investissement | PRT=ICP_E101000 - QDHP & QD Europe Sarl ICP
+Row 48: ENT=007005 - VELO Investissement | PRT=
+Row 49: ENT=E101110 - QD VEO_S.a.r.l. | PRT=ICP_007004 - QD VEO S.a.r.l. (H) ICP
+Row 50: ENT=E101110 - QD VEO_S.a.r.l. | PRT=ICP_007005 - VELO Investissement ICP
+Row 51: ENT=E101110 - QD VEO_S.a.r.l. | PRT=
+Row 52: ENT=007006 - Casinvest S.a.r.l. (H) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 53: ENT=007006 - Casinvest S.a.r.l. (H) | PRT=ICP_E101100 - QD Europe_S.a.r.l. ICP
+Row 54: ENT=007006 - Casinvest S.a.r.l. (H) | PRT=ICP_E101000 - QDHP & QD Europe Sarl ICP
+Row 55: ENT=007006 - Casinvest S.a.r.l. (H) | PRT=
+Row 56: ENT=032002 - QD Hotel & Property Investment Montenegro Doo | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 57: ENT=032002 - QD Hotel & Property Investment Montenegro Doo | PRT=ICP_E101100 - QD Europe_S.a.r.l. ICP
+Row 58: ENT=032002 - QD Hotel & Property Investment Montenegro Doo | PRT=ICP_E101000 - QDHP & QD Europe Sarl ICP
+Row 59: ENT=032002 - QD Hotel & Property Investment Montenegro Doo | PRT=
+Row 60: ENT=007011 - GPS Holdings S.a.r.l. | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 61: ENT=007011 - GPS Holdings S.a.r.l. | PRT=ICP_E101100 - QD Europe_S.a.r.l. ICP
+Row 62: ENT=007011 - GPS Holdings S.a.r.l. | PRT=ICP_E101000 - QDHP & QD Europe Sarl ICP
+Row 63: ENT=007011 - GPS Holdings S.a.r.l. | PRT=
+Row 64: ENT=E101100 - QD Europe_S.a.r.l. | PRT=ICP_007001 - QD Europe S.a.r.l. (H) ICP
+Row 65: ENT=E101100 - QD Europe_S.a.r.l. | PRT=ICP_007006 - Casinvest S.a.r.l. (H) ICP
+Row 66: ENT=E101100 - QD Europe_S.a.r.l. | PRT=ICP_007011 - GPS Holdings S.a.r.l. ICP
+Row 67: ENT=E101100 - QD Europe_S.a.r.l. | PRT=ICP_007004 - QD VEO S.a.r.l. (H) ICP
+Row 68: ENT=E101100 - QD Europe_S.a.r.l. | PRT=ICP_007005 - VELO Investissement ICP
+Row 69: ENT=E101100 - QD Europe_S.a.r.l. | PRT=ICP_032002 - QD Hotel & Property Investment Montenegro Doo ICP
+Row 70: ENT=E101100 - QD Europe_S.a.r.l. | PRT=
+Row 71: ENT=E101000 - QDHP & QD Europe Sarl | PRT=ICP_007001 - QD Europe S.a.r.l. (H) ICP
+Row 72: ENT=E101000 - QDHP & QD Europe Sarl | PRT=ICP_007006 - Casinvest S.a.r.l. (H) ICP
+Row 73: ENT=E101000 - QDHP & QD Europe Sarl | PRT=ICP_007011 - GPS Holdings S.a.r.l. ICP
+Row 74: ENT=E101000 - QDHP & QD Europe Sarl | PRT=ICP_007004 - QD VEO S.a.r.l. (H) ICP
+Row 75: ENT=E101000 - QDHP & QD Europe Sarl | PRT=ICP_007005 - VELO Investissement ICP
+Row 76: ENT=E101000 - QDHP & QD Europe Sarl | PRT=ICP_032002 - QD Hotel & Property Investment Montenegro Doo ICP
+Row 77: ENT=E101000 - QDHP & QD Europe Sarl | PRT=
+Row 78: ENT=002001 - QDRE & Tourism Co. LLC. (Egypt) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 79: ENT=002001 - QDRE & Tourism Co. LLC. (Egypt) | PRT=
+Row 80: ENT=019002 - QD US Real Estate Company (H) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 81: ENT=019002 - QD US Real Estate Company (H) | PRT=
+Row 82: ENT=019003 - QD US Parcel A (Residential) Company (H) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 83: ENT=019003 - QD US Parcel A (Residential) Company (H) | PRT=ICP_E108000 - QD US Real Estate Co. ICP
+Row 84: ENT=019003 - QD US Parcel A (Residential) Company (H) | PRT=ICP_E108400 - QD US Parcel A (Residential) Co. ICP
+Row 85: ENT=019003 - QD US Parcel A (Residential) Company (H) | PRT=
+Row 86: ENT=027001 - CityCenter DC Residential | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 87: ENT=027001 - CityCenter DC Residential | PRT=ICP_E108000 - QD US Real Estate Co. ICP
+Row 88: ENT=027001 - CityCenter DC Residential | PRT=ICP_E108400 - QD US Parcel A (Residential) Co. ICP
+Row 89: ENT=027001 - CityCenter DC Residential | PRT=
+Row 90: ENT=E108400 - QD US Parcel A (Residential) Co. | PRT=ICP_027001 - CityCenter DC Residential ICP
+Row 91: ENT=E108400 - QD US Parcel A (Residential) Co. | PRT=ICP_019003 - QD US Parcel A (Residential) Company (H) ICP
+Row 92: ENT=E108400 - QD US Parcel A (Residential) Co. | PRT=
+Row 93: ENT=013004 - CCDC Parcel B Hotel Corp. | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 94: ENT=013004 - CCDC Parcel B Hotel Corp. | PRT=ICP_E108000 - QD US Real Estate Co. ICP
+Row 95: ENT=013004 - CCDC Parcel B Hotel Corp. | PRT=ICP_E108600 - CCDC Parcel B Hotel Corporation ICP
+Row 96: ENT=013004 - CCDC Parcel B Hotel Corp. | PRT=
+Row 97: ENT=027006 - CityCenter Parcel B Hotel Corp. | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 98: ENT=027006 - CityCenter Parcel B Hotel Corp. | PRT=ICP_E108000 - QD US Real Estate Co. ICP
+Row 99: ENT=027006 - CityCenter Parcel B Hotel Corp. | PRT=ICP_E108600 - CCDC Parcel B Hotel Corporation ICP
+Row 100: ENT=027006 - CityCenter Parcel B Hotel Corp. | PRT=
+Row 101: ENT=E108600 - CCDC Parcel B Hotel Corporation | PRT=ICP_013004 - CCDC Parcel B Hotel Corp. ICP
+Row 102: ENT=E108600 - CCDC Parcel B Hotel Corporation | PRT=ICP_027006 - CityCenter Parcel B Hotel Corp. ICP
+Row 103: ENT=E108600 - CCDC Parcel B Hotel Corporation | PRT=
+Row 104: ENT=013005 - CCDC Parcel B Retail Corp. | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 105: ENT=013005 - CCDC Parcel B Retail Corp. | PRT=ICP_E108000 - QD US Real Estate Co. ICP
+Row 106: ENT=013005 - CCDC Parcel B Retail Corp. | PRT=ICP_E108700 - CCDC Parcel B Retail Corporation ICP
+Row 107: ENT=013005 - CCDC Parcel B Retail Corp. | PRT=
+Row 108: ENT=027007 - CityCenter Parcel B Retail Corp. | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 109: ENT=027007 - CityCenter Parcel B Retail Corp. | PRT=ICP_E108000 - QD US Real Estate Co. ICP
+Row 110: ENT=027007 - CityCenter Parcel B Retail Corp. | PRT=ICP_E108700 - CCDC Parcel B Retail Corporation ICP
+Row 111: ENT=027007 - CityCenter Parcel B Retail Corp. | PRT=
+Row 112: ENT=E108700 - CCDC Parcel B Retail Corporation | PRT=ICP_013005 - CCDC Parcel B Retail Corp. ICP
+Row 113: ENT=E108700 - CCDC Parcel B Retail Corporation | PRT=ICP_027007 - CityCenter Parcel B Retail Corp. ICP
+Row 114: ENT=E108700 - CCDC Parcel B Retail Corporation | PRT=
+Row 115: ENT=027008 - LIC Gotham (US) Inc. | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 116: ENT=027008 - LIC Gotham (US) Inc. | PRT=ICP_E108000 - QD US Real Estate Co. ICP
+Row 117: ENT=027008 - LIC Gotham (US) Inc. | PRT=ICP_E108800 - LIC Gotham (UK) Limited ICP
+Row 118: ENT=027008 - LIC Gotham (US) Inc. | PRT=
+Row 119: ENT=013006 - LIC Gotham (UK) Ltd. (H) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 120: ENT=013006 - LIC Gotham (UK) Ltd. (H) | PRT=ICP_E108000 - QD US Real Estate Co. ICP
+Row 121: ENT=013006 - LIC Gotham (UK) Ltd. (H) | PRT=ICP_E108800 - LIC Gotham (UK) Limited ICP
+Row 122: ENT=013006 - LIC Gotham (UK) Ltd. (H) | PRT=
+Row 123: ENT=E108800 - LIC Gotham (UK) Limited | PRT=ICP_027008 - LIC Gotham (US) Inc. ICP
+Row 124: ENT=E108800 - LIC Gotham (UK) Limited | PRT=ICP_013006 - LIC Gotham (UK) Ltd. (H) ICP
+Row 125: ENT=E108800 - LIC Gotham (UK) Limited | PRT=
+Row 126: ENT=E108000 - QD US Real Estate Co. | PRT=ICP_027001 - CityCenter DC Residential ICP
+Row 127: ENT=E108000 - QD US Real Estate Co. | PRT=ICP_019003 - QD US Parcel A (Residential) Company (H) ICP
+Row 128: ENT=E108000 - QD US Real Estate Co. | PRT=ICP_013004 - CCDC Parcel B Hotel Corp. ICP
+Row 129: ENT=E108000 - QD US Real Estate Co. | PRT=ICP_027006 - CityCenter Parcel B Hotel Corp. ICP
+Row 130: ENT=E108000 - QD US Real Estate Co. | PRT=ICP_013005 - CCDC Parcel B Retail Corp. ICP
+Row 131: ENT=E108000 - QD US Real Estate Co. | PRT=ICP_027007 - CityCenter Parcel B Retail Corp. ICP
+Row 132: ENT=E108000 - QD US Real Estate Co. | PRT=ICP_027008 - LIC Gotham (US) Inc. ICP
+Row 133: ENT=E108000 - QD US Real Estate Co. | PRT=ICP_013006 - LIC Gotham (UK) Ltd. (H) ICP
+Row 134: ENT=E108000 - QD US Real Estate Co. | PRT=
+Row 135: ENT=001008 - Qatari Diar Infrastructure Co. L.L.C. (H) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 136: ENT=001008 - Qatari Diar Infrastructure Co. L.L.C. (H) | PRT=
+Row 137: ENT=013013 - QD UK Holdings LP (H) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 138: ENT=013013 - QD UK Holdings LP (H) | PRT=ICP_E117000 - QD UK Holdings_LP ICP
+Row 139: ENT=013013 - QD UK Holdings LP (H) | PRT=ICP_E117100 - QD UK Holdings LP adjusted ICP
+Row 140: ENT=013013 - QD UK Holdings LP (H) | PRT=
+Row 141: ENT=013007 - CB 1_3 LP | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 142: ENT=013007 - CB 1_3 LP | PRT=ICP_E117000 - QD UK Holdings_LP ICP
+Row 143: ENT=013007 - CB 1_3 LP | PRT=ICP_E117100 - QD UK Holdings LP adjusted ICP
+Row 144: ENT=013007 - CB 1_3 LP | PRT=
+Row 145: ENT=013012 - 16 GS LLP | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 146: ENT=013012 - 16 GS LLP | PRT=ICP_E117000 - QD UK Holdings_LP ICP
+Row 147: ENT=013012 - 16 GS LLP | PRT=ICP_E117100 - QD UK Holdings LP adjusted ICP
+Row 148: ENT=013012 - 16 GS LLP | PRT=
+Row 149: ENT=E117000 - QD UK Holdings_LP | PRT=ICP_013013 - QD UK Holdings LP (H) ICP
+Row 150: ENT=E117000 - QD UK Holdings_LP | PRT=ICP_013007 - CB 1_3 LP ICP
+Row 151: ENT=E117000 - QD UK Holdings_LP | PRT=ICP_013012 - 16 GS LLP ICP
+Row 152: ENT=E117000 - QD UK Holdings_LP | PRT=
+Row 153: ENT=E117100 - QD UK Holdings LP adjusted | PRT=ICP_013013 - QD UK Holdings LP (H) ICP
+Row 154: ENT=E117100 - QD UK Holdings LP adjusted | PRT=ICP_013007 - CB 1_3 LP ICP
+Row 155: ENT=E117100 - QD UK Holdings LP adjusted | PRT=ICP_013012 - 16 GS LLP ICP
+Row 156: ENT=E117100 - QD UK Holdings LP adjusted | PRT=
+Row 157: ENT=001033 - PORR-SBG-HBK Joint Operation (Underground) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 158: ENT=001033 - PORR-SBG-HBK Joint Operation (Underground) | PRT=
+Row 159: ENT=007010 - QD America Ltd. | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 160: ENT=007010 - QD America Ltd. | PRT=
+Row 161: ENT=030001 - QD Asia Pacific (H) | PRT=ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP
+Row 162: ENT=030001 - QD Asia Pacific (H) | PRT=
+Row 163: ENT=Grand Total | PRT=
+Row 164: ENT=Plug Account: 188600 - 188600:Intercompany Interest Plug A/c | PRT=
+Row 165: ENT=Eliminating Accounts | PRT=
+Row 166: ENT=111006 - 111006:Inv. prop. under construction - Capitalized Intercompany Interest | PRT=
+Row 167: ENT=121015 - 121015:PUD- Capitalized Intercompany Interest | PRT=
+Row 168: ENT=120030 - 120030:PPE - Project in progress - Capitalized Intercompany Interest | PRT=
+Row 169: ENT=534018 - 534018:Interest expense - related parties | PRT=
+Row 170: ENT=433002 - 433002:Interest income - related parties | PRT=
+Row 171: ENT=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP | PRT=E101000:QDHP & QD Europe Sarl
+Row 172: ENT=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP | PRT=E108000:QD US Real Estate Co.
+Row 173: ENT=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP | PRT=E111000:Qatari Resorts Co. Q.S.C.
+Row 174: ENT=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP | PRT=E118000:QD SBG Group adjusted
+Row 175: ENT=001002:Qatari Resorts Co. Q.S.C. (H) ICP | PRT=E101000:QDHP & QD Europe Sarl
+Row 176: ENT=001032:SBG-PORR-HBK Joint Operation (Elevated) | PRT=001033:PORR-SBG-HBK Joint Operation (Underground)
+Row 177: ENT=005002:Al Maha Morocco ICP | PRT=ICP_E105000:Qatari Diar Real Estate Investment Company (QD Morocco)
+Row 178: ENT=ICP_005003:Morocco RE Brok Serv(under liquidation) ICP | PRT=E103000:Qatar RE Partners C.Q.S.C. (under liquidation)
+Row 179: ENT=007009:QD UK Holdings LP adjusted | PRT=E117100:QD UK Holdings LP adjusted
+Row 180: ENT=007012:QD UK Holdings LP adjusted | PRT=E117100:QD UK Holdings LP adjusted
+Row 181: ENT=009002:QD Ras Al Hadd Development ICP | PRT=E112000:Qatari Diar Development Company L.L.C.
+Row 182: ENT=013001:Qatari Diar UK Limited | PRT=E117100:QD UK Holdings LP adjusted
+Row 183: ENT=013011:Qatari Diar Europe LLP | PRT=E101000:QDHP & QD Europe Sarl
+Row 184: ENT=013011:Qatari Diar Europe LLP | PRT=E117100:QD UK Holdings LP adjusted
+Row 185: ENT=013014:30 GS LLP ICP | PRT=E101000:QDHP & QD Europe Sarl
+Row 186: ENT=022001:QDREI  Co. Tajakistan Ltd | PRT=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP
+Row 187: ENT=027009:QD Americas Inc. - Delaware ICP | PRT=E108000:QD US Real Estate Co.
+Row 188: ENT=E111100:Qatari Diar Infrastructure Co. L.L.C. | PRT=ICP_001011:Seef Lusail For Real Estate Development Company ICP

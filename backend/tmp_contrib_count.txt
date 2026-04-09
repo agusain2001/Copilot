@@ -1,0 +1,12 @@
+Contribution journal: 9 transactions
+
+ALL TRANSACTIONS:
+  JnlRow 223: (109000, ICP_011002, 315005) debit=0.00 credit=431247081.59 signed=431247081.59 (GROUP/E-prefix)
+  JnlRow 238: (103000, ICP_001004, Plug_InvSh) debit=43170.00 credit=0.00 signed=43170.00 (GROUP/E-prefix)
+  JnlRow 239: (103000, ICP_005003, Plug_InvSh) debit=0.00 credit=200000.00 signed=-200000.00 (GROUP/E-prefix)
+  JnlRow 241: (103000, ICP_001004, Plug_InvSh) debit=0.00 credit=43170.00 signed=-43170.00 (GROUP/E-prefix)
+  JnlRow 242: (103000, ICP_005003, Plug_InvSh) debit=200000.00 credit=0.00 signed=200000.00 (GROUP/E-prefix)
+  JnlRow 258: (016003, ICP_016001, 165003) debit=0.00 credit=1.00 signed=-1.00
+  JnlRow 368: (111100, ICP_001011, Plug_InvSh) debit=0.00 credit=3167434180.00 signed=-3167434180.00 (GROUP/E-prefix)
+  JnlRow 418: (117000A, ICP_001001, 224000) debit=64502.00 credit=0.00 signed=-64502.00
+  JnlRow 419: (117000A, ICP_013013, 310001) debit=0.00 credit=64502.00 signed=64502.00

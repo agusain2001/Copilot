@@ -24,8 +24,8 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', handleClick);
   }, []);
 
-  const initials = user
-    ? user.full_name.split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase()
+  const initials = user?.full_name
+    ? user.full_name.split(' ').filter(w => w).map((w) => w[0]).join('').slice(0, 2).toUpperCase()
     : 'U';
 
   return (
@@ -45,7 +45,6 @@ export default function Navbar() {
 
         <div className="navbar-links">
           <NavLink to="/reports" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Reports</NavLink>
-          <NavLink to="/processing" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>Processing</NavLink>
         </div>
 
         <div className="navbar-right">

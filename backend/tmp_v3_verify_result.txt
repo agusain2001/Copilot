@@ -1,0 +1,86 @@
+﻿Sheet: ICM Matched
+Max row: 1341, Max col: 74
+
+All headers (row 32):
+  Col   1: Entity
+  Col   2: Partner
+  Col   3: 165003 - 165003:Advances provided for related parties Entity
+  Col   4: 165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie
+  Col   5: 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col   6: 189001 - 189001:Inter company account - receivables Entity
+  Col   7: 189014 - 189014:Discount on intercompany loan Entity
+  Col   8: 189501 - 189501:Due from Related Party - Non-current Entity
+  Col   9: 224000 - 224000:Due to related parties Entity
+  Col  10: 224003 - 224003:Advances provided from related parties Entity
+  Col  11: 224009 - 224009:Inter company accounts - Payables Entity
+  Col  12: 188800 - 188800:Intercompany Balances Plug A/c Entity
+  Col  13: Variance
+  Col  14: 224000 - 224000:Due to related parties Partner
+  Col  15: 224003 - 224003:Advances provided from related parties Partner
+  Col  16: 224009 - 224009:Inter company accounts - Payables Partner
+  Col  17: 165003 - 165003:Advances provided for related parties Partner
+  Col  18: 165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie
+  Col  19: 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col  20: 189001 - 189001:Inter company account - receivables Partner
+  Col  21: 189014 - 189014:Discount on intercompany loan Partner
+  Col  22: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col  23: Variance
+  Col  24: Total
+  Col  26: 165003 - 165003:Advances provided for related parties Entity
+  Col  27: 165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie
+  Col  28: 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col  29: 189001 - 189001:Inter company account - receivables Entity
+  Col  30: 189014 - 189014:Discount on intercompany loan Entity
+  Col  31: 189501 - 189501:Due from Related Party - Non-current Entity
+  Col  32: 224000 - 224000:Due to related parties Entity
+  Col  33: 224003 - 224003:Advances provided from related parties Entity
+  Col  34: 224009 - 224009:Inter company accounts - Payables Entity
+  Col  35: 188800 - 188800:Intercompany Balances Plug A/c Entity
+  Col  36: Variance
+  Col  37: 224000 - 224000:Due to related parties Partner
+  Col  38: 224003 - 224003:Advances provided from related parties Partner
+  Col  39: 224009 - 224009:Inter company accounts - Payables Partner
+  Col  40: 165003 - 165003:Advances provided for related parties Partner
+  Col  41: 165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie
+  Col  42: 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col  43: 189001 - 189001:Inter company account - receivables Partner
+  Col  44: 189014 - 189014:Discount on intercompany loan Partner
+  Col  45: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col  46: Variance
+  Col  47: Total
+  Col  48: 188800:Intercompany Balances Plug A/c
+  Col  50: 165003 - 165003:Advances provided for related parties Entity
+  Col  51: 165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie
+  Col  52: 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col  53: 189001 - 189001:Inter company account - receivables Entity
+  Col  54: 189014 - 189014:Discount on intercompany loan Entity
+  Col  55: 189501 - 189501:Due from Related Party - Non-current Entity
+  Col  56: 224000 - 224000:Due to related parties Entity
+  Col  57: 224003 - 224003:Advances provided from related parties Entity
+  Col  58: 224009 - 224009:Inter company accounts - Payables Entity
+  Col  59: 188800 - 188800:Intercompany Balances Plug A/c Entity
+  Col  60: Variance
+  Col  61: 224000 - 224000:Due to related parties Partner
+  Col  62: 224003 - 224003:Advances provided from related parties Partner
+  Col  63: 224009 - 224009:Inter company accounts - Payables Partner
+  Col  64: 165003 - 165003:Advances provided for related parties Partner
+  Col  65: 165004 - 165004:Payments to subcontractors & suppliers on behalf of other partie
+  Col  66: 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col  67: 189001 - 189001:Inter company account - receivables Partner
+  Col  68: 189014 - 189014:Discount on intercompany loan Partner
+  Col  69: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col  70: Variance
+  Col  71: Total
+  Col  72: 188800:Intercompany Balances Plug A/c
+  Col  74: Final Total
+
+Unique account codes: ['165003', '165004', '165005', '188800', '189001', '189014', '189501', '224000', '224003', '224009']
+Total: 10
+
+Section labels (row 29):
+  Col 26: Parent Input
+  Col 50: Contribution Input
+
+Journal-only accounts in output: NONE (correct!)
+
+Data rows: 1309

@@ -1,0 +1,23 @@
+﻿Sheet: ICM Matched
+Max col: 111
+
+Accounts present in output columns:
+['165001', '165002', '165003', '165004', '165005', '187052', '188800', '189001', '189014', '189015', '189501', '224000', '224001', '224003', '224009', '224024']
+
+Expected match count: 16
+g:\FCCS\backend\venv\Scripts\python.exe : Traceback (most recent call last):
+At line:1 char:1
++ g:\FCCS\backend\venv\Scripts\python.exe tmp_verify_v6.py 2>&1 | Out-F ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last) 
+   ::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "G:\FCCS\backend\tmp_verify_v6.py", line 33, in <module>
+    print("ALL ACCOUNTS CONFIRMED PRESENT IN OUTPUT COLUMNS \u2705")
+  File "C:\Users\InFiNiTe\AppData\Local\Programs\Python\Python312\Lib\encodings
+\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in 
+position 49: character maps to <undefined>

@@ -1,0 +1,168 @@
+
+================================================================================
+JOURNAL: Update files (used as parent)
+  Path: G:\FCCS\Update files\Journal Report.xlsx
+================================================================================
+  Sheet: Sheet1, max_row=745, max_col=17
+
+  Header area (rows 28-32):
+    Row 28: C1='Column Display Options', C3='Label(Subtotal), Status, Entity, Account, Intercom'
+    Row 30: C1=' Label ', C2=' Status ', C3=' Entity ', C4=' Account ', C5=' Intercompany ', C6=' Movement ', C7=' Project ', C9=' Sub Code ', C10=' Future1 ', C11=' Future2 ', C12=' Group ', C13=' Type ', C14=' Journal Description ', C15='Debit', C16='Credit'
+    Row 31: C1=' 30GSADJ4', C2=' Posted', C3=' 013014:30 GS LLP', C4=' 187013:187013:Current - Derivative financial inst', C5=' FCCS_No Intercompany:No Intercompany', C6=' Mvmts_BS', C7=' [Project].[No Project]', C9=' [Sub Code].[No Sub Code]', C10=' [Future1].[No Future1]', C11=' [Future2].[No Future2]', C12=' Consol_Adj', C13=' Auto Reversing', C14=' Reclassification journal', C16='30465313'
+    Row 32: C1=' 30GSADJ4', C2=' Posted', C3=' 013014:30 GS LLP', C4=' 188999:188999:Derivative financial instruments - ', C5=' FCCS_No Intercompany:No Intercompany', C6=' Mvmts_BS', C7=' [Project].[No Project]', C9=' [Sub Code].[No Sub Code]', C10=' [Future1].[No Future1]', C11=' [Future2].[No Future2]', C12=' Consol_Adj', C13=' Auto Reversing', C14=' Reclassification journal', C15='30465313'
+
+  Total detail rows: 533
+
+  Unique entities (51):
+    001001: 001001:QDRE Investment Company Q.S.C. (H)
+    001006: 001006:Lusail RE Develop Co. W.L.L.
+    001014: 001014:The Commercial Avenue W.L.L.
+    001015: 001015:Barwa Al Khor S.P.C.
+    001021: 001021:Legtafiya Asset Mng. Co.
+    001033: 001033:PORR-SBG-HBK Joint Operation (Underground)
+    001038: 001038:Lusail Plaza RED Co. LLC (Lusail Tower 1 SPV)
+    001039: 001039:Lusail Real Estate Management Co. (LREMC)
+    003010: 003010:Qatari Diar Jersey Limited
+    007011: 007011:GPS Holdings S.a.r.l.
+    010001: 010001:Al Yemania Al Qatariah REID Co.
+    010002: 010002:QDRE Investment Co. Yemen
+    011003: 011003:Diar Sulaymaniye (H)
+    013001: 013001:Qatari Diar UK Limited
+    013003: 013003:Tasleem (UK) Limited
+    013007: 013007:CB 1_3 LP
+    013008: 013008:CB 4 LP
+    013009: 013009:CB 5 LP
+    013011: 013011:Qatari Diar Europe LLP
+    013014: 013014:30 GS LLP
+    013024: 013024:QDUK Holdings GP LLP
+    015003: 015003:QD Project Management Co.
+    017001: 017001:QDRE Investment Co. L.L.C. (Syria)
+    021001: 021001:QDRE Investment Co Ltd . (Eritrea)
+    022001: 022001:QDREI  Co. Tajakistan Ltd
+    022002: 022002:Al Maha Property & Facility Mng. co.-Tajikistan
+    026001: 026001:QDRE Investment Co. (Seychelles) Ltd.
+    E101000: E101000:QDHP & QD Europe Sarl
+    E102000: E102000:QDVC_Q.S.C.
+    E103000: E103000:Qatar RE Partners C.Q.S.C. (under liquidation)
+    E104000: E104000:Smeet_W.L.L.
+    E105000: E105000:Qatari Diar Real Estate Investment Company (QD Moroc
+    E106000: E106000:Project Red Group Ltd.
+    E107000: E107000:Project Blue Holdings Ltd.
+    E108000: E108000:QD US Real Estate Co.
+    E109000: E109000:QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve
+    E110000: E110000:Al Qatariya Development Co, Malta
+    E111000: E111000:Qatari Resorts Co. Q.S.C.
+    E112000: E112000:Qatari Diar Development Company L.L.C.
+    E113000: E113000:Marafeq Qatar Co. W.L.L.
+    E114000: E114000:Project Russet (Holdings Company) Ltd, Jersey
+    E115000: E115000:Bawabat El Sharq Egypt Real_Estate
+    E116000: E116000:QD Triangle (Holding Company) Ltd
+    E117000: E117000:QD UK Holdings_LP
+    E117100: E117100:QD UK Holdings LP adjusted
+    E118000: E118000:QD SBG Group adjusted
+    E120000: E120000:QDRE Development SAE (Egypt) Subgroup
+    E121000: E121000:QDRE & Tourism Co. LLC. (Egypt) Subgroup
+    E123000: E123000:QD Asia Pacific Subgroup
+    E124000: E124000:QDRE Investment Company Tozeur Subgroup
+    E125000: E125000:Qatari Diar for Hotel Services Subgroup
+
+  Has entity '001001': YES
+  Has entity '001033': YES
+  Has entity '022001': YES
+  Has entity '013024': YES
+
+================================================================================
+JOURNAL: Report22 inputs J(1)
+  Path: G:\FCCS\backend\uploads\reports\22\inputs\Journal Report (1).xlsx
+================================================================================
+  Sheet: Sheet1, max_row=91, max_col=17
+
+  Header area (rows 28-32):
+    Row 30: C1=' Label ', C2=' Status ', C3=' Entity ', C4=' Account ', C5=' Intercompany ', C6=' Movement ', C7=' Project ', C9=' Sub Code ', C10=' Future1 ', C11=' Future2 ', C12=' Group ', C13=' Type ', C14=' Journal Description ', C15='Debit', C16='Credit'
+    Row 31: C1=' AdhocAdj11', C2=' Posted', C3=' E117100:QD UK Holdings LP adjusted', C4=' 224000:224000:Due to related parties', C5=' ICP_007009:QD Europe Chancery S.a.r.l. ICP', C6=' Mvmts_BS', C7=' [Project].[No Project]', C9=' [Sub Code].[No Sub Code]', C10=' [Future1].[No Future1]', C11=' [Future2].[No Future2]', C12=' Consol_Adj', C13=' Regular', C14=' Adhoc adj to match final consol', C15='7934061.83'
+    Row 32: C1=' AdhocAdj11', C2='  ', C3='  ', C4='  ', C5='  ', C6='  ', C7='  ', C9='  ', C10='  ', C11='  ', C12='  ', C13='  ', C14='  ', C15='7934061.83', C16='0'
+
+  Total detail rows: 35
+
+  Unique entities (12):
+    001021: 001021:Legtafiya Asset Mng. Co.
+    001033: 001033:PORR-SBG-HBK Joint Operation (Underground)
+    013024: 013024:QDUK Holdings GP LLP
+    022001: 022001:QDREI  Co. Tajakistan Ltd
+    E101000: E101000:QDHP & QD Europe Sarl
+    E103000: E103000:Qatar RE Partners C.Q.S.C. (under liquidation)
+    E105000: E105000:Qatari Diar Real Estate Investment Company (QD Moroc
+    E108000: E108000:QD US Real Estate Co.
+    E111000: E111000:Qatari Resorts Co. Q.S.C.
+    E112000: E112000:Qatari Diar Development Company L.L.C.
+    E117100: E117100:QD UK Holdings LP adjusted
+    E118000: E118000:QD SBG Group adjusted
+
+  Has entity '001001': NO
+  Has entity '001033': YES
+  Has entity '022001': YES
+  Has entity '013024': YES
+
+
+================================================================================
+ICM INPUT FILE:
+================================================================================
+  Total ICM data rows: 1289
+
+
+================================================================================
+MATCHING RESULTS (parent journal = Update files\Journal Report.xlsx):
+================================================================================
+
+  Primary updates (7 entries):
+    ('001021', 'ICP_001001', '189001') -> -69025.28
+    ('001033', 'ICP_001001', '165003') -> 20340466.09
+    ('001033', 'ICP_001032', '165003') -> -88717872.52
+    ('001033', 'ICP_001032', '224000') -> -192160.0
+    ('013024', 'ICP_001001', '189001') -> 3218.0
+    ('022001', 'ICP_001001', '189001') -> 26035079.04
+    ('022001', 'ICP_001001', '189501') -> -26035079.04
+
+  Fallback updates (27 entries):
+    ('E101000', 'ICP_001001', '189001') -> -1.75
+    ('E101000', 'ICP_001001', '189501') -> -1555338.34
+    ('E101000', 'ICP_001001', '224000') -> -4147686.72
+    ('E101000', 'ICP_001002', '224000') -> 3635532.44
+    ('E101000', 'ICP_013001', '224000') -> 116.79
+    ('E101000', 'ICP_013011', '224000') -> -8722.03
+    ('E101000', 'ICP_013014', '189001') -> 1.96
+    ('E101000', 'ICP_019002', '189001') -> 1313435.12
+    ('E103000', 'ICP_001004', 'Plug_InvSh') -> 43170.0
+    ('E103000', 'ICP_005003', 'Plug_InvSh') -> -200000.0
+    ('E105000', 'ICP_005002', '155020') -> 1109.52
+    ('E108000', 'ICP_001001', '189001') -> -69247729.0
+    ('E108000', 'ICP_001001', '224000') -> -69254195.5
+    ('E108000', 'ICP_013011', '224000') -> -465978.46
+    ('E108000', 'ICP_027009', '224000') -> 465978.46
+    ('E111000', 'ICP_001001', '224000') -> 11700.0
+    ('E112000', 'ICP_009002', 'Plug_InvSh') -> -13112760.0
+    ('E117100', 'ICP_001001', '189001') -> 2315402.68
+    ('E117100', 'ICP_007001', '224000') -> 17882306.93
+    ('E117100', 'ICP_007009', '224000') -> -7934061.83
+    ('E117100', 'ICP_007012', '224000') -> -9830437.32
+    ('E117100', 'ICP_013001', '189001') -> 116407.55
+    ('E117100', 'ICP_013001', '224000') -> -1395.3
+    ('E117100', 'ICP_013003', '224000') -> -4.65
+    ('E117100', 'ICP_013011', '189001') -> -2315402.68
+    ('E117100', 'ICP_013018', '189001') -> -125000.28
+    ('E118000', 'ICP_001001', '165003') -> -1576708.0
+
+
+================================================================================
+OUTPUT FILE CHECK (first rows with parent values):
+================================================================================
+  Row 506: 022001 - QDREI  Co. Tajakistan Ltd / ICP_001001 - QDRE Investment Company Q.S.C. (H) IC
+    Parent entity-side: 189001=26035079.04, 189501=-26035079.04
+  Row 664: 001021 - Legtafiya Asset Mng. Co. / ICP_001001 - QDRE Investment Company Q.S.C. (H) IC
+    Parent entity-side: 189001=-69025.28
+  Row 1122: 001033 - PORR-SBG-HBK Joint Operation (Underground / ICP_001001 - QDRE Investment Company Q.S.C. (H) IC
+    Parent entity-side: 165003=20340466.09
+  Row 1123: 001033 - PORR-SBG-HBK Joint Operation (Underground / ICP_001032 - SBG-PORR-HBK Joint Operation (Elevate
+    Parent entity-side: 165003=-88717872.52, 224000=-192160
+  Row 1274: 013024 - QDUK Holdings GP LLP / ICP_001001 - QDRE Investment Company Q.S.C. (H) IC
+    Parent entity-side: 189001=3218

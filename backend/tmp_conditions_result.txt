@@ -1,0 +1,19 @@
+﻿Total Columns: 113
+
+Parent Block from col 38 to 73
+Parent Block Ending columns:
+  31: 224024 - 224024:224024 Entity
+  32: Variance
+  33: Total
+  34: 188800:Intercompany Balances Plug A/c
+  35: 
+
+Contrib Block from col 74 to 109
+Contrib Block Ending columns:
+  31: 224024 - 224024:224024 Entity
+  32: Variance
+  33: Total
+  34: 188800:Intercompany Balances Plug A/c
+  35: 
+
+Total synthetic rows (no base data): 0

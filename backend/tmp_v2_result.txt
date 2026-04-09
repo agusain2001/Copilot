@@ -1,0 +1,36 @@
+﻿Max row: 1348, Max col: 131
+
+Searching for key accounts in header row 32:
+  Col 12: 189501 -> '189501 - 189501:Due from Related Party - Non-current Entity'
+  Col 18: 155020 -> '155020 - [155000].[155020]:155020:Diar Club Al Houra Entity'
+  Col 19: 310001 -> '310001 - [310100].[310001]:310001:Share_Capital Partner'
+  Col 20: 315005 -> '315005 - [314000].[315005]:315005:Minority_Interest Partner'
+  Col 21: Plug_InvSh -> 'Plug_InvSh - [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug '
+  Col 32: 189501 -> '189501 - 189501:Due from Related Party - Non-current Partner'
+  Col 38: 155020 -> '155020 - [155000].[155020]:155020:Diar Club Al Houra Partner'
+  Col 39: 310001 -> '310001 - [310100].[310001]:310001:Share_Capital Entity'
+  Col 40: 315005 -> '315005 - [314000].[315005]:315005:Minority_Interest Entity'
+  Col 41: Plug_InvSh -> 'Plug_InvSh - [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug '
+  Col 54: 189501 -> '189501 - 189501:Due from Related Party - Non-current Entity'
+  Col 60: 155020 -> '155020 - [155000].[155020]:155020:Diar Club Al Houra Entity'
+  Col 61: 310001 -> '310001 - [310100].[310001]:310001:Share_Capital Partner'
+  Col 62: 315005 -> '315005 - [314000].[315005]:315005:Minority_Interest Partner'
+  Col 63: Plug_InvSh -> 'Plug_InvSh - [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug '
+  Col 74: 189501 -> '189501 - 189501:Due from Related Party - Non-current Partner'
+  Col 80: 155020 -> '155020 - [155000].[155020]:155020:Diar Club Al Houra Partner'
+  Col 81: 310001 -> '310001 - [310100].[310001]:310001:Share_Capital Entity'
+  Col 82: 315005 -> '315005 - [314000].[315005]:315005:Minority_Interest Entity'
+  Col 83: Plug_InvSh -> 'Plug_InvSh - [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug '
+  Col 96: 189501 -> '189501 - 189501:Due from Related Party - Non-current Entity'
+  Col 102: 155020 -> '155020 - [155000].[155020]:155020:Diar Club Al Houra Entity'
+  Col 103: 310001 -> '310001 - [310100].[310001]:310001:Share_Capital Partner'
+  Col 104: 315005 -> '315005 - [314000].[315005]:315005:Minority_Interest Partner'
+  Col 105: Plug_InvSh -> 'Plug_InvSh - [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug '
+  Col 116: 189501 -> '189501 - 189501:Due from Related Party - Non-current Partner'
+  Col 122: 155020 -> '155020 - [155000].[155020]:155020:Diar Club Al Houra Partner'
+  Col 123: 310001 -> '310001 - [310100].[310001]:310001:Share_Capital Entity'
+  Col 124: 315005 -> '315005 - [314000].[315005]:315005:Minority_Interest Entity'
+  Col 125: Plug_InvSh -> 'Plug_InvSh - [FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug '
+
+All account codes in output: ['155020', '165001', '165002', '165003', '165004', '165005', '187052', '188800', '189001', '189014', '189015', '189501', '224000', '224001', '224003', '224009', '224024', '310001', '315005', 'Plug_InvSh']
+Total: 20 unique accounts

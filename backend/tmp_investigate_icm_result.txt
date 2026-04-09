@@ -1,0 +1,28 @@
+﻿Sheet: Sheet1, header=32, data_start=33
+  Row 281: entity='001033 - PORR-SBG-HBK Joint Operation (Underground)' partner='ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP'
+    entity_code=001033 partner_icp=ICP_E100000 partner_num=100000
+  Row 283: entity='001033 - PORR-SBG-HBK Joint Operation (Underground)' partner=''
+    entity_code=001033 partner_icp= partner_num=
+Sheet: Sheet2, header=4, data_start=5
+
+REF Row 157: Entity='001033 - PORR-SBG-HBK Joint Operation (Underground)' Partner='ICP_E100000 - QDRE Investment Company Q.C.S.C. ICP'
+  Col 10 (534018 - 534018:Interest expense - related parties Partner): -382813
+  Col 14 (Variance): -382813
+  Col 15 (Total): -382813
+  Col 50 (Final Total): -382813
+
+REF Row 158: Entity='001033 - PORR-SBG-HBK Joint Operation (Underground)' Partner=''
+  Col 10 (534018 - 534018:Interest expense - related parties Partner): -382813
+  Col 14 (Variance): -382813
+  Col 15 (Total): -382813
+  Col 50 (Final Total): -382813
+
+REF Row 176: Entity='001032:SBG-PORR-HBK Joint Operation (Elevated)' Partner='ICP_001033:PORR-SBG-HBK Joint Operation (Underground)'
+  Col 17 (534018 - 534018:Interest expense - related parties Entity): 192160
+  Col 22 (Variance): 192160
+  Col 27 (121015 - 121015:121015 Partner): -88717872.52
+  Col 28 (Variance): -88717872.52
+  Col 29 (Total): -88525712.52
+  Col 50 (Final Total): -88525712.52
+
+REF Row 177: Entity='001033:PORR-SBG-HBK Joint Operation (Underground)' Partner='ICP_001032:SBG-PORR-HBK Joint Operation (Elevated) ICP'

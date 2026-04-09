@@ -1,0 +1,33 @@
+Row 153: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013013 - QD UK Holdings LP (H) ICP
+  Col 3 (534018 - 534018:Interest expense - related parties): -108525628
+  Col 8 (Variance): -108525628
+  Col 15 (Total): -108525628
+  Col 50 (Final Total): -108525628
+
+Row 154: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013007 - CB 1_3 LP ICP
+  Col 4 (433002 - 433002:Interest income - related parties ): -100163395
+  Col 8 (Variance): 100163395
+  Col 15 (Total): 100163395
+  Col 50 (Final Total): 100163395
+
+Row 155: Entity=E117100 - QD UK Holdings LP adjusted | Partner=ICP_013012 - 16 GS LLP ICP
+  Col 4 (433002 - 433002:Interest income - related parties ): -8366746
+  Col 8 (Variance): 8366746
+  Col 15 (Total): 8366746
+  Col 50 (Final Total): 8366746
+
+Row 156: Entity=E117100 - QD UK Holdings LP adjusted | Partner=
+  [ALL ZERO/EMPTY]
+
+Row 200: Entity=E117100:QD UK Holdings LP adjusted | Partner=ICP_007009:QD Europe Chancery S.a.r.l. ICP
+  [ALL ZERO/EMPTY]
+
+Row 201: Entity=E117100:QD UK Holdings LP adjusted | Partner=ICP_007012:GS 16  S.ar.l. ICP
+  [ALL ZERO/EMPTY]
+
+Row 202: Entity=E117100:QD UK Holdings LP adjusted | Partner=ICP_013001:Qatari Diar UK Limited ICP
+  [ALL ZERO/EMPTY]
+
+Row 203: Entity=E117100:QD UK Holdings LP adjusted | Partner=ICP_013011:Qatari Diar Europe LLP ICP
+  [ALL ZERO/EMPTY]
+

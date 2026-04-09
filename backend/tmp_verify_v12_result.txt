@@ -1,0 +1,21 @@
+﻿=== Checking rows with 001001/001033 pair ===
+
+Row 111: Entity=001001 - QDRE Investment Company Q.  Partner=ICP_001033 - PORR-SBG-HBK Joint Ope
+  Parent Input: (empty)
+
+Row 1119: Entity=001032 - SBG-PORR-HBK Joint Operati  Partner=ICP_001033 - PORR-SBG-HBK Joint Ope
+  Parent Input: (empty)
+
+Row 1122: Entity=001033 - PORR-SBG-HBK Joint Operati  Partner=ICP_001001 - QDRE Investment Compan
+  Parent Input values:
+      Col 38 [165003 - 165003:Advances provided for related part]: 20340466.09
+      Col 54 [Variance]: 20340466.09
+      Col 71 [Total]: 20340466.09
+
+Row 1123: Entity=001033 - PORR-SBG-HBK Joint Operati  Partner=ICP_001032 - SBG-PORR-HBK Joint Ope
+  Parent Input values:
+      Col 38 [165003 - 165003:Advances provided for related part]: -88717872.52
+      Col 44 [224000 - 224000:Due to related parties Entity]: -192160
+      Col 54 [Variance]: -88525712.52
+      Col 71 [Total]: -88525712.52
+

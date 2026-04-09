@@ -1,0 +1,42 @@
+=== ICM SOURCE HEADERS WITH 189501 ===
+  Col 11: code=189501 tag=Partner full=189501 - 189501:Due from Related Party - Non-current Partner
+
+=== ICM SOURCE ROWS WITH ENTITY 189501 ===
+
+=== JOURNALS WITH 189501 ===
+
+--- Journal Report 1.xlsx ---
+  Row 68: ent=022001:QDREI  Co. Tajakistan Ltd acct=[165000].[189501]:189501:Due from Related Party - Non-current icp=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP
+           ent_code=022001 acct_code=189501
+  Row 79: ent=E101000:QDHP & QD Europe Sarl acct=[165000].[189501]:189501:Due from Related Party - Non-current icp=ICP_001001:QDRE Investment Company Q.S.C. (H) ICP
+           ent_code=101000 acct_code=189501
+
+--- Journal Report 2.xlsx ---
+
+=== OUTPUT: Rows with 189501 in entity ===
+Headers with 189501:
+  Col 14: 189501 - 189501:189501 Entity
+  Col 24: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col 48: 189501 - 189501:189501 Entity
+  Col 58: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col 83: 189501 - 189501:189501 Entity
+  Col 93: 189501 - 189501:Due from Related Party - Non-current Partner
+
+Data rows:
+  Row 438: entity=189501 - 189501:Due from Related Party - Non-current partner=
+
+=== ALL ICM SOURCE ACCOUNT HEADERS (first block) ===
+Sheet: Sheet1
+  Col 3: code=165003 full=165003 - 165003:Advances provided for related parties Entity
+  Col 4: code=189001 full=189001 - 189001:Inter company account - receivables Entity
+  Col 5: code=224000 full=224000 - 224000:Due to related parties Partner
+  Col 6: code=224009 full=224009 - 224009:Inter company accounts - Payables Partner
+  Col 7: code= full=Variance
+  Col 8: code=165003 full=165003 - 165003:Advances provided for related parties Partner
+  Col 9: code=189001 full=189001 - 189001:Inter company account - receivables Partner
+  Col 10: code=189014 full=189014 - 189014:Discount on intercompany loan Partner
+  Col 11: code=189501 full=189501 - 189501:Due from Related Party - Non-current Partner
+  Col 12: code=224000 full=224000 - 224000:Due to related parties Entity
+  Col 13: code=224009 full=224009 - 224009:Inter company accounts - Payables Entity
+  Col 14: code= full=Variance
+  Col 15: code= full=Total

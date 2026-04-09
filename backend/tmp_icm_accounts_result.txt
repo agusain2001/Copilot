@@ -1,0 +1,166 @@
+﻿g:\FCCS\backend\venv\Scripts\python.exe : Could not detect Entity/Partner 
+header row; using defaults 4/5
+At line:1 char:1
++ g:\FCCS\backend\venv\Scripts\python.exe tmp_icm_accounts.py 2>&1 | Ou ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Could not detec...ng defaults 4/5 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Sheet: 'Sheet1 (2)' (max_col=71)
+Header row: 32
+
+Entity-tagged accounts (28):
+  Col   3: 165003          | 165003 - 165003:Advances provided for related parties Entity
+  Col   4: 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col   5: 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col   6: 189001          | 189001 - 189001:Inter company account - receivables Entity
+  Col   7: 189014          | 189014 - 189014:Discount on intercompany loan Entity
+  Col   8: 189501          | 189501 - 189501:Due from Related Party - Non-current Entity
+  Col  19: 224000          | 224000 - 224000:Due to related parties Entity
+  Col  20: 224003          | 224003 - 224003:Advances provided from related parties Entity
+  Col  21: 224009          | 224009 - 224009:Inter company accounts - Payables Entity
+  Col  25: 165003          | 165003 - 165003:Advances provided for related parties Entity
+  Col  26: 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  27: 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col  28: 189001          | 189001 - 189001:Inter company account - receivables Entity
+  Col  29: 189014          | 189014 - 189014:Discount on intercompany loan Entity
+  Col  30: 189501          | 189501 - 189501:Due from Related Party - Non-current Entity
+  Col  41: 224000          | 224000 - 224000:Due to related parties Entity
+  Col  42: 224003          | 224003 - 224003:Advances provided from related parties Entity
+  Col  43: 224009          | 224009 - 224009:Inter company accounts - Payables Entity
+  Col  47: 165003          | 165003 - 165003:Advances provided for related parties Entity
+  Col  48: 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  49: 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col  50: 189001          | 189001 - 189001:Inter company account - receivables Entity
+  Col  51: 189014          | 189014 - 189014:Discount on intercompany loan Entity
+  Col  52: 189501          | 189501 - 189501:Due from Related Party - Non-current Entity
+  Col  63: 224000          | 224000 - 224000:Due to related parties Entity
+  Col  64: 224003          | 224003 - 224003:Advances provided from related parties Entity
+  Col  65: 224009          | 224009 - 224009:Inter company accounts - Payables Entity
+  Col  69: 188800          | 188800:Intercompany Balances Plug A/c
+
+Partner-tagged accounts (27):
+  Col   9: 224000          | 224000 - 224000:Due to related parties Partner
+  Col  10: 224003          | 224003 - 224003:Advances provided from related parties Partner
+  Col  11: 224009          | 224009 - 224009:Inter company accounts - Payables Partner
+  Col  13: 165003          | 165003 - 165003:Advances provided for related parties Partner
+  Col  14: 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  15: 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col  16: 189001          | 189001 - 189001:Inter company account - receivables Partner
+  Col  17: 189014          | 189014 - 189014:Discount on intercompany loan Partner
+  Col  18: 189501          | 189501 - 189501:Due from Related Party - Non-current Partner
+  Col  31: 224000          | 224000 - 224000:Due to related parties Partner
+  Col  32: 224003          | 224003 - 224003:Advances provided from related parties Partner
+  Col  33: 224009          | 224009 - 224009:Inter company accounts - Payables Partner
+  Col  35: 165003          | 165003 - 165003:Advances provided for related parties Partner
+  Col  36: 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  37: 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col  38: 189001          | 189001 - 189001:Inter company account - receivables Partner
+  Col  39: 189014          | 189014 - 189014:Discount on intercompany loan Partner
+  Col  40: 189501          | 189501 - 189501:Due from Related Party - Non-current Partner
+  Col  53: 224000          | 224000 - 224000:Due to related parties Partner
+  Col  54: 224003          | 224003 - 224003:Advances provided from related parties Partner
+  Col  55: 224009          | 224009 - 224009:Inter company accounts - Payables Partner
+  Col  57: 165003          | 165003 - 165003:Advances provided for related parties Partner
+  Col  58: 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  59: 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col  60: 189001          | 189001 - 189001:Inter company account - receivables Partner
+  Col  61: 189014          | 189014 - 189014:Discount on intercompany loan Partner
+  Col  62: 189501          | 189501 - 189501:Due from Related Party - Non-current Partner
+
+All unique account codes in ICM: ['165003', '165004', '165005', '188800', '189001', '189014', '189501', '224000', '224003', '224009']
+Total unique: 10
+
+Sheet: 'Sheet1' (max_col=30)
+Header row: 32
+
+Entity-tagged accounts (9):
+  Col   3: 165003          | 165003 - 165003:Advances provided for related parties Entity
+  Col   4: 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col   5: 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col   6: 189001          | 189001 - 189001:Inter company account - receivables Entity
+  Col   7: 189014          | 189014 - 189014:Discount on intercompany loan Entity
+  Col   8: 189501          | 189501 - 189501:Due from Related Party - Non-current Entity
+  Col  19: 224000          | 224000 - 224000:Due to related parties Entity
+  Col  20: 224003          | 224003 - 224003:Advances provided from related parties Entity
+  Col  21: 224009          | 224009 - 224009:Inter company accounts - Payables Entity
+
+Partner-tagged accounts (9):
+  Col   9: 224000          | 224000 - 224000:Due to related parties Partner
+  Col  10: 224003          | 224003 - 224003:Advances provided from related parties Partner
+  Col  11: 224009          | 224009 - 224009:Inter company accounts - Payables Partner
+  Col  13: 165003          | 165003 - 165003:Advances provided for related parties Partner
+  Col  14: 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  15: 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col  16: 189001          | 189001 - 189001:Inter company account - receivables Partner
+  Col  17: 189014          | 189014 - 189014:Discount on intercompany loan Partner
+  Col  18: 189501          | 189501 - 189501:Due from Related Party - Non-current Partner
+
+All unique account codes in ICM: ['165003', '165004', '165005', '189001', '189014', '189501', '224000', '224003', '224009']
+Total unique: 9
+
+================================================================================
+
+Sheet1 (2): max_col=71, header_row=32
+
+All accounts in Sheet1 (2) (55):
+  Col   3: [Entity ] 165003          | 165003 - 165003:Advances provided for related parties Entity
+  Col   4: [Entity ] 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col   5: [Entity ] 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col   6: [Entity ] 189001          | 189001 - 189001:Inter company account - receivables Entity
+  Col   7: [Entity ] 189014          | 189014 - 189014:Discount on intercompany loan Entity
+  Col   8: [Entity ] 189501          | 189501 - 189501:Due from Related Party - Non-current Entity
+  Col   9: [Partner] 224000          | 224000 - 224000:Due to related parties Partner
+  Col  10: [Partner] 224003          | 224003 - 224003:Advances provided from related parties Partner
+  Col  11: [Partner] 224009          | 224009 - 224009:Inter company accounts - Payables Partner
+  Col  13: [Partner] 165003          | 165003 - 165003:Advances provided for related parties Partner
+  Col  14: [Partner] 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  15: [Partner] 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col  16: [Partner] 189001          | 189001 - 189001:Inter company account - receivables Partner
+  Col  17: [Partner] 189014          | 189014 - 189014:Discount on intercompany loan Partner
+  Col  18: [Partner] 189501          | 189501 - 189501:Due from Related Party - Non-current Partner
+  Col  19: [Entity ] 224000          | 224000 - 224000:Due to related parties Entity
+  Col  20: [Entity ] 224003          | 224003 - 224003:Advances provided from related parties Entity
+  Col  21: [Entity ] 224009          | 224009 - 224009:Inter company accounts - Payables Entity
+  Col  25: [Entity ] 165003          | 165003 - 165003:Advances provided for related parties Entity
+  Col  26: [Entity ] 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  27: [Entity ] 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col  28: [Entity ] 189001          | 189001 - 189001:Inter company account - receivables Entity
+  Col  29: [Entity ] 189014          | 189014 - 189014:Discount on intercompany loan Entity
+  Col  30: [Entity ] 189501          | 189501 - 189501:Due from Related Party - Non-current Entity
+  Col  31: [Partner] 224000          | 224000 - 224000:Due to related parties Partner
+  Col  32: [Partner] 224003          | 224003 - 224003:Advances provided from related parties Partner
+  Col  33: [Partner] 224009          | 224009 - 224009:Inter company accounts - Payables Partner
+  Col  35: [Partner] 165003          | 165003 - 165003:Advances provided for related parties Partner
+  Col  36: [Partner] 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  37: [Partner] 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col  38: [Partner] 189001          | 189001 - 189001:Inter company account - receivables Partner
+  Col  39: [Partner] 189014          | 189014 - 189014:Discount on intercompany loan Partner
+  Col  40: [Partner] 189501          | 189501 - 189501:Due from Related Party - Non-current Partner
+  Col  41: [Entity ] 224000          | 224000 - 224000:Due to related parties Entity
+  Col  42: [Entity ] 224003          | 224003 - 224003:Advances provided from related parties Entity
+  Col  43: [Entity ] 224009          | 224009 - 224009:Inter company accounts - Payables Entity
+  Col  47: [Entity ] 165003          | 165003 - 165003:Advances provided for related parties Entity
+  Col  48: [Entity ] 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  49: [Entity ] 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col  50: [Entity ] 189001          | 189001 - 189001:Inter company account - receivables Entity
+  Col  51: [Entity ] 189014          | 189014 - 189014:Discount on intercompany loan Entity
+  Col  52: [Entity ] 189501          | 189501 - 189501:Due from Related Party - Non-current Entity
+  Col  53: [Partner] 224000          | 224000 - 224000:Due to related parties Partner
+  Col  54: [Partner] 224003          | 224003 - 224003:Advances provided from related parties Partner
+  Col  55: [Partner] 224009          | 224009 - 224009:Inter company accounts - Payables Partner
+  Col  57: [Partner] 165003          | 165003 - 165003:Advances provided for related parties Partner
+  Col  58: [Partner] 165004          | 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col  59: [Partner] 165005          | 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col  60: [Partner] 189001          | 189001 - 189001:Inter company account - receivables Partner
+  Col  61: [Partner] 189014          | 189014 - 189014:Discount on intercompany loan Partner
+  Col  62: [Partner] 189501          | 189501 - 189501:Due from Related Party - Non-current Partner
+  Col  63: [Entity ] 224000          | 224000 - 224000:Due to related parties Entity
+  Col  64: [Entity ] 224003          | 224003 - 224003:Advances provided from related parties Entity
+  Col  65: [Entity ] 224009          | 224009 - 224009:Inter company accounts - Payables Entity
+  Col  69: [Entity ] 188800          | 188800:Intercompany Balances Plug A/c
+
+Unique account codes: ['165003', '165004', '165005', '188800', '189001', '189014', '189501', '224000', '224003', '224009']
+Total unique: 10

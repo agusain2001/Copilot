@@ -1,0 +1,37 @@
+﻿REF: 188 rows x 50 cols
+NEW: 204 rows x 50 cols
+REF data rows: 156
+NEW data rows: 172
+
+--- HEADER COMPARISON (row 32) ---
+  Headers MATCH (same columns)
+
+Common pairs: 140
+Only in REF (16):
+  ('001001:QDRE Investment Company Q.S.C. (H)', 'ICP_E101000:QDHP & QD Europe Sarl')
+  ('001001:QDRE Investment Company Q.S.C. (H)', 'ICP_E108000:QD US Real Estate Co.')
+  ('001001:QDRE Investment Company Q.S.C. (H)', 'ICP_E111000:Qatari Resorts Co. Q.S.C.')
+  ('001001:QDRE Investment Company Q.S.C. (H)', 'ICP_E118000:QD SBG Group adjusted')
+  ('001002:Qatari Resorts Co. Q.S.C. (H) ICP', 'ICP_E101000:QDHP & QD Europe Sarl')
+  ('001032:SBG-PORR-HBK Joint Operation (Elevated)', 'ICP_001033:PORR-SBG-HBK Joint Operation (Underground)')
+  ('001033:PORR-SBG-HBK Joint Operation (Underground)', 'ICP_001032:SBG-PORR-HBK Joint Operation (Elevated) ICP')
+  ('005003:Morocco RE Brok Serv(under liquidation) ICP', 'ICP_E103000:Qatar RE Partners C.Q.S.C. (under liquidation)')
+  ('007009:QD UK Holdings LP adjusted', 'ICP_E117100:QD UK Holdings LP adjusted')
+  ('007012:QD UK Holdings LP adjusted', 'ICP_E117100:QD UK Holdings LP adjusted')
+Only in NEW (32):
+  ('001002:Qatari Resorts Co. Q.S.C. (H) ICP', 'E101000:QDHP & QD Europe Sarl')
+  ('001032:SBG-PORR-HBK Joint Operation (Elevated)', '001033:PORR-SBG-HBK Joint Operation (Underground)')
+  ('001033:PORR-SBG-HBK Joint Operation (Underground)', '001032:SBG-PORR-HBK Joint Operation (Elevated)')
+  ('007009:QD UK Holdings LP adjusted', 'E117100:QD UK Holdings LP adjusted')
+  ('007012:QD UK Holdings LP adjusted', 'E117100:QD UK Holdings LP adjusted')
+  ('009002:QD Ras Al Hadd Development ICP', 'E112000:Qatari Diar Development Company L.L.C.')
+  ('013001:Qatari Diar UK Limited', 'E117100:QD UK Holdings LP adjusted')
+  ('013011:Qatari Diar Europe LLP', 'E101000:QDHP & QD Europe Sarl')
+  ('013011:Qatari Diar Europe LLP', 'E117100:QD UK Holdings LP adjusted')
+  ('013014:30 GS LLP ICP', 'E101000:QDHP & QD Europe Sarl')
+
+--- VALUE COMPARISON ---
+
+Matching values: 6720
+Mismatched values: 0
+Match rate: 100.0%

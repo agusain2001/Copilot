@@ -1,0 +1,162 @@
+﻿
+OLD (ICM_Output_NEW_RUN):
+  Max row: 1346, Max col: 107
+  Total text rows (from 33): 1314
+  Valid numeric entity rows: 1279
+  Account codes in headers: ['165001', '165002', '165003', '165004', '165005', '187052', '188800', '189001', '189014', '189015', '189501', '224000', '224001', '224003', '224009', '224024']
+
+NEW (ICM_Output_ENHANCED):
+  Max row: 1348, Max col: 125
+  Total text rows (from 33): 1316
+  Valid numeric entity rows: 1281
+  Account codes in headers: ['155020', '165001', '165002', '165003', '165004', '165005', '187052', '188800', '189001', '189014', '189015', '189501', '224000', '224001', '224003', '224009', '224024', '310001', '315005']
+
+
+--- NEW output: All header columns ---
+  Col 1: Entity
+  Col 2: Partner
+  Col 3: 165001 - 165001:Loans provided to related parties Entity
+  Col 4: 165002 - 165002:Expenses recharged on behalf of a related party Entity
+  Col 5: 165003 - 165003:Advances provided for related parties Entity
+  Col 6: 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col 7: 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col 8: 187052 - 187052:Retention receivable-Intercomp Entity
+  Col 9: 189001 - 189001:Inter company account - receivables Entity
+  Col 10: 189014 - 189014:Discount on intercompany loan Entity
+  Col 11: 189015 - 189015:Intercompany receivable A/C for outside QD group Entit
+  Col 12: 189501 - 189501:Due from Related Party - Non-current Entity
+  Col 13: 224000 - 224000:Due to related parties Partner
+  Col 14: 224001 - 224001:Loans provided from related parties Partner
+  Col 15: 224003 - 224003:Advances provided from related parties Partner
+  Col 16: 224009 - 224009:Inter company accounts - Payables Partner
+  Col 17: 224024 - 224024:Intercompany payable A/C for outside QD group Partner
+  Col 18: 155020 - [155000].[155020]:155020:Diar Club Al Houra Entity
+  Col 19: 310001 - [310100].[310001]:310001:Share_Capital Partner
+  Col 20: 315005 - [314000].[315005]:315005:Minority_Interest Partner
+  Col 21: Variance
+  Col 22: 165001 - 165001:Loans provided to related parties Partner
+  Col 23: 165002 - 165002:Expenses recharged on behalf of a related party Partne
+  Col 24: 165003 - 165003:Advances provided for related parties Partner
+  Col 25: 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col 26: 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col 27: 187052 - 187052:Retention receivable-Intercomp Partner
+  Col 28: 189001 - 189001:Inter company account - receivables Partner
+  Col 29: 189014 - 189014:Discount on intercompany loan Partner
+  Col 30: 189015 - 189015:Intercompany receivable A/C for outside QD group Partn
+  Col 31: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col 32: 224000 - 224000:Due to related parties Entity
+  Col 33: 224001 - 224001:Loans provided from related parties Entity
+  Col 34: 224003 - 224003:Advances provided from related parties Entity
+  Col 35: 224009 - 224009:Inter company accounts - Payables Entity
+  Col 36: 224024 - 224024:Intercompany payable A/C for outside QD group Entity
+  Col 37: 155020 - [155000].[155020]:155020:Diar Club Al Houra Partner
+  Col 38: 310001 - [310100].[310001]:310001:Share_Capital Entity
+  Col 39: 315005 - [314000].[315005]:315005:Minority_Interest Entity
+  Col 40: Variance
+  Col 41: Total
+  Col 43: 165001 - 165001:Loans provided to related parties Entity
+  Col 44: 165002 - 165002:Expenses recharged on behalf of a related party Entity
+  Col 45: 165003 - 165003:Advances provided for related parties Entity
+  Col 46: 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col 47: 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col 48: 187052 - 187052:Retention receivable-Intercomp Entity
+  Col 49: 189001 - 189001:Inter company account - receivables Entity
+  Col 50: 189014 - 189014:Discount on intercompany loan Entity
+  Col 51: 189015 - 189015:Intercompany receivable A/C for outside QD group Entit
+  Col 52: 189501 - 189501:Due from Related Party - Non-current Entity
+  Col 53: 224000 - 224000:Due to related parties Partner
+  Col 54: 224001 - 224001:Loans provided from related parties Partner
+  Col 55: 224003 - 224003:Advances provided from related parties Partner
+  Col 56: 224009 - 224009:Inter company accounts - Payables Partner
+  Col 57: 224024 - 224024:Intercompany payable A/C for outside QD group Partner
+  Col 58: 155020 - [155000].[155020]:155020:Diar Club Al Houra Entity
+  Col 59: 310001 - [310100].[310001]:310001:Share_Capital Partner
+  Col 60: 315005 - [314000].[315005]:315005:Minority_Interest Partner
+  Col 61: Variance
+  Col 62: 165001 - 165001:Loans provided to related parties Partner
+  Col 63: 165002 - 165002:Expenses recharged on behalf of a related party Partne
+  Col 64: 165003 - 165003:Advances provided for related parties Partner
+  Col 65: 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col 66: 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col 67: 187052 - 187052:Retention receivable-Intercomp Partner
+  Col 68: 189001 - 189001:Inter company account - receivables Partner
+  Col 69: 189014 - 189014:Discount on intercompany loan Partner
+  Col 70: 189015 - 189015:Intercompany receivable A/C for outside QD group Partn
+  Col 71: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col 72: 224000 - 224000:Due to related parties Entity
+  Col 73: 224001 - 224001:Loans provided from related parties Entity
+  Col 74: 224003 - 224003:Advances provided from related parties Entity
+  Col 75: 224009 - 224009:Inter company accounts - Payables Entity
+  Col 76: 224024 - 224024:Intercompany payable A/C for outside QD group Entity
+  Col 77: 155020 - [155000].[155020]:155020:Diar Club Al Houra Partner
+  Col 78: 310001 - [310100].[310001]:310001:Share_Capital Entity
+  Col 79: 315005 - [314000].[315005]:315005:Minority_Interest Entity
+  Col 80: Variance
+  Col 81: Total
+  Col 83: 165001 - 165001:Loans provided to related parties Entity
+  Col 84: 165002 - 165002:Expenses recharged on behalf of a related party Entity
+  Col 85: 165003 - 165003:Advances provided for related parties Entity
+  Col 86: 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col 87: 165005 - 165005:Retention receivable-Intercompany (Current) Entity
+  Col 88: 187052 - 187052:Retention receivable-Intercomp Entity
+  Col 89: 189001 - 189001:Inter company account - receivables Entity
+  Col 90: 189014 - 189014:Discount on intercompany loan Entity
+  Col 91: 189015 - 189015:Intercompany receivable A/C for outside QD group Entit
+  Col 92: 189501 - 189501:Due from Related Party - Non-current Entity
+  Col 93: 224000 - 224000:Due to related parties Partner
+  Col 94: 224001 - 224001:Loans provided from related parties Partner
+  Col 95: 224003 - 224003:Advances provided from related parties Partner
+  Col 96: 224009 - 224009:Inter company accounts - Payables Partner
+  Col 97: 224024 - 224024:Intercompany payable A/C for outside QD group Partner
+  Col 98: 155020 - [155000].[155020]:155020:Diar Club Al Houra Entity
+  Col 99: 310001 - [310100].[310001]:310001:Share_Capital Partner
+  Col 100: 315005 - [314000].[315005]:315005:Minority_Interest Partner
+  Col 101: Variance
+  Col 102: 165001 - 165001:Loans provided to related parties Partner
+  Col 103: 165002 - 165002:Expenses recharged on behalf of a related party Partne
+  Col 104: 165003 - 165003:Advances provided for related parties Partner
+  Col 105: 165004 - 165004:Payments to subcontractors & suppliers on behalf of ot
+  Col 106: 165005 - 165005:Retention receivable-Intercompany (Current) Partner
+  Col 107: 187052 - 187052:Retention receivable-Intercomp Partner
+  Col 108: 189001 - 189001:Inter company account - receivables Partner
+  Col 109: 189014 - 189014:Discount on intercompany loan Partner
+  Col 110: 189015 - 189015:Intercompany receivable A/C for outside QD group Partn
+  Col 111: 189501 - 189501:Due from Related Party - Non-current Partner
+  Col 112: 224000 - 224000:Due to related parties Entity
+  Col 113: 224001 - 224001:Loans provided from related parties Entity
+  Col 114: 224003 - 224003:Advances provided from related parties Entity
+  Col 115: 224009 - 224009:Inter company accounts - Payables Entity
+  Col 116: 224024 - 224024:Intercompany payable A/C for outside QD group Entity
+  Col 117: 155020 - [155000].[155020]:155020:Diar Club Al Houra Partner
+  Col 118: 310001 - [310100].[310001]:310001:Share_Capital Entity
+  Col 119: 315005 - [314000].[315005]:315005:Minority_Interest Entity
+  Col 120: Variance
+  Col 121: Total
+  Col 123: 188800:Intercompany Balances Plug A/c
+  Col 125: Total
+
+--- Verifying extra accounts in headers ---
+  FOUND 189501 at Col 12: 189501 - 189501:Due from Related Party - Non-current Entity
+  FOUND 155020 at Col 18: 155020 - [155000].[155020]:155020:Diar Club Al Houra Entity
+  FOUND 310001 at Col 19: 310001 - [310100].[310001]:310001:Share_Capital Partner
+  FOUND 315005 at Col 20: 315005 - [314000].[315005]:315005:Minority_Interest Partner
+  FOUND 189501 at Col 31: 189501 - 189501:Due from Related Party - Non-current Partner
+  FOUND 155020 at Col 37: 155020 - [155000].[155020]:155020:Diar Club Al Houra Partner
+  FOUND 310001 at Col 38: 310001 - [310100].[310001]:310001:Share_Capital Entity
+  FOUND 315005 at Col 39: 315005 - [314000].[315005]:315005:Minority_Interest Entity
+  FOUND 189501 at Col 52: 189501 - 189501:Due from Related Party - Non-current Entity
+  FOUND 155020 at Col 58: 155020 - [155000].[155020]:155020:Diar Club Al Houra Entity
+  FOUND 310001 at Col 59: 310001 - [310100].[310001]:310001:Share_Capital Partner
+  FOUND 315005 at Col 60: 315005 - [314000].[315005]:315005:Minority_Interest Partner
+  FOUND 189501 at Col 71: 189501 - 189501:Due from Related Party - Non-current Partner
+  FOUND 155020 at Col 77: 155020 - [155000].[155020]:155020:Diar Club Al Houra Partner
+  FOUND 310001 at Col 78: 310001 - [310100].[310001]:310001:Share_Capital Entity
+  FOUND 315005 at Col 79: 315005 - [314000].[315005]:315005:Minority_Interest Entity
+  FOUND 189501 at Col 92: 189501 - 189501:Due from Related Party - Non-current Entity
+  FOUND 155020 at Col 98: 155020 - [155000].[155020]:155020:Diar Club Al Houra Entity
+  FOUND 310001 at Col 99: 310001 - [310100].[310001]:310001:Share_Capital Partner
+  FOUND 315005 at Col 100: 315005 - [314000].[315005]:315005:Minority_Interest Partner
+  FOUND 189501 at Col 111: 189501 - 189501:Due from Related Party - Non-current Partner
+  FOUND 155020 at Col 117: 155020 - [155000].[155020]:155020:Diar Club Al Houra Partner
+  FOUND 310001 at Col 118: 310001 - [310100].[310001]:310001:Share_Capital Entity
+  FOUND 315005 at Col 119: 315005 - [314000].[315005]:315005:Minority_Interest Entity

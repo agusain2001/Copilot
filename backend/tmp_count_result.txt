@@ -1,0 +1,81 @@
+Parent journal: 35 transactions
+
+Total Parent block non-zero cells in output: 34
+Expected: 35 (one per transaction)
+
+  OutRow=171 side=entity  key=(001001, ICP_E101000, 534018) val=        -116.79 [OK] JnlRow=49, expect=-116.79
+  OutRow=171 side=partner key=(101000, ICP_001001, 534018) val=     4147686.72 [OK] JnlRow=48, expect=4147686.72
+  OutRow=172 side=entity  key=(001001, ICP_E108000, 534018) val=      465978.46 [OK] JnlRow=62, expect=465978.46
+  OutRow=172 side=partner key=(108000, ICP_001001, 534018) val=    69254195.50 [OK] JnlRow=61, expect=69254195.50
+  OutRow=173 side=entity  key=(001001, ICP_E111000, 120030) val=    -1555338.34 [OK] JnlRow=79, expect=-1555338.34
+  OutRow=173 side=partner key=(111000, ICP_001001, 534018) val=      -11700.00 [OK] JnlRow=69, expect=-11700.00
+  OutRow=174 side=entity  key=(001001, ICP_E118000, 111006) val=       43170.00 [OK] JnlRow=413, expect=43170.00
+  OutRow=174 side=partner key=(118000, ICP_001001, 121015) val=    -1576708.00 [OK] JnlRow=363, expect=-1576708.00
+  OutRow=175 side=entity  key=(001002, ICP_E101000, 433002) val=    69247729.00 [OK] JnlRow=60, expect=69247729.00
+  OutRow=175 side=partner key=(101000, ICP_001002, 534018) val=    -3635532.44 [OK] JnlRow=58, expect=-3635532.44
+  OutRow=176 side=entity  key=(001032, ICP_001033, 534018) val=      192160.00 [OK] JnlRow=227, expect=192160.00
+  OutRow=176 side=partner key=(001033, ICP_001032, 121015) val=   -88717872.52 [OK] JnlRow=212, expect=-88717872.52
+  OutRow=178 side=entity  key=(005002, ICP_E105000, 433002) val=       69025.28 [OK] JnlRow=350, expect=69025.28
+  OutRow=178 side=partner key=(105000, ICP_005002, 111006) val=        1109.52 [OK] JnlRow=249, expect=1109.52
+  OutRow=179 side=entity  key=(005003, ICP_E103000, 433002) val=       -3218.00 [OK] JnlRow=498, expect=-3218.00
+  OutRow=179 side=partner key=(103000, ICP_005003, 111006) val=     -200000.00 [OK] JnlRow=414, expect=-200000.00
+  OutRow=180 side=entity  key=(007009, ICP_E117100, 534018) val=   -17882306.93 [OK] JnlRow=41, expect=-17882306.93
+  OutRow=180 side=partner key=(117100, ICP_007009, 534018) val=     7934061.83 [OK] JnlRow=39, expect=7934061.83
+  OutRow=181 side=entity  key=(007012, ICP_E117100, 534018) val=           4.65 [OK] JnlRow=44, expect=4.65
+  OutRow=181 side=partner key=(117100, ICP_007012, 534018) val=     9830437.32 [OK] JnlRow=42, expect=9830437.32
+  OutRow=182 side=entity  key=(009002, ICP_E112000, 121015) val=    20340466.09 [OK] JnlRow=211, expect=20340466.09
+  OutRow=182 side=partner key=(112000, ICP_009002, 111006) val=   -13112760.00 [OK] JnlRow=174, expect=-13112760.00
+  OutRow=183 side=entity  key=(013001, ICP_E117100, 433002) val=    -2315402.68 [OK] JnlRow=87, expect=-2315402.68
+  OutRow=183 side=entity  key=(013001, ICP_E117100, 534018) val=        1395.30 [OK] JnlRow=90, expect=1395.30
+  OutRow=183 side=partner key=(117100, ICP_013001, 433002) val=     -116407.55 [OK] JnlRow=85, expect=-117802.85
+  OutRow=184 side=entity  key=(013011, ICP_E101000, 433002) val=           1.75 [OK] JnlRow=52, expect=1.75
+  OutRow=184 side=partner key=(101000, ICP_013011, 534018) val=        8722.03 [OK] JnlRow=50, expect=8722.03
+  OutRow=185 side=entity  key=(013011, ICP_E117100, 433002) val=      125000.28 [OK] JnlRow=93, expect=125000.28
+  OutRow=185 side=partner key=(117100, ICP_013011, 433002) val=     2315402.68 [OK] JnlRow=91, expect=2315402.68
+  OutRow=186 side=entity  key=(013014, ICP_E101000, 433002) val=    -1313435.12 [OK] JnlRow=54, expect=-1313435.12
+  OutRow=186 side=partner key=(101000, ICP_013014, 433002) val=          -1.96 [OK] JnlRow=53, expect=-1.96
+  OutRow=187 side=entity  key=(022001, ICP_001001, 120030) val=   -26035079.04 [OK] JnlRow=68, expect=-26035079.04
+  OutRow=188 side=entity  key=(027009, ICP_E108000, 433002) val=   -26035079.04 [OK] JnlRow=67, expect=-26035079.04
+  OutRow=188 side=partner key=(108000, ICP_027009, 534018) val=     -465978.46 [OK] JnlRow=63, expect=-465978.46
+
+
+--- Transaction usage count ---
+  JnlRow  39: (117100, ICP_007009, 534018) =      7934061.83 -> used 1 times [OK]
+  JnlRow  41: (007009, ICP_E117100, 534018) =    -17882306.93 -> used 1 times [OK]
+  JnlRow  42: (117100, ICP_007012, 534018) =      9830437.32 -> used 1 times [OK]
+  JnlRow  44: (007012, ICP_E117100, 534018) =            4.65 -> used 1 times [OK]
+  JnlRow  48: (101000, ICP_001001, 534018) =      4147686.72 -> used 1 times [OK]
+  JnlRow  49: (001001, ICP_E101000, 534018) =         -116.79 -> used 1 times [OK]
+  JnlRow  50: (101000, ICP_013011, 534018) =         8722.03 -> used 1 times [OK]
+  JnlRow  52: (013011, ICP_E101000, 433002) =            1.75 -> used 1 times [OK]
+  JnlRow  53: (101000, ICP_013014, 433002) =           -1.96 -> used 1 times [OK]
+  JnlRow  54: (013014, ICP_E101000, 433002) =     -1313435.12 -> used 1 times [OK]
+  JnlRow  58: (101000, ICP_001002, 534018) =     -3635532.44 -> used 1 times [OK]
+  JnlRow  60: (001002, ICP_E101000, 433002) =     69247729.00 -> used 1 times [OK]
+  JnlRow  61: (108000, ICP_001001, 534018) =     69254195.50 -> used 1 times [OK]
+  JnlRow  62: (001001, ICP_E108000, 534018) =       465978.46 -> used 1 times [OK]
+  JnlRow  63: (108000, ICP_027009, 534018) =      -465978.46 -> used 1 times [OK]
+  JnlRow  67: (027009, ICP_E108000, 433002) =    -26035079.04 -> used 1 times [OK]
+  JnlRow  68: (022001, ICP_001001, 120030) =    -26035079.04 -> used 1 times [OK]
+  JnlRow  69: (111000, ICP_001001, 534018) =       -11700.00 -> used 1 times [OK]
+  JnlRow  79: (001001, ICP_E111000, 120030) =     -1555338.34 -> used 1 times [OK]
+  JnlRow  85: (117100, ICP_013001, 433002) =      -117802.85 -> used 1 times [OK]
+  JnlRow  87: (013001, ICP_E117100, 433002) =     -2315402.68 -> used 1 times [OK]
+  JnlRow  89: (117100, ICP_013001, 433002) =         1395.30 -> used 1 times [OK]
+  JnlRow  90: (013001, ICP_E117100, 534018) =         1395.30 -> used 1 times [OK]
+  JnlRow  91: (117100, ICP_013011, 433002) =      2315402.68 -> used 1 times [OK]
+  JnlRow  93: (013011, ICP_E117100, 433002) =       125000.28 -> used 1 times [OK]
+  JnlRow 174: (112000, ICP_009002, 111006) =    -13112760.00 -> used 1 times [OK]
+  JnlRow 211: (009002, ICP_E112000, 121015) =     20340466.09 -> used 1 times [OK]
+  JnlRow 212: (001033, ICP_001032, 121015) =    -88717872.52 -> used 1 times [OK]
+  JnlRow 227: (001032, ICP_001033, 534018) =       192160.00 -> used 1 times [OK]
+  JnlRow 249: (105000, ICP_005002, 111006) =         1109.52 -> used 1 times [OK]
+  JnlRow 350: (005002, ICP_E105000, 433002) =        69025.28 -> used 1 times [OK]
+  JnlRow 363: (118000, ICP_001001, 121015) =     -1576708.00 -> used 1 times [OK]
+  JnlRow 413: (001001, ICP_E118000, 111006) =        43170.00 -> used 1 times [OK]
+  JnlRow 414: (103000, ICP_005003, 111006) =      -200000.00 -> used 1 times [OK]
+  JnlRow 498: (005003, ICP_E103000, 433002) =        -3218.00 -> used 1 times [OK]
+
+Total transaction uses: 35 (should be 35)
+Duplicated: 0
+Missing: 0
