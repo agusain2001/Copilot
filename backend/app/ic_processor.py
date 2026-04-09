@@ -1408,10 +1408,11 @@ from app.ic_refactor import (  # noqa: E402
 )
 
 
-def process_icm_report(icm_path, journal_paths, output_path, report_inputs_path=None):
+def process_icm_report(icm_path, journal_paths, output_path, report_inputs_path=None, lookup_paths=None):
     return process_icm_report_v2(
         icm_path=icm_path,
         journal_paths=journal_paths,
         output_path=output_path,
         report_inputs_path=report_inputs_path,
+        lookup_paths=lookup_paths,
     )

@@ -1,5 +1,5 @@
 """
-Processing Router — Run IC matching on uploaded Excel files.
+Processing router for IC matching.
 """
 
 import os
@@ -8,7 +8,7 @@ from pathlib import Path
 from datetime import datetime
 from typing import Optional
 
-from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Form, status
+from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Form
 from fastapi.responses import FileResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
@@ -27,7 +27,6 @@ router = APIRouter(prefix="/api/processing", tags=["Processing"])
 
 
 async def _save_temp_upload(file: UploadFile, dest_dir: str) -> tuple[str, int]:
-    """Save an uploaded file to dest_dir and return (path, size)."""
     os.makedirs(dest_dir, exist_ok=True)
     file_path = os.path.join(dest_dir, file.filename)
     content = await file.read()
@@ -40,19 +39,27 @@ async def _save_temp_upload(file: UploadFile, dest_dir: str) -> tuple[str, int]:
             detail=f"File '{file.filename}' too large. Max {settings.MAX_FILE_SIZE_MB}MB.",
         )
 
-    with open(file_path, "wb") as f:
-        f.write(content)
+    with open(file_path, "wb") as handle:
+        handle.write(content)
     return file_path, file_size
 
 
-def _validate_xlsx(file: UploadFile, label: str):
-    """Ensure uploaded file has .xlsx extension."""
+def _validate_extension(file: UploadFile, label: str, allowed: set[str]):
     ext = Path(file.filename).suffix.lower()
-    if ext != ".xlsx":
+    if ext not in allowed:
+        allowed_text = ", ".join(sorted(allowed))
         raise HTTPException(
             status_code=400,
-            detail=f"{label} must be a .xlsx file (got '{ext}')",
+            detail=f"{label} must be one of [{allowed_text}] (got '{ext}')",
         )
+
+
+def _validate_xlsx(file: UploadFile, label: str):
+    _validate_extension(file, label, {".xlsx"})
+
+
+def _validate_xlsx_or_csv(file: UploadFile, label: str):
+    _validate_extension(file, label, {".xlsx", ".csv"})
 
 
 @router.post("/run")
@@ -61,85 +68,88 @@ async def run_processing(
     type_name: str = Form("alpha", description="Report type name"),
     icm_report: UploadFile = File(...),
     parent_journal: UploadFile = File(...),
-    contribution_journal: UploadFile = File(...),
+    contribution_journal: Optional[UploadFile] = File(None),
     plugaccount_journal: UploadFile = File(...),
+    entity_with_currency: UploadFile = File(...),
+    exchange_rates: UploadFile = File(...),
+    ownership_structure: UploadFile = File(...),
     report_inputs: Optional[UploadFile] = File(None),
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
     """
-    Accept 4 required + 1 optional Excel files, run IC matching, and return the result.
+    Required uploads:
+    - icm_report (.xlsx)
+    - parent_journal (.xlsx)
+    - plugaccount_journal (.xlsx)
+    - entity_with_currency (.csv/.xlsx)
+    - exchange_rates (.xlsx)
+    - ownership_structure (.xlsx)
 
-    Required files:
-        - icm_report (.xlsx)               — Intercompany Balances Matching Report
-        - parent_journal (.xlsx)           — Journal Report 1 (Parent)
-        - contribution_journal (.xlsx)     — Journal Report 2 (Contribution)
-        - plugaccount_journal (.xlsx)      — Journal Report 4 (Plug Account)
-    Optional file:
-        - report_inputs (.xlsx)            — Archived for records; not used in matching
+    Optional uploads:
+    - contribution_journal (.xlsx) (deprecated and ignored by QAR flow)
+    - report_inputs (.xlsx)
     """
-    # 1. Validate required files are .xlsx
     _validate_xlsx(icm_report, "ICM Report")
     _validate_xlsx(parent_journal, "Parent Journal")
-    _validate_xlsx(contribution_journal, "Contribution Journal")
     _validate_xlsx(plugaccount_journal, "Plug Account Journal")
+    _validate_xlsx_or_csv(entity_with_currency, "Entity With Currency")
+    _validate_xlsx(exchange_rates, "Exchange Rates")
+    _validate_xlsx(ownership_structure, "Ownership Structure")
+    if contribution_journal:
+        _validate_xlsx(contribution_journal, "Contribution Journal")
     if report_inputs:
         _validate_xlsx(report_inputs, "Report Inputs")
 
-    # 2. Resolve report type — try requested name, fall back to first active type
     rt_result = await db.execute(
         select(ReportType).where(ReportType.name == type_name, ReportType.is_active == True)
     )
     report_type = rt_result.scalar_one_or_none()
     if not report_type:
-        # Fallback: use any active report type rather than failing
-        fb_result = await db.execute(
+        fallback_result = await db.execute(
             select(ReportType).where(ReportType.is_active == True).order_by(ReportType.sort_order)
         )
-        report_type = fb_result.scalars().first()
+        report_type = fallback_result.scalars().first()
     if not report_type:
         raise HTTPException(
             status_code=500,
-            detail="No active report type found in the database. Please seed report types."
+            detail="No active report type found in the database. Please seed report types.",
         )
 
-    # 3. Create a new sequence group
     seq = ReportSequence()
     db.add(seq)
     await db.flush()
     sequence_id = seq.id
 
-    # 4. Save all input files
     input_dir = os.path.join(settings.UPLOAD_DIR, "reports", str(sequence_id), "inputs")
-    # report_inputs is optional — only include if provided
     files_map = {
         "icm_report": icm_report,
         "parent_journal": parent_journal,
-        "contribution_journal": contribution_journal,
         "plugaccount_journal": plugaccount_journal,
+        "entity_with_currency": entity_with_currency,
+        "exchange_rates": exchange_rates,
+        "ownership_structure": ownership_structure,
     }
+    if contribution_journal:
+        files_map["contribution_journal"] = contribution_journal
     if report_inputs:
         files_map["report_inputs"] = report_inputs
 
     saved_paths = {}
     input_reports = []
-
     for file_key, upload_file in files_map.items():
-        fpath, fsize = await _save_temp_upload(upload_file, input_dir)
-        saved_paths[file_key] = fpath
+        path, size = await _save_temp_upload(upload_file, input_dir)
+        saved_paths[file_key] = path
 
-        # Create a Report record for each input file
         now_ts = datetime.now().strftime("%d%m%Y%H%M%S")
         stored_name = f"{now_ts}_{upload_file.filename}"
-        folder_path = str(
-            Path("uploads") / "reports" / str(sequence_id) / "inputs" / upload_file.filename
-        )
+        folder_path = str(Path("uploads") / "reports" / str(sequence_id) / "inputs" / upload_file.filename)
         report = Report(
             name=f"{name} - {file_key}",
             type_id=report_type.id,
-            file_url=fpath,
+            file_url=path,
             original_filename=upload_file.filename,
-            file_size_bytes=fsize,
+            file_size_bytes=size,
             uploaded_by=current_user.id,
             sequence_id=sequence_id,
             file_type="input",
@@ -149,7 +159,6 @@ async def run_processing(
         db.add(report)
         input_reports.append(report)
 
-    # 5. Run IC matching (synchronous CPU work — import here to avoid circular refs)
     from app.ic_processor import process_icm_report
 
     output_dir = os.path.join(settings.UPLOAD_DIR, "reports", str(sequence_id), "outputs")
@@ -158,9 +167,16 @@ async def run_processing(
     output_path = os.path.join(output_dir, output_filename)
 
     journal_paths = {
-        "parent_journal":       saved_paths["parent_journal"],
-        "contribution_journal": saved_paths["contribution_journal"],
-        "plugaccount_journal":  saved_paths["plugaccount_journal"],
+        "parent_journal": saved_paths["parent_journal"],
+        "plugaccount_journal": saved_paths["plugaccount_journal"],
+    }
+    if saved_paths.get("contribution_journal"):
+        journal_paths["contribution_journal"] = saved_paths["contribution_journal"]
+
+    lookup_paths = {
+        "entity_with_currency": saved_paths["entity_with_currency"],
+        "exchange_rates": saved_paths["exchange_rates"],
+        "ownership_structure": saved_paths["ownership_structure"],
     }
 
     try:
@@ -169,22 +185,20 @@ async def run_processing(
             journal_paths=journal_paths,
             output_path=output_path,
             report_inputs_path=saved_paths.get("report_inputs"),
+            lookup_paths=lookup_paths,
         )
-    except Exception as e:
+    except Exception as exc:
         logger.exception("IC processing failed for sequence %d", sequence_id)
         await db.rollback()
         raise HTTPException(
             status_code=500,
-            detail=f"Processing failed: {str(e)}",
+            detail=f"Processing failed: {str(exc)}",
         )
 
-    # 6. Create Report record for the output file
     output_size = os.path.getsize(output_path) if os.path.exists(output_path) else 0
     now_ts = datetime.now().strftime("%d%m%Y%H%M%S")
     output_stored_name = f"{now_ts}_{output_filename}"
-    output_folder_path = str(
-        Path("uploads") / "reports" / str(sequence_id) / "outputs" / output_filename
-    )
+    output_folder_path = str(Path("uploads") / "reports" / str(sequence_id) / "outputs" / output_filename)
     output_report = Report(
         name=f"{name} - output",
         type_id=report_type.id,
@@ -200,8 +214,6 @@ async def run_processing(
     db.add(output_report)
 
     await db.commit()
-
-    # Refresh to get generated IDs
     await db.refresh(output_report)
 
     return {
@@ -220,7 +232,6 @@ async def download_output(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    """Download the generated output file for a processing run."""
     result = await db.execute(
         select(Report).where(
             Report.sequence_id == sequence_id,

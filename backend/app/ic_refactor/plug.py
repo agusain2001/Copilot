@@ -12,7 +12,8 @@ def derive_plug_facts(fact_ids, fact_registry, elim_codes: set[str], plug_code: 
     derived = []
     for fact_id in fact_ids:
         fact = fact_registry[fact_id]
-        if fact.account_code not in elim_codes:
+        # Plug columns must reflect only the configured plug-account postings.
+        if fact.account_code != plug_code:
             continue
         derived.append(
             NormalizedFact(

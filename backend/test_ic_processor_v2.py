@@ -2,6 +2,7 @@ import os
 import sys
 import unittest
 import uuid
+import csv
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "venv", "Lib", "site-packages"))
 sys.path.insert(0, os.path.dirname(__file__))
@@ -12,7 +13,7 @@ from app.ic_processor import (
     compare_v1_v2_report31,
     process_icm_report,
 )
-from app.ic_refactor.facts import normalize_account_code, normalize_party_code
+from app.ic_refactor.facts import normalize_account_code, normalize_journal_account_code, normalize_party_code
 from app.ic_refactor.ledger import build_cell_ledger
 from app.ic_refactor.models import LayoutColumn, LayoutSpec, NormalizedFact, PairOwner
 from app.ic_refactor.pairs import build_pair_registry
@@ -25,6 +26,8 @@ class IcProcessorV2Tests(unittest.TestCase):
         diagnostics = {"bad_codes": []}
         self.assertEqual(normalize_party_code("E117100"), "117100")
         self.assertEqual(normalize_party_code("ICP_007009"), "007009")
+        self.assertEqual(normalize_party_code("-E117100"), "117100")
+        self.assertEqual(normalize_party_code("27009"), "027009")
         self.assertIsNone(normalize_party_code("117000A", diagnostics=diagnostics, field_name="entity"))
         self.assertEqual(len(diagnostics["bad_codes"]), 1)
 
@@ -32,6 +35,22 @@ class IcProcessorV2Tests(unittest.TestCase):
         self.assertEqual(normalize_account_code("534018 - 534018:Interest expense - related parties"), "534018")
         self.assertEqual(normalize_account_code("[111000].[111001]:111001:Land for undertermined use"), "111001")
         self.assertIsNone(normalize_account_code("[FCCS_Long Term Assets].[Plug_InvSh]:Investment-share capital plug account"))
+
+    def test_normalize_journal_account_code_requires_direct_leading_code(self):
+        self.assertEqual(
+            normalize_journal_account_code("189001:189001:Inter company account - receivables"),
+            "189001",
+        )
+        self.assertEqual(
+            normalize_journal_account_code("534018 - 534018:Interest expense - related parties"),
+            "534018",
+        )
+        self.assertIsNone(
+            normalize_journal_account_code("[165000].[189501]:189501:Due from Related Party - Non-current")
+        )
+        self.assertIsNone(
+            normalize_journal_account_code("[155000].[155020]:155020:Diar Club Al Houra")
+        )
 
     def test_pair_registry_prefers_trusted_icm_direction(self):
         base_rows = [
@@ -72,12 +91,12 @@ class IcProcessorV2Tests(unittest.TestCase):
                 source_row=31,
                 entity_num="117100",
                 partner_num="007009",
-                account_code="534018",
+                account_code="188600",
                 amount=100.0,
                 direction="entity_to_partner",
                 raw_entity="E117100:Entity",
                 raw_partner="ICP_007009:Partner",
-                raw_account="534018",
+                raw_account="188600",
                 meta={},
             ),
             "fact_000002": NormalizedFact(
@@ -221,8 +240,284 @@ class IcProcessorV2Tests(unittest.TestCase):
 
         wb = openpyxl.load_workbook(paths["output"], data_only=True)
         self.assertIn("ICM Matched", wb.sheetnames)
-        self.assertIn("Diagnostics_Assignment", wb.sheetnames)
-        self.assertIn("Diagnostics_Pairs", wb.sheetnames)
+        self.assertEqual(wb.sheetnames, ["ICM Matched"])
+
+    def test_parent_ownership_then_qar_fx_roundup(self):
+        from test_ic_processor_bidirectional import _journal_workbook
+
+        base_dir = os.path.dirname(__file__)
+        suffix = uuid.uuid4().hex
+        paths = {
+            "icm": os.path.join(base_dir, f"tmp_v2_icm_{suffix}.xlsx"),
+            "parent": os.path.join(base_dir, f"tmp_v2_parent_fx_{suffix}.xlsx"),
+            "plug": os.path.join(base_dir, f"tmp_v2_plug_fx_{suffix}.xlsx"),
+            "entity_currency": os.path.join(base_dir, f"tmp_v2_entity_currency_{suffix}.csv"),
+            "exchange_rates": os.path.join(base_dir, f"tmp_v2_exchange_{suffix}.xlsx"),
+            "ownership": os.path.join(base_dir, f"tmp_v2_ownership_{suffix}.xlsx"),
+            "output": os.path.join(base_dir, f"tmp_v2_output_fx_{suffix}.xlsx"),
+        }
+        for path in paths.values():
+            self.addCleanup(lambda p=path: os.path.exists(p) and os.remove(p))
+
+        wb_icm = openpyxl.Workbook()
+        ws_icm = wb_icm.active
+        ws_icm.cell(4, 1).value = "Entity"
+        ws_icm.cell(4, 2).value = "Partner"
+        ws_icm.cell(4, 3).value = "534018 - 534018:Interest expense - related parties Entity"
+        ws_icm.cell(4, 4).value = "534018 - 534018:Interest expense - related parties Partner"
+        ws_icm.cell(5, 1).value = "E117100 - Entity"
+        ws_icm.cell(5, 2).value = "ICP_007009 - Partner ICP"
+        ws_icm.cell(5, 3).value = 0
+        ws_icm.cell(5, 4).value = 0
+        wb_icm.save(paths["icm"])
+
+        _journal_workbook(
+            paths["parent"],
+            [
+                {
+                    "entity": "E117100:Entity",
+                    "account": "534018 - 534018:Interest expense - related parties",
+                    "icp": "ICP_007009:Partner ICP",
+                    "debit": 100,
+                    "credit": 0,
+                }
+            ],
+        )
+        _journal_workbook(paths["plug"], [])
+
+        with open(paths["entity_currency"], "w", newline="", encoding="utf-8") as handle:
+            writer = csv.writer(handle)
+            writer.writerow(["Entity", "Alias", "Base Currency"])
+            writer.writerow(["E117100", "Entity 117100", "EUR"])
+
+        wb_rate = openpyxl.Workbook()
+        ws_rate = wb_rate.active
+        ws_rate.cell(3, 3).value = "Dec"
+        ws_rate.cell(3, 4).value = "Currency"
+        ws_rate.cell(3, 5).value = "Type"
+        ws_rate.cell(4, 3).value = 3.92245
+        ws_rate.cell(4, 4).value = "EUR"
+        ws_rate.cell(4, 5).value = "Average"
+        ws_rate.cell(5, 3).value = 3.8087
+        ws_rate.cell(5, 4).value = "EUR"
+        ws_rate.cell(5, 5).value = "Ending"
+        wb_rate.save(paths["exchange_rates"])
+
+        wb_own = openpyxl.Workbook()
+        ws_own = wb_own.active
+        ws_own.cell(1, 1).value = "Entity"
+        ws_own.cell(1, 2).value = "FCCS_Percent Ownership"
+        ws_own.cell(2, 1).value = "-E117100"
+        ws_own.cell(2, 2).value = 0.5
+        wb_own.save(paths["ownership"])
+
+        process_icm_report(
+            paths["icm"],
+            {
+                "parent_journal": paths["parent"],
+                "plugaccount_journal": paths["plug"],
+            },
+            paths["output"],
+            lookup_paths={
+                "entity_with_currency": paths["entity_currency"],
+                "exchange_rates": paths["exchange_rates"],
+                "ownership_structure": paths["ownership"],
+            },
+        )
+
+        wb_out = openpyxl.load_workbook(paths["output"], data_only=True)
+        ws_out = wb_out["ICM Matched"]
+
+        parent_start = None
+        qar_start = None
+        for col in range(1, ws_out.max_column + 1):
+            value = ws_out.cell(29, col).value
+            if value == "Parent Input":
+                parent_start = col
+            elif value == "QAR Currency":
+                qar_start = col
+        self.assertIsNotNone(parent_start)
+        self.assertIsNotNone(qar_start)
+
+        target_row = None
+        for row_num in range(33, ws_out.max_row + 1):
+            entity = str(ws_out.cell(row_num, 1).value or "")
+            partner = str(ws_out.cell(row_num, 2).value or "")
+            if "117100" in entity and "007009" in partner:
+                target_row = row_num
+                break
+        self.assertIsNotNone(target_row)
+
+        self.assertEqual(ws_out.cell(target_row, parent_start).value, 50)
+        self.assertEqual(ws_out.cell(target_row, qar_start).value, 197)
+
+    def test_parent_pipeline_skips_bracketed_account_formats(self):
+        from test_ic_processor_bidirectional import _journal_workbook
+
+        base_dir = os.path.dirname(__file__)
+        suffix = uuid.uuid4().hex
+        paths = {
+            "icm": os.path.join(base_dir, f"tmp_v2_icm_bracket_{suffix}.xlsx"),
+            "parent": os.path.join(base_dir, f"tmp_v2_parent_bracket_{suffix}.xlsx"),
+        }
+        for path in paths.values():
+            self.addCleanup(lambda p=path: os.path.exists(p) and os.remove(p))
+
+        wb_icm = openpyxl.Workbook()
+        ws_icm = wb_icm.active
+        ws_icm.cell(32, 1).value = "Entity"
+        ws_icm.cell(32, 2).value = "Partner"
+        ws_icm.cell(32, 3).value = "189501 - 189501:Due from Related Party - Non-current Entity"
+        ws_icm.cell(32, 4).value = "189501 - 189501:Due from Related Party - Non-current Partner"
+        ws_icm.cell(32, 5).value = "Total"
+        ws_icm.cell(33, 1).value = "E101000 - Example Entity"
+        ws_icm.cell(33, 2).value = "ICP_001001 - Example Partner ICP"
+        ws_icm.cell(33, 3).value = 0
+        ws_icm.cell(33, 4).value = 0
+        wb_icm.save(paths["icm"])
+
+        _journal_workbook(
+            paths["parent"],
+            [
+                {
+                    "entity": "E101000:Example Entity",
+                    "account": "[165000].[189501]:189501:Due from Related Party - Non-current",
+                    "icp": "ICP_001001:Example Partner ICP",
+                    "debit": 0,
+                    "credit": 1555338.34,
+                }
+            ],
+        )
+
+        result = run_pipeline_v2(paths["icm"], {"parent_journal": paths["parent"]})
+
+        self.assertEqual(result.fact_build.facts_parent, [])
+        self.assertEqual(
+            [item["reason"] for item in result.diagnostics["unmatched_facts"]],
+            ["unsupported_journal_account_format"],
+        )
+
+    def test_lookup_fallback_defaults_keep_pipeline_running(self):
+        from test_ic_processor_bidirectional import _journal_workbook
+
+        base_dir = os.path.dirname(__file__)
+        suffix = uuid.uuid4().hex
+        paths = {
+            "icm": os.path.join(base_dir, f"tmp_v2_icm_fallback_{suffix}.xlsx"),
+            "parent": os.path.join(base_dir, f"tmp_v2_parent_fallback_{suffix}.xlsx"),
+            "plug": os.path.join(base_dir, f"tmp_v2_plug_fallback_{suffix}.xlsx"),
+            "output": os.path.join(base_dir, f"tmp_v2_output_fallback_{suffix}.xlsx"),
+        }
+        for path in paths.values():
+            self.addCleanup(lambda p=path: os.path.exists(p) and os.remove(p))
+
+        wb_icm = openpyxl.Workbook()
+        ws_icm = wb_icm.active
+        ws_icm.cell(4, 1).value = "Entity"
+        ws_icm.cell(4, 2).value = "Partner"
+        ws_icm.cell(4, 3).value = "534018 - 534018:Interest expense - related parties Entity"
+        ws_icm.cell(4, 4).value = "534018 - 534018:Interest expense - related parties Partner"
+        ws_icm.cell(5, 1).value = "E117100 - Entity"
+        ws_icm.cell(5, 2).value = "ICP_007009 - Partner ICP"
+        wb_icm.save(paths["icm"])
+
+        _journal_workbook(
+            paths["parent"],
+            [
+                {
+                    "entity": "E117100:Entity",
+                    "account": "534018 - 534018:Interest expense - related parties",
+                    "icp": "ICP_007009:Partner ICP",
+                    "debit": 100,
+                    "credit": 0,
+                }
+            ],
+        )
+        _journal_workbook(paths["plug"], [])
+
+        process_icm_report(
+            paths["icm"],
+            {
+                "parent_journal": paths["parent"],
+                "plugaccount_journal": paths["plug"],
+            },
+            paths["output"],
+        )
+
+        wb_out = openpyxl.load_workbook(paths["output"], data_only=True)
+        self.assertEqual(wb_out.sheetnames, ["ICM Matched"])
+
+    def test_no_plug_journal_keeps_standalone_plug_section_blank(self):
+        from test_ic_processor_bidirectional import _ic_elim_workbook, _journal_workbook, _report_inputs_workbook
+
+        base_dir = os.path.dirname(__file__)
+        suffix = uuid.uuid4().hex
+        paths = {
+            "icm": os.path.join(base_dir, f"tmp_v2_icm_noplug_{suffix}.xlsx"),
+            "parent": os.path.join(base_dir, f"tmp_v2_parent_noplug_{suffix}.xlsx"),
+            "inputs": os.path.join(base_dir, f"tmp_v2_inputs_noplug_{suffix}.xlsx"),
+            "output": os.path.join(base_dir, f"tmp_v2_output_noplug_{suffix}.xlsx"),
+        }
+        for path in paths.values():
+            self.addCleanup(lambda p=path: os.path.exists(p) and os.remove(p))
+
+        _ic_elim_workbook(
+            paths["icm"],
+            [
+                {
+                    "entity": "E117100 - Entity",
+                    "partner": "ICP_007009 - Partner ICP",
+                    "entity_value": 0,
+                    "partner_value": 0,
+                    "total": 75,
+                }
+            ],
+            plug_code="188600",
+        )
+        _journal_workbook(
+            paths["parent"],
+            [
+                {
+                    "entity": "E117100:Entity",
+                    "account": "534018 - 534018:Interest expense - related parties",
+                    "icp": "ICP_007009:Partner ICP",
+                    "debit": 100,
+                    "credit": 0,
+                }
+            ],
+        )
+        _report_inputs_workbook(paths["inputs"], plug_code="188600", elim_code="534018")
+
+        process_icm_report(
+            paths["icm"],
+            {
+                "parent_journal": paths["parent"],
+            },
+            paths["output"],
+            report_inputs_path=paths["inputs"],
+        )
+
+        wb_out = openpyxl.load_workbook(paths["output"], data_only=True)
+        ws_out = wb_out["ICM Matched"]
+
+        plug_section_col = None
+        for col in range(1, ws_out.max_column + 1):
+            if ws_out.cell(29, col).value == "Plug Account":
+                plug_section_col = col
+                break
+        self.assertIsNotNone(plug_section_col)
+
+        target_row = None
+        for row_num in range(33, ws_out.max_row + 1):
+            entity = str(ws_out.cell(row_num, 1).value or "")
+            partner = str(ws_out.cell(row_num, 2).value or "")
+            if "117100" in entity and "007009" in partner:
+                target_row = row_num
+                break
+        self.assertIsNotNone(target_row)
+
+        self.assertIsNone(ws_out.cell(target_row, plug_section_col).value)
+        self.assertIsNone(ws_out.cell(target_row, plug_section_col + 1).value)
 
     def test_report31_comparison_harness(self):
         outputs = compare_v1_v2_report31()

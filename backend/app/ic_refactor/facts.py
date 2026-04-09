@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import csv
 import os
 import re
 from collections import defaultdict
@@ -53,6 +54,15 @@ def normalize_account_code(raw: str) -> str | None:
     return None
 
 
+def normalize_journal_account_code(raw: str) -> str | None:
+    text = str(raw or "").strip()
+    if not text:
+        return None
+    if not re.match(r"^\d{6}(?![A-Za-z0-9])", text):
+        return None
+    return normalize_account_code(text)
+
+
 def normalize_party_code(
     raw: str,
     *,
@@ -70,19 +80,21 @@ def normalize_party_code(
     alias_key = text.upper()
     if alias_key in alias_map:
         value = alias_map[alias_key]
-        return value if str(value).isdigit() else None
+        if str(value).isdigit():
+            return str(value).zfill(6) if len(str(value)) <= 6 else str(value)
+        return None
 
     upper = alias_key
     if upper.startswith("FCCS_NO INTERCOMPANY") or upper.startswith("NO INTERCOMPANY"):
         return None
 
-    match = re.match(r"^(?:ICP_)?E?(\d{6})(?![A-Za-z0-9])", upper)
+    match = re.match(r"^(?:ICP_)?E?(\d{5,6})(?![A-Za-z0-9])", upper)
     if match:
-        return match.group(1)
+        return match.group(1).zfill(6)
 
-    embedded = re.search(r"(?<![A-Za-z0-9])(?:ICP_)?E?(\d{6})(?![A-Za-z0-9])", upper)
+    embedded = re.search(r"(?<![A-Za-z0-9])(?:ICP_)?E?(\d{5,6})(?![A-Za-z0-9])", upper)
     if embedded:
-        return embedded.group(1)
+        return embedded.group(1).zfill(6)
 
     if any(ch.isdigit() for ch in upper):
         if diagnostics is not None:
@@ -148,6 +160,299 @@ def parse_report_inputs(filepath: str | None) -> dict[str, Any]:
             elim_codes.add(code)
 
     return {"plug_code": plug_code, "elim_codes": elim_codes}
+
+
+def _normalize_rate_type(raw: str) -> str | None:
+    text = str(raw or "").strip().lower()
+    if not text:
+        return None
+    if "avg" in text or text == "average":
+        return "average"
+    if "end" in text or text == "ending":
+        return "ending"
+    return None
+
+
+def _fx_rate_type_for_account(account_code: str) -> str | None:
+    code = str(account_code or "").strip()
+    if not code or not code[0].isdigit():
+        return None
+    if code[0] in {"1", "2", "3"}:
+        return "ending"
+    if code[0] in {"4", "5"}:
+        return "average"
+    return None
+
+
+def _parse_numeric_or_none(raw) -> float | None:
+    if raw in (None, "", " "):
+        return None
+    if isinstance(raw, (int, float)):
+        return float(raw)
+    text = str(raw).strip().replace(",", "")
+    if text.endswith("%"):
+        text = text[:-1].strip()
+        try:
+            return float(text) / 100.0
+        except ValueError:
+            return None
+    try:
+        return float(text)
+    except ValueError:
+        return None
+
+
+def _find_header_row(rows: list[list], required_tokens: set[str]) -> tuple[int, dict[str, int]] | None:
+    for idx, row in enumerate(rows):
+        tokens = {str(cell or "").strip().lower() for cell in row}
+        if not required_tokens.issubset(tokens):
+            continue
+        index_map = {}
+        for col_idx, cell in enumerate(row):
+            key = str(cell or "").strip().lower()
+            if key:
+                index_map[key] = col_idx
+        return idx, index_map
+    return None
+
+
+def parse_entity_currency_lookup(
+    filepath: str | None,
+    alias_map: dict[str, str],
+    diagnostics: dict[str, list[dict]],
+) -> dict[str, str]:
+    mapping: dict[str, str] = {}
+    if not filepath or not os.path.exists(filepath):
+        return mapping
+
+    ext = os.path.splitext(filepath)[1].lower()
+    rows: list[list] = []
+
+    if ext == ".csv":
+        with open(filepath, "r", encoding="utf-8-sig", newline="") as handle:
+            rows = list(csv.reader(handle))
+    else:
+        wb = openpyxl.load_workbook(filepath, data_only=True)
+        ws = wb.active
+        rows = [[ws.cell(r, c).value for c in range(1, ws.max_column + 1)] for r in range(1, ws.max_row + 1)]
+
+    hdr = _find_header_row(rows, {"entity"})
+    if hdr is None:
+        return mapping
+
+    header_row, columns = hdr
+    entity_col = columns.get("entity", 0)
+    currency_col = None
+    for key, idx in columns.items():
+        if "currency" in key:
+            currency_col = idx
+            break
+    if currency_col is None:
+        return mapping
+
+    for row_idx, row in enumerate(rows[header_row + 1 :], start=header_row + 2):
+        entity_raw = row[entity_col] if entity_col < len(row) else None
+        currency_raw = row[currency_col] if currency_col < len(row) else None
+        entity_num = normalize_party_code(
+            str(entity_raw or ""),
+            alias_map=alias_map,
+            diagnostics=diagnostics,
+            source_file=filepath,
+            source_row=row_idx,
+            field_name="entity",
+        )
+        currency = str(currency_raw or "").strip().upper()
+        if not entity_num or not currency:
+            continue
+        mapping[entity_num] = currency
+
+    return mapping
+
+
+def parse_ownership_lookup(
+    filepath: str | None,
+    alias_map: dict[str, str],
+    diagnostics: dict[str, list[dict]],
+) -> dict[str, float]:
+    mapping: dict[str, float] = {}
+    if not filepath or not os.path.exists(filepath):
+        return mapping
+
+    wb = openpyxl.load_workbook(filepath, data_only=True)
+    ws = wb.active
+    rows = [[ws.cell(r, c).value for c in range(1, ws.max_column + 1)] for r in range(1, ws.max_row + 1)]
+
+    pct_header = None
+    header_row = 0
+    for row_idx, row in enumerate(rows):
+        for col_idx, cell in enumerate(row):
+            if "percent ownership" in str(cell or "").strip().lower():
+                pct_header = col_idx
+                header_row = row_idx
+                break
+        if pct_header is not None:
+            break
+
+    if pct_header is None:
+        return mapping
+
+    entity_col = 0
+    header_values = [str(cell or "").strip().lower() for cell in rows[header_row]]
+    for idx, value in enumerate(header_values):
+        if value == "entity":
+            entity_col = idx
+            break
+
+    for row_idx, row in enumerate(rows[header_row + 1 :], start=header_row + 2):
+        entity_raw = row[entity_col] if entity_col < len(row) else None
+        pct_raw = row[pct_header] if pct_header < len(row) else None
+        pct = _parse_numeric_or_none(pct_raw)
+        if pct is None:
+            continue
+        if pct > 1.0 and pct <= 100.0:
+            pct = pct / 100.0
+        entity_num = normalize_party_code(
+            str(entity_raw or ""),
+            alias_map=alias_map,
+            diagnostics=diagnostics,
+            source_file=filepath,
+            source_row=row_idx,
+            field_name="entity",
+        )
+        if not entity_num:
+            continue
+        mapping[entity_num] = pct
+
+    return mapping
+
+
+def parse_exchange_rates_lookup(filepath: str | None) -> dict[tuple[str, str], float]:
+    rates: dict[tuple[str, str], float] = {}
+    if not filepath or not os.path.exists(filepath):
+        return rates
+
+    wb = openpyxl.load_workbook(filepath, data_only=True)
+    ws = wb.active
+    rows = [[ws.cell(r, c).value for c in range(1, ws.max_column + 1)] for r in range(1, ws.max_row + 1)]
+
+    header_info = _find_header_row(rows, {"currency", "type"})
+    if header_info is None:
+        return rates
+
+    header_row, columns = header_info
+    currency_col = columns.get("currency")
+    type_col = columns.get("type")
+    if currency_col is None or type_col is None:
+        return rates
+
+    for row in rows[header_row + 1 :]:
+        currency = str(row[currency_col] if currency_col < len(row) else "").strip().upper()
+        rate_type = _normalize_rate_type(row[type_col] if type_col < len(row) else "")
+        if not currency or rate_type is None:
+            continue
+        rate = None
+        for idx, raw in enumerate(row):
+            if idx in {currency_col, type_col}:
+                continue
+            rate = _parse_numeric_or_none(raw)
+            if rate is not None:
+                break
+        if rate is None:
+            continue
+        rates[(currency, rate_type)] = rate
+
+    return rates
+
+
+def build_qar_facts_from_parent(
+    parent_fact_ids: list[str],
+    fact_registry: dict[str, NormalizedFact],
+    entity_currency_map: dict[str, str],
+    exchange_rates: dict[tuple[str, str], float],
+    diagnostics: dict[str, list[dict]],
+) -> list[NormalizedFact]:
+    derived: list[NormalizedFact] = []
+    for fact_id in parent_fact_ids:
+        parent_fact = fact_registry[fact_id]
+        currency = entity_currency_map.get(parent_fact.entity_num)
+        if not currency:
+            record_diagnostic(
+                diagnostics,
+                "lookup_fallbacks",
+                "missing_entity_currency_default_rate_1_0",
+                source_file=parent_fact.source_file,
+                source_row=parent_fact.source_row,
+                raw_entity=parent_fact.raw_entity,
+                raw_partner=parent_fact.raw_partner,
+                normalized_entity=parent_fact.entity_num,
+                normalized_partner=parent_fact.partner_num,
+                account=parent_fact.account_code,
+                amount=parent_fact.amount,
+            )
+            currency = "UNKNOWN"
+
+        rate_type = _fx_rate_type_for_account(parent_fact.account_code)
+        if rate_type is None:
+            record_diagnostic(
+                diagnostics,
+                "lookup_fallbacks",
+                "unsupported_account_series_default_rate_1_0",
+                source_file=parent_fact.source_file,
+                source_row=parent_fact.source_row,
+                raw_entity=parent_fact.raw_entity,
+                raw_partner=parent_fact.raw_partner,
+                normalized_entity=parent_fact.entity_num,
+                normalized_partner=parent_fact.partner_num,
+                account=parent_fact.account_code,
+                amount=parent_fact.amount,
+            )
+            rate = 1.0
+        else:
+            rate = exchange_rates.get((currency, rate_type))
+            if rate is None:
+                record_diagnostic(
+                    diagnostics,
+                    "lookup_fallbacks",
+                    "missing_exchange_rate_default_1_0",
+                    source_file=parent_fact.source_file,
+                    source_row=parent_fact.source_row,
+                    raw_entity=parent_fact.raw_entity,
+                    raw_partner=parent_fact.raw_partner,
+                    normalized_entity=parent_fact.entity_num,
+                    normalized_partner=parent_fact.partner_num,
+                    account=parent_fact.account_code,
+                    amount=parent_fact.amount,
+                    extra={"currency": currency, "rate_type": rate_type},
+                )
+                rate = 1.0
+
+        meta = dict(parent_fact.meta)
+        meta.update(
+            {
+                "derived_from": "parent_fx",
+                "currency": currency,
+                "fx_rate_type": rate_type or "fallback_1_0",
+                "fx_rate": rate,
+                "source_fact_ids": [fact_id],
+            }
+        )
+        derived.append(
+            NormalizedFact(
+                family="contrib",
+                source_file=parent_fact.source_file,
+                source_row=parent_fact.source_row,
+                entity_num=parent_fact.entity_num,
+                partner_num=parent_fact.partner_num,
+                account_code=parent_fact.account_code,
+                amount=parent_fact.amount * rate,
+                direction=parent_fact.direction,
+                raw_entity=parent_fact.raw_entity,
+                raw_partner=parent_fact.raw_partner,
+                raw_account=parent_fact.raw_account,
+                meta=meta,
+            )
+        )
+    return derived
 
 
 def _get_sheet(source):
@@ -379,6 +684,9 @@ def build_journal_facts(
     plug_code: str | None = None,
     elim_codes: set[str] | None = None,
     plug_remap: bool = False,
+    ownership_lookup: dict[str, float] | None = None,
+    apply_ownership: bool = False,
+    require_direct_account_format: bool = False,
 ) -> list[str]:
     ws = _get_sheet(source)
     indices = _journal_indices(ws, source.header_row)
@@ -395,6 +703,8 @@ def build_journal_facts(
         partner_raw = str(ws.cell(row_num, indices["intercompany"]).value or "").strip()
         if not entity_raw and not account_raw and not partner_raw:
             continue
+
+        raw_account_code = normalize_account_code(account_raw)
 
         entity_num = normalize_party_code(
             entity_raw,
@@ -413,13 +723,53 @@ def build_journal_facts(
             field_name="partner",
         )
 
-        account_code = normalize_account_code(account_raw)
+        if require_direct_account_format and account_raw and normalize_journal_account_code(account_raw) is None:
+            debit = to_float(ws.cell(row_num, indices["debit"]).value)
+            credit = to_float(ws.cell(row_num, indices["credit"]).value)
+            amount = apply_sign(debit, credit, raw_account_code or "")
+            record_diagnostic(
+                diagnostics,
+                "unmatched_facts",
+                "unsupported_journal_account_format",
+                source_file=source.filepath,
+                source_row=row_num,
+                raw_entity=entity_raw,
+                raw_partner=partner_raw,
+                normalized_entity=entity_num,
+                normalized_partner=partner_num,
+                account=account_raw,
+                amount=amount,
+                extra={"family": family, "label": label},
+            )
+            continue
+
+        account_code = raw_account_code
         if plug_remap and plug_code and (account_code in elim_codes or account_code is None):
             account_code = plug_code
 
         debit = to_float(ws.cell(row_num, indices["debit"]).value)
         credit = to_float(ws.cell(row_num, indices["credit"]).value)
         amount = apply_sign(debit, credit, account_code or "")
+
+        ownership_pct = 1.0
+        if apply_ownership and entity_num:
+            if ownership_lookup and entity_num in ownership_lookup:
+                ownership_pct = ownership_lookup[entity_num]
+            else:
+                record_diagnostic(
+                    diagnostics,
+                    "lookup_fallbacks",
+                    "missing_ownership_default_1_0",
+                    source_file=source.filepath,
+                    source_row=row_num,
+                    raw_entity=entity_raw,
+                    raw_partner=partner_raw,
+                    normalized_entity=entity_num,
+                    normalized_partner=partner_num,
+                    account=account_code or account_raw,
+                    amount=amount,
+                )
+            amount *= ownership_pct
 
         if amount == 0:
             continue
@@ -452,7 +802,7 @@ def build_journal_facts(
             raw_entity=entity_raw,
             raw_partner=partner_raw,
             raw_account=account_raw,
-            meta={"label": label, "debit": debit, "credit": credit},
+            meta={"label": label, "debit": debit, "credit": credit, "ownership_pct": ownership_pct},
         )
         fact_id = collector.add(fact)
         facts.append(fact_id)
@@ -573,10 +923,12 @@ def build_all_facts(
     icm_path: str,
     journal_paths: dict[str, str],
     report_inputs_path: str | None = None,
+    lookup_paths: dict[str, str] | None = None,
     alias_map: dict[str, str] | None = None,
 ) -> FactBuildResult:
     alias_map = alias_map or PARTY_CODE_ALIASES
     diagnostics = new_diagnostics()
+    lookup_paths = lookup_paths or {}
     sources = detect_sources(icm_path, journal_paths)
     base_source = sources.get("base_grid")
     if base_source is None:
@@ -586,6 +938,17 @@ def build_all_facts(
     plug_code = report_inputs.get("plug_code")
     elim_codes = set(report_inputs.get("elim_codes", set()))
     layout = extract_layout(base_source, plug_code, elim_codes)
+    entity_currency_map = parse_entity_currency_lookup(
+        lookup_paths.get("entity_with_currency"),
+        alias_map,
+        diagnostics,
+    )
+    ownership_lookup = parse_ownership_lookup(
+        lookup_paths.get("ownership_structure"),
+        alias_map,
+        diagnostics,
+    )
+    exchange_rates = parse_exchange_rates_lookup(lookup_paths.get("exchange_rates"))
 
     collector = FactCollector()
     label_maps = {
@@ -605,18 +968,37 @@ def build_all_facts(
             label_maps,
             diagnostics,
             alias_map,
+            ownership_lookup=ownership_lookup,
+            apply_ownership=True,
+            require_direct_account_format=True,
         )
 
-    facts_contrib = []
     if sources.get("contribution_journal") is not None:
-        facts_contrib = build_journal_facts(
-            sources["contribution_journal"],
-            "contrib",
-            collector,
-            label_maps,
+        record_diagnostic(
             diagnostics,
-            alias_map,
+            "lookup_fallbacks",
+            "contribution_journal_ignored_qar_mode",
+            source_file=sources["contribution_journal"].filepath,
+            source_row=None,
+            raw_entity="",
+            raw_partner="",
+            normalized_entity=None,
+            normalized_partner=None,
+            account="",
+            amount=None,
         )
+
+    facts_contrib: list[str] = []
+    for fact in build_qar_facts_from_parent(
+        facts_parent,
+        collector.registry,
+        entity_currency_map,
+        exchange_rates,
+        diagnostics,
+    ):
+        fact_id = collector.add(fact)
+        facts_contrib.append(fact_id)
+        _register_labels(label_maps, fact)
 
     facts_plug_source = []
     if sources.get("plugaccount_journal") is not None:

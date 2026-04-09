@@ -115,6 +115,7 @@ def write_diagnostics_sheets(
     _write_table_sheet(workbook, "Diagnostics_Pairs", diagnostics.get("pairs", []))
     _write_table_sheet(workbook, "Diagnostics_UnmatchedFacts", diagnostics.get("unmatched_facts", []))
     _write_table_sheet(workbook, "Diagnostics_Aliases", diagnostics.get("bad_codes", []))
+    _write_table_sheet(workbook, "Diagnostics_Lookups", diagnostics.get("lookup_fallbacks", []))
     _write_table_sheet(workbook, "Diagnostics_PlugRecon", plug_reconciliation_log)
 
     assignment_rows = []

@@ -1,12 +1,11 @@
 from __future__ import annotations
 
+import math
 import os
 
 import openpyxl
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
-
-from .diagnostics import write_diagnostics_sheets
 
 
 ICM_OUTPUT_HEADER_ROW = 32
@@ -54,6 +53,17 @@ def _style_data_cell(cell, value, fill=None):
     cell.alignment = Alignment(vertical="top", wrap_text=True)
     if isinstance(value, (int, float)):
         cell.number_format = NUM_FORMAT
+
+
+def _roundup_whole(value):
+    if value is None:
+        return None
+    number = float(value)
+    if number > 0:
+        return float(math.ceil(number))
+    if number < 0:
+        return float(math.floor(number))
+    return 0.0
 
 
 def _block_positions(start, num_accts_ent, num_accts_par, has_plug=False):
@@ -130,7 +140,7 @@ def write_output_v2(
         cell.alignment = Alignment(horizontal="center", vertical="center")
 
     _section_label(blk_par["ent_start"], blk_par["plug"] or blk_par["total"], "Parent Input")
-    _section_label(blk_cont["ent_start"], blk_cont["plug"] or blk_cont["total"], "Contribution Input")
+    _section_label(blk_cont["ent_start"], blk_cont["plug"] or blk_cont["total"], "QAR Currency")
     _section_label(plug_section["plug_col"], plug_section["total"], "Plug Account")
 
     _style_header_cell(ws.cell(ICM_OUTPUT_HEADER_ROW, 1), "Entity")
@@ -173,11 +183,13 @@ def write_output_v2(
         _style_id_cell(ws.cell(out_row, 1), row.display_entity)
         _style_id_cell(ws.cell(out_row, 2), row.display_partner)
 
-        def _write_block(blk, block_name, source):
+        def _write_block(blk, block_name, source, round_qar=False):
             ent_values = {}
             par_values = {}
             for idx, column in enumerate(layout.ent_cols):
                 value = _get_map_value(base_value_map, row.source_row_num, "entity_side", column.code) if source == "base" else _get_ledger_value(cell_ledger, row_key, block_name, "entity_side", column.code)
+                if round_qar and value is not None:
+                    value = _roundup_whole(value)
                 _style_data_cell(ws.cell(out_row, blk["ent_start"] + idx), value, MATCH_FILL if value not in (None, 0) and source != "base" else None)
                 ent_values[column.code] = value
 
@@ -186,6 +198,8 @@ def write_output_v2(
 
             for idx, column in enumerate(layout.par_cols):
                 value = _get_map_value(base_value_map, row.source_row_num, "partner_side", column.code) if source == "base" else _get_ledger_value(cell_ledger, row_key, block_name, "partner_side", column.code)
+                if round_qar and value is not None:
+                    value = _roundup_whole(value)
                 _style_data_cell(ws.cell(out_row, blk["par_start"] + idx), value, MATCH_FILL if value not in (None, 0) and source != "base" else None)
                 par_values[column.code] = value
 
@@ -197,12 +211,14 @@ def write_output_v2(
 
         base_total = _write_block(blk_base, "base", "base")
         parent_total = _write_block(blk_par, "parent", "ledger")
-        contrib_total = _write_block(blk_cont, "contrib", "ledger")
+        contrib_total = _write_block(blk_cont, "contrib", "ledger", round_qar=True)
 
         plug_parent = _get_ledger_value(cell_ledger, row_key, "plug", "plug_parent", layout.plug_code) if layout.plug_code else None
         _style_data_cell(ws.cell(out_row, blk_par["plug"]), plug_parent, MATCH_FILL if plug_parent not in (None, 0) else None)
 
         plug_contrib = _get_ledger_value(cell_ledger, row_key, "plug", "plug_contrib", layout.plug_code) if layout.plug_code else None
+        if plug_contrib is not None:
+            plug_contrib = _roundup_whole(plug_contrib)
         _style_data_cell(ws.cell(out_row, blk_cont["plug"]), plug_contrib, MATCH_FILL if plug_contrib not in (None, 0) else None)
 
         plug_section_value = _get_ledger_value(cell_ledger, row_key, "plug", "plug_section", layout.plug_code) if layout.plug_code else None
@@ -219,7 +235,6 @@ def write_output_v2(
         )
         _style_data_cell(ws.cell(out_row, col_final), final_total, TOTAL_FILL)
 
-    write_diagnostics_sheets(out_wb, diagnostics, plug_reconciliation_log, fact_assignment_log)
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     out_wb.save(output_path)
     return output_path

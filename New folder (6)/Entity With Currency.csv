@@ -1,0 +1,270 @@
+﻿Entity, Alias: Default, Base Currency
+FCCS_Global Assumptions,,
+FCCS_Total Geography,,
+E100000,QDRE Investment Company Q.C.S.C.,QAR
+001001,QDRE Investment Company Q.S.C. (H),QAR
+001051,Huzoom Lusail Company LLC,QAR
+E101000,QDHP & QD Europe Sarl,EUR
+E101100,QD Europe_S.a.r.l.,EUR
+007001,QD Europe S.a.r.l. (H),EUR
+007012,GS 16  S.ar.l.,EUR
+E101110,QD VEO_S.a.r.l.,EUR
+007004,QD VEO S.a.r.l. (H),EUR
+007005,VELO Investissement,EUR
+007006,Casinvest S.a.r.l. (H),EUR
+E101111,Q Hotel & Marina Limited,EUR
+032002,QD Hotel & Property Investment Montenegro Doo,EUR
+007013,Q Hotel & Marina Ltd. (H),EUR
+007008,QD Cyprus Ltd.,EUR
+007007,Casinvest Iean S.a.r.l.,EUR
+007009,QD Europe Chancery S.a.r.l.,GBP
+027009,QD Americas Inc. - Delaware,USD
+007011,GPS Holdings S.a.r.l.,GBP
+006002,QD Hotel & Property Investment Ltd.,EUR
+008000,QDHP & QD Europe Sarl (H),EUR
+E102000,QDVC_Q.S.C.,QAR
+001007,QDVC Q.S.C. (Holding),QAR
+001046,QDVP Q.S.C.,QAR
+102000A,QDVC Adj Entity,QAR
+E103000,Qatar RE Partners C.Q.S.C. (under liquidation),QAR
+001003,Qatar RE Part C.Q.S.C.(under liquidation)(H),QAR
+005003,Morocco RE Brok Serv(under liquidation),MAD
+001004,Qatar Real Estate Brokerage Services,QAR
+E104000,Smeet_W.L.L.,QAR
+001016,Smeet W.L.L. (H),QAR
+001047,SMEET Precast S.P.C.,QAR
+001048,SMEET Readymix Co. W.L.L. (brn.),QAR
+104000A,Smeet Adj Entity,QAR
+001028,East Gates Real Estate Investment,QAR
+E105000,Qatari Diar Real Estate Investment Company (QD Morocco),MAD
+005001,QDRE Investment Co.(QD Morocco) (H),MAD
+005004,Al Houara Golf & Racket Club (Mor.),MAD
+005005,Al Houara Hotel & Beach Res.(Mor),MAD
+005006,Al Houara Beach Hotel (Morocco),MAD
+105000A,QD Mor Adj Entity,MAD
+E121000,QDRE & Tourism Co. LLC. (Egypt) Subgroup,EGP
+002001,QDRE & Tourism Co. LLC. (Egypt),EGP
+121001A,QDRE & Tourism Co. LLC. (Egypt) Adj Entity,EGP
+017001,QDRE Investment Co. L.L.C. (Syria),SYP
+E106000,Project Red Group Ltd.,GBP
+003001,Project Red Group Limited (Holding),GBP
+003002,Project Red Holdings Limited,GBP
+003003,Project Red  Limited,GBP
+E107000,Project Blue Holdings Ltd.,GBP
+003004,Project Blue Holdings Ltd.(H),GBP
+003006,Project Blue Develop. Ltd.(H),GBP
+003005,Roseglen Limited,GBP
+003009,Project Blue  Acquisitions Limited,GBP
+003007,Project Blue  Limited,GBP
+E108000,QD US Real Estate Co.,USD
+019002,QD US Real Estate Company (H),USD
+E108100,QD US Parcel A (Condo 1) Co.,USD
+019004,QD US Parcel A (Condo 1) Company (H),USD
+027002,CityCenter DC Condo 1,USD
+E108200,QD US Parcel A (Condo 2) Co.,USD
+019005,QD US Parcel A (Condo 2) Company (H),USD
+027003,CityCenter DC Condo 2,USD
+E108300,QD US Parcel A (Office) Co.,USD
+019006,QD US Parcel A (Office) Company (H),USD
+027004,CityCenter DC Office,USD
+E108400,QD US Parcel A (Residential) Co.,USD
+019003,QD US Parcel A (Residential) Company (H),USD
+027001,CityCenter DC Residential,USD
+E108500,QD US Parcel A (Retail) Co.,USD
+019007,QD US Parcel A (Retail) Company (H),USD
+027005,CityCenter DC Reail,USD
+E108600,CCDC Parcel B Hotel Corporation,USD
+013004,CCDC Parcel B Hotel Corp.,USD
+027006,CityCenter Parcel B Hotel Corp.,USD
+E108700,CCDC Parcel B Retail Corporation,USD
+013005,CCDC Parcel B Retail Corp.,USD
+027007,CityCenter Parcel B Retail Corp.,USD
+E108800,LIC Gotham (UK) Limited,USD
+027008,LIC Gotham (US) Inc.,USD
+013006,LIC Gotham (UK) Ltd. (H),USD
+013001,Qatari Diar UK Limited,GBP
+E122000,QDRE Investment Co. Ltd (QD Sudan) Subgroup,QAR
+016001,QDRE Investment Co. Ltd (QD Sudan),QAR
+122001A,QDRE Investment Co. Ltd (QD Sudan) Adj Entity,QAR
+E109000,QD Istanbul Gayrimenkul Gelistirme Yatirim Insaat Ve Ticaret Ltd. Sirketi,TRY
+011001,QD Istanbul (Holding),TRY
+011002,Kat Turizm Gayrimenkul Yatirimlarive Isletme Tic. A.S.,TRY
+018001,QDRE Investments Co. Mauritania S.a.r.l.,QAR
+026001,QDRE Investment Co. (Seychelles) Ltd.,QAR
+022001,QDREI  Co. Tajakistan Ltd,USD
+021001,QDRE Investment Co Ltd . (Eritrea),QAR
+E110000,"Al Qatariya Development Co, Malta",EUR
+006001,Al Qatariya Develop Co. Malta (H),EUR
+008002,Waterfront JV Libya (ALAQ),EUR
+008001,Bab El Madina JV Libya,EUR
+010002,QDRE Investment Co. Yemen,USD
+010001,Al Yemania Al Qatariah REID Co.,USD
+E111000,Qatari Resorts Co. Q.S.C.,QAR
+001002,Qatari Resorts Co. Q.S.C. (H),QAR
+001026,Gulf Organisation for R&D QSTP LLC,QAR
+002003,Hurghada Real Estate Investment (Hurghada),EGP
+E111100,Qatari Diar Infrastructure Co. L.L.C.,QAR
+001008,Qatari Diar Infrastructure Co. L.L.C. (H),QAR
+001011,Seef Lusail For Real Estate Development Company,QAR
+020001,Gran Paraiso S.A. (under liquidation),USD
+E112000,Qatari Diar Development Company L.L.C.,OMR
+009001,QD Development Co. L.L.C. (H),OMR
+E112100,QD Ras Al Hadd Development Subgroup,OMR
+009002,QD Ras Al Hadd Development,OMR
+060002,QD RHLS,OMR
+112000A,Qatari Diar Development Company L.L.C. Adj Entity,QAR
+001013,Lusail City Company (H),QAR
+015003,QD Project Management Co.,TND
+019001,Al Maha Real Estate Investment Company -Cayman,MAD
+001021,Legtafiya Asset Mng. Co.,QAR
+003010,Qatari Diar Jersey Limited,GBP
+E113000,Marafeq Qatar Co. W.L.L.,QAR
+001017,Marafeq Qatar Co. W.L.L. (H),QAR
+001037,Lusail City District Cooling Co. LLC,QAR
+001036,Lusail City Cooling Sys. Op. Co. LLC,QAR
+001040,Qatari Diar for Operations and Maintenance,QAR
+001015,Barwa Al Khor S.P.C.,QAR
+001031,Qetaifan Real Estate Development Co.,QAR
+E114000,"Project Russet (Holdings Company) Ltd, Jersey",GBP
+003011,Project Russet(Hold Co) Ltd Jersey (H),GBP
+003012,Project Russet (LP Co) Ltd Jersey,GBP
+003013,Project Russet (GP Co.) Ltd Jersey,GBP
+E115000,Bawabat El Sharq Egypt Real_Estate,EGP
+002006,Bawabat El Sharq Egypt RE (H),EGP
+002007,Bawabat El Sharq Egypt For RED S.A.E.,EGP
+002005,Bawabat El Sharq New Cairo For REI S.A.E.,EGP
+002011,Barwa Investment,EGP
+115000A,Bawabat El Sharq Egypt Real Estate Adj Entity,QAR
+E124000,QDRE Investment Company Tozeur Subgroup,TND
+015002,QDRE Investment Company Tozeur,TND
+015004,Al Maha Resort Management Tozeur Company,TND
+124001A,QDRE Investment Company Tozeur Adj Entity,TND
+001027,Qatari Diar Finance Q.S.C.,QAR
+016002,Mushereib Serv. & Project Mng. Co. Ltd.,QAR
+016003,Al Maha Private Asset & Facility Mng. Co.,SDG
+023001,Qatari Diar (Thailand) Limited,QAR
+001014,The Commercial Avenue W.L.L.,QAR
+E116000,QD Triangle (Holding Company) Ltd,GBP
+003020,QD Triangle (Hold Co.) Ltd (H),GBP
+003022,QD Triangle (East Village) Ltd,GBP
+003021,QD Triangle (EC1) Ltd,GBP
+116001A,QD Triangle (Holding Company) Ltd Adj entity,GBP
+022002,Al Maha Property & Facility Mng. co.-Tajikistan,USD
+013011,Qatari Diar Europe LLP,GBP
+E117100,QD UK Holdings LP adjusted,QAR
+E117000,QD UK Holdings_LP,GBP
+013013,QD UK Holdings LP (H),GBP
+013007,CB 1_3 LP,GBP
+013008,CB 4 LP,GBP
+013009,CB 5 LP,GBP
+013010,CB 6 LP,GBP
+013016,CB Estate LP,GBP
+013012,16 GS LLP,GBP
+013014,30 GS LLP,GBP
+003014,"Project Russet Property Unit Trust, Jersey",GBP
+013017,51 RG LP,GBP
+117000A,QDUKH Adj Entity,GBP
+117101A,QD UK Holdings LP QAR Adj Entity,QAR
+E118000,QD SBG Group adjusted,QAR
+E118100,QD-SBG Group WLL,QAR
+001022,QD SBG Group WLL (H),QAR
+001050,SBG O&M,QAR
+001024,QD SBG Construction,QAR
+118001A,QD-SBG Group WLL Adj Entity,QAR
+E118200,QD-CPC Industries WLL,QAR
+001043,QD CPC Precast Cement Products Factory WLL,QAR
+001044,QD CPC Ready Mix WLL,QAR
+001041,QD CPC Aluminum Manufacturing WLL,QAR
+001042,QD CPC Asphalt Factory WLL,QAR
+001045,QD CPC Woods and Interior Finishing WLL,QAR
+001025,QD CPC Industries (Holding),QAR
+E125000,Qatari Diar for Hotel Services Subgroup,EGP
+002012,Qatari Diar for Hotel Services,EGP
+002013,Al Maha for Facility Management S.A.E.,EGP
+001032,SBG-PORR-HBK Joint Operation (Elevated),QAR
+001033,PORR-SBG-HBK Joint Operation (Underground),QAR
+001039,Lusail Real Estate Management Co. (LREMC),QAR
+001038,Lusail Plaza RED Co. LLC (Lusail Tower 1 SPV),QAR
+001009,Strategic Projects Company,QAR
+001012,Labregah Real Estate Co. QSC.,QAR
+001018,Diar Local Projects Co.,QAR
+001019,Qatar Railways Company (RAIL),QAR
+001023,Lusail Hochtief,QAR
+002008,Hurgada Development Co.,QAR
+002009,Giza Real Estate & Dev. Co.,QAR
+007015,Q Hotels BV,QAR
+E120000,QDRE Development SAE (Egypt) Subgroup,EGP
+002002,QDRE Development SAE (Egypt),EGP
+120001A,QDRE Development SAE (Egypt) Adj Entity,EGP
+029001,Bayti,QAR
+060001,Miscellaneous for hyperion rounding off,QAR
+075001,,QAR
+028001,Qatari Diar Djibouti,QAR
+001049,Galalah Hotel Investment L.L.C,QAR
+001029,Qatar Project Management Q.S.C.,QAR
+E119000,Barwa Real_Estate,QAR
+E119100,Barwa District Cooling SPC,QAR
+013018,CB EM Services LLP,GBP
+007010,QD America Ltd.,USD
+005002,Al Maha Morocco,MAD
+001052,Diar Al Khor,QAR
+E123000,QD Asia Pacific Subgroup,USD
+030001,QD Asia Pacific (H),USD
+123001A,QD Asia Pacific Adj Entity,USD
+011003,Diar Sulaymaniye (H),TRY
+007002,QD Marina Sa.r.l. (H),EUR
+007003,Comet Luxembourg Holding S.a.r.l.,EUR
+015001,QD Tunisia Services Co.(under liquidation),TND
+013002,Qatari Diar Development Company (UK) Limited,GBP
+013003,Tasleem (UK) Limited,GBP
+030002,Success Diar Sdn. Bhd.,QAR
+031001,,QAR
+001006,Lusail RE Develop Co. W.L.L.,QAR
+013020,8 Whistler Square limited,GBP
+013019,30 GS Management Services Limited,GBP
+001053,Simaisma Real Estate Investment WLL,QAR
+E127000,Simaisma For Entertainment WLL Subconsol,QAR
+001054,Simaisma For Entertainment WLL,QAR
+001058,North Entertainment LLC,QAR
+013023,CB Phase 1 Retail Limited,QAR
+013024,QDUK Holdings GP LLP,GBP
+013025,QD Minority Holdings Liminted,GBP
+001055,Safari Park Doha WLL,QAR
+001056,Darb Lusail for Real Estate Investment WLL,QAR
+E126000,QD Alam Al Rom For Real Estate Investment WLL Subconsol,QAR
+001057,QD Alam Al Rom For Real Estate Investment WLL,QAR
+002014,Qatari Diar for Urban Development – Alam Al Roum,QAR
+001059,Simaisma Projects WLL,QAR
+E900000,QD Group Adj Entities,QAR
+E900001,QD Group Adjustment Entities (H),QAR
+Related Parties,,QAR
+Associates,,QAR
+A_001,Gulf Organisation for research and development,QAR
+A_002,London and Regional SA,QAR
+A_003,Braeburn (Shell Centre),QAR
+A_004,CCDC Residential Rental L.L.C.,QAR
+A_005,CCDC Office L.L.C.,QAR
+A_006,CCDC  Retail L.L.C.,QAR
+A_007,CCDC B Hotel LLC,QAR
+A_008,CCDC B Retail LLC,QAR
+A_009,LIC Site B-1 JV Holdings L.P.,QAR
+Other Related Parties,,QAR
+RP_001,London and Reigonal,QAR
+RP_002,Qatar Investment Authority,QAR
+RP_003,QBC Joint venture,QAR
+RP_004,DOHA METRO PROJECT - QDVC-GS E&C-ADE JV,QAR
+RP_005,QDVC Bin Omran JV-NOH,QAR
+RP_006,Consolidated Contactors Group S.A.L (offshore),QAR
+RP_007,SBG-Porr-HBK JV,QAR
+RP_008,PORR Bau GmbH (Qatar Branch),QAR
+RP_009,Hamad Bin Khalid Contracting Company W.L.L.,QAR
+RP_010,RP_010:Other Related Party,QAR
+RP_011,RP_011:Other Related Party,QAR
+RP_012,RP_012:Other Related Party,QAR
+RP_013,RP_013:Other Related Party,QAR
+RP_014,RP_014:Other Related Party,QAR
+RP_015,RP_015:Other Related Party,QAR
+RP_016,RP_016:Other Related Party,QAR
+RP_017,RP_017:Other Related Party,QAR
+RP_018,RP_018:Other Related Party,QAR
+RP_019,RP_019:Other Related Party,QAR

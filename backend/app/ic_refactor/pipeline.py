@@ -23,7 +23,11 @@ def _row_relevant_fact_ids(fact_build):
     relevant = []
     for fact_id in fact_build.facts_parent + fact_build.facts_contrib:
         fact = fact_build.fact_registry[fact_id]
-        if fact.account_code in layout_codes or fact.account_code in fact_build.elim_codes:
+        if (
+            fact.account_code in layout_codes
+            or fact.account_code in fact_build.elim_codes
+            or fact.account_code == fact_build.plug_code
+        ):
             relevant.append(fact_id)
     for fact_id in fact_build.facts_ic_elim:
         fact = fact_build.fact_registry[fact_id]
@@ -32,8 +36,13 @@ def _row_relevant_fact_ids(fact_build):
     return relevant
 
 
-def run_pipeline_v2(icm_path, journal_paths, report_inputs_path=None) -> PipelineResult:
-    fact_build = build_all_facts(icm_path, journal_paths, report_inputs_path=report_inputs_path)
+def run_pipeline_v2(icm_path, journal_paths, report_inputs_path=None, lookup_paths=None) -> PipelineResult:
+    fact_build = build_all_facts(
+        icm_path,
+        journal_paths,
+        report_inputs_path=report_inputs_path,
+        lookup_paths=lookup_paths,
+    )
     diagnostics = fact_build.diagnostics
     fact_registry = fact_build.fact_registry
 
@@ -48,7 +57,9 @@ def run_pipeline_v2(icm_path, journal_paths, report_inputs_path=None) -> Pipelin
 
     parent_plug = derive_plug_facts(fact_build.facts_parent, fact_registry, fact_build.elim_codes, fact_build.plug_code, "parent")
     contrib_plug = derive_plug_facts(fact_build.facts_contrib, fact_registry, fact_build.elim_codes, fact_build.plug_code, "contrib")
-    standalone_plug = build_plug_section_facts(fact_build.facts_ic_elim, fact_registry, fact_build.plug_code)
+    standalone_plug = []
+    if fact_build.sources.get("plugaccount_journal") is not None:
+        standalone_plug = build_plug_section_facts(fact_build.facts_ic_elim, fact_registry, fact_build.plug_code)
 
     parent_plug_ids = _register_derived_facts(fact_registry, parent_plug)
     contrib_plug_ids = _register_derived_facts(fact_registry, contrib_plug)
@@ -107,8 +118,13 @@ def run_pipeline_v2(icm_path, journal_paths, report_inputs_path=None) -> Pipelin
     )
 
 
-def process_icm_report_v2(icm_path, journal_paths, output_path, report_inputs_path=None):
-    result = run_pipeline_v2(icm_path, journal_paths, report_inputs_path=report_inputs_path)
+def process_icm_report_v2(icm_path, journal_paths, output_path, report_inputs_path=None, lookup_paths=None):
+    result = run_pipeline_v2(
+        icm_path,
+        journal_paths,
+        report_inputs_path=report_inputs_path,
+        lookup_paths=lookup_paths,
+    )
     write_output_v2(
         result.row_registry,
         result.cell_ledger,

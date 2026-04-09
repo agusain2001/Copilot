@@ -14,26 +14,31 @@ import {
 import './ProcessingPage.css';
 
 const FILE_SLOTS = [
-  { key: 'icm_report',            label: 'ICM Report',             hint: 'Intercompany Balances IC Matching Report', required: true  },
-  { key: 'parent_journal',        label: 'Parent Journal',         hint: 'Journal Report 1 — Parent Input Data',    required: true  },
-  { key: 'contribution_journal',  label: 'Contribution Journal',   hint: 'Journal Report 2 — Contribution Data',    required: true  },
-  { key: 'plugaccount_journal',   label: 'Plug Account Journal',   hint: 'Journal Report 4 — Plug Account Data',    required: true  },
-  { key: 'report_inputs',         label: 'Report Inputs',          hint: 'Optional — archived for records only',     required: false },
+  { key: 'icm_report', label: 'ICM Report', hint: 'Intercompany Balances IC Matching Report', required: true, allowed: ['xlsx'], accept: '.xlsx' },
+  { key: 'parent_journal', label: 'Parent Journal', hint: 'Journal Report 1 - Parent Input Data', required: true, allowed: ['xlsx'], accept: '.xlsx' },
+  { key: 'plugaccount_journal', label: 'Plug Account Journal', hint: 'Journal Report 4 - Plug Account Data', required: true, allowed: ['xlsx'], accept: '.xlsx' },
+  { key: 'entity_with_currency', label: 'Entity With Currency', hint: 'Entity mapping file (.csv or .xlsx)', required: true, allowed: ['csv', 'xlsx'], accept: '.csv,.xlsx' },
+  { key: 'exchange_rates', label: 'Exchange Rates', hint: 'Exchange rates with Currency/Type columns', required: true, allowed: ['xlsx'], accept: '.xlsx' },
+  { key: 'ownership_structure', label: 'Ownership Structure', hint: 'Ownership percentages by entity', required: true, allowed: ['xlsx'], accept: '.xlsx' },
+  { key: 'contribution_journal', label: 'Contribution Journal', hint: 'Optional - deprecated and ignored in QAR mode', required: false, allowed: ['xlsx'], accept: '.xlsx' },
+  { key: 'report_inputs', label: 'Report Inputs', hint: 'Optional - archived for records only', required: false, allowed: ['xlsx'], accept: '.xlsx' },
 ];
 
 export default function ProcessingPage() {
   const [files, setFiles] = useState({});
   const [runName, setRunName] = useState('');
   const [processing, setProcessing] = useState(false);
-  const [result, setResult] = useState(null);   // { status, sequenceId, outputReportId, outputFilename, error }
+  const [result, setResult] = useState(null);
+  const [dragKey, setDragKey] = useState(null);
   const inputRefs = useRef({});
 
-  // ── File handlers ───────────────────────────────────────────────
   const handleFile = useCallback((key, file) => {
     if (!file) return;
     const ext = file.name.split('.').pop().toLowerCase();
-    if (ext !== 'xlsx') {
-      alert(`Only .xlsx files are allowed. "${file.name}" is .${ext}`);
+    const slot = FILE_SLOTS.find((item) => item.key === key);
+    const allowed = slot?.allowed || ['xlsx'];
+    if (!allowed.includes(ext)) {
+      alert(`Invalid file type for ${slot?.label || key}. Allowed: ${allowed.map((item) => `.${item}`).join(', ')}`);
       return;
     }
     setFiles((prev) => ({ ...prev, [key]: file }));
@@ -53,6 +58,7 @@ export default function ProcessingPage() {
       e.stopPropagation();
       const file = e.dataTransfer.files[0];
       handleFile(key, file);
+      setDragKey(null);
     },
     [handleFile]
   );
@@ -62,21 +68,18 @@ export default function ProcessingPage() {
     e.stopPropagation();
   };
 
-  // ── Drag state for visual feedback ──────────────────────────────
-  const [dragKey, setDragKey] = useState(null);
-
   const handleDragEnter = (key) => (e) => {
     e.preventDefault();
     setDragKey(key);
   };
+
   const handleDragLeave = (key) => (e) => {
     e.preventDefault();
     if (dragKey === key) setDragKey(null);
   };
 
-  // ── Submit ──────────────────────────────────────────────────────
-  const requiredSlots = FILE_SLOTS.filter((s) => s.required);
-  const allRequiredFilled = requiredSlots.every((s) => files[s.key]);
+  const requiredSlots = FILE_SLOTS.filter((slot) => slot.required);
+  const allRequiredFilled = requiredSlots.every((slot) => files[slot.key]);
 
   const handleProcess = async () => {
     if (!allRequiredFilled) return;
@@ -86,16 +89,16 @@ export default function ProcessingPage() {
     const formData = new FormData();
     formData.append('name', runName || `Processing Run ${new Date().toLocaleString()}`);
     formData.append('type_name', 'alpha');
-    FILE_SLOTS.forEach((s) => {
-      if (files[s.key]) {
-        formData.append(s.key, files[s.key]);
+    FILE_SLOTS.forEach((slot) => {
+      if (files[slot.key]) {
+        formData.append(slot.key, files[slot.key]);
       }
     });
 
     try {
       const res = await api.post('/api/processing/run', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
-        timeout: 300000,  // 5 min timeout for large files
+        timeout: 300000,
       });
       setResult({
         status: 'success',
@@ -113,7 +116,6 @@ export default function ProcessingPage() {
     }
   };
 
-  // ── Download ────────────────────────────────────────────────────
   const handleDownload = async () => {
     if (!result?.sequenceId) return;
     try {
@@ -121,19 +123,18 @@ export default function ProcessingPage() {
         responseType: 'blob',
       });
       const url = URL.createObjectURL(res.data);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = result.outputFilename || 'ICM_Output.xlsx';
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = result.outputFilename || 'ICM_Output.xlsx';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
       URL.revokeObjectURL(url);
     } catch (err) {
       alert('Download failed: ' + (err.response?.data?.detail || err.message));
     }
   };
 
-  // ── Reset ───────────────────────────────────────────────────────
   const handleReset = () => {
     setFiles({});
     setRunName('');
@@ -148,16 +149,15 @@ export default function ProcessingPage() {
       <div className="processing-content">
         <div className="processing-header">
           <h1>ICM Report Processing</h1>
-          <p>Upload the 4 required Excel files (and optionally a Report Inputs file) to run intercompany matching.</p>
+          <p>Upload required files to run Parent Input and QAR Currency matching.</p>
         </div>
 
         <div className="upload-card">
           <div className="upload-card-title">Upload Files</div>
           <div className="upload-card-subtitle">
-            Drag & drop or click each zone to select the required .xlsx files.
+            Drag and drop or click each zone to select the needed files.
           </div>
 
-          {/* Run name */}
           <div className="processing-name-row">
             <div className="form-group">
               <label htmlFor="run-name">Run Name (optional)</label>
@@ -173,7 +173,6 @@ export default function ProcessingPage() {
             </div>
           </div>
 
-          {/* File drop zones */}
           <div className="file-grid">
             {FILE_SLOTS.map((slot) => {
               const file = files[slot.key];
@@ -190,16 +189,14 @@ export default function ProcessingPage() {
                 >
                   <input
                     type="file"
-                    accept=".xlsx"
+                    accept={slot.accept}
                     ref={(el) => (inputRefs.current[slot.key] = el)}
                     onChange={(e) => {
                       handleFile(slot.key, e.target.files[0]);
                       e.target.value = '';
                     }}
                   />
-                  <div className="drop-zone-icon">
-                    {file ? <FiFileText /> : <FiUploadCloud />}
-                  </div>
+                  <div className="drop-zone-icon">{file ? <FiFileText /> : <FiUploadCloud />}</div>
                   <div className="drop-zone-label">{slot.label}</div>
                   {file ? (
                     <div className="drop-zone-file">
@@ -223,14 +220,13 @@ export default function ProcessingPage() {
             })}
           </div>
 
-          {/* Actions */}
           <div className="processing-actions">
             <span className="file-counter">
               <strong>{filledCount}</strong> / {FILE_SLOTS.length} files
-              {' — '}
+              {' - '}
               {allRequiredFilled
-                ? <span style={{ color: 'var(--accent-success)', fontWeight: 600 }}>✓ Ready to process</span>
-                : <span>{requiredSlots.filter((s) => files[s.key]).length} / {requiredSlots.length} required</span>
+                ? <span style={{ color: 'var(--accent-success)', fontWeight: 600 }}>Ready to process</span>
+                : <span>{requiredSlots.filter((slot) => files[slot.key]).length} / {requiredSlots.length} required</span>
               }
             </span>
             <button
@@ -239,46 +235,35 @@ export default function ProcessingPage() {
               onClick={handleProcess}
             >
               <FiPlay size={15} />
-              {processing ? 'Processing…' : 'Process Files'}
+              {processing ? 'Processing...' : 'Process Files'}
             </button>
           </div>
         </div>
 
-        {/* Processing spinner */}
         {processing && (
           <div className="processing-state">
             <div className="spinner-container">
               <div className="spinner" />
-              <div className="spinner-text">Running IC Matching…</div>
-              <div className="spinner-subtext">
-                This may take a minute depending on file size.
-              </div>
+              <div className="spinner-text">Running IC Matching...</div>
+              <div className="spinner-subtext">This may take a minute depending on file size.</div>
             </div>
           </div>
         )}
 
-        {/* Result */}
         {result && !processing && (
           <div className={`result-card ${result.status}`}>
             <div className="result-header">
               <div className={`result-icon ${result.status}`}>
-                {result.status === 'success' ? (
-                  <FiCheckCircle />
-                ) : (
-                  <FiAlertCircle />
-                )}
+                {result.status === 'success' ? <FiCheckCircle /> : <FiAlertCircle />}
               </div>
               <div className="result-title">
-                {result.status === 'success'
-                  ? 'Processing Complete'
-                  : 'Processing Failed'}
+                {result.status === 'success' ? 'Processing Complete' : 'Processing Failed'}
               </div>
             </div>
             <div className="result-details">
               {result.status === 'success' ? (
                 <>
-                  Output file <strong>{result.outputFilename}</strong> is ready
-                  for download.
+                  Output file <strong>{result.outputFilename}</strong> is ready for download.
                   <br />
                   Sequence ID: {result.sequenceId}
                 </>
